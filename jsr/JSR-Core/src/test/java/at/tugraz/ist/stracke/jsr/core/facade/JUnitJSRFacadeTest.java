@@ -153,7 +153,7 @@ class JUnitJSRFacadeTest {
                                                                     Path.of(outDir),
                                                                     Path.of(slicerDir));
     JSRFacade facade = facadeBuilder
-      .reductionStrategy(new GeneticReductionStrategy())
+      .reductionStrategy(new GeneticReductionStrategy(0.5, 0.15))
       .applyModificationsAsCopy(Path.of(serialDir))
       .staticReductionReportFilename()
       .build();
@@ -211,7 +211,7 @@ class JUnitJSRFacadeTest {
                                                                     Path.of(slicerDir));
     JSRFacade facade = facadeBuilder
       .coverageStrategy(lineCoverage)
-      .reductionStrategy(new GeneticReductionStrategy())
+      .reductionStrategy(new GeneticReductionStrategy(0.5, 0.15))
       .applyModificationsAsCopy(Path.of(serialDir))
       .staticReductionReportFilename()
       .build();

@@ -85,7 +85,7 @@ public class ReductionService {
         builder.reductionStrategy(new DelayedGreedyReductionStrategy());
         break;
       case GENETIC:
-        builder.reductionStrategy(new GeneticReductionStrategy());
+        builder.reductionStrategy(new GeneticReductionStrategy(0.5, 0.15));
         break;
       // In the default case we don't have to do anything, as
       // the builder uses the greedy HGS algo as default RS.

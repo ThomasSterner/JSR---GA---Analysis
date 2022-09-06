@@ -33,7 +33,9 @@ class SFLFacadeImplTest {
                                      null,
                                      null,
                                      "at.tugraz",
-                                     false);
+                                     false,
+                                     0.0,
+                                     0.0);
 
     SFLFacadeImpl facade = new SFLFacadeImpl();
 
@@ -96,7 +98,9 @@ class SFLFacadeImplTest {
                                      null,
                                      null,
                                      "at.tugraz",
-                                     false);
+                                     false,
+                                     0.0,
+                                     0.0);
 
     SFLFacade facade = new SFLFacadeImpl();
 

@@ -43,8 +43,8 @@ public class GeneticReductionStrategy extends BaseReductionStrategy {
   private static final int POPULATION_SIZE = 5000;
 
   private static final double PROB_BIT_GENE_TRUE_INIT = 0.95;
-  private static final double PROB_MUTATOR = 0.5;
-  private static final double PROB_ROULETTE = 0.15;
+  private double PROB_MUTATOR = 0.5;
+  private double PROB_ROULETTE = 0.15;
 
   private static final int LIMIT_STEADY_FITNESS = 15;
   private static final int LIMIT_MAX_GENERATIONS = 100;
@@ -52,12 +52,18 @@ public class GeneticReductionStrategy extends BaseReductionStrategy {
   private static final boolean AVG_DUPLICATES = true;
 
   public GeneticReductionStrategy(@NonNull TestSuite testSuite,
-                                  @NonNull CoverageReport coverageReport) {
+                                  @NonNull CoverageReport coverageReport,
+                                  double mutationRate,
+                                  double crossOverRate) {
     super(testSuite, coverageReport, LogManager.getLogger(GeneticReductionStrategy.class));
+    PROB_MUTATOR = mutationRate;
+    PROB_ROULETTE = crossOverRate;
   }
 
-  public GeneticReductionStrategy() {
+  public GeneticReductionStrategy(double mutationRate, double crossOverRate) {
     super(LogManager.getLogger(GeneticReductionStrategy.class));
+    PROB_MUTATOR = mutationRate;
+    PROB_ROULETTE = crossOverRate;
   }
 
   @Override

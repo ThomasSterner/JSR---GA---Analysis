@@ -105,7 +105,9 @@ public class CoverageCommand implements Callable<Integer> {
       opts ? optionalFlags.coverageMetric : CoverageCandidates.COV_CHECKED,
       null,
       opts ? optionalFlags.basePackage : null,
-      false);
+      false,
+      0.0,
+      0.0);
 
     CoverageService coverageService = new JSRServiceImpl();
     coverageService.calculateCoverage(params);

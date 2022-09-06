@@ -56,7 +56,7 @@ public class JSRServiceImpl implements TSRService, SFLService, CoverageService {
 
     switch (params.algorithm) {
       case AlgorithmCandidates.ALG_GENETIC:
-        builder.reductionStrategy(new GeneticReductionStrategy());
+        builder.reductionStrategy(new GeneticReductionStrategy(params.mutationRate, params.crossOverRate));
         break;
       case AlgorithmCandidates.ALG_DELAYED_GREEDY:
         builder.reductionStrategy(new DelayedGreedyReductionStrategy());

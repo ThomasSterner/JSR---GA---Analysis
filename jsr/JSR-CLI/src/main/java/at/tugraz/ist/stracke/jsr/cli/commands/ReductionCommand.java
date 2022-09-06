@@ -122,6 +122,18 @@ public class ReductionCommand implements Callable<Integer> {
             description = "When this option is specified, test cases that do not " +
                           "have any coverage, are kept instead of removed from the test suite")
     private boolean keep0CoverageTCs;
+
+    @Option(order = 10,
+            arity = "1",
+            names = {"--mutation"},
+            description = "Mutation rate used for the genetic algorithm")
+    private double mutationRate;
+
+    @Option(order = 11,
+            arity = "1",
+            names = {"--crossover"},
+            description = "Crossover rate used for the genetic algorithm")
+    private double crossOverRate;
   }
 
   @Override
@@ -141,7 +153,9 @@ public class ReductionCommand implements Callable<Integer> {
       options ? this.optionalFlags.coverageMetric : null,
       options ? this.optionalFlags.algorithm : null,
       options ? this.optionalFlags.basePackage : null,
-      options && this.optionalFlags.keep0CoverageTCs
+      options && this.optionalFlags.keep0CoverageTCs,
+      options ? this.optionalFlags.mutationRate : null,
+      options ? this.optionalFlags.crossOverRate : null
     );
 
     TSRService TSRService = new JSRServiceImpl();

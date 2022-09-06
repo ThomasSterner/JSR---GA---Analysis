@@ -15,8 +15,8 @@
     <option name="pathSerialOut" value="$PROJECT_DIR$/build/jsr/pluginTest01/gen" />
     <option name="basePackage" value="at.tugraz" />
     <option name="coverageMetric" value="LINE_COVERAGE" />
-    <option name="reductionAlgorithm" value="DELAYED_GREEDY" />
-    <option name="resultsExpanded" value="true" />
+    <option name="reductionAlgorithm" value="GENETIC" />
+    <option name="settingsExpanded" value="true" />
     <option name="keepZeroCoverageTCs" value="true" />
   </component>
 </project>

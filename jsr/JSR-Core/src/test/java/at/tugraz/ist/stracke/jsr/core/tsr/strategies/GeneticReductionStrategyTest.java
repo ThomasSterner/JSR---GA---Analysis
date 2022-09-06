@@ -20,7 +20,9 @@ class GeneticReductionStrategyTest {
   @Test
   void testReduce01() {
     ReductionStrategy strategy = new GeneticReductionStrategy(TSRData.smallOriginalTS,
-                                                              TSRData.smallCoverageReport);
+                                                              TSRData.smallCoverageReport,
+            0.5,
+            0.15);
     ReducedTestSuite rts = strategy.reduce();
 
     List<TestCase> union = new ArrayList<>(rts.testCases);
@@ -34,7 +36,9 @@ class GeneticReductionStrategyTest {
   @Test
   void testGetFitnessInvalidSelection() {
     GeneticReductionStrategy strategy = new GeneticReductionStrategy(TSRData.smallOriginalTS,
-                                                                     TSRData.smallCoverageReport);
+                                                                     TSRData.smallCoverageReport,
+            0.5,
+            0.15);
     final BitSet bits = new BitSet(5);
     bits.set(0, true);
     bits.set(1, false);
@@ -51,7 +55,9 @@ class GeneticReductionStrategyTest {
   @Test
   void testGetFitnessBadSelection() {
     GeneticReductionStrategy strategy = new GeneticReductionStrategy(TSRData.smallOriginalTS,
-                                                                     TSRData.smallCoverageReport);
+                                                                     TSRData.smallCoverageReport,
+            0.5,
+            0.15);
     final BitSet bits = new BitSet(5);
     bits.set(0, true);
     bits.set(1, true);
@@ -68,7 +74,9 @@ class GeneticReductionStrategyTest {
   @Test
   void testGetFitnessNormalSelection() {
     GeneticReductionStrategy strategy = new GeneticReductionStrategy(TSRData.smallOriginalTS,
-                                                                     TSRData.smallCoverageReport);
+                                                                     TSRData.smallCoverageReport,
+            0.5,
+            0.15);
     final BitSet bits = new BitSet(5);
     bits.set(0, true);
     bits.set(1, true);
@@ -85,7 +93,9 @@ class GeneticReductionStrategyTest {
   @Test
   void testGetFitnessBestSelection() {
     GeneticReductionStrategy strategy = new GeneticReductionStrategy(TSRData.smallOriginalTS,
-                                                                     TSRData.smallCoverageReport);
+                                                                     TSRData.smallCoverageReport,
+            0.5,
+            0.15);
     final BitSet bits = new BitSet(5);
     bits.set(0, false);
     bits.set(1, false);
