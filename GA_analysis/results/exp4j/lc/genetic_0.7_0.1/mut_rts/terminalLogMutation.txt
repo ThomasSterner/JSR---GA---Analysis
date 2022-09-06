@@ -1,0 +1,331 @@
+HEAD is now at e0ad0561 add exp4j, remove opencsv
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36mnet.objecthunter:exp4j[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding exp4j 0.4.9-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mexp4j[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mexp4j[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mexp4j[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 19 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mexp4j[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mexp4j[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 11 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/test-classes
+[[1;33mWARNING[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/src/test/java/net/objecthunter/exp4j/FunctionsTest.java: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/src/test/java/net/objecthunter/exp4j/FunctionsTest.java uses or overrides a deprecated API.
+[[1;33mWARNING[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/src/test/java/net/objecthunter/exp4j/FunctionsTest.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mexp4j[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.objecthunter.exp4j.tokenizer.TokenizerTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+Running net.objecthunter.exp4j.tokenizer.TokenizerUnknownTokenOrVariableTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running net.objecthunter.exp4j.ExpressionBuilderTest
+Tests run: 219, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 0.078 sec
+Running net.objecthunter.exp4j.PerformanceTest
++------------------------+---------------------------+--------------------------+
+| Implementation         | Calculations per Second   | Percentage of Math       |
++------------------------+---------------------------+--------------------------+
+| Java Math              |               12594725.00 |                 100.00 % |
+| exp4j                  |                4206626.00 |                  33.40 % |
+| JSR-223 (Java Script)  |                    712.00 |                   0.01 % |
++------------------------+---------------------------+--------------------------+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.185 sec
+Running net.objecthunter.exp4j.FunctionsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running net.objecthunter.exp4j.ExpressionValidateTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.004 sec
+Running net.objecthunter.exp4j.ArrayStackTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec
+Running net.objecthunter.exp4j.ExpressionTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.003 sec
+Running net.objecthunter.exp4j.shuntingyard.ShuntingYardTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+
+Results :
+
+Tests run: 312, Failures: 0, Errors: 0, Skipped: 14
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mexp4j[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/exp4j-0.4.9-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mmaven-source-plugin:2.2.1:jar[m [1m(attach-sources)[0;1m > [0;1mgenerate-sources[m @ [36mexp4j[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mmaven-source-plugin:2.2.1:jar[m [1m(attach-sources)[0;1m < [0;1mgenerate-sources[m @ [36mexp4j[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-source-plugin:2.2.1:jar[m [1m(attach-sources)[m @ [36mexp4j[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/exp4j-0.4.9-SNAPSHOT-sources.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-javadoc-plugin:3.1.1:jar[m [1m(attach-javadocs)[m @ [36mexp4j[0;1m ---[m
+[[1;34mINFO[m] 
+Loading source files for package net.objecthunter.exp4j...
+Loading source files for package net.objecthunter.exp4j.tokenizer...
+Loading source files for package net.objecthunter.exp4j.shuntingyard...
+Loading source files for package net.objecthunter.exp4j.operator...
+Loading source files for package net.objecthunter.exp4j.function...
+Constructing Javadoc information...
+Standard Doclet version 11.0.16
+Building tree for all the packages and classes...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/Expression.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/ExpressionBuilder.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/ValidationResult.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/function/Function.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/function/Functions.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/operator/Operator.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/operator/Operators.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/shuntingyard/ShuntingYard.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/FunctionToken.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/NumberToken.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/OperatorToken.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/Token.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/Tokenizer.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/VariableToken.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/package-summary.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/package-tree.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/function/package-summary.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/function/package-tree.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/operator/package-summary.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/operator/package-tree.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/shuntingyard/package-summary.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/shuntingyard/package-tree.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/package-summary.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/package-tree.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/constant-values.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/class-use/Expression.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/class-use/ValidationResult.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/class-use/ExpressionBuilder.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/class-use/FunctionToken.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/class-use/OperatorToken.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/class-use/VariableToken.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/class-use/Token.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/class-use/NumberToken.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/class-use/Tokenizer.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/shuntingyard/class-use/ShuntingYard.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/operator/class-use/Operator.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/operator/class-use/Operators.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/function/class-use/Functions.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/function/class-use/Function.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/package-use.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/function/package-use.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/operator/package-use.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/shuntingyard/package-use.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/net/objecthunter/exp4j/tokenizer/package-use.html...
+Building index for all the packages and classes...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/overview-tree.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/index-all.html...
+Building index for all classes...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/allclasses-index.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/allpackages-index.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/deprecated-list.html...
+Building index for all classes...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/allclasses.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/allclasses.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/index.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/overview-summary.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/apidocs/help-doc.html...
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/exp4j-0.4.9-SNAPSHOT-javadoc.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:2.6:single[m [1m(make-assembly)[m @ [36mexp4j[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/exp4j-0.4.9-SNAPSHOT-fat-tests.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mexp4j[0;1m ---[m
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/exp4j-0.4.9-SNAPSHOT.jar to /home/thomas/.m2/repository/net/objecthunter/exp4j/0.4.9-SNAPSHOT/exp4j-0.4.9-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/pom.xml to /home/thomas/.m2/repository/net/objecthunter/exp4j/0.4.9-SNAPSHOT/exp4j-0.4.9-SNAPSHOT.pom
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/exp4j-0.4.9-SNAPSHOT-sources.jar to /home/thomas/.m2/repository/net/objecthunter/exp4j/0.4.9-SNAPSHOT/exp4j-0.4.9-SNAPSHOT-sources.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/exp4j-0.4.9-SNAPSHOT-javadoc.jar to /home/thomas/.m2/repository/net/objecthunter/exp4j/0.4.9-SNAPSHOT/exp4j-0.4.9-SNAPSHOT-javadoc.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/exp4j-0.4.9-SNAPSHOT-fat-tests.jar to /home/thomas/.m2/repository/net/objecthunter/exp4j/0.4.9-SNAPSHOT/exp4j-0.4.9-SNAPSHOT-fat-tests.jar
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  10.523 s
+[[1;34mINFO[m] Finished at: 2022-08-31T06:08:53+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36mnet.objecthunter:exp4j[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding exp4j 0.4.9-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:2.6:single[m [1m(default-cli)[m @ [36mexp4j[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] Cannot include project artifact: net.objecthunter:exp4j:jar:0.4.9-SNAPSHOT; it doesn't have an associated file or directory.
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/exp4j-0.4.9-SNAPSHOT-fat-tests.jar
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.979 s
+[[1;34mINFO[m] Finished at: 2022-08-31T06:08:55+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36mnet.objecthunter:exp4j[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding exp4j 0.4.9-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mpitest-maven:1.7.2:mutationCoverage[m [1m(default-cli)[m @ [36mexp4j[0;1m ---[m
+[[1;34mINFO[m] Found plugin : Default csv report plugin
+[[1;34mINFO[m] Found plugin : Default xml report plugin
+[[1;34mINFO[m] Found plugin : Default html report plugin
+[[1;34mINFO[m] Found plugin : Static initializer code detector plugin
+[[1;34mINFO[m] Found plugin : Excluded annotations plugin
+[[1;34mINFO[m] Found plugin : Try with resources filter
+[[1;34mINFO[m] Found plugin : Inlined finally block filter plugin
+[[1;34mINFO[m] Found plugin : Implicit null check filter
+[[1;34mINFO[m] Found plugin : Method reference null check filter
+[[1;34mINFO[m] Found plugin : For each loop filter
+[[1;34mINFO[m] Found plugin : Enum constructor filter
+[[1;34mINFO[m] Found plugin : Record junk mutation filter
+[[1;34mINFO[m] Found plugin : Logging calls filter
+[[1;34mINFO[m] Found plugin : Infinite for loop filter
+[[1;34mINFO[m] Found plugin : Long running iterator loop filter
+[[1;34mINFO[m] Found plugin : For loop counter filter
+[[1;34mINFO[m] Found plugin : Kotlin junk mutations filter
+[[1;34mINFO[m] Found plugin : Max mutations per class limit
+[[1;34mINFO[m] Found plugin : Equals shortcut equivalent mutant filter
+[[1;34mINFO[m] Found plugin : Trivial return vals equivalence filter
+[[1;34mINFO[m] Found plugin : Mutant export plugin
+[[1;34mINFO[m] Found shared classpath plugin : Default mutation engine
+[[1;34mINFO[m] Found shared classpath plugin : JUnit plugin
+[[1;34mINFO[m] Found shared classpath plugin : TestNG plugin
+[[1;34mINFO[m] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[[1;34mINFO[m] Adding org.pitest:pitest to SUT classpath
+[[1;34mINFO[m] Mutating from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/classes
+[[1;34mINFO[m] Defaulting target classes to match packages in build directory
+[[1;34mINFO[m] Defaulting target tests to match packages in test build directory
+6:08:57 AM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+6:08:57 AM PIT >> INFO : Incremental analysis reduced number of mutations by 0
+6:08:57 AM PIT >> INFO : Created  55 mutation test units in pre scan
+6:08:58 AM PIT >> INFO : Sending 129 test classes to minion
+6:08:58 AM PIT >> INFO : Sent tests to minion
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\6:09:03 AM PIT >> INFO : MINION : Warning: Nashorn engine is planned to be removed from a future JDK release
+|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/6:09:05 AM PIT >> INFO : Calculated coverage in 7 seconds.
+6:09:06 AM PIT >> INFO : Incremental analysis reduced number of mutations by 0
+6:09:06 AM PIT >> INFO : Created  55 mutation test units
+6:09:10 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:09:14 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\6:09:47 AM PIT >> INFO : Completed in 49 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 22 Killed 17 (77%)
+> KILLED 17 SURVIVED 5 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 11 Killed 11 (100%)
+> KILLED 11 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 50 Killed 42 (84%)
+> KILLED 42 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 8 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 11 Killed 9 (82%)
+> KILLED 8 SURVIVED 1 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 1 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 15 Killed 15 (100%)
+> KILLED 15 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator
+>> Generated 1 Killed 1 (100%)
+> KILLED 1 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 78 Killed 67 (86%)
+> KILLED 67 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 10 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 52 Killed 44 (85%)
+> KILLED 43 SURVIVED 1 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 7 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 5 Killed 5 (100%)
+> KILLED 5 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
+>> Generated 9 Killed 8 (89%)
+> KILLED 8 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 1 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 156 Killed 152 (97%)
+> KILLED 152 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 3 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : 7 seconds
+> build mutation tests : < 1 second
+> run mutation analysis : 41 seconds
+--------------------------------------------------------------------------------
+> Total  : 49 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 607/658 (92%)
+>> Generated 410 mutations Killed 371 (90%)
+>> Mutations with no coverage 30. Test strength 98%
+>> Ran 1528 tests (3.73 tests per mutation)
+
+Pitest development is currently supported by GroupCDG.
+Enhanced functionality available at https://pitest.groupcdg.com/
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  50.611 s
+[[1;34mINFO[m] Finished at: 2022-08-31T06:09:47+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+HEAD is now at e0ad0561 add exp4j, remove opencsv

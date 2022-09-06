@@ -1,0 +1,912 @@
+HEAD is now at 964d401a add exp4j mut results + parameter analysis remaining projects
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36mcommons-io:commons-io[0;1m >------------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons IO 2.6[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.0.0:clean[m [1m(default-clean)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:1.10:parse-version[m [1m(parse-version)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(javadoc.resources)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/apidocs/META-INF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create[m [1m(default)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io
+[[1;34mINFO[m] Storing buildNumber: 964d401a94a00f808be91c37e349e7fb9728c321 at timestamp: 1662221071040
+[[1;34mINFO[m] Storing buildScmBranch: scripting
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.7:resources[m [1m(default-resources)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Using 'iso-8859-1' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.0:compile[m [1m(default-compile)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 118 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/classes
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/AutoCloseInputStream.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/AutoCloseInputStream.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-bundle-plugin:3.0.1:manifest[m [1m(bundle-manifest)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.15:check[m [1m(checkAPIcompatibility)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/ReaderInputStream.java:124: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.flip() has been changed to java.nio.CharBuffer java.nio.CharBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/ReaderInputStream.java:126: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/ReaderInputStream.java:206: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.position(int) has been changed to java.nio.CharBuffer java.nio.CharBuffer.position(int)
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/ReaderInputStream.java:208: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.flip() has been changed to java.nio.CharBuffer java.nio.CharBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/ReaderInputStream.java:212: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:73: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:127: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:222: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.mark() has been changed to java.nio.CharBuffer java.nio.CharBuffer.mark()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:223: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.mark() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.mark()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:245: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.rewind() has been changed to java.nio.CharBuffer java.nio.CharBuffer.rewind()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:246: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.rewind() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.rewind()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:247: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.limit(int) has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.limit(int)
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:249: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.rewind() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.rewind()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:250: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.limit(int) has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.limit(int)
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:258: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.position(int) has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.position(int)
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/output/WriterOutputStream.java:283: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/output/WriterOutputStream.java:309: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.rewind() has been changed to java.nio.CharBuffer java.nio.CharBuffer.rewind()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/output/WriterOutputStream.java:331: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/output/WriterOutputStream.java:340: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.rewind() has been changed to java.nio.CharBuffer java.nio.CharBuffer.rewind()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/IOUtils.java:2876: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.position(int) has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.position(int)
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/IOUtils.java:2877: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.limit(int) has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.limit(int)
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/FileUtils.java:868: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/FileUtils.java:870: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.clear() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.clear()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/FileUtils.java:868: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/FileUtils.java:870: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.clear() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.clear()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/FileUtils.java:868: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/FileUtils.java:870: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.clear() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.clear()
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.7:testResources[m [1m(default-testResources)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Using 'iso-8859-1' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 20 resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.0:testCompile[m [1m(default-testCompile)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 112 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/test-classes
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/test/java/org/apache/commons/io/FileSystemUtilsTestCase.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/test/java/org/apache/commons/io/FileSystemUtilsTestCase.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.19.1:test[m [1m(default-test)[m @ [36mcommons-io[0;1m ---[m
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.commons.io.FileUtilsFileNewerTestCase
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.apache.commons.io.FileUtilsFileNewerTestCase
+Running org.apache.commons.io.TaggedIOExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.apache.commons.io.TaggedIOExceptionTest
+Running org.apache.commons.io.FilenameUtilsWildcardTestCase
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.033 sec - in org.apache.commons.io.FilenameUtilsWildcardTestCase
+Running org.apache.commons.io.EndianUtilsTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in org.apache.commons.io.EndianUtilsTest
+Running org.apache.commons.io.comparator.PathFileComparatorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.apache.commons.io.comparator.PathFileComparatorTest
+Running org.apache.commons.io.comparator.ExtensionFileComparatorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.056 sec - in org.apache.commons.io.comparator.ExtensionFileComparatorTest
+Running org.apache.commons.io.comparator.CompositeFileComparatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.044 sec - in org.apache.commons.io.comparator.CompositeFileComparatorTest
+Running org.apache.commons.io.comparator.NameFileComparatorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.054 sec - in org.apache.commons.io.comparator.NameFileComparatorTest
+Running org.apache.commons.io.comparator.DirectoryFileComparatorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.042 sec - in org.apache.commons.io.comparator.DirectoryFileComparatorTest
+Running org.apache.commons.io.comparator.DefaultFileComparatorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.apache.commons.io.comparator.DefaultFileComparatorTest
+Running org.apache.commons.io.comparator.LastModifiedFileComparatorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.261 sec - in org.apache.commons.io.comparator.LastModifiedFileComparatorTest
+Running org.apache.commons.io.comparator.SizeFileComparatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in org.apache.commons.io.comparator.SizeFileComparatorTest
+Running org.apache.commons.io.output.CountingOutputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in org.apache.commons.io.output.CountingOutputStreamTest
+Running org.apache.commons.io.output.ThresholdingOutputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.apache.commons.io.output.ThresholdingOutputStreamTest
+Running org.apache.commons.io.output.ProxyOutputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.io.output.ProxyOutputStreamTest
+Running org.apache.commons.io.output.LockableFileWriterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.apache.commons.io.output.LockableFileWriterTest
+Running org.apache.commons.io.output.AppendableOutputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.io.output.AppendableOutputStreamTest
+Running org.apache.commons.io.output.TeeOutputStreamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.apache.commons.io.output.TeeOutputStreamTest
+Running org.apache.commons.io.output.StringBuilderWriterTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.apache.commons.io.output.StringBuilderWriterTest
+Running org.apache.commons.io.output.NullWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.io.output.NullWriterTest
+Running org.apache.commons.io.output.BrokenOutputStreamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.io.output.BrokenOutputStreamTest
+Running org.apache.commons.io.output.TaggedOutputStreamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.apache.commons.io.output.TaggedOutputStreamTest
+Running org.apache.commons.io.output.FileWriterWithEncodingTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.apache.commons.io.output.FileWriterWithEncodingTest
+Running org.apache.commons.io.output.XmlStreamWriterTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in org.apache.commons.io.output.XmlStreamWriterTest
+Running org.apache.commons.io.output.NullOutputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.commons.io.output.NullOutputStreamTest
+Running org.apache.commons.io.output.WriterOutputStreamTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.apache.commons.io.output.WriterOutputStreamTest
+Running org.apache.commons.io.output.ChunkedOutputStreamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in org.apache.commons.io.output.ChunkedOutputStreamTest
+Running org.apache.commons.io.output.ClosedOutputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.commons.io.output.ClosedOutputStreamTest
+Running org.apache.commons.io.output.ProxyWriterTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.039 sec - in org.apache.commons.io.output.ProxyWriterTest
+Running org.apache.commons.io.output.ByteArrayOutputStreamTestCase
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.apache.commons.io.output.ByteArrayOutputStreamTestCase
+Running org.apache.commons.io.output.CloseShieldOutputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.apache.commons.io.output.CloseShieldOutputStreamTest
+Running org.apache.commons.io.output.ChunkedWriterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.io.output.ChunkedWriterTest
+Running org.apache.commons.io.input.TeeInputStreamTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.033 sec - in org.apache.commons.io.input.TeeInputStreamTest
+Running org.apache.commons.io.input.TailerTest
+Elapsed: 165
+testMultiByteBreak() Default charset: UTF-8
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.719 sec - in org.apache.commons.io.input.TailerTest
+Running org.apache.commons.io.input.BrokenInputStreamTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.io.input.BrokenInputStreamTest
+Running org.apache.commons.io.input.ClosedInputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.io.input.ClosedInputStreamTest
+Running org.apache.commons.io.input.XmlStreamReaderUtilitiesTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.042 sec - in org.apache.commons.io.input.XmlStreamReaderUtilitiesTest
+Running org.apache.commons.io.input.AutoCloseInputStreamTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.apache.commons.io.input.AutoCloseInputStreamTest
+Running org.apache.commons.io.input.UnixLineEndingInputStreamTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.04 sec - in org.apache.commons.io.input.UnixLineEndingInputStreamTest
+Running org.apache.commons.io.input.compatibility.XmlStreamReaderUtilitiesCompatibilityTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.042 sec - in org.apache.commons.io.input.compatibility.XmlStreamReaderUtilitiesCompatibilityTest
+Running org.apache.commons.io.input.CharSequenceInputStreamTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.216 sec - in org.apache.commons.io.input.CharSequenceInputStreamTest
+Running org.apache.commons.io.input.ProxyReaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.apache.commons.io.input.ProxyReaderTest
+Running org.apache.commons.io.input.BoundedReaderTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.apache.commons.io.input.BoundedReaderTest
+Running org.apache.commons.io.input.InfiniteCircularInputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.io.input.InfiniteCircularInputStreamTest
+Running org.apache.commons.io.input.ReaderInputStreamTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.apache.commons.io.input.ReaderInputStreamTest
+Running org.apache.commons.io.input.ReversedLinesFileReaderTestSimple
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in org.apache.commons.io.input.ReversedLinesFileReaderTestSimple
+Running org.apache.commons.io.input.ObservableInputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.apache.commons.io.input.ObservableInputStreamTest
+Running org.apache.commons.io.input.NullReaderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.apache.commons.io.input.NullReaderTest
+Running org.apache.commons.io.input.MessageDigestCalculatingInputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.apache.commons.io.input.MessageDigestCalculatingInputStreamTest
+Running org.apache.commons.io.input.CountingInputStreamTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.apache.commons.io.input.CountingInputStreamTest
+Running org.apache.commons.io.input.XmlStreamReaderTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.245 sec - in org.apache.commons.io.input.XmlStreamReaderTest
+Running org.apache.commons.io.input.NullInputStreamTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.031 sec - in org.apache.commons.io.input.NullInputStreamTest
+Running org.apache.commons.io.input.ReversedLinesFileReaderTestParamFile
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec - in org.apache.commons.io.input.ReversedLinesFileReaderTestParamFile
+Running org.apache.commons.io.input.CharSequenceReaderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.031 sec - in org.apache.commons.io.input.CharSequenceReaderTest
+Running org.apache.commons.io.input.CloseShieldInputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.io.input.CloseShieldInputStreamTest
+Running org.apache.commons.io.input.WindowsLineEndingInputStreamTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.031 sec - in org.apache.commons.io.input.WindowsLineEndingInputStreamTest
+Running org.apache.commons.io.input.SwappedDataInputStreamTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 14, Time elapsed: 0.032 sec - in org.apache.commons.io.input.SwappedDataInputStreamTest
+Running org.apache.commons.io.input.ClassLoaderObjectInputStreamTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.apache.commons.io.input.ClassLoaderObjectInputStreamTest
+Running org.apache.commons.io.input.BOMInputStreamTest
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.098 sec - in org.apache.commons.io.input.BOMInputStreamTest
+Running org.apache.commons.io.input.TaggedInputStreamTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.apache.commons.io.input.TaggedInputStreamTest
+Running org.apache.commons.io.input.BoundedInputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.apache.commons.io.input.BoundedInputStreamTest
+Running org.apache.commons.io.LineIteratorTestCase
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.apache.commons.io.LineIteratorTestCase
+Running org.apache.commons.io.FileUtilsDirectoryContainsTestCase
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.044 sec - in org.apache.commons.io.FileUtilsDirectoryContainsTestCase
+Running org.apache.commons.io.FileUtilsCleanSymlinksTestCase
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.apache.commons.io.FileUtilsCleanSymlinksTestCase
+Running org.apache.commons.io.FileUtilsListFilesTestCase
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in org.apache.commons.io.FileUtilsListFilesTestCase
+Running org.apache.commons.io.CopyUtilsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.038 sec - in org.apache.commons.io.CopyUtilsTest
+Running org.apache.commons.io.IOUtilsCopyTestCase
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec - in org.apache.commons.io.IOUtilsCopyTestCase
+Running org.apache.commons.io.IOCaseTestCase
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.038 sec - in org.apache.commons.io.IOCaseTestCase
+Running org.apache.commons.io.DirectoryWalkerTestCase
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.apache.commons.io.DirectoryWalkerTestCase
+Running org.apache.commons.io.FileDeleteStrategyTestCase
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.apache.commons.io.FileDeleteStrategyTestCase
+Running org.apache.commons.io.IOUtilsTestCase
+Tests run: 107, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.133 sec - in org.apache.commons.io.IOUtilsTestCase
+Running org.apache.commons.io.filefilter.RegexFileFilterTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in org.apache.commons.io.filefilter.RegexFileFilterTestCase
+Running org.apache.commons.io.filefilter.AndFileFilterTestCase
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in org.apache.commons.io.filefilter.AndFileFilterTestCase
+Running org.apache.commons.io.filefilter.OrFileFilterTestCase
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.apache.commons.io.filefilter.OrFileFilterTestCase
+Running org.apache.commons.io.filefilter.FileFilterTestCase
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.071 sec - in org.apache.commons.io.filefilter.FileFilterTestCase
+Running org.apache.commons.io.IOExceptionWithCauseTestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.io.IOExceptionWithCauseTestCase
+Running org.apache.commons.io.CharsetsTestCase
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.apache.commons.io.CharsetsTestCase
+Running org.apache.commons.io.DemuxTestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.113 sec - in org.apache.commons.io.DemuxTestCase
+Running org.apache.commons.io.FileUtilsCleanDirectoryTestCase
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.049 sec - in org.apache.commons.io.FileUtilsCleanDirectoryTestCase
+Running org.apache.commons.io.DirectoryWalkerTestCaseJava4
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.apache.commons.io.DirectoryWalkerTestCaseJava4
+Running org.apache.commons.io.ByteOrderMarkTestCase
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.apache.commons.io.ByteOrderMarkTestCase
+Running org.apache.commons.io.FileUtilsWaitForTestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.05 sec - in org.apache.commons.io.FileUtilsWaitForTestCase
+Running org.apache.commons.io.HexDumpTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.apache.commons.io.HexDumpTest
+Running org.apache.commons.io.FileUtilsTestCase
+Tests run: 142, Failures: 0, Errors: 0, Skipped: 12, Time elapsed: 2.2 sec - in org.apache.commons.io.FileUtilsTestCase
+Running org.apache.commons.io.ByteOrderParserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.commons.io.ByteOrderParserTest
+Running org.apache.commons.io.FileCleaningTrackerTestCase
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.135 sec - in org.apache.commons.io.FileCleaningTrackerTestCase
+Running org.apache.commons.io.IOUtilsWriteTestCase
+Tests run: 53, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.074 sec - in org.apache.commons.io.IOUtilsWriteTestCase
+Running org.apache.commons.io.FilenameUtilsTestCase
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.057 sec - in org.apache.commons.io.FilenameUtilsTestCase
+Running org.apache.commons.io.serialization.RegexpClassNameMatcherTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.031 sec - in org.apache.commons.io.serialization.RegexpClassNameMatcherTest
+Running org.apache.commons.io.serialization.MoreComplexObjectTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.052 sec - in org.apache.commons.io.serialization.MoreComplexObjectTest
+Running org.apache.commons.io.serialization.FullClassNameMatcherTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.03 sec - in org.apache.commons.io.serialization.FullClassNameMatcherTest
+Running org.apache.commons.io.serialization.ValidatingObjectInputStreamTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.049 sec - in org.apache.commons.io.serialization.ValidatingObjectInputStreamTest
+Running org.apache.commons.io.serialization.WildcardClassNameMatcherTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.io.serialization.WildcardClassNameMatcherTest
+Running org.apache.commons.io.ThreadMonitorTestCase
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.335 sec - in org.apache.commons.io.ThreadMonitorTestCase
+Running org.apache.commons.io.FileSystemUtilsTestCase
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.apache.commons.io.FileSystemUtilsTestCase
+Running org.apache.commons.io.FileCleanerTestCase
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 3.631 sec - in org.apache.commons.io.FileCleanerTestCase
+Running org.apache.commons.io.monitor.FileAlterationObserverTestCase
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 3.986 sec - in org.apache.commons.io.monitor.FileAlterationObserverTestCase
+Running org.apache.commons.io.monitor.FileAlterationMonitorTestCase
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.653 sec - in org.apache.commons.io.monitor.FileAlterationMonitorTestCase
+
+Results :
+
+Tests run: 1104, Failures: 0, Errors: 0, Skipped: 76
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.0.0:jar[m [1m(default-jar)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.6:attach-descriptor[m [1m(attach-descriptor)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:3.3.0:single[m [1m(make-assembly)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/bin.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/src.xml
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-fat-tests.jar
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-bin.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-bin.zip
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-src.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-src.zip
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.0.0:test-jar[m [1m(default)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-tests.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6.jar to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/pom.xml to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.pom
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-fat-tests.jar to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6-fat-tests.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-bin.tar.gz to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6-bin.tar.gz
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-bin.zip to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6-bin.zip
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-src.tar.gz to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6-src.tar.gz
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-src.zip to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6-src.zip
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-tests.jar to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6-tests.jar
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  01:25 min
+[[1;34mINFO[m] Finished at: 2022-09-03T18:05:55+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36mcommons-io:commons-io[0;1m >------------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons IO 2.6[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:3.3.0:single[m [1m(default-cli)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/bin.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/src.xml
+[[1;33mWARNING[m] Cannot include project artifact: commons-io:commons-io:jar:2.6; it doesn't have an associated file or directory.
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-fat-tests.jar
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-bin.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-bin.zip
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-src.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-src.zip
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  1.094 s
+[[1;34mINFO[m] Finished at: 2022-09-03T18:05:57+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36mcommons-io:commons-io[0;1m >------------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons IO 2.6[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mpitest-maven:1.7.2:mutationCoverage[m [1m(default-cli)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Found plugin : Default csv report plugin
+[[1;34mINFO[m] Found plugin : Default xml report plugin
+[[1;34mINFO[m] Found plugin : Default html report plugin
+[[1;34mINFO[m] Found plugin : Static initializer code detector plugin
+[[1;34mINFO[m] Found plugin : Excluded annotations plugin
+[[1;34mINFO[m] Found plugin : Try with resources filter
+[[1;34mINFO[m] Found plugin : Inlined finally block filter plugin
+[[1;34mINFO[m] Found plugin : Implicit null check filter
+[[1;34mINFO[m] Found plugin : Method reference null check filter
+[[1;34mINFO[m] Found plugin : For each loop filter
+[[1;34mINFO[m] Found plugin : Enum constructor filter
+[[1;34mINFO[m] Found plugin : Record junk mutation filter
+[[1;34mINFO[m] Found plugin : Logging calls filter
+[[1;34mINFO[m] Found plugin : Infinite for loop filter
+[[1;34mINFO[m] Found plugin : Long running iterator loop filter
+[[1;34mINFO[m] Found plugin : For loop counter filter
+[[1;34mINFO[m] Found plugin : Kotlin junk mutations filter
+[[1;34mINFO[m] Found plugin : Max mutations per class limit
+[[1;34mINFO[m] Found plugin : Equals shortcut equivalent mutant filter
+[[1;34mINFO[m] Found plugin : Trivial return vals equivalence filter
+[[1;34mINFO[m] Found plugin : Mutant export plugin
+[[1;34mINFO[m] Found shared classpath plugin : Default mutation engine
+[[1;34mINFO[m] Found shared classpath plugin : JUnit plugin
+[[1;34mINFO[m] Found shared classpath plugin : TestNG plugin
+[[1;34mINFO[m] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[[1;34mINFO[m] Adding org.pitest:pitest to SUT classpath
+[[1;34mINFO[m] Mutating from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/classes
+[[1;34mINFO[m] Defaulting target classes to match packages in build directory
+[[1;34mINFO[m] Defaulting target tests to match packages in test build directory
+6:05:59 PM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+6:06:00 PM PIT >> INFO : Incremental analysis reduced number of mutations by 0
+6:06:00 PM PIT >> INFO : Created  110 mutation test units in pre scan
+6:06:00 PM PIT >> INFO : Sending 212 test classes to minion
+6:06:00 PM PIT >> INFO : Sent tests to minion
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|6:06:33 PM PIT >> INFO : Calculated coverage in 32 seconds.
+6:06:34 PM PIT >> INFO : Incremental analysis reduced number of mutations by 0
+6:06:34 PM PIT >> INFO : Created  110 mutation test units
+6:07:35 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/6:07:54 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:07:59 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:08:05 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:08:09 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-6:08:14 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:08:18 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:08:24 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:08:27 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:08:31 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:08:35 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:08:39 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:08:42 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:08:46 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:08:50 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:08:55 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:08:58 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|6:09:07 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-6:09:15 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:09:19 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:09:23 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/-6:11:20 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:11:32 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:11:36 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:11:40 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:11:48 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:11:53 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:12:23 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:12:27 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:12:33 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:12:41 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:12:45 PM PIT >> WARNING : Minion exited abnormally due to MEMORY_ERROR
+6:12:56 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\6:13:09 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|6:13:13 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:13:16 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:13:20 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:13:23 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:13:27 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:13:30 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:13:33 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:13:37 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:13:40 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:13:43 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\|6:13:49 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:13:53 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:13:56 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:13:59 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:14:03 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:14:06 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\|6:14:11 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/6:14:15 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:14:18 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:14:22 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:14:25 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:14:28 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:14:31 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:14:35 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:14:38 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:14:41 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:14:45 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:14:48 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-6:14:52 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/6:14:57 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:15:01 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:15:04 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\|/-\|/-\|/-\|/-\|/-\|/-\|/-6:16:11 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:16:15 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:16:20 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/-\|/-\|/6:16:28 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-\6:16:39 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+6:16:43 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|6:17:17 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\6:17:23 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+|/-\|/-\|/-\|6:18:00 PM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+/-\|/-\|/-\|/-\|/-\|/-\|/-6:18:12 PM PIT >> INFO : Completed in 732 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 257 Killed 148 (58%)
+> KILLED 125 SURVIVED 98 TIMED_OUT 19 NON_VIABLE 4 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 11 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 239 Killed 189 (79%)
+> KILLED 177 SURVIVED 10 TIMED_OUT 9 NON_VIABLE 3 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 40 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 36 Killed 34 (94%)
+> KILLED 32 SURVIVED 2 TIMED_OUT 2 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 533 Killed 327 (61%)
+> KILLED 315 SURVIVED 120 TIMED_OUT 10 NON_VIABLE 1 
+> MEMORY_ERROR 1 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 86 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 134 Killed 103 (77%)
+> KILLED 100 SURVIVED 10 TIMED_OUT 0 NON_VIABLE 3 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 21 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 195 Killed 160 (82%)
+> KILLED 159 SURVIVED 10 TIMED_OUT 0 NON_VIABLE 1 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 25 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 452 Killed 379 (84%)
+> KILLED 374 SURVIVED 57 TIMED_OUT 3 NON_VIABLE 2 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 16 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
+>> Generated 163 Killed 135 (83%)
+> KILLED 133 SURVIVED 16 TIMED_OUT 0 NON_VIABLE 2 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 12 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 99 Killed 80 (81%)
+> KILLED 79 SURVIVED 10 TIMED_OUT 0 NON_VIABLE 1 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 9 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 1161 Killed 1053 (91%)
+> KILLED 1012 SURVIVED 60 TIMED_OUT 31 NON_VIABLE 10 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 48 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : 32 seconds
+> build mutation tests : < 1 second
+> run mutation analysis : 11 minutes and 38 seconds
+--------------------------------------------------------------------------------
+> Total  : 12 minutes and 12 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 4566/5218 (88%)
+>> Generated 3269 mutations Killed 2608 (80%)
+>> Mutations with no coverage 268. Test strength 87%
+>> Ran 7012 tests (2.14 tests per mutation)
+
+Pitest development is currently supported by GroupCDG.
+Enhanced functionality available at https://pitest.groupcdg.com/
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  12:13 min
+[[1;34mINFO[m] Finished at: 2022-09-03T18:18:12+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+HEAD is now at 964d401a add exp4j mut results + parameter analysis remaining projects
+HEAD is now at 964d401a add exp4j mut results + parameter analysis remaining projects
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36mcommons-io:commons-io[0;1m >------------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons IO 2.6[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.0.0:clean[m [1m(default-clean)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:1.10:parse-version[m [1m(parse-version)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(javadoc.resources)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/apidocs/META-INF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create[m [1m(default)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io
+[[1;34mINFO[m] Storing buildNumber: 964d401a94a00f808be91c37e349e7fb9728c321 at timestamp: 1662221894685
+[[1;34mINFO[m] Storing buildScmBranch: scripting
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.7:resources[m [1m(default-resources)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Using 'iso-8859-1' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.0:compile[m [1m(default-compile)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 118 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/classes
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/AutoCloseInputStream.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/AutoCloseInputStream.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-bundle-plugin:3.0.1:manifest[m [1m(bundle-manifest)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.15:check[m [1m(checkAPIcompatibility)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/ReaderInputStream.java:124: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.flip() has been changed to java.nio.CharBuffer java.nio.CharBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/ReaderInputStream.java:126: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/ReaderInputStream.java:206: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.position(int) has been changed to java.nio.CharBuffer java.nio.CharBuffer.position(int)
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/ReaderInputStream.java:208: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.flip() has been changed to java.nio.CharBuffer java.nio.CharBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/ReaderInputStream.java:212: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:73: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:127: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:222: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.mark() has been changed to java.nio.CharBuffer java.nio.CharBuffer.mark()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:223: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.mark() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.mark()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:245: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.rewind() has been changed to java.nio.CharBuffer java.nio.CharBuffer.rewind()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:246: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.rewind() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.rewind()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:247: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.limit(int) has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.limit(int)
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:249: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.rewind() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.rewind()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:250: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.limit(int) has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.limit(int)
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java:258: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.position(int) has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.position(int)
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/output/WriterOutputStream.java:283: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/output/WriterOutputStream.java:309: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.rewind() has been changed to java.nio.CharBuffer java.nio.CharBuffer.rewind()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/output/WriterOutputStream.java:331: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/output/WriterOutputStream.java:340: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.rewind() has been changed to java.nio.CharBuffer java.nio.CharBuffer.rewind()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/IOUtils.java:2876: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.position(int) has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.position(int)
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/IOUtils.java:2877: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.limit(int) has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.limit(int)
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/FileUtils.java:868: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/FileUtils.java:870: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.clear() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.clear()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/FileUtils.java:868: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/FileUtils.java:870: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.clear() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.clear()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/FileUtils.java:868: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.flip() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.flip()
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/main/java/org/apache/commons/io/FileUtils.java:870: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.clear() has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.clear()
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.7:testResources[m [1m(default-testResources)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Using 'iso-8859-1' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 20 resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.0:testCompile[m [1m(default-testCompile)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 112 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/test-classes
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/test/java/org/apache/commons/io/FileSystemUtilsTestCase.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/src/test/java/org/apache/commons/io/FileSystemUtilsTestCase.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.19.1:test[m [1m(default-test)[m @ [36mcommons-io[0;1m ---[m
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.commons.io.FileUtilsFileNewerTestCase
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.apache.commons.io.FileUtilsFileNewerTestCase
+Running org.apache.commons.io.TaggedIOExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.apache.commons.io.TaggedIOExceptionTest
+Running org.apache.commons.io.FilenameUtilsWildcardTestCase
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec - in org.apache.commons.io.FilenameUtilsWildcardTestCase
+Running org.apache.commons.io.EndianUtilsTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.apache.commons.io.EndianUtilsTest
+Running org.apache.commons.io.comparator.PathFileComparatorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.apache.commons.io.comparator.PathFileComparatorTest
+Running org.apache.commons.io.comparator.ExtensionFileComparatorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.apache.commons.io.comparator.ExtensionFileComparatorTest
+Running org.apache.commons.io.comparator.CompositeFileComparatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.apache.commons.io.comparator.CompositeFileComparatorTest
+Running org.apache.commons.io.comparator.NameFileComparatorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.apache.commons.io.comparator.NameFileComparatorTest
+Running org.apache.commons.io.comparator.DirectoryFileComparatorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.apache.commons.io.comparator.DirectoryFileComparatorTest
+Running org.apache.commons.io.comparator.DefaultFileComparatorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.apache.commons.io.comparator.DefaultFileComparatorTest
+Running org.apache.commons.io.comparator.LastModifiedFileComparatorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.251 sec - in org.apache.commons.io.comparator.LastModifiedFileComparatorTest
+Running org.apache.commons.io.comparator.SizeFileComparatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.apache.commons.io.comparator.SizeFileComparatorTest
+Running org.apache.commons.io.output.CountingOutputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.apache.commons.io.output.CountingOutputStreamTest
+Running org.apache.commons.io.output.ThresholdingOutputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.apache.commons.io.output.ThresholdingOutputStreamTest
+Running org.apache.commons.io.output.ProxyOutputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.io.output.ProxyOutputStreamTest
+Running org.apache.commons.io.output.LockableFileWriterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in org.apache.commons.io.output.LockableFileWriterTest
+Running org.apache.commons.io.output.AppendableOutputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.io.output.AppendableOutputStreamTest
+Running org.apache.commons.io.output.TeeOutputStreamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.apache.commons.io.output.TeeOutputStreamTest
+Running org.apache.commons.io.output.StringBuilderWriterTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.apache.commons.io.output.StringBuilderWriterTest
+Running org.apache.commons.io.output.NullWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.apache.commons.io.output.NullWriterTest
+Running org.apache.commons.io.output.BrokenOutputStreamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.io.output.BrokenOutputStreamTest
+Running org.apache.commons.io.output.TaggedOutputStreamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.apache.commons.io.output.TaggedOutputStreamTest
+Running org.apache.commons.io.output.FileWriterWithEncodingTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.apache.commons.io.output.FileWriterWithEncodingTest
+Running org.apache.commons.io.output.XmlStreamWriterTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in org.apache.commons.io.output.XmlStreamWriterTest
+Running org.apache.commons.io.output.NullOutputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.commons.io.output.NullOutputStreamTest
+Running org.apache.commons.io.output.WriterOutputStreamTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.apache.commons.io.output.WriterOutputStreamTest
+Running org.apache.commons.io.output.ChunkedOutputStreamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.apache.commons.io.output.ChunkedOutputStreamTest
+Running org.apache.commons.io.output.ClosedOutputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in org.apache.commons.io.output.ClosedOutputStreamTest
+Running org.apache.commons.io.output.ProxyWriterTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.apache.commons.io.output.ProxyWriterTest
+Running org.apache.commons.io.output.ByteArrayOutputStreamTestCase
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.apache.commons.io.output.ByteArrayOutputStreamTestCase
+Running org.apache.commons.io.output.CloseShieldOutputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.io.output.CloseShieldOutputStreamTest
+Running org.apache.commons.io.output.ChunkedWriterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.io.output.ChunkedWriterTest
+Running org.apache.commons.io.input.TeeInputStreamTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.apache.commons.io.input.TeeInputStreamTest
+Running org.apache.commons.io.input.TailerTest
+Elapsed: 140
+testMultiByteBreak() Default charset: UTF-8
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.068 sec - in org.apache.commons.io.input.TailerTest
+Running org.apache.commons.io.input.BrokenInputStreamTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.io.input.BrokenInputStreamTest
+Running org.apache.commons.io.input.ClosedInputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in org.apache.commons.io.input.ClosedInputStreamTest
+Running org.apache.commons.io.input.XmlStreamReaderUtilitiesTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in org.apache.commons.io.input.XmlStreamReaderUtilitiesTest
+Running org.apache.commons.io.input.AutoCloseInputStreamTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.io.input.AutoCloseInputStreamTest
+Running org.apache.commons.io.input.UnixLineEndingInputStreamTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.io.input.UnixLineEndingInputStreamTest
+Running org.apache.commons.io.input.compatibility.XmlStreamReaderUtilitiesCompatibilityTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.apache.commons.io.input.compatibility.XmlStreamReaderUtilitiesCompatibilityTest
+Running org.apache.commons.io.input.CharSequenceInputStreamTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.237 sec - in org.apache.commons.io.input.CharSequenceInputStreamTest
+Running org.apache.commons.io.input.ProxyReaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.apache.commons.io.input.ProxyReaderTest
+Running org.apache.commons.io.input.BoundedReaderTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.apache.commons.io.input.BoundedReaderTest
+Running org.apache.commons.io.input.InfiniteCircularInputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.io.input.InfiniteCircularInputStreamTest
+Running org.apache.commons.io.input.ReaderInputStreamTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.apache.commons.io.input.ReaderInputStreamTest
+Running org.apache.commons.io.input.ReversedLinesFileReaderTestSimple
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in org.apache.commons.io.input.ReversedLinesFileReaderTestSimple
+Running org.apache.commons.io.input.ObservableInputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.apache.commons.io.input.ObservableInputStreamTest
+Running org.apache.commons.io.input.NullReaderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.io.input.NullReaderTest
+Running org.apache.commons.io.input.MessageDigestCalculatingInputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.apache.commons.io.input.MessageDigestCalculatingInputStreamTest
+Running org.apache.commons.io.input.CountingInputStreamTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in org.apache.commons.io.input.CountingInputStreamTest
+Running org.apache.commons.io.input.XmlStreamReaderTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.242 sec - in org.apache.commons.io.input.XmlStreamReaderTest
+Running org.apache.commons.io.input.NullInputStreamTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.io.input.NullInputStreamTest
+Running org.apache.commons.io.input.ReversedLinesFileReaderTestParamFile
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec - in org.apache.commons.io.input.ReversedLinesFileReaderTestParamFile
+Running org.apache.commons.io.input.CharSequenceReaderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.io.input.CharSequenceReaderTest
+Running org.apache.commons.io.input.CloseShieldInputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.commons.io.input.CloseShieldInputStreamTest
+Running org.apache.commons.io.input.WindowsLineEndingInputStreamTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.io.input.WindowsLineEndingInputStreamTest
+Running org.apache.commons.io.input.SwappedDataInputStreamTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.apache.commons.io.input.SwappedDataInputStreamTest
+Running org.apache.commons.io.input.ClassLoaderObjectInputStreamTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.apache.commons.io.input.ClassLoaderObjectInputStreamTest
+Running org.apache.commons.io.input.BOMInputStreamTest
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.101 sec - in org.apache.commons.io.input.BOMInputStreamTest
+Running org.apache.commons.io.input.TaggedInputStreamTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.apache.commons.io.input.TaggedInputStreamTest
+Running org.apache.commons.io.input.BoundedInputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.apache.commons.io.input.BoundedInputStreamTest
+Running org.apache.commons.io.LineIteratorTestCase
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in org.apache.commons.io.LineIteratorTestCase
+Running org.apache.commons.io.FileUtilsDirectoryContainsTestCase
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.apache.commons.io.FileUtilsDirectoryContainsTestCase
+Running org.apache.commons.io.FileUtilsCleanSymlinksTestCase
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.apache.commons.io.FileUtilsCleanSymlinksTestCase
+Running org.apache.commons.io.FileUtilsListFilesTestCase
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.apache.commons.io.FileUtilsListFilesTestCase
+Running org.apache.commons.io.CopyUtilsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.apache.commons.io.CopyUtilsTest
+Running org.apache.commons.io.IOUtilsCopyTestCase
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in org.apache.commons.io.IOUtilsCopyTestCase
+Running org.apache.commons.io.IOCaseTestCase
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in org.apache.commons.io.IOCaseTestCase
+Running org.apache.commons.io.DirectoryWalkerTestCase
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in org.apache.commons.io.DirectoryWalkerTestCase
+Running org.apache.commons.io.FileDeleteStrategyTestCase
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.apache.commons.io.FileDeleteStrategyTestCase
+Running org.apache.commons.io.IOUtilsTestCase
+Tests run: 107, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 sec - in org.apache.commons.io.IOUtilsTestCase
+Running org.apache.commons.io.filefilter.RegexFileFilterTestCase
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.apache.commons.io.filefilter.RegexFileFilterTestCase
+Running org.apache.commons.io.filefilter.AndFileFilterTestCase
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.apache.commons.io.filefilter.AndFileFilterTestCase
+Running org.apache.commons.io.filefilter.OrFileFilterTestCase
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.apache.commons.io.filefilter.OrFileFilterTestCase
+Running org.apache.commons.io.filefilter.FileFilterTestCase
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.072 sec - in org.apache.commons.io.filefilter.FileFilterTestCase
+Running org.apache.commons.io.IOExceptionWithCauseTestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.commons.io.IOExceptionWithCauseTestCase
+Running org.apache.commons.io.CharsetsTestCase
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.apache.commons.io.CharsetsTestCase
+Running org.apache.commons.io.DemuxTestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.212 sec - in org.apache.commons.io.DemuxTestCase
+Running org.apache.commons.io.FileUtilsCleanDirectoryTestCase
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in org.apache.commons.io.FileUtilsCleanDirectoryTestCase
+Running org.apache.commons.io.DirectoryWalkerTestCaseJava4
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.apache.commons.io.DirectoryWalkerTestCaseJava4
+Running org.apache.commons.io.ByteOrderMarkTestCase
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.apache.commons.io.ByteOrderMarkTestCase
+Running org.apache.commons.io.FileUtilsWaitForTestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.036 sec - in org.apache.commons.io.FileUtilsWaitForTestCase
+Running org.apache.commons.io.HexDumpTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.apache.commons.io.HexDumpTest
+Running org.apache.commons.io.FileUtilsTestCase
+Tests run: 142, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.207 sec - in org.apache.commons.io.FileUtilsTestCase
+Running org.apache.commons.io.ByteOrderParserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.io.ByteOrderParserTest
+Running org.apache.commons.io.FileCleaningTrackerTestCase
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.117 sec - in org.apache.commons.io.FileCleaningTrackerTestCase
+Running org.apache.commons.io.IOUtilsWriteTestCase
+Tests run: 53, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.apache.commons.io.IOUtilsWriteTestCase
+Running org.apache.commons.io.FilenameUtilsTestCase
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.apache.commons.io.FilenameUtilsTestCase
+Running org.apache.commons.io.serialization.RegexpClassNameMatcherTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.apache.commons.io.serialization.RegexpClassNameMatcherTest
+Running org.apache.commons.io.serialization.MoreComplexObjectTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in org.apache.commons.io.serialization.MoreComplexObjectTest
+Running org.apache.commons.io.serialization.FullClassNameMatcherTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.io.serialization.FullClassNameMatcherTest
+Running org.apache.commons.io.serialization.ValidatingObjectInputStreamTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in org.apache.commons.io.serialization.ValidatingObjectInputStreamTest
+Running org.apache.commons.io.serialization.WildcardClassNameMatcherTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.commons.io.serialization.WildcardClassNameMatcherTest
+Running org.apache.commons.io.ThreadMonitorTestCase
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.435 sec - in org.apache.commons.io.ThreadMonitorTestCase
+Running org.apache.commons.io.FileSystemUtilsTestCase
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.apache.commons.io.FileSystemUtilsTestCase
+Running org.apache.commons.io.FileCleanerTestCase
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.142 sec - in org.apache.commons.io.FileCleanerTestCase
+Running org.apache.commons.io.monitor.FileAlterationObserverTestCase
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.58 sec - in org.apache.commons.io.monitor.FileAlterationObserverTestCase
+Running org.apache.commons.io.monitor.FileAlterationMonitorTestCase
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.652 sec - in org.apache.commons.io.monitor.FileAlterationMonitorTestCase
+
+Results :
+
+Tests run: 1104, Failures: 0, Errors: 0, Skipped: 4
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.0.0:jar[m [1m(default-jar)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.6:attach-descriptor[m [1m(attach-descriptor)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:3.3.0:single[m [1m(make-assembly)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/bin.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/src.xml
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-fat-tests.jar
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-bin.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-bin.zip
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-src.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-src.zip
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.0.0:test-jar[m [1m(default)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-tests.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6.jar to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/pom.xml to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.pom
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-fat-tests.jar to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6-fat-tests.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-bin.tar.gz to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6-bin.tar.gz
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-bin.zip to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6-bin.zip
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-src.tar.gz to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6-src.tar.gz
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-src.zip to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6-src.zip
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-tests.jar to /home/thomas/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6-tests.jar
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  01:30 min
+[[1;34mINFO[m] Finished at: 2022-09-03T18:19:44+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36mcommons-io:commons-io[0;1m >------------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons IO 2.6[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:3.3.0:single[m [1m(default-cli)[m @ [36mcommons-io[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/bin.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/src.xml
+[[1;33mWARNING[m] Cannot include project artifact: commons-io:commons-io:jar:2.6; it doesn't have an associated file or directory.
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-fat-tests.jar
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-bin.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-bin.zip
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-src.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-io/target/commons-io-2.6-src.zip
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  1.074 s
+[[1;34mINFO[m] Finished at: 2022-09-03T18:19:46+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

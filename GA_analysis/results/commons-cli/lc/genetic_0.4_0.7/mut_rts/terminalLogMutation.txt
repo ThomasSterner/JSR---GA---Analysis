@@ -1,0 +1,284 @@
+HEAD is now at 88d9b42 add commons-csv rts results
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mcommons-cli:commons-cli[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CLI 1.4[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.0.0:clean[m [1m(default-clean)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:1.4.1:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:1.10:parse-version[m [1m(parse-version)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.7:run[m [1m(javadoc.resources)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/apidocs/META-INF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create[m [1m(default)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli' && 'svn' '--non-interactive' 'info'
+[[1;34mINFO[m] Working directory: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli
+[[1;33mWARNING[m] Cannot get the revision information from the scm repository, proceeding with revision of ?????? : 
+Exception while executing SCM command.
+[[1;34mINFO[m] Storing buildNumber: ?????? at timestamp: 1661484813906
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli' && 'svn' '--non-interactive' 'info'
+[[1;34mINFO[m] Working directory: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli
+[[1;33mWARNING[m] Cannot get the branch information from the scm repository, proceeding with UNKNOWN_BRANCH : 
+Exception while executing SCM command.
+[[1;34mINFO[m] Storing buildScmBranch: UNKNOWN_BRANCH
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.7:resources[m [1m(default-resources)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] Using 'utf-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/src/main/resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.0:compile[m [1m(default-compile)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 23 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/classes
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/src/main/java/org/apache/commons/cli/TypeHandler.java: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/src/main/java/org/apache/commons/cli/TypeHandler.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/src/main/java/org/apache/commons/cli/TypeHandler.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/src/main/java/org/apache/commons/cli/Parser.java: Some input files use unchecked or unsafe operations.
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/src/main/java/org/apache/commons/cli/Parser.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-bundle-plugin:3.0.1:manifest[m [1m(bundle-manifest)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.15:check[m [1m(checkAPIcompatibility)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.7:testResources[m [1m(default-testResources)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] Using 'utf-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/src/test/resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.0:testCompile[m [1m(default-testCompile)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 27 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/test-classes
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.7.7.201606060606:prepare-agent[m [1m(prepare-agent)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/thomas/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.19.1:test[m [1m(default-test)[m @ [36mcommons-cli[0;1m ---[m
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+FATAL ERROR in native method: processing of -javaagent failed, processJavaStart failed
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+Caused by: java.lang.RuntimeException: Class java/util/UUID could not be instrumented.
+	at org.jacoco.agent.rt.internal_6da5971.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:140)
+	at org.jacoco.agent.rt.internal_6da5971.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:101)
+	at org.jacoco.agent.rt.internal_6da5971.PreMain.createRuntime(PreMain.java:55)
+	at org.jacoco.agent.rt.internal_6da5971.PreMain.premain(PreMain.java:47)
+	... 6 more
+Caused by: java.lang.NoSuchFieldException: $jacocoAccess
+	at java.base/java.lang.Class.getField(Class.java:1999)
+	at org.jacoco.agent.rt.internal_6da5971.core.runtime.ModifiedSystemClassRuntime.createFor(ModifiedSystemClassRuntime.java:138)
+	... 9 more
+*** java.lang.instrument ASSERTION FAILED ***: "result" with message agent load/premain call failed at src/java.instrument/share/native/libinstrument/JPLISAgent.c line: 422
+Aborted (core dumped)
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  3.656 s
+[[1;34mINFO[m] Finished at: 2022-08-26T05:33:36+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:2.19.1:test[m [1m(default-test)[m on project [36mcommons-cli[m: [1;31mExecution default-test of goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test failed: The forked VM terminated without properly saying goodbye. VM crash or System.exit called?[m
+[[1;31mERROR[m] [1;31mCommand was /bin/sh -c cd /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli && /usr/lib/jvm/java-11-openjdk-amd64/bin/java -javaagent:/home/thomas/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/jacoco.exec -jar /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/surefire/surefirebooter12721611251995835280.jar /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/surefire/surefire7830534476710121038tmp /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/surefire/surefire_011963818921408796279tmp[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mcommons-cli:commons-cli[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CLI 1.4[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:3.3.0:single[m [1m(default-cli)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/bin.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/src.xml
+[[1;33mWARNING[m] Cannot include project artifact: commons-cli:commons-cli:jar:1.4; it doesn't have an associated file or directory.
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/commons-cli-1.4-fat-tests.jar
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/commons-cli-1.4-bin.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/commons-cli-1.4-bin.zip
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/commons-cli-1.4-src.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/commons-cli-1.4-src.zip
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.823 s
+[[1;34mINFO[m] Finished at: 2022-08-26T05:33:38+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mcommons-cli:commons-cli[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CLI 1.4[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mpitest-maven:1.7.2:mutationCoverage[m [1m(default-cli)[m @ [36mcommons-cli[0;1m ---[m
+[[1;34mINFO[m] Found plugin : Default csv report plugin
+[[1;34mINFO[m] Found plugin : Default xml report plugin
+[[1;34mINFO[m] Found plugin : Default html report plugin
+[[1;34mINFO[m] Found plugin : Static initializer code detector plugin
+[[1;34mINFO[m] Found plugin : Excluded annotations plugin
+[[1;34mINFO[m] Found plugin : Try with resources filter
+[[1;34mINFO[m] Found plugin : Inlined finally block filter plugin
+[[1;34mINFO[m] Found plugin : Implicit null check filter
+[[1;34mINFO[m] Found plugin : Method reference null check filter
+[[1;34mINFO[m] Found plugin : For each loop filter
+[[1;34mINFO[m] Found plugin : Enum constructor filter
+[[1;34mINFO[m] Found plugin : Record junk mutation filter
+[[1;34mINFO[m] Found plugin : Logging calls filter
+[[1;34mINFO[m] Found plugin : Infinite for loop filter
+[[1;34mINFO[m] Found plugin : Long running iterator loop filter
+[[1;34mINFO[m] Found plugin : For loop counter filter
+[[1;34mINFO[m] Found plugin : Kotlin junk mutations filter
+[[1;34mINFO[m] Found plugin : Max mutations per class limit
+[[1;34mINFO[m] Found plugin : Equals shortcut equivalent mutant filter
+[[1;34mINFO[m] Found plugin : Trivial return vals equivalence filter
+[[1;34mINFO[m] Found plugin : Mutant export plugin
+[[1;34mINFO[m] Found shared classpath plugin : Default mutation engine
+[[1;34mINFO[m] Found shared classpath plugin : JUnit plugin
+[[1;34mINFO[m] Found shared classpath plugin : TestNG plugin
+[[1;34mINFO[m] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[[1;34mINFO[m] Adding org.pitest:pitest to SUT classpath
+[[1;34mINFO[m] Mutating from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/classes
+[[1;34mINFO[m] Defaulting target classes to match packages in build directory
+[[1;34mINFO[m] Defaulting target tests to match packages in test build directory
+5:33:39 AM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+5:33:40 AM PIT >> INFO : Incremental analysis reduced number of mutations by 0
+5:33:40 AM PIT >> INFO : Created  23 mutation test units in pre scan
+5:33:40 AM PIT >> INFO : Sending 54 test classes to minion
+5:33:40 AM PIT >> INFO : Sent tests to minion
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\5:33:40 AM PIT >> INFO : MINION : Exception found converting d to desired type: Unable to find the class: System.DateTime
+5:33:40 AM PIT >> INFO : MINION : Exception found converting x to desired type: For input string: "3,5"
+5:33:40 AM PIT >> INFO : MINION : Exception found converting i to desired type: java.lang.IllegalAccessException; Unable to create an instance of: java.util.Calendar
+5:33:40 AM PIT >> INFO : MINION : Exception found converting n to desired type: Unable to find the class: System.DateTime
+5:33:40 AM PIT >> INFO : MINION : Exception found converting v to desired type: Unable to parse the URL: foo://commons.apache.org
+|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|5:33:40 AM PIT >> INFO : Calculated coverage in 0 seconds.
+5:33:41 AM PIT >> INFO : Incremental analysis reduced number of mutations by 0
+5:33:41 AM PIT >> INFO : Created  23 mutation test units
+/5:33:47 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+5:33:51 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+5:33:55 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-5:34:00 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/-\|/-\|/-\|/-\|/-\5:34:14 AM PIT >> INFO : Completed in 35 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 34 Killed 22 (65%)
+> KILLED 21 SURVIVED 12 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 8 Killed 8 (100%)
+> KILLED 8 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 13 Killed 12 (92%)
+> KILLED 12 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 1 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 117 Killed 102 (87%)
+> KILLED 102 SURVIVED 9 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 6 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 32 Killed 27 (84%)
+> KILLED 27 SURVIVED 4 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 1 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 108 Killed 81 (75%)
+> KILLED 81 SURVIVED 20 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 7 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 27 Killed 23 (85%)
+> KILLED 21 SURVIVED 2 TIMED_OUT 2 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 2 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
+>> Generated 47 Killed 45 (96%)
+> KILLED 45 SURVIVED 2 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 17 Killed 14 (82%)
+> KILLED 14 SURVIVED 2 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 1 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 332 Killed 313 (94%)
+> KILLED 312 SURVIVED 16 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 3 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : < 1 second
+> build mutation tests : < 1 second
+> run mutation analysis : 33 seconds
+--------------------------------------------------------------------------------
+> Total  : 34 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 1134/1178 (96%)
+>> Generated 735 mutations Killed 647 (88%)
+>> Mutations with no coverage 21. Test strength 91%
+>> Ran 3127 tests (4.25 tests per mutation)
+
+Pitest development is currently supported by GroupCDG.
+Enhanced functionality available at https://pitest.groupcdg.com/
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  35.796 s
+[[1;34mINFO[m] Finished at: 2022-08-26T05:34:14+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+HEAD is now at 88d9b42 add commons-csv rts results

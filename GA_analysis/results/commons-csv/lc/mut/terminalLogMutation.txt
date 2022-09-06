@@ -1,0 +1,1105 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M2:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M2:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.13:check[m [1m(rat-check)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Enabled default license matchers.
+[[1;34mINFO[m] Will parse SCM ignores for exclusions...
+[[1;34mINFO[m] Parsing exclusions from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/.gitignore
+[[1;34mINFO[m] Finished adding exclusions from SCM ignore files.
+[[1;34mINFO[m] 70 implicit excludes (use -debug for more details).
+[[1;34mINFO[m] 27 explicit excludes (use -debug for more details).
+[[1;34mINFO[m] 57 resources included (use -debug for more details)
+[[1;34mINFO[m] Rat check: Summary over all files. Unapproved: 3, unknown: 3, generated: 0, approved: 47 licenses.
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  1.099 s
+[[1;34mINFO[m] Finished at: 2022-08-23T08:46:16+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.rat:apache-rat-plugin:0.13:check[m [1m(rat-check)[m on project [36mcommons-csv[m: [1;31mToo many files with unapproved license: 3 See RAT report in: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/rat.txt[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:2.6:single[m [1m(default-cli)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/bin.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/src.xml
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] Cannot include project artifact: org.apache.commons:commons-csv:jar:1.7; it doesn't have an associated file or directory.
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-fat-tests.jar
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-bin.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-bin.zip
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-src.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-src.zip
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  3.459 s
+[[1;34mINFO[m] Finished at: 2022-08-23T08:46:20+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mpitest-maven:1.7.2:mutationCoverage[m [1m(default-cli)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Found plugin : Default csv report plugin
+[[1;34mINFO[m] Found plugin : Default xml report plugin
+[[1;34mINFO[m] Found plugin : Default html report plugin
+[[1;34mINFO[m] Found plugin : Static initializer code detector plugin
+[[1;34mINFO[m] Found plugin : Excluded annotations plugin
+[[1;34mINFO[m] Found plugin : Try with resources filter
+[[1;34mINFO[m] Found plugin : Inlined finally block filter plugin
+[[1;34mINFO[m] Found plugin : Implicit null check filter
+[[1;34mINFO[m] Found plugin : Method reference null check filter
+[[1;34mINFO[m] Found plugin : For each loop filter
+[[1;34mINFO[m] Found plugin : Enum constructor filter
+[[1;34mINFO[m] Found plugin : Record junk mutation filter
+[[1;34mINFO[m] Found plugin : Logging calls filter
+[[1;34mINFO[m] Found plugin : Infinite for loop filter
+[[1;34mINFO[m] Found plugin : Long running iterator loop filter
+[[1;34mINFO[m] Found plugin : For loop counter filter
+[[1;34mINFO[m] Found plugin : Kotlin junk mutations filter
+[[1;34mINFO[m] Found plugin : Max mutations per class limit
+[[1;34mINFO[m] Found plugin : Equals shortcut equivalent mutant filter
+[[1;34mINFO[m] Found plugin : Trivial return vals equivalence filter
+[[1;34mINFO[m] Found plugin : Mutant export plugin
+[[1;34mINFO[m] Found shared classpath plugin : Default mutation engine
+[[1;34mINFO[m] Found shared classpath plugin : JUnit plugin
+[[1;34mINFO[m] Found shared classpath plugin : TestNG plugin
+[[1;34mINFO[m] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[[1;34mINFO[m] Adding org.pitest:pitest to SUT classpath
+[[1;34mINFO[m] Mutating from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/classes
+[[1;34mINFO[m] Defaulting target classes to match packages in build directory
+[[1;34mINFO[m] Defaulting target tests to match packages in test build directory
+8:46:22 AM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+8:46:22 AM PIT >> INFO : Incremental analysis reduced number of mutations by 0
+8:46:22 AM PIT >> INFO : Created  0 mutation test units in pre scan
+8:46:22 AM PIT >> WARNING : No mutations found. This probably means there is an issue with either the supplied classpath or filters.
+See http://pitest.org for more details.
+8:46:22 AM PIT >> INFO : Skipping coverage and analysis as no mutations found
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.720 s
+[[1;34mINFO[m] Finished at: 2022-08-23T08:46:22+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M2:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M2:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.13:check[m [1m(rat-check)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Enabled default license matchers.
+[[1;34mINFO[m] Will parse SCM ignores for exclusions...
+[[1;34mINFO[m] Parsing exclusions from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/.gitignore
+[[1;34mINFO[m] Finished adding exclusions from SCM ignore files.
+[[1;34mINFO[m] 70 implicit excludes (use -debug for more details).
+[[1;34mINFO[m] 27 explicit excludes (use -debug for more details).
+[[1;34mINFO[m] 57 resources included (use -debug for more details)
+[[1;34mINFO[m] Rat check: Summary over all files. Unapproved: 3, unknown: 3, generated: 0, approved: 47 licenses.
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  1.004 s
+[[1;34mINFO[m] Finished at: 2022-08-23T08:47:12+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.rat:apache-rat-plugin:0.13:check[m [1m(rat-check)[m on project [36mcommons-csv[m: [1;31mToo many files with unapproved license: 3 See RAT report in: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/rat.txt[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:2.6:single[m [1m(default-cli)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/bin.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/src.xml
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] Cannot include project artifact: org.apache.commons:commons-csv:jar:1.7; it doesn't have an associated file or directory.
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-fat-tests.jar
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-bin.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-bin.zip
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-src.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-src.zip
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  3.223 s
+[[1;34mINFO[m] Finished at: 2022-08-23T08:47:16+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mpitest-maven:1.7.2:mutationCoverage[m [1m(default-cli)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Found plugin : Default csv report plugin
+[[1;34mINFO[m] Found plugin : Default xml report plugin
+[[1;34mINFO[m] Found plugin : Default html report plugin
+[[1;34mINFO[m] Found plugin : Static initializer code detector plugin
+[[1;34mINFO[m] Found plugin : Excluded annotations plugin
+[[1;34mINFO[m] Found plugin : Try with resources filter
+[[1;34mINFO[m] Found plugin : Inlined finally block filter plugin
+[[1;34mINFO[m] Found plugin : Implicit null check filter
+[[1;34mINFO[m] Found plugin : Method reference null check filter
+[[1;34mINFO[m] Found plugin : For each loop filter
+[[1;34mINFO[m] Found plugin : Enum constructor filter
+[[1;34mINFO[m] Found plugin : Record junk mutation filter
+[[1;34mINFO[m] Found plugin : Logging calls filter
+[[1;34mINFO[m] Found plugin : Infinite for loop filter
+[[1;34mINFO[m] Found plugin : Long running iterator loop filter
+[[1;34mINFO[m] Found plugin : For loop counter filter
+[[1;34mINFO[m] Found plugin : Kotlin junk mutations filter
+[[1;34mINFO[m] Found plugin : Max mutations per class limit
+[[1;34mINFO[m] Found plugin : Equals shortcut equivalent mutant filter
+[[1;34mINFO[m] Found plugin : Trivial return vals equivalence filter
+[[1;34mINFO[m] Found plugin : Mutant export plugin
+[[1;34mINFO[m] Found shared classpath plugin : Default mutation engine
+[[1;34mINFO[m] Found shared classpath plugin : JUnit plugin
+[[1;34mINFO[m] Found shared classpath plugin : TestNG plugin
+[[1;34mINFO[m] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[[1;34mINFO[m] Adding org.pitest:pitest to SUT classpath
+[[1;34mINFO[m] Mutating from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/classes
+[[1;34mINFO[m] Defaulting target classes to match packages in build directory
+[[1;34mINFO[m] Defaulting target tests to match packages in test build directory
+8:47:18 AM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+8:47:18 AM PIT >> INFO : Incremental analysis reduced number of mutations by 0
+8:47:18 AM PIT >> INFO : Created  0 mutation test units in pre scan
+8:47:18 AM PIT >> WARNING : No mutations found. This probably means there is an issue with either the supplied classpath or filters.
+See http://pitest.org for more details.
+8:47:18 AM PIT >> INFO : Skipping coverage and analysis as no mutations found
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.753 s
+[[1;34mINFO[m] Finished at: 2022-08-23T08:47:18+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M2:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M2:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.13:check[m [1m(rat-check)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Enabled default license matchers.
+[[1;34mINFO[m] Will parse SCM ignores for exclusions...
+[[1;34mINFO[m] Parsing exclusions from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/.gitignore
+[[1;34mINFO[m] Finished adding exclusions from SCM ignore files.
+[[1;34mINFO[m] 70 implicit excludes (use -debug for more details).
+[[1;34mINFO[m] 27 explicit excludes (use -debug for more details).
+[[1;34mINFO[m] 57 resources included (use -debug for more details)
+[[1;34mINFO[m] Rat check: Summary over all files. Unapproved: 3, unknown: 3, generated: 0, approved: 47 licenses.
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.933 s
+[[1;34mINFO[m] Finished at: 2022-08-23T08:50:02+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.rat:apache-rat-plugin:0.13:check[m [1m(rat-check)[m on project [36mcommons-csv[m: [1;31mToo many files with unapproved license: 3 See RAT report in: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/rat.txt[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:2.6:single[m [1m(default-cli)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/bin.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/src.xml
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] Cannot include project artifact: org.apache.commons:commons-csv:jar:1.7; it doesn't have an associated file or directory.
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-fat-tests.jar
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-bin.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-bin.zip
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-src.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-src.zip
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  3.190 s
+[[1;34mINFO[m] Finished at: 2022-08-23T08:50:06+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mpitest-maven:1.7.2:mutationCoverage[m [1m(default-cli)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Found plugin : Default csv report plugin
+[[1;34mINFO[m] Found plugin : Default xml report plugin
+[[1;34mINFO[m] Found plugin : Default html report plugin
+[[1;34mINFO[m] Found plugin : Static initializer code detector plugin
+[[1;34mINFO[m] Found plugin : Excluded annotations plugin
+[[1;34mINFO[m] Found plugin : Try with resources filter
+[[1;34mINFO[m] Found plugin : Inlined finally block filter plugin
+[[1;34mINFO[m] Found plugin : Implicit null check filter
+[[1;34mINFO[m] Found plugin : Method reference null check filter
+[[1;34mINFO[m] Found plugin : For each loop filter
+[[1;34mINFO[m] Found plugin : Enum constructor filter
+[[1;34mINFO[m] Found plugin : Record junk mutation filter
+[[1;34mINFO[m] Found plugin : Logging calls filter
+[[1;34mINFO[m] Found plugin : Infinite for loop filter
+[[1;34mINFO[m] Found plugin : Long running iterator loop filter
+[[1;34mINFO[m] Found plugin : For loop counter filter
+[[1;34mINFO[m] Found plugin : Kotlin junk mutations filter
+[[1;34mINFO[m] Found plugin : Max mutations per class limit
+[[1;34mINFO[m] Found plugin : Equals shortcut equivalent mutant filter
+[[1;34mINFO[m] Found plugin : Trivial return vals equivalence filter
+[[1;34mINFO[m] Found plugin : Mutant export plugin
+[[1;34mINFO[m] Found shared classpath plugin : Default mutation engine
+[[1;34mINFO[m] Found shared classpath plugin : JUnit plugin
+[[1;34mINFO[m] Found shared classpath plugin : TestNG plugin
+[[1;34mINFO[m] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[[1;34mINFO[m] Adding org.pitest:pitest to SUT classpath
+[[1;34mINFO[m] Mutating from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/classes
+[[1;34mINFO[m] Defaulting target classes to match packages in build directory
+[[1;34mINFO[m] Defaulting target tests to match packages in test build directory
+8:50:08 AM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+8:50:08 AM PIT >> INFO : Incremental analysis reduced number of mutations by 0
+8:50:08 AM PIT >> INFO : Created  0 mutation test units in pre scan
+8:50:08 AM PIT >> WARNING : No mutations found. This probably means there is an issue with either the supplied classpath or filters.
+See http://pitest.org for more details.
+8:50:08 AM PIT >> INFO : Skipping coverage and analysis as no mutations found
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.821 s
+[[1;34mINFO[m] Finished at: 2022-08-23T08:50:08+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M2:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M2:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.13:check[m [1m(rat-check)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Enabled default license matchers.
+[[1;34mINFO[m] Will parse SCM ignores for exclusions...
+[[1;34mINFO[m] Parsing exclusions from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/.gitignore
+[[1;34mINFO[m] Finished adding exclusions from SCM ignore files.
+[[1;34mINFO[m] 70 implicit excludes (use -debug for more details).
+[[1;34mINFO[m] 27 explicit excludes (use -debug for more details).
+[[1;34mINFO[m] 57 resources included (use -debug for more details)
+[[1;34mINFO[m] Rat check: Summary over all files. Unapproved: 3, unknown: 3, generated: 0, approved: 47 licenses.
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.892 s
+[[1;34mINFO[m] Finished at: 2022-08-23T08:50:31+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.rat:apache-rat-plugin:0.13:check[m [1m(rat-check)[m on project [36mcommons-csv[m: [1;31mToo many files with unapproved license: 3 See RAT report in: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/rat.txt[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:2.6:single[m [1m(default-cli)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/bin.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/src.xml
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] Cannot include project artifact: org.apache.commons:commons-csv:jar:1.7; it doesn't have an associated file or directory.
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-fat-tests.jar
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-bin.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-bin.zip
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-src.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-src.zip
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  3.299 s
+[[1;34mINFO[m] Finished at: 2022-08-23T08:50:35+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mpitest-maven:1.7.2:mutationCoverage[m [1m(default-cli)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Found plugin : Default csv report plugin
+[[1;34mINFO[m] Found plugin : Default xml report plugin
+[[1;34mINFO[m] Found plugin : Default html report plugin
+[[1;34mINFO[m] Found plugin : Static initializer code detector plugin
+[[1;34mINFO[m] Found plugin : Excluded annotations plugin
+[[1;34mINFO[m] Found plugin : Try with resources filter
+[[1;34mINFO[m] Found plugin : Inlined finally block filter plugin
+[[1;34mINFO[m] Found plugin : Implicit null check filter
+[[1;34mINFO[m] Found plugin : Method reference null check filter
+[[1;34mINFO[m] Found plugin : For each loop filter
+[[1;34mINFO[m] Found plugin : Enum constructor filter
+[[1;34mINFO[m] Found plugin : Record junk mutation filter
+[[1;34mINFO[m] Found plugin : Logging calls filter
+[[1;34mINFO[m] Found plugin : Infinite for loop filter
+[[1;34mINFO[m] Found plugin : Long running iterator loop filter
+[[1;34mINFO[m] Found plugin : For loop counter filter
+[[1;34mINFO[m] Found plugin : Kotlin junk mutations filter
+[[1;34mINFO[m] Found plugin : Max mutations per class limit
+[[1;34mINFO[m] Found plugin : Equals shortcut equivalent mutant filter
+[[1;34mINFO[m] Found plugin : Trivial return vals equivalence filter
+[[1;34mINFO[m] Found plugin : Mutant export plugin
+[[1;34mINFO[m] Found shared classpath plugin : Default mutation engine
+[[1;34mINFO[m] Found shared classpath plugin : JUnit plugin
+[[1;34mINFO[m] Found shared classpath plugin : TestNG plugin
+[[1;34mINFO[m] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[[1;34mINFO[m] Adding org.pitest:pitest to SUT classpath
+[[1;34mINFO[m] Mutating from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/classes
+[[1;34mINFO[m] Defaulting target classes to match packages in build directory
+[[1;34mINFO[m] Defaulting target tests to match packages in test build directory
+8:50:37 AM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+8:50:37 AM PIT >> INFO : Incremental analysis reduced number of mutations by 0
+8:50:37 AM PIT >> INFO : Created  0 mutation test units in pre scan
+8:50:37 AM PIT >> WARNING : No mutations found. This probably means there is an issue with either the supplied classpath or filters.
+See http://pitest.org for more details.
+8:50:37 AM PIT >> INFO : Skipping coverage and analysis as no mutations found
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.776 s
+[[1;34mINFO[m] Finished at: 2022-08-23T08:50:37+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M2:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M2:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.13:check[m [1m(rat-check)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Enabled default license matchers.
+[[1;34mINFO[m] Will parse SCM ignores for exclusions...
+[[1;34mINFO[m] Finished adding exclusions from SCM ignore files.
+[[1;34mINFO[m] 62 implicit excludes (use -debug for more details).
+[[1;34mINFO[m] 23 explicit excludes (use -debug for more details).
+[[1;34mINFO[m] 54 resources included (use -debug for more details)
+[[1;34mINFO[m] Rat check: Summary over all files. Unapproved: 3, unknown: 3, generated: 0, approved: 44 licenses.
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.873 s
+[[1;34mINFO[m] Finished at: 2022-08-23T09:02:53+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.rat:apache-rat-plugin:0.13:check[m [1m(rat-check)[m on project [36mcommons-csv[m: [1;31mToo many files with unapproved license: 3 See RAT report in: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/rat.txt[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:3.1.1:single[m [1m(default-cli)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/bin.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/src.xml
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-bin.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-bin.zip
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-src.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv/target/commons-csv-1.7-src.zip
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  2.851 s
+[[1;34mINFO[m] Finished at: 2022-08-23T09:02:57+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-build-plugin/1.10/commons-build-plugin-1.10.pom
+Progress (1): 2.7/10.0 kBProgress (1): 5.5/10.0 kBProgress (1): 8.2/10.0 kBProgress (1): 10.0 kB                         Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-build-plugin/1.10/commons-build-plugin-1.10.pom (10.0 kB at 24 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-build-plugin/1.10/commons-build-plugin-1.10.jar
+Progress (1): 2.7/35 kBProgress (1): 5.5/35 kBProgress (1): 8.2/35 kBProgress (1): 11/35 kB Progress (1): 14/35 kBProgress (1): 16/35 kBProgress (1): 19/35 kBProgress (1): 21/35 kBProgress (1): 24/35 kBProgress (1): 27/35 kBProgress (1): 30/35 kBProgress (1): 32/35 kBProgress (1): 35/35 kBProgress (1): 35 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-build-plugin/1.10/commons-build-plugin-1.10.jar (35 kB at 137 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/3.0.0/maven-checkstyle-plugin-3.0.0.pom
+Progress (1): 2.7/15 kBProgress (1): 5.5/15 kBProgress (1): 8.2/15 kBProgress (1): 11/15 kB Progress (1): 14/15 kBProgress (1): 15 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/3.0.0/maven-checkstyle-plugin-3.0.0.pom (15 kB at 363 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/3.0.0/maven-checkstyle-plugin-3.0.0.jar
+Progress (1): 4.1/108 kBProgress (1): 8.2/108 kBProgress (1): 12/108 kB Progress (1): 16/108 kBProgress (1): 20/108 kBProgress (1): 24/108 kBProgress (1): 28/108 kBProgress (1): 32/108 kBProgress (1): 36/108 kBProgress (1): 40/108 kBProgress (1): 45/108 kBProgress (1): 49/108 kBProgress (1): 53/108 kBProgress (1): 57/108 kBProgress (1): 61/108 kBProgress (1): 65/108 kBProgress (1): 69/108 kBProgress (1): 73/108 kBProgress (1): 77/108 kBProgress (1): 81/108 kBProgress (1): 85/108 kBProgress (1): 90/108 kBProgress (1): 94/108 kBProgress (1): 98/108 kBProgress (1): 102/108 kBProgress (1): 106/108 kBProgress (1): 108 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/3.0.0/maven-checkstyle-plugin-3.0.0.jar (108 kB at 2.0 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-scm-publish-plugin/3.0.0/maven-scm-publish-plugin-3.0.0.pom
+Progress (1): 4.1/6.9 kBProgress (1): 6.9 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-scm-publish-plugin/3.0.0/maven-scm-publish-plugin-3.0.0.pom (6.9 kB at 37 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-scm-publish-plugin/3.0.0/maven-scm-publish-plugin-3.0.0.jar
+Progress (1): 4.1/40 kBProgress (1): 8.2/40 kBProgress (1): 12/40 kB Progress (1): 16/40 kBProgress (1): 20/40 kBProgress (1): 24/40 kBProgress (1): 28/40 kBProgress (1): 32/40 kBProgress (1): 36/40 kBProgress (1): 40 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-scm-publish-plugin/3.0.0/maven-scm-publish-plugin-3.0.0.jar (40 kB at 1.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom
+Progress (1): 4.1/7.1 kBProgress (1): 7.1 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom (7.1 kB at 264 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar
+Progress (1): 4.1/34 kBProgress (1): 8.2/34 kBProgress (1): 12/34 kB Progress (1): 16/34 kBProgress (1): 20/34 kBProgress (1): 24/34 kBProgress (1): 28/34 kBProgress (1): 32/34 kBProgress (1): 34 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar (34 kB at 1.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/3.1.1/maven-dependency-plugin-3.1.1.pom
+Progress (1): 4.1/15 kBProgress (1): 8.2/15 kBProgress (1): 12/15 kB Progress (1): 15 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/3.1.1/maven-dependency-plugin-3.1.1.pom (15 kB at 420 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/3.1.1/maven-dependency-plugin-3.1.1.jar
+Progress (1): 4.1/167 kBProgress (1): 8.2/167 kBProgress (1): 12/167 kB Progress (1): 16/167 kBProgress (1): 20/167 kBProgress (1): 24/167 kBProgress (1): 28/167 kBProgress (1): 32/167 kBProgress (1): 36/167 kBProgress (1): 40/167 kBProgress (1): 45/167 kBProgress (1): 49/167 kBProgress (1): 53/167 kBProgress (1): 57/167 kBProgress (1): 61/167 kBProgress (1): 65/167 kBProgress (1): 69/167 kBProgress (1): 73/167 kBProgress (1): 77/167 kBProgress (1): 81/167 kBProgress (1): 85/167 kBProgress (1): 90/167 kBProgress (1): 94/167 kBProgress (1): 98/167 kBProgress (1): 102/167 kBProgress (1): 106/167 kBProgress (1): 110/167 kBProgress (1): 114/167 kBProgress (1): 118/167 kBProgress (1): 122/167 kBProgress (1): 126/167 kBProgress (1): 131/167 kBProgress (1): 135/167 kBProgress (1): 139/167 kBProgress (1): 143/167 kBProgress (1): 147/167 kBProgress (1): 151/167 kBProgress (1): 155/167 kBProgress (1): 159/167 kBProgress (1): 163/167 kBProgress (1): 167 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/3.1.1/maven-dependency-plugin-3.1.1.jar (167 kB at 3.1 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-docck-plugin/1.1/maven-docck-plugin-1.1.pom
+Progress (1): 4.1/5.9 kBProgress (1): 5.9 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-docck-plugin/1.1/maven-docck-plugin-1.1.pom (5.9 kB at 49 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-docck-plugin/1.1/maven-docck-plugin-1.1.jar
+Progress (1): 4.1/34 kBProgress (1): 8.2/34 kBProgress (1): 12/34 kB Progress (1): 16/34 kBProgress (1): 20/34 kBProgress (1): 24/34 kBProgress (1): 28/34 kBProgress (1): 32/34 kBProgress (1): 34 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-docck-plugin/1.1/maven-docck-plugin-1.1.jar (34 kB at 256 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-ear-plugin/3.0.1/maven-ear-plugin-3.0.1.pom
+Progress (1): 4.1/11 kBProgress (1): 8.2/11 kBProgress (1): 11 kB                       Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-ear-plugin/3.0.1/maven-ear-plugin-3.0.1.pom (11 kB at 312 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-ear-plugin/3.0.1/maven-ear-plugin-3.0.1.jar
+Progress (1): 4.1/88 kBProgress (1): 8.2/88 kBProgress (1): 12/88 kB Progress (1): 16/88 kBProgress (1): 20/88 kBProgress (1): 24/88 kBProgress (1): 28/88 kBProgress (1): 32/88 kBProgress (1): 36/88 kBProgress (1): 40/88 kBProgress (1): 45/88 kBProgress (1): 49/88 kBProgress (1): 53/88 kBProgress (1): 57/88 kBProgress (1): 61/88 kBProgress (1): 65/88 kBProgress (1): 69/88 kBProgress (1): 73/88 kBProgress (1): 77/88 kBProgress (1): 81/88 kBProgress (1): 85/88 kBProgress (1): 88 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-ear-plugin/3.0.1/maven-ear-plugin-3.0.1.jar (88 kB at 589 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.22.1/maven-failsafe-plugin-2.22.1.pom
+Progress (1): 4.1/12 kBProgress (1): 8.2/12 kBProgress (1): 12 kB                       Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.22.1/maven-failsafe-plugin-2.22.1.pom (12 kB at 47 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.22.1/maven-failsafe-plugin-2.22.1.jar
+Progress (1): 4.1/294 kBProgress (1): 8.2/294 kBProgress (1): 12/294 kB Progress (1): 16/294 kBProgress (1): 20/294 kBProgress (1): 24/294 kBProgress (1): 28/294 kBProgress (1): 32/294 kBProgress (1): 36/294 kBProgress (1): 40/294 kBProgress (1): 45/294 kBProgress (1): 49/294 kBProgress (1): 53/294 kBProgress (1): 57/294 kBProgress (1): 61/294 kBProgress (1): 65/294 kBProgress (1): 69/294 kBProgress (1): 73/294 kBProgress (1): 77/294 kBProgress (1): 81/294 kBProgress (1): 85/294 kBProgress (1): 90/294 kBProgress (1): 94/294 kBProgress (1): 98/294 kBProgress (1): 102/294 kBProgress (1): 106/294 kBProgress (1): 110/294 kBProgress (1): 114/294 kBProgress (1): 118/294 kBProgress (1): 122/294 kBProgress (1): 126/294 kBProgress (1): 131/294 kBProgress (1): 135/294 kBProgress (1): 139/294 kBProgress (1): 143/294 kBProgress (1): 147/294 kBProgress (1): 151/294 kBProgress (1): 155/294 kBProgress (1): 159/294 kBProgress (1): 163/294 kBProgress (1): 167/294 kBProgress (1): 171/294 kBProgress (1): 176/294 kBProgress (1): 180/294 kBProgress (1): 184/294 kBProgress (1): 188/294 kBProgress (1): 192/294 kBProgress (1): 196/294 kBProgress (1): 200/294 kBProgress (1): 204/294 kBProgress (1): 208/294 kBProgress (1): 212/294 kBProgress (1): 217/294 kBProgress (1): 221/294 kBProgress (1): 225/294 kBProgress (1): 229/294 kBProgress (1): 233/294 kBProgress (1): 237/294 kBProgress (1): 241/294 kBProgress (1): 245/294 kBProgress (1): 249/294 kBProgress (1): 253/294 kBProgress (1): 258/294 kBProgress (1): 262/294 kBProgress (1): 266/294 kBProgress (1): 270/294 kBProgress (1): 274/294 kBProgress (1): 278/294 kBProgress (1): 282/294 kBProgress (1): 286/294 kBProgress (1): 290/294 kBProgress (1): 294 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.22.1/maven-failsafe-plugin-2.22.1.jar (294 kB at 3.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.1.0/maven-help-plugin-3.1.0.pom
+Progress (1): 4.1/9.5 kBProgress (1): 8.2/9.5 kBProgress (1): 9.5 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.1.0/maven-help-plugin-3.1.0.pom (9.5 kB at 350 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.1.0/maven-help-plugin-3.1.0.jar
+Progress (1): 4.1/64 kBProgress (1): 8.2/64 kBProgress (1): 12/64 kB Progress (1): 16/64 kBProgress (1): 20/64 kBProgress (1): 24/64 kBProgress (1): 28/64 kBProgress (1): 32/64 kBProgress (1): 36/64 kBProgress (1): 40/64 kBProgress (1): 45/64 kBProgress (1): 49/64 kBProgress (1): 53/64 kBProgress (1): 57/64 kBProgress (1): 61/64 kBProgress (1): 64 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.1.0/maven-help-plugin-3.1.0.jar (64 kB at 482 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-invoker-plugin/3.1.0/maven-invoker-plugin-3.1.0.pom
+Progress (1): 4.1/14 kBProgress (1): 8.2/14 kBProgress (1): 12/14 kB Progress (1): 14 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-invoker-plugin/3.1.0/maven-invoker-plugin-3.1.0.pom (14 kB at 312 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-invoker-plugin/3.1.0/maven-invoker-plugin-3.1.0.jar
+Progress (1): 4.1/115 kBProgress (1): 8.2/115 kBProgress (1): 12/115 kB Progress (1): 16/115 kBProgress (1): 20/115 kBProgress (1): 24/115 kBProgress (1): 28/115 kBProgress (1): 32/115 kBProgress (1): 36/115 kBProgress (1): 40/115 kBProgress (1): 45/115 kBProgress (1): 49/115 kBProgress (1): 53/115 kBProgress (1): 57/115 kBProgress (1): 61/115 kBProgress (1): 65/115 kBProgress (1): 69/115 kBProgress (1): 73/115 kBProgress (1): 77/115 kBProgress (1): 81/115 kBProgress (1): 85/115 kBProgress (1): 90/115 kBProgress (1): 94/115 kBProgress (1): 98/115 kBProgress (1): 102/115 kBProgress (1): 106/115 kBProgress (1): 110/115 kBProgress (1): 114/115 kBProgress (1): 115 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-invoker-plugin/3.1.0/maven-invoker-plugin-3.1.0.jar (115 kB at 2.5 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/3.1.0/maven-javadoc-plugin-3.1.0.pom
+Progress (1): 4.1/19 kBProgress (1): 8.2/19 kBProgress (1): 12/19 kB Progress (1): 16/19 kBProgress (1): 19 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/3.1.0/maven-javadoc-plugin-3.1.0.pom (19 kB at 750 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/3.1.0/maven-javadoc-plugin-3.1.0.jar
+Progress (1): 4.1/481 kBProgress (1): 8.2/481 kBProgress (1): 12/481 kB Progress (1): 16/481 kBProgress (1): 20/481 kBProgress (1): 24/481 kBProgress (1): 28/481 kBProgress (1): 32/481 kBProgress (1): 36/481 kBProgress (1): 40/481 kBProgress (1): 45/481 kBProgress (1): 49/481 kBProgress (1): 53/481 kBProgress (1): 57/481 kBProgress (1): 61/481 kBProgress (1): 65/481 kBProgress (1): 69/481 kBProgress (1): 73/481 kBProgress (1): 77/481 kBProgress (1): 81/481 kBProgress (1): 85/481 kBProgress (1): 90/481 kBProgress (1): 94/481 kBProgress (1): 98/481 kBProgress (1): 102/481 kBProgress (1): 106/481 kBProgress (1): 110/481 kBProgress (1): 114/481 kBProgress (1): 118/481 kBProgress (1): 122/481 kBProgress (1): 126/481 kBProgress (1): 131/481 kBProgress (1): 135/481 kBProgress (1): 139/481 kBProgress (1): 143/481 kBProgress (1): 147/481 kBProgress (1): 151/481 kBProgress (1): 155/481 kBProgress (1): 159/481 kBProgress (1): 163/481 kBProgress (1): 167/481 kBProgress (1): 171/481 kBProgress (1): 176/481 kBProgress (1): 180/481 kBProgress (1): 184/481 kBProgress (1): 188/481 kBProgress (1): 192/481 kBProgress (1): 196/481 kBProgress (1): 200/481 kBProgress (1): 204/481 kBProgress (1): 208/481 kBProgress (1): 212/481 kBProgress (1): 217/481 kBProgress (1): 221/481 kBProgress (1): 225/481 kBProgress (1): 229/481 kBProgress (1): 233/481 kBProgress (1): 237/481 kBProgress (1): 241/481 kBProgress (1): 245/481 kBProgress (1): 249/481 kBProgress (1): 253/481 kBProgress (1): 258/481 kBProgress (1): 262/481 kBProgress (1): 266/481 kBProgress (1): 270/481 kBProgress (1): 274/481 kBProgress (1): 278/481 kBProgress (1): 282/481 kBProgress (1): 286/481 kBProgress (1): 290/481 kBProgress (1): 294/481 kBProgress (1): 298/481 kBProgress (1): 303/481 kBProgress (1): 307/481 kBProgress (1): 311/481 kBProgress (1): 315/481 kBProgress (1): 319/481 kBProgress (1): 323/481 kBProgress (1): 327/481 kBProgress (1): 331/481 kBProgress (1): 335/481 kBProgress (1): 339/481 kBProgress (1): 344/481 kBProgress (1): 348/481 kBProgress (1): 352/481 kBProgress (1): 356/481 kBProgress (1): 360/481 kBProgress (1): 364/481 kBProgress (1): 368/481 kBProgress (1): 372/481 kBProgress (1): 376/481 kBProgress (1): 380/481 kBProgress (1): 384/481 kBProgress (1): 389/481 kBProgress (1): 393/481 kBProgress (1): 397/481 kBProgress (1): 401/481 kBProgress (1): 405/481 kBProgress (1): 409/481 kBProgress (1): 413/481 kBProgress (1): 417/481 kBProgress (1): 421/481 kBProgress (1): 425/481 kBProgress (1): 430/481 kBProgress (1): 434/481 kBProgress (1): 438/481 kBProgress (1): 442/481 kBProgress (1): 446/481 kBProgress (1): 450/481 kBProgress (1): 454/481 kBProgress (1): 458/481 kBProgress (1): 462/481 kBProgress (1): 466/481 kBProgress (1): 470/481 kBProgress (1): 475/481 kBProgress (1): 479/481 kBProgress (1): 481 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/3.1.0/maven-javadoc-plugin-3.1.0.jar (481 kB at 5.5 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugin-plugin/3.5.2/maven-plugin-plugin-3.5.2.pom
+Progress (1): 4.1/14 kBProgress (1): 8.2/14 kBProgress (1): 12/14 kB Progress (1): 14 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugin-plugin/3.5.2/maven-plugin-plugin-3.5.2.pom (14 kB at 63 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugin-plugin/3.5.2/maven-plugin-plugin-3.5.2.jar
+Progress (1): 4.1/57 kBProgress (1): 8.2/57 kBProgress (1): 12/57 kB Progress (1): 16/57 kBProgress (1): 20/57 kBProgress (1): 24/57 kBProgress (1): 28/57 kBProgress (1): 32/57 kBProgress (1): 36/57 kBProgress (1): 40/57 kBProgress (1): 45/57 kBProgress (1): 49/57 kBProgress (1): 53/57 kBProgress (1): 57/57 kBProgress (1): 57 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugin-plugin/3.5.2/maven-plugin-plugin-3.5.2.jar (57 kB at 1.4 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/versions-maven-plugin/2.7/versions-maven-plugin-2.7.pom
+Progress (1): 4.1/17 kBProgress (1): 8.2/17 kBProgress (1): 12/17 kB Progress (1): 16/17 kBProgress (1): 17 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/versions-maven-plugin/2.7/versions-maven-plugin-2.7.pom (17 kB at 681 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/versions-maven-plugin/2.7/versions-maven-plugin-2.7.jar
+Progress (1): 4.1/310 kBProgress (1): 8.2/310 kBProgress (1): 12/310 kB Progress (1): 16/310 kBProgress (1): 20/310 kBProgress (1): 24/310 kBProgress (1): 28/310 kBProgress (1): 32/310 kBProgress (1): 36/310 kBProgress (1): 40/310 kBProgress (1): 45/310 kBProgress (1): 49/310 kBProgress (1): 53/310 kBProgress (1): 57/310 kBProgress (1): 61/310 kBProgress (1): 65/310 kBProgress (1): 69/310 kBProgress (1): 73/310 kBProgress (1): 77/310 kBProgress (1): 81/310 kBProgress (1): 85/310 kBProgress (1): 90/310 kBProgress (1): 94/310 kBProgress (1): 98/310 kBProgress (1): 102/310 kBProgress (1): 106/310 kBProgress (1): 110/310 kBProgress (1): 114/310 kBProgress (1): 118/310 kBProgress (1): 122/310 kBProgress (1): 126/310 kBProgress (1): 131/310 kBProgress (1): 135/310 kBProgress (1): 139/310 kBProgress (1): 143/310 kBProgress (1): 147/310 kBProgress (1): 151/310 kBProgress (1): 155/310 kBProgress (1): 159/310 kBProgress (1): 163/310 kBProgress (1): 167/310 kBProgress (1): 171/310 kBProgress (1): 176/310 kBProgress (1): 180/310 kBProgress (1): 184/310 kBProgress (1): 188/310 kBProgress (1): 192/310 kBProgress (1): 196/310 kBProgress (1): 200/310 kBProgress (1): 204/310 kBProgress (1): 208/310 kBProgress (1): 212/310 kBProgress (1): 217/310 kBProgress (1): 221/310 kBProgress (1): 225/310 kBProgress (1): 229/310 kBProgress (1): 233/310 kBProgress (1): 237/310 kBProgress (1): 241/310 kBProgress (1): 245/310 kBProgress (1): 249/310 kBProgress (1): 253/310 kBProgress (1): 258/310 kBProgress (1): 262/310 kBProgress (1): 266/310 kBProgress (1): 270/310 kBProgress (1): 274/310 kBProgress (1): 278/310 kBProgress (1): 282/310 kBProgress (1): 286/310 kBProgress (1): 290/310 kBProgress (1): 294/310 kBProgress (1): 298/310 kBProgress (1): 303/310 kBProgress (1): 307/310 kBProgress (1): 310 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/versions-maven-plugin/2.7/versions-maven-plugin-2.7.jar (310 kB at 5.4 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-project-info-reports-plugin/3.0.0/maven-project-info-reports-plugin-3.0.0.pom
+Progress (1): 4.1/20 kBProgress (1): 8.2/20 kBProgress (1): 12/20 kB Progress (1): 16/20 kBProgress (1): 20 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-project-info-reports-plugin/3.0.0/maven-project-info-reports-plugin-3.0.0.pom (20 kB at 561 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-project-info-reports-plugin/3.0.0/maven-project-info-reports-plugin-3.0.0.jar
+Progress (1): 4.1/300 kBProgress (1): 8.2/300 kBProgress (1): 12/300 kB Progress (1): 16/300 kBProgress (1): 20/300 kBProgress (1): 24/300 kBProgress (1): 28/300 kBProgress (1): 32/300 kBProgress (1): 36/300 kBProgress (1): 40/300 kBProgress (1): 45/300 kBProgress (1): 49/300 kBProgress (1): 53/300 kBProgress (1): 57/300 kBProgress (1): 61/300 kBProgress (1): 65/300 kBProgress (1): 69/300 kBProgress (1): 73/300 kBProgress (1): 77/300 kBProgress (1): 81/300 kBProgress (1): 85/300 kBProgress (1): 90/300 kBProgress (1): 94/300 kBProgress (1): 98/300 kBProgress (1): 102/300 kBProgress (1): 106/300 kBProgress (1): 110/300 kBProgress (1): 114/300 kBProgress (1): 118/300 kBProgress (1): 122/300 kBProgress (1): 126/300 kBProgress (1): 131/300 kBProgress (1): 135/300 kBProgress (1): 139/300 kBProgress (1): 143/300 kBProgress (1): 147/300 kBProgress (1): 151/300 kBProgress (1): 155/300 kBProgress (1): 159/300 kBProgress (1): 163/300 kBProgress (1): 167/300 kBProgress (1): 171/300 kBProgress (1): 176/300 kBProgress (1): 180/300 kBProgress (1): 184/300 kBProgress (1): 188/300 kBProgress (1): 192/300 kBProgress (1): 196/300 kBProgress (1): 200/300 kBProgress (1): 204/300 kBProgress (1): 208/300 kBProgress (1): 212/300 kBProgress (1): 217/300 kBProgress (1): 221/300 kBProgress (1): 225/300 kBProgress (1): 229/300 kBProgress (1): 233/300 kBProgress (1): 237/300 kBProgress (1): 241/300 kBProgress (1): 245/300 kBProgress (1): 249/300 kBProgress (1): 253/300 kBProgress (1): 258/300 kBProgress (1): 262/300 kBProgress (1): 266/300 kBProgress (1): 270/300 kBProgress (1): 274/300 kBProgress (1): 278/300 kBProgress (1): 282/300 kBProgress (1): 286/300 kBProgress (1): 290/300 kBProgress (1): 294/300 kBProgress (1): 298/300 kBProgress (1): 300 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-project-info-reports-plugin/3.0.0/maven-project-info-reports-plugin-3.0.0.jar (300 kB at 4.4 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-scm-plugin/1.9.5/maven-scm-plugin-1.9.5.pom
+Progress (1): 4.1/7.1 kBProgress (1): 7.1 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-scm-plugin/1.9.5/maven-scm-plugin-1.9.5.pom (7.1 kB at 235 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm/1.9.5/maven-scm-1.9.5.pom
+Progress (1): 4.1/25 kBProgress (1): 8.2/25 kBProgress (1): 12/25 kB Progress (1): 16/25 kBProgress (1): 20/25 kBProgress (1): 24/25 kBProgress (1): 25 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm/1.9.5/maven-scm-1.9.5.pom (25 kB at 127 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-scm-plugin/1.9.5/maven-scm-plugin-1.9.5.jar
+Progress (1): 4.1/67 kBProgress (1): 8.2/67 kBProgress (1): 12/67 kB Progress (1): 16/67 kBProgress (1): 20/67 kBProgress (1): 24/67 kBProgress (1): 28/67 kBProgress (1): 32/67 kBProgress (1): 36/67 kBProgress (1): 40/67 kBProgress (1): 45/67 kBProgress (1): 49/67 kBProgress (1): 53/67 kBProgress (1): 57/67 kBProgress (1): 61/67 kBProgress (1): 65/67 kBProgress (1): 67 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-scm-plugin/1.9.5/maven-scm-plugin-1.9.5.jar (67 kB at 1.6 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-report-plugin/2.22.0/maven-surefire-report-plugin-2.22.0.pom
+Progress (1): 4.1/8.0 kBProgress (1): 8.0 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-report-plugin/2.22.0/maven-surefire-report-plugin-2.22.0.pom (8.0 kB at 257 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-report-plugin/2.22.0/maven-surefire-report-plugin-2.22.0.jar
+Progress (1): 4.1/54 kBProgress (1): 8.2/54 kBProgress (1): 12/54 kB Progress (1): 16/54 kBProgress (1): 20/54 kBProgress (1): 24/54 kBProgress (1): 28/54 kBProgress (1): 32/54 kBProgress (1): 36/54 kBProgress (1): 40/54 kBProgress (1): 45/54 kBProgress (1): 49/54 kBProgress (1): 53/54 kBProgress (1): 54 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-report-plugin/2.22.0/maven-surefire-report-plugin-2.22.0.jar (54 kB at 287 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/3.2.2/maven-war-plugin-3.2.2.pom
+Progress (1): 4.1/9.7 kBProgress (1): 8.2/9.7 kBProgress (1): 9.7 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/3.2.2/maven-war-plugin-3.2.2.pom (9.7 kB at 194 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/3.2.2/maven-war-plugin-3.2.2.jar
+Progress (1): 4.1/91 kBProgress (1): 8.2/91 kBProgress (1): 12/91 kB Progress (1): 16/91 kBProgress (1): 20/91 kBProgress (1): 24/91 kBProgress (1): 28/91 kBProgress (1): 32/91 kBProgress (1): 36/91 kBProgress (1): 40/91 kBProgress (1): 45/91 kBProgress (1): 49/91 kBProgress (1): 53/91 kBProgress (1): 57/91 kBProgress (1): 61/91 kBProgress (1): 65/91 kBProgress (1): 69/91 kBProgress (1): 73/91 kBProgress (1): 77/91 kBProgress (1): 81/91 kBProgress (1): 85/91 kBProgress (1): 90/91 kBProgress (1): 91 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/3.2.2/maven-war-plugin-3.2.2.jar (91 kB at 2.5 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.1.1/maven-shade-plugin-3.1.1.pom
+Progress (1): 4.1/9.4 kBProgress (1): 8.2/9.4 kBProgress (1): 9.4 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.1.1/maven-shade-plugin-3.1.1.pom (9.4 kB at 312 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.1.1/maven-shade-plugin-3.1.1.jar
+Progress (1): 4.1/114 kBProgress (1): 8.2/114 kBProgress (1): 12/114 kB Progress (1): 16/114 kBProgress (1): 20/114 kBProgress (1): 24/114 kBProgress (1): 28/114 kBProgress (1): 32/114 kBProgress (1): 36/114 kBProgress (1): 40/114 kBProgress (1): 45/114 kBProgress (1): 49/114 kBProgress (1): 53/114 kBProgress (1): 57/114 kBProgress (1): 61/114 kBProgress (1): 65/114 kBProgress (1): 69/114 kBProgress (1): 73/114 kBProgress (1): 77/114 kBProgress (1): 81/114 kBProgress (1): 85/114 kBProgress (1): 90/114 kBProgress (1): 94/114 kBProgress (1): 98/114 kBProgress (1): 102/114 kBProgress (1): 106/114 kBProgress (1): 110/114 kBProgress (1): 114 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.1.1/maven-shade-plugin-3.1.1.jar (114 kB at 3.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/github/siom79/japicmp/japicmp-maven-plugin/0.13.0/japicmp-maven-plugin-0.13.0.pom
+Progress (1): 4.1/5.3 kBProgress (1): 5.3 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/com/github/siom79/japicmp/japicmp-maven-plugin/0.13.0/japicmp-maven-plugin-0.13.0.pom (5.3 kB at 23 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/github/siom79/japicmp/japicmp-base/0.13.0/japicmp-base-0.13.0.pom
+Progress (1): 4.1/13 kBProgress (1): 8.2/13 kBProgress (1): 12/13 kB Progress (1): 13 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/com/github/siom79/japicmp/japicmp-base/0.13.0/japicmp-base-0.13.0.pom (13 kB at 108 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/github/siom79/japicmp/japicmp-maven-plugin/0.13.0/japicmp-maven-plugin-0.13.0.jar
+Progress (1): 4.1/45 kBProgress (1): 8.2/45 kBProgress (1): 12/45 kB Progress (1): 16/45 kBProgress (1): 20/45 kBProgress (1): 24/45 kBProgress (1): 28/45 kBProgress (1): 32/45 kBProgress (1): 36/45 kBProgress (1): 40/45 kBProgress (1): 45/45 kBProgress (1): 45 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/com/github/siom79/japicmp/japicmp-maven-plugin/0.13.0/japicmp-maven-plugin-0.13.0.jar (45 kB at 511 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/clirr-maven-plugin/2.8/clirr-maven-plugin-2.8.pom
+Progress (1): 4.1/8.0 kBProgress (1): 8.0 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/clirr-maven-plugin/2.8/clirr-maven-plugin-2.8.pom (8.0 kB at 258 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/clirr-maven-plugin/2.8/clirr-maven-plugin-2.8.jar
+Progress (1): 4.1/75 kBProgress (1): 8.2/75 kBProgress (1): 12/75 kB Progress (1): 16/75 kBProgress (1): 20/75 kBProgress (1): 24/75 kBProgress (1): 28/75 kBProgress (1): 32/75 kBProgress (1): 36/75 kBProgress (1): 40/75 kBProgress (1): 45/75 kBProgress (1): 49/75 kBProgress (1): 53/75 kBProgress (1): 57/75 kBProgress (1): 61/75 kBProgress (1): 65/75 kBProgress (1): 69/75 kBProgress (1): 73/75 kBProgress (1): 75 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/clirr-maven-plugin/2.8/clirr-maven-plugin-2.8.jar (75 kB at 1.6 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+Progress (1): 4.1/21 kBProgress (1): 8.2/21 kBProgress (1): 12/21 kB Progress (1): 16/21 kBProgress (1): 20/21 kBProgress (1): 21 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (21 kB at 573 kB/s)
+Progress (1): 2.7/14 kBProgress (1): 5.5/14 kBProgress (1): 8.2/14 kBProgress (1): 11/14 kB Progress (1): 14/14 kBProgress (1): 14 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 kB at 193 kB/s)
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  4.905 s
+[[1;34mINFO[m] Finished at: 2022-08-23T09:03:02+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] No plugin found for prefix 'pitest' in the current project and in the plugin groups [org.apache.maven.plugins, org.codehaus.mojo] available from the repositories [local (/home/thomas/.m2/repository), central (https://repo.maven.apache.org/maven2)] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/NoPluginFoundForPrefixException
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M2:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M2:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.13:check[m [1m(rat-check)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Enabled default license matchers.
+[[1;34mINFO[m] Will parse SCM ignores for exclusions...
+[[1;34mINFO[m] Parsing exclusions from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/.gitignore
+[[1;34mINFO[m] Finished adding exclusions from SCM ignore files.
+[[1;34mINFO[m] 70 implicit excludes (use -debug for more details).
+[[1;34mINFO[m] 30 explicit excludes (use -debug for more details).
+[[1;34mINFO[m] 54 resources included (use -debug for more details)
+[[1;34mINFO[m] Rat check: Summary over all files. Unapproved: 0, unknown: 0, generated: 0, approved: 47 licenses.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:3.0.0:parse-version[m [1m(parse-version)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(javadoc.resources)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/apidocs/META-INF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create[m [1m(default)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old
+[[1;34mINFO[m] Storing buildNumber: e42a0ef35a87593e2b6ee7e36e865d5904fb70ad at timestamp: 1661238447197
+[[1;34mINFO[m] Storing buildScmBranch: scripting
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/src/main/resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 12 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-bundle-plugin:4.1.0:manifest[m [1m(bundle-manifest)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(checkAPIcompatibility)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/src/main/java/org/apache/commons/csv/IOUtils.java:82: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.flip() has been changed to java.nio.CharBuffer java.nio.CharBuffer.flip()
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 14 resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 19 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/test-classes
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/src/test/java/org/apache/commons/csv/CSVFormatTest.java: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/src/test/java/org/apache/commons/csv/CSVFormatTest.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/src/test/java/org/apache/commons/csv/CSVFormatTest.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.3:prepare-agent[m [1m(prepare-agent)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/thomas/.m2/repository/org/jacoco/org.jacoco.agent/0.8.3/org.jacoco.agent-0.8.3-runtime.jar=destfile=/home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.1:test[m [1m(default-test)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mCSVFormatPredefinedTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in org.apache.commons.csv.[1mCSVFormatPredefinedTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mLexerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m26[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.commons.csv.[1mLexerTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.issues.[1mJiraCsv198Test[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.408 s - in org.apache.commons.csv.issues.[1mJiraCsv198Test[m
+[[1;34mINFO[m] Running org.apache.commons.csv.issues.[1mJiraCsv164Test[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.csv.issues.[1mJiraCsv164Test[m
+[[1;34mINFO[m] Running org.apache.commons.csv.issues.[1mJiraCsv213Test[m
+[[1;33mWARNING[m] [1;33mTests [0;1mrun: [0;1m1[m, Failures: 0, Errors: 0, [1;33mSkipped: [0;1;33m1[m, Time elapsed: 0.001 s - in org.apache.commons.csv.issues.[1mJiraCsv213Test[m
+[[1;34mINFO[m] Running org.apache.commons.csv.issues.[1mJiraCsv167Test[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.csv.issues.[1mJiraCsv167Test[m
+[[1;34mINFO[m] Running org.apache.commons.csv.issues.[1mJiraCsv203Test[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.csv.issues.[1mJiraCsv203Test[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mCSVPrinterTest[m
+[[1;33mWARNING[m] [1;33mTests [0;1mrun: [0;1m99[m, Failures: 0, Errors: 0, [1;33mSkipped: [0;1;33m11[m, Time elapsed: 2.669 s - in org.apache.commons.csv.[1mCSVPrinterTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mTokenMatchersTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.csv.[1mTokenMatchersTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mCSVRecordTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m18[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.csv.[1mCSVRecordTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mCSVParserTest[m
+[[1;33mWARNING[m] [1;33mTests [0;1mrun: [0;1m81[m, Failures: 0, Errors: 0, [1;33mSkipped: [0;1;33m4[m, Time elapsed: 0.025 s - in org.apache.commons.csv.[1mCSVParserTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mCSVFormatTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m56[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.commons.csv.[1mCSVFormatTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mExtendedBufferedReaderTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.csv.[1mExtendedBufferedReaderTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mAssertionsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.csv.[1mAssertionsTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;33mWARNING[m] [1;33mTests run: 313, Failures: 0, Errors: 0, Skipped: 16[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.1.1:jar[m [1m(default-jar)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:2.6:single[m [1m(make-assembly)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/bin.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/src.xml
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-fat-tests.jar
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-bin.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-bin.zip
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-src.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-src.zip
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.1.1:test-jar[m [1m(default)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-tests.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-source-plugin:3.0.1:jar-no-fork[m [1m(create-source-jar)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-sources.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-source-plugin:3.0.1:test-jar-no-fork[m [1m(create-source-jar)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-test-sources.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.3:check[m [1m(check)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Loading execution data file /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/jacoco.exec
+[[1;34mINFO[m] Analyzed bundle 'commons-csv' with 15 classes
+[[1;33mWARNING[m] Rule violated for bundle commons-csv: classes covered ratio is 0.93, but expected minimum is 1.00
+[[1;33mWARNING[m] Rule violated for bundle commons-csv: instructions covered ratio is 0.89, but expected minimum is 0.90
+[[1;33mWARNING[m] Rule violated for bundle commons-csv: methods covered ratio is 0.93, but expected minimum is 0.95
+[[1;33mWARNING[m] Rule violated for bundle commons-csv: complexity covered ratio is 0.84, but expected minimum is 0.85
+[[1;33mWARNING[m] Coverage checks have not been met. See log for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7.jar to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/pom.xml to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7.pom
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-fat-tests.jar to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-fat-tests.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-bin.tar.gz to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-bin.tar.gz
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-bin.zip to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-bin.zip
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-src.tar.gz to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-src.tar.gz
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-src.zip to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-src.zip
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-tests.jar to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-tests.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-sources.jar to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-sources.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-test-sources.jar to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-test-sources.jar
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  14.174 s
+[[1;34mINFO[m] Finished at: 2022-08-23T09:07:39+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M2:enforce[m [1m(enforce-maven-version)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M2:enforce[m [1m(enforce-maven-3)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mapache-rat-plugin:0.13:check[m [1m(rat-check)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Enabled default license matchers.
+[[1;34mINFO[m] Will parse SCM ignores for exclusions...
+[[1;34mINFO[m] Parsing exclusions from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/.gitignore
+[[1;34mINFO[m] Finished adding exclusions from SCM ignore files.
+[[1;34mINFO[m] 70 implicit excludes (use -debug for more details).
+[[1;34mINFO[m] 30 explicit excludes (use -debug for more details).
+[[1;34mINFO[m] 54 resources included (use -debug for more details)
+[[1;34mINFO[m] Rat check: Summary over all files. Unapproved: 0, unknown: 0, generated: 0, approved: 47 licenses.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:3.0.0:parse-version[m [1m(parse-version)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:1.8:run[m [1m(javadoc.resources)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/apidocs/META-INF
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:1.4:create[m [1m(default)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old' && 'git' 'rev-parse' '--verify' 'HEAD'
+[[1;34mINFO[m] Working directory: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old
+[[1;34mINFO[m] Storing buildNumber: e42a0ef35a87593e2b6ee7e36e865d5904fb70ad at timestamp: 1661238657429
+[[1;34mINFO[m] Storing buildScmBranch: scripting
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/src/main/resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 12 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-bundle-plugin:4.1.0:manifest[m [1m(bundle-manifest)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32manimal-sniffer-maven-plugin:1.17:check[m [1m(checkAPIcompatibility)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/src/main/java/org/apache/commons/csv/IOUtils.java:82: Covariant return type change detected: java.nio.Buffer java.nio.CharBuffer.flip() has been changed to java.nio.CharBuffer java.nio.CharBuffer.flip()
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 14 resources
+[[1;34mINFO[m] Copying 2 resources to META-INF
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 19 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/test-classes
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/src/test/java/org/apache/commons/csv/CSVFormatTest.java: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/src/test/java/org/apache/commons/csv/CSVFormatTest.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/src/test/java/org/apache/commons/csv/CSVFormatTest.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.3:prepare-agent[m [1m(prepare-agent)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/thomas/.m2/repository/org/jacoco/org.jacoco.agent/0.8.3/org.jacoco.agent-0.8.3-runtime.jar=destfile=/home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.1:test[m [1m(default-test)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mCSVFormatPredefinedTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in org.apache.commons.csv.[1mCSVFormatPredefinedTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mLexerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m26[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.commons.csv.[1mLexerTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.issues.[1mJiraCsv198Test[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.392 s - in org.apache.commons.csv.issues.[1mJiraCsv198Test[m
+[[1;34mINFO[m] Running org.apache.commons.csv.issues.[1mJiraCsv164Test[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.csv.issues.[1mJiraCsv164Test[m
+[[1;34mINFO[m] Running org.apache.commons.csv.issues.[1mJiraCsv213Test[m
+[[1;33mWARNING[m] [1;33mTests [0;1mrun: [0;1m1[m, Failures: 0, Errors: 0, [1;33mSkipped: [0;1;33m1[m, Time elapsed: 0 s - in org.apache.commons.csv.issues.[1mJiraCsv213Test[m
+[[1;34mINFO[m] Running org.apache.commons.csv.issues.[1mJiraCsv167Test[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.csv.issues.[1mJiraCsv167Test[m
+[[1;34mINFO[m] Running org.apache.commons.csv.issues.[1mJiraCsv203Test[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.csv.issues.[1mJiraCsv203Test[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mCSVPrinterTest[m
+[[1;33mWARNING[m] [1;33mTests [0;1mrun: [0;1m99[m, Failures: 0, Errors: 0, [1;33mSkipped: [0;1;33m11[m, Time elapsed: 2.609 s - in org.apache.commons.csv.[1mCSVPrinterTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mTokenMatchersTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.csv.[1mTokenMatchersTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mCSVRecordTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m18[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.csv.[1mCSVRecordTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mCSVParserTest[m
+[[1;33mWARNING[m] [1;33mTests [0;1mrun: [0;1m81[m, Failures: 0, Errors: 0, [1;33mSkipped: [0;1;33m4[m, Time elapsed: 0.03 s - in org.apache.commons.csv.[1mCSVParserTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mCSVFormatTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m56[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.commons.csv.[1mCSVFormatTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mExtendedBufferedReaderTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.csv.[1mExtendedBufferedReaderTest[m
+[[1;34mINFO[m] Running org.apache.commons.csv.[1mAssertionsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.csv.[1mAssertionsTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;33mWARNING[m] [1;33mTests run: 313, Failures: 0, Errors: 0, Skipped: 16[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.1.1:jar[m [1m(default-jar)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:2.6:single[m [1m(make-assembly)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/bin.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/src.xml
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-fat-tests.jar
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-bin.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-bin.zip
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-src.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-src.zip
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:attach-descriptor[m [1m(attach-descriptor)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.1.1:test-jar[m [1m(default)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-tests.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-source-plugin:3.0.1:jar-no-fork[m [1m(create-source-jar)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-sources.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-source-plugin:3.0.1:test-jar-no-fork[m [1m(create-source-jar)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-test-sources.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.3:check[m [1m(check)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Loading execution data file /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/jacoco.exec
+[[1;34mINFO[m] Analyzed bundle 'commons-csv' with 15 classes
+[[1;33mWARNING[m] Rule violated for bundle commons-csv: classes covered ratio is 0.93, but expected minimum is 1.00
+[[1;33mWARNING[m] Rule violated for bundle commons-csv: instructions covered ratio is 0.89, but expected minimum is 0.90
+[[1;33mWARNING[m] Rule violated for bundle commons-csv: methods covered ratio is 0.93, but expected minimum is 0.95
+[[1;33mWARNING[m] Rule violated for bundle commons-csv: complexity covered ratio is 0.84, but expected minimum is 0.85
+[[1;33mWARNING[m] Coverage checks have not been met. See log for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7.jar to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/pom.xml to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7.pom
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-fat-tests.jar to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-fat-tests.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-bin.tar.gz to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-bin.tar.gz
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-bin.zip to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-bin.zip
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-src.tar.gz to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-src.tar.gz
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-src.zip to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-src.zip
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-tests.jar to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-tests.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-sources.jar to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-sources.jar
+[[1;34mINFO[m] Installing /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-test-sources.jar to /home/thomas/.m2/repository/org/apache/commons/commons-csv/1.7/commons-csv-1.7-test-sources.jar
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  13.943 s
+[[1;34mINFO[m] Finished at: 2022-08-23T09:11:09+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:2.6:single[m [1m(default-cli)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/bin.xml
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/src.xml
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] Cannot include project artifact: org.apache.commons:commons-csv:jar:1.7; it doesn't have an associated file or directory.
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-fat-tests.jar
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-bin.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-bin.zip
+[[1;34mINFO[m] Building tar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-src.tar.gz
+[[1;34mINFO[m] Building zip: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/commons-csv-1.7-src.zip
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  3.615 s
+[[1;34mINFO[m] Finished at: 2022-08-23T09:11:14+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.commons:commons-csv[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Commons CSV 1.7[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mpitest-maven:1.7.2:mutationCoverage[m [1m(default-cli)[m @ [36mcommons-csv[0;1m ---[m
+[[1;34mINFO[m] Found plugin : Default csv report plugin
+[[1;34mINFO[m] Found plugin : Default xml report plugin
+[[1;34mINFO[m] Found plugin : Default html report plugin
+[[1;34mINFO[m] Found plugin : Static initializer code detector plugin
+[[1;34mINFO[m] Found plugin : Excluded annotations plugin
+[[1;34mINFO[m] Found plugin : Try with resources filter
+[[1;34mINFO[m] Found plugin : Inlined finally block filter plugin
+[[1;34mINFO[m] Found plugin : Implicit null check filter
+[[1;34mINFO[m] Found plugin : Method reference null check filter
+[[1;34mINFO[m] Found plugin : For each loop filter
+[[1;34mINFO[m] Found plugin : Enum constructor filter
+[[1;34mINFO[m] Found plugin : Record junk mutation filter
+[[1;34mINFO[m] Found plugin : Logging calls filter
+[[1;34mINFO[m] Found plugin : Infinite for loop filter
+[[1;34mINFO[m] Found plugin : Long running iterator loop filter
+[[1;34mINFO[m] Found plugin : For loop counter filter
+[[1;34mINFO[m] Found plugin : Kotlin junk mutations filter
+[[1;34mINFO[m] Found plugin : Max mutations per class limit
+[[1;34mINFO[m] Found plugin : Equals shortcut equivalent mutant filter
+[[1;34mINFO[m] Found plugin : Trivial return vals equivalence filter
+[[1;34mINFO[m] Found plugin : Mutant export plugin
+[[1;34mINFO[m] Found shared classpath plugin : Default mutation engine
+[[1;34mINFO[m] Found shared classpath plugin : JUnit plugin
+[[1;34mINFO[m] Found shared classpath plugin : TestNG plugin
+[[1;34mINFO[m] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[[1;34mINFO[m] Adding org.pitest:pitest to SUT classpath
+[[1;34mINFO[m] Mutating from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-csv_old/target/classes
+[[1;34mINFO[m] Defaulting target classes to match packages in build directory
+[[1;34mINFO[m] Defaulting target tests to match packages in test build directory
+9:11:16 AM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+9:11:16 AM PIT >> INFO : Incremental analysis reduced number of mutations by 0
+9:11:16 AM PIT >> INFO : Created  11 mutation test units in pre scan
+9:11:16 AM PIT >> INFO : Sending 48 test classes to minion
+9:11:16 AM PIT >> INFO : Sent tests to minion
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-9:11:17 AM PIT >> INFO : MINION : WARNING: An illegal reflective access operation has occurred
+9:11:17 AM PIT >> INFO : MINION : WARNING: Illegal reflective access by org.mockito.internal.creation.cglib.ClassImposterizer (file:/home/thomas/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar) to constructor java.io.Writer(java.lang.Object)
+9:11:17 AM PIT >> INFO : MINION : WARNING: Please consider reporting this to the maintainers of org.mockito.internal.creation.cglib.ClassImposterizer
+9:11:17 AM PIT >> INFO : MINION : WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+9:11:17 AM PIT >> INFO : MINION : WARNING: All illegal access operations will be denied in a future release
+\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/9:11:20 AM PIT >> INFO : Calculated coverage in 3 seconds.
+9:11:20 AM PIT >> INFO : Incremental analysis reduced number of mutations by 0
+9:11:20 AM PIT >> INFO : Created  11 mutation test units
+/9:11:37 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+9:11:40 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+9:11:48 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+-9:11:52 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+9:11:55 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+9:11:59 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+\|/-\|/-\9:12:09 AM PIT >> INFO : Completed in 53 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 29 Killed 21 (72%)
+> KILLED 21 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 7 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 32 Killed 16 (50%)
+> KILLED 16 SURVIVED 7 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 9 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 13 Killed 9 (69%)
+> KILLED 9 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 4 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 64 Killed 53 (83%)
+> KILLED 52 SURVIVED 6 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 5 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 51 Killed 48 (94%)
+> KILLED 46 SURVIVED 0 TIMED_OUT 2 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 3 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 78 Killed 70 (90%)
+> KILLED 70 SURVIVED 5 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 3 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 50 Killed 19 (38%)
+> KILLED 19 SURVIVED 25 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 6 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 14 Killed 14 (100%)
+> KILLED 14 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
+>> Generated 19 Killed 16 (84%)
+> KILLED 16 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 3 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 292 Killed 261 (89%)
+> KILLED 258 SURVIVED 10 TIMED_OUT 3 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 21 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : 3 seconds
+> build mutation tests : < 1 second
+> run mutation analysis : 48 seconds
+--------------------------------------------------------------------------------
+> Total  : 53 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 895/985 (91%)
+>> Generated 642 mutations Killed 527 (82%)
+>> Mutations with no coverage 61. Test strength 91%
+>> Ran 2406 tests (3.75 tests per mutation)
+
+Pitest development is currently supported by GroupCDG.
+Enhanced functionality available at https://pitest.groupcdg.com/
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  54.143 s
+[[1;34mINFO[m] Finished at: 2022-08-23T09:12:09+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

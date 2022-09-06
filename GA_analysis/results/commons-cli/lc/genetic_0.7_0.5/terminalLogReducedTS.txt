@@ -1,0 +1,1548 @@
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+[32m22.08.2022 - 11:39:35.991 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Current absolute path is: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli
+[m[32m22.08.2022 - 11:39:35.994 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/target/commons-cli-1.4-fat-tests.jar
+[m[32m22.08.2022 - 11:39:35.994 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to slicer: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/JSR/slicer/Slicer4J
+[m[32m22.08.2022 - 11:39:35.994 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to out dir: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5
+[m[32m22.08.2022 - 11:39:35.994 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to out logging jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/JSR/slicer/DynamicSlicingCore/DynamicSlicingLoggingClasses/DynamicSlicingLogger.jar
+[m[m22.08.2022 - 11:39:36.502 [INFO ] ParsingStrategy.parseTestSuiteFromFilePath() - Parsing test suite from File Path
+[m[m22.08.2022 - 11:39:36.502 [INFO ] CompilationUnitExtractor.parseCompilationUnitsFromFilePath() - Collecting compilation units from File Path /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/src/test/java
+[m[m22.08.2022 - 11:39:37.056 [INFO ] ParsingStrategy.parseTestSuite() - Found 58 test cases
+[m[m22.08.2022 - 11:39:37.058 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testSimpleShort has 4 assertions: 
+ assertTrue("Confirm -a is set", cl.hasOption("a")); ref {cl} [60-60],
+ assertTrue("Confirm -b is set", cl.hasOption("b")); ref {cl} [61-61],
+ assertTrue("Confirm arg of -b", cl.getOptionValue("b").equals("toast")); ref {cl} [62-62],
+ assertTrue("Confirm size of extra args", cl.getArgList().size() == 2); ref {cl} [63-63]
+[m[m22.08.2022 - 11:39:37.059 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testSimpleLong has 5 assertions: 
+ assertTrue("Confirm -a is set", cl.hasOption("a")); ref {cl} [75-75],
+ assertTrue("Confirm -b is set", cl.hasOption("b")); ref {cl} [76-76],
+ assertTrue("Confirm arg of -b", cl.getOptionValue("b").equals("toast")); ref {cl} [77-77],
+ assertTrue("Confirm arg of --bfile", cl.getOptionValue("bfile").equals("toast")); ref {cl} [78-78],
+ assertTrue("Confirm size of extra args", cl.getArgList().size() == 2); ref {cl} [79-79]
+[m[m22.08.2022 - 11:39:37.060 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testMultiple has 7 assertions: 
+ assertTrue("Confirm -c is set", cl.hasOption("c")); ref {cl} [90-90],
+ assertTrue("Confirm  3 extra args: " + cl.getArgList().size(), cl.getArgList().size() == 3); ref {cl} [91-91],
+ assertTrue("Confirm -c is not set", !cl.hasOption("c")); ref {cl} [95-95],
+ assertTrue("Confirm -b is set", cl.hasOption("b")); ref {cl} [96-96],
+ assertTrue("Confirm arg of -b", cl.getOptionValue("b").equals("toast")); ref {cl} [97-97],
+ assertTrue("Confirm  1 extra arg: " + cl.getArgList().size(), cl.getArgList().size() == 1); ref {cl} [98-98],
+ assertTrue("Confirm  value of extra arg: " + cl.getArgList().get(0), cl.getArgList().get(0).equals("foobar")); ref {cl} [99-99]
+[m[m22.08.2022 - 11:39:37.060 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testMultipleWithLong has 7 assertions: 
+ assertTrue("Confirm -c is set", cl.hasOption("c")); ref {cl} [110-110],
+ assertTrue("Confirm  3 extra args: " + cl.getArgList().size(), cl.getArgList().size() == 3); ref {cl} [111-111],
+ assertTrue("Confirm -c is not set", !cl.hasOption("c")); ref {cl} [115-115],
+ assertTrue("Confirm -b is set", cl.hasOption("b")); ref {cl} [116-116],
+ assertTrue("Confirm arg of -b", cl.getOptionValue("b").equals("toast")); ref {cl} [117-117],
+ assertTrue("Confirm  1 extra arg: " + cl.getArgList().size(), cl.getArgList().size() == 1); ref {cl} [118-118],
+ assertTrue("Confirm  value of extra arg: " + cl.getArgList().get(0), cl.getArgList().get(0).equals("foobar")); ref {cl} [119-119]
+[m[m22.08.2022 - 11:39:37.061 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testUnrecognizedOption has 1 assertions: 
+ assertEquals("-d", e.getOption()); ref {e} [134-134]
+[m[m22.08.2022 - 11:39:37.061 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testMissingArg has 2 assertions: 
+ assertEquals("option missing an argument", "b", e.getOption().getOpt()); ref {e} [152-152],
+ assertTrue("Confirm MissingArgumentException caught", caught); ref {caught} [155-155]
+[m[m22.08.2022 - 11:39:37.062 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testDoubleDash1 has 3 assertions: 
+ assertTrue("Confirm -c is set", cl.hasOption("c")); ref {cl} [167-167],
+ assertTrue("Confirm -b is not set", !cl.hasOption("b")); ref {cl} [168-168],
+ assertTrue("Confirm 2 extra args: " + cl.getArgList().size(), cl.getArgList().size() == 2); ref {cl} [169-169]
+[m[m22.08.2022 - 11:39:37.062 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testDoubleDash2 has 2 assertions: 
+ assertNotNull("option null", e.getOption()); ref {e} [186-186],
+ assertEquals("n", e.getOption().getOpt()); ref {e} [187-187]
+[m[m22.08.2022 - 11:39:37.063 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testSingleDash has 5 assertions: 
+ assertTrue("Confirm -a is set", cl.hasOption("a")); ref {cl} [201-201],
+ assertTrue("Confirm -b is set", cl.hasOption("b")); ref {cl} [202-202],
+ assertTrue("Confirm arg of -b", cl.getOptionValue("b").equals("-")); ref {cl} [203-203],
+ assertTrue("Confirm 1 extra arg: " + cl.getArgList().size(), cl.getArgList().size() == 1); ref {cl} [204-204],
+ assertTrue("Confirm value of extra arg: " + cl.getArgList().get(0), cl.getArgList().get(0).equals("-")); ref {cl} [205-205]
+[m[m22.08.2022 - 11:39:37.063 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testStopAtUnexpectedArg has 2 assertions: 
+ assertTrue("Confirm -c is set", cl.hasOption("c")); ref {cl} [217-217],
+ assertTrue("Confirm  3 extra args: " + cl.getArgList().size(), cl.getArgList().size() == 3); ref {cl} [218-218]
+[m[m22.08.2022 - 11:39:37.063 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testStopAtExpectedArg has 3 assertions: 
+ assertTrue("Confirm -b is set", cl.hasOption('b')); ref {cl} [228-228],
+ assertEquals("Confirm -b is set", "foo", cl.getOptionValue('b')); ref {cl} [229-229],
+ assertTrue("Confirm no extra args: " + cl.getArgList().size(), cl.getArgList().size() == 0); ref {cl} [230-230]
+[m[m22.08.2022 - 11:39:37.064 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testStopAtNonOptionShort has 2 assertions: 
+ assertFalse("Confirm -a is not set", cl.hasOption("a")); ref {cl} [241-241],
+ assertTrue("Confirm  3 extra args: " + cl.getArgList().size(), cl.getArgList().size() == 3); ref {cl} [242-242]
+[m[m22.08.2022 - 11:39:37.064 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testStopAtNonOptionLong has 3 assertions: 
+ assertFalse("Confirm -a is not set", cl.hasOption("a")); ref {cl} [254-254],
+ assertFalse("Confirm -b is not set", cl.hasOption("b")); ref {cl} [255-255],
+ assertTrue("Confirm  3 extra args: " + cl.getArgList().size(), cl.getArgList().size() == 3); ref {cl} [256-256]
+[m[m22.08.2022 - 11:39:37.064 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testNegativeArgument has 1 assertions: 
+ assertEquals("-1", cl.getOptionValue("b")); ref {cl} [265-265]
+[m[m22.08.2022 - 11:39:37.065 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testNegativeOption has 1 assertions: 
+ assertEquals("-1", cl.getOptionValue("b")); ref {cl} [276-276]
+[m[m22.08.2022 - 11:39:37.065 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testArgumentStartingWithHyphen has 1 assertions: 
+ assertEquals("-foo", cl.getOptionValue("b")); ref {cl} [285-285]
+[m[m22.08.2022 - 11:39:37.065 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testShortWithEqual has 1 assertions: 
+ assertEquals("bar", cl.getOptionValue("foo")); ref {cl} [298-298]
+[m[m22.08.2022 - 11:39:37.065 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testShortWithoutEqual has 1 assertions: 
+ assertEquals("bar", cl.getOptionValue("foo")); ref {cl} [311-311]
+[m[m22.08.2022 - 11:39:37.066 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testLongWithEqualDoubleDash has 1 assertions: 
+ assertEquals("bar", cl.getOptionValue("foo")); ref {cl} [324-324]
+[m[m22.08.2022 - 11:39:37.066 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testLongWithEqualSingleDash has 1 assertions: 
+ assertEquals("bar", cl.getOptionValue("foo")); ref {cl} [337-337]
+[m[m22.08.2022 - 11:39:37.066 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testLongWithoutEqualSingleDash has 1 assertions: 
+ assertEquals("bar", cl.getOptionValue("foo")); ref {cl} [350-350]
+[m[m22.08.2022 - 11:39:37.066 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testAmbiguousLongWithoutEqualSingleDash has 3 assertions: 
+ assertTrue(cl.hasOption("b")); ref {cl} [364-364],
+ assertTrue(cl.hasOption("f")); ref {cl} [365-365],
+ assertEquals("bar", cl.getOptionValue("foo")); ref {cl} [366-366]
+[m[m22.08.2022 - 11:39:37.067 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testLongWithoutEqualDoubleDash has 1 assertions: 
+ // foo isn't expected to be recognized with a double dash
+assertFalse(cl.hasOption("foo")); ref {cl} [379-379]
+[m[m22.08.2022 - 11:39:37.067 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testLongWithUnexpectedArgument1 has 1 assertions: 
+ assertEquals("--foo=bar", e.getOption()); ref {e} [396-396]
+[m[m22.08.2022 - 11:39:37.067 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testLongWithUnexpectedArgument2 has 1 assertions: 
+ assertEquals("-foobar", e.getOption()); ref {e} [417-417]
+[m[m22.08.2022 - 11:39:37.068 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testShortWithUnexpectedArgument has 1 assertions: 
+ assertEquals("-f=bar", e.getOption()); ref {e} [438-438]
+[m[m22.08.2022 - 11:39:37.068 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testPropertiesOption1 has 8 assertions: 
+ assertNotNull("null values", values); ref {values} [456-456],
+ assertEquals("number of values", 4, values.size()); ref {values} [457-457],
+ assertEquals("value 1", "source", values.get(0)); ref {values} [458-458],
+ assertEquals("value 2", "1.5", values.get(1)); ref {values} [459-459],
+ assertEquals("value 3", "target", values.get(2)); ref {values} [460-460],
+ assertEquals("value 4", "1.5", values.get(3)); ref {values} [461-461],
+ assertEquals("Should be 1 arg left", 1, argsleft.size()); ref {argsleft} [464-464],
+ assertEquals("Expecting foo", "foo", argsleft.get(0)); ref {argsleft} [465-465]
+[m[m22.08.2022 - 11:39:37.069 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testPropertiesOption2 has 5 assertions: 
+ assertNotNull("null properties", props); ref {props} [479-479],
+ assertEquals("number of properties in " + props, 2, props.size()); ref {props} [480-480],
+ assertEquals("property 1", "true", props.getProperty("param1")); ref {props} [481-481],
+ assertEquals("property 2", "value2", props.getProperty("param2")); ref {props} [482-482],
+ assertEquals("Should be no arg left", 0, argsleft.size()); ref {argsleft} [485-485]
+[m[m22.08.2022 - 11:39:37.069 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testUnambiguousPartialLongOption1 has 1 assertions: 
+ assertTrue("Confirm --version is set", cl.hasOption("version")); ref {cl} [499-499]
+[m[m22.08.2022 - 11:39:37.069 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testUnambiguousPartialLongOption2 has 1 assertions: 
+ assertTrue("Confirm --version is set", cl.hasOption("version")); ref {cl} [513-513]
+[m[m22.08.2022 - 11:39:37.069 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testUnambiguousPartialLongOption3 has 2 assertions: 
+ assertTrue("Confirm --verbose is set", cl.hasOption("verbose")); ref {cl} [527-527],
+ assertEquals("1", cl.getOptionValue("verbose")); ref {cl} [528-528]
+[m[m22.08.2022 - 11:39:37.070 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testUnambiguousPartialLongOption4 has 2 assertions: 
+ assertTrue("Confirm --verbose is set", cl.hasOption("verbose")); ref {cl} [542-542],
+ assertEquals("1", cl.getOptionValue("verbose")); ref {cl} [543-543]
+[m[m22.08.2022 - 11:39:37.070 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testAmbiguousPartialLongOption1 has 4 assertions: 
+ assertEquals("Partial option", "--ver", e.getOption()); ref {e} [564-564],
+ assertNotNull("Matching options null", e.getMatchingOptions()); ref {e} [565-565],
+ assertEquals("Matching options size", 2, e.getMatchingOptions().size()); ref {e} [566-566],
+ assertTrue("Confirm MissingArgumentException caught", caught); ref {caught} [569-569]
+[m[m22.08.2022 - 11:39:37.070 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testAmbiguousPartialLongOption2 has 4 assertions: 
+ assertEquals("Partial option", "-ver", e.getOption()); ref {e} [590-590],
+ assertNotNull("Matching options null", e.getMatchingOptions()); ref {e} [591-591],
+ assertEquals("Matching options size", 2, e.getMatchingOptions().size()); ref {e} [592-592],
+ assertTrue("Confirm MissingArgumentException caught", caught); ref {caught} [595-595]
+[m[m22.08.2022 - 11:39:37.071 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testAmbiguousPartialLongOption3 has 4 assertions: 
+ assertEquals("Partial option", "--ver", e.getOption()); ref {e} [616-616],
+ assertNotNull("Matching options null", e.getMatchingOptions()); ref {e} [617-617],
+ assertEquals("Matching options size", 2, e.getMatchingOptions().size()); ref {e} [618-618],
+ assertTrue("Confirm MissingArgumentException caught", caught); ref {caught} [621-621]
+[m[m22.08.2022 - 11:39:37.071 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testAmbiguousPartialLongOption4 has 4 assertions: 
+ assertEquals("Partial option", "-ver", e.getOption()); ref {e} [642-642],
+ assertNotNull("Matching options null", e.getMatchingOptions()); ref {e} [643-643],
+ assertEquals("Matching options size", 2, e.getMatchingOptions().size()); ref {e} [644-644],
+ assertTrue("Confirm MissingArgumentException caught", caught); ref {caught} [647-647]
+[m[m22.08.2022 - 11:39:37.071 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testPartialLongOptionSingleDash has 2 assertions: 
+ assertTrue("Confirm --version is set", cl.hasOption("version")); ref {cl} [661-661],
+ assertTrue("Confirm -v is not set", !cl.hasOption("v")); ref {cl} [662-662]
+[m[m22.08.2022 - 11:39:37.072 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testWithRequiredOption has 4 assertions: 
+ assertTrue("Confirm -a is NOT set", !cl.hasOption("a")); ref {cl} [676-676],
+ assertTrue("Confirm -b is set", cl.hasOption("b")); ref {cl} [677-677],
+ assertTrue("Confirm arg of -b", cl.getOptionValue("b").equals("file")); ref {cl} [678-678],
+ assertTrue("Confirm NO of extra args", cl.getArgList().size() == 0); ref {cl} [679-679]
+[m[m22.08.2022 - 11:39:37.072 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testOptionAndRequiredOption has 4 assertions: 
+ assertTrue("Confirm -a is set", cl.hasOption("a")); ref {cl} [693-693],
+ assertTrue("Confirm -b is set", cl.hasOption("b")); ref {cl} [694-694],
+ assertTrue("Confirm arg of -b", cl.getOptionValue("b").equals("file")); ref {cl} [695-695],
+ assertTrue("Confirm NO of extra args", cl.getArgList().size() == 0); ref {cl} [696-696]
+[m[m22.08.2022 - 11:39:37.073 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testMissingRequiredOption has 2 assertions: 
+ assertEquals("Incorrect exception message", "Missing required option: b", e.getMessage()); ref {e} [715-715],
+ assertTrue(e.getMissingOptions().contains("b")); ref {e} [716-716]
+[m[m22.08.2022 - 11:39:37.073 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testMissingRequiredOptions has 3 assertions: 
+ assertEquals("Incorrect exception message", "Missing required options: b, c", e.getMessage()); ref {e} [741-741],
+ assertTrue(e.getMissingOptions().contains("b")); ref {e} [742-742],
+ assertTrue(e.getMissingOptions().contains("c")); ref {e} [743-743]
+[m[m22.08.2022 - 11:39:37.073 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testMissingRequiredGroup has 2 assertions: 
+ assertEquals(1, e.getMissingOptions().size()); ref {e} [770-770],
+ assertTrue(e.getMissingOptions().get(0) instanceof OptionGroup); ref {e} [771-771]
+[m[m22.08.2022 - 11:39:37.073 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testOptionGroup has 1 assertions: 
+ assertEquals("selected option", "b", group.getSelected()); ref {group} [791-791]
+[m[m22.08.2022 - 11:39:37.074 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testOptionGroupLong has 2 assertions: 
+ assertTrue(cl.hasOption("bar")); ref {cl} [806-806],
+ assertEquals("selected option", "bar", group.getSelected()); ref {group} [807-807]
+[m[m22.08.2022 - 11:39:37.074 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testReuseOptionsTwice has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.074 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testBursting has 5 assertions: 
+ assertTrue("Confirm -a is set", cl.hasOption("a")); ref {cl} [838-838],
+ assertTrue("Confirm -b is set", cl.hasOption("b")); ref {cl} [839-839],
+ assertTrue("Confirm -c is set", cl.hasOption("c")); ref {cl} [840-840],
+ assertTrue("Confirm arg of -b", cl.getOptionValue("b").equals("toast")); ref {cl} [841-841],
+ assertTrue("Confirm size of extra args", cl.getArgList().size() == 2); ref {cl} [842-842]
+[m[m22.08.2022 - 11:39:37.075 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testUnrecognizedOptionWithBursting has 1 assertions: 
+ assertEquals("-adbtoast", e.getOption()); ref {e} [857-857]
+[m[m22.08.2022 - 11:39:37.075 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testMissingArgWithBursting has 2 assertions: 
+ assertEquals("option missing an argument", "b", e.getOption().getOpt()); ref {e} [875-875],
+ assertTrue("Confirm MissingArgumentException caught", caught); ref {caught} [878-878]
+[m[m22.08.2022 - 11:39:37.075 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testStopBursting has 4 assertions: 
+ assertTrue("Confirm -a is set", cl.hasOption("a")); ref {cl} [887-887],
+ assertFalse("Confirm -c is not set", cl.hasOption("c")); ref {cl} [888-888],
+ assertTrue("Confirm  1 extra arg: " + cl.getArgList().size(), cl.getArgList().size() == 1); ref {cl} [890-890],
+ assertTrue(cl.getArgList().contains("zc")); ref {cl} [891-891]
+[m[m22.08.2022 - 11:39:37.076 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testStopBursting2 has 7 assertions: 
+ assertTrue("Confirm -c is set", cl.hasOption("c")); ref {cl} [900-900],
+ assertTrue("Confirm  2 extra args: " + cl.getArgList().size(), cl.getArgList().size() == 2); ref {cl} [901-901],
+ assertTrue("Confirm -c is not set", !cl.hasOption("c")); ref {cl} [905-905],
+ assertTrue("Confirm -b is set", cl.hasOption("b")); ref {cl} [906-906],
+ assertTrue("Confirm arg of -b", cl.getOptionValue("b").equals("toast")); ref {cl} [907-907],
+ assertTrue("Confirm  1 extra arg: " + cl.getArgList().size(), cl.getArgList().size() == 1); ref {cl} [908-908],
+ assertTrue("Confirm  value of extra arg: " + cl.getArgList().get(0), cl.getArgList().get(0).equals("foobar")); ref {cl} [909-909]
+[m[m22.08.2022 - 11:39:37.076 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testUnlimitedArgs has 4 assertions: 
+ assertTrue("Confirm -e is set", cl.hasOption("e")); ref {cl} [923-923],
+ assertEquals("number of arg for -e", 2, cl.getOptionValues("e").length); ref {cl.getOptionValues("e").length, cl} [924-924],
+ assertTrue("Confirm -f is set", cl.hasOption("f")); ref {cl} [925-925],
+ assertEquals("number of arg for -f", 1, cl.getOptionValues("f").length); ref {cl, cl.getOptionValues("f").length} [926-926]
+[m[m22.08.2022 - 11:39:37.077 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testPropertyOptionSingularValue has 3 assertions: 
+ assertTrue(cmd.hasOption("hide")); ref {cmd} [950-950],
+ assertEquals("seek", cmd.getOptionValue("hide")); ref {cmd} [951-951],
+ assertTrue(!cmd.hasOption("fake")); ref {cmd} [952-952]
+[m[m22.08.2022 - 11:39:37.077 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testPropertyOptionFlags has 14 assertions: 
+ assertTrue(cmd.hasOption("a")); ref {cmd} [969-969],
+ assertTrue(cmd.hasOption("c")); ref {cmd} [970-970],
+ assertTrue(cmd.hasOption("e")); ref {cmd} [971-971],
+ assertTrue(!cmd.hasOption("a")); ref {cmd} [980-980],
+ assertTrue(!cmd.hasOption("c")); ref {cmd} [981-981],
+ // this option accepts an argument
+assertTrue(cmd.hasOption("e")); ref {cmd} [982-982],
+ assertTrue(cmd.hasOption("a")); ref {cmd} [991-991],
+ assertTrue(!cmd.hasOption("c")); ref {cmd} [992-992],
+ assertTrue(cmd.hasOption("e")); ref {cmd} [993-993],
+ assertTrue(!cmd.hasOption("a")); ref {cmd} [1001-1001],
+ assertTrue(!cmd.hasOption("c")); ref {cmd} [1002-1002],
+ assertTrue(cmd.hasOption("e")); ref {cmd} [1003-1003],
+ assertTrue(!cmd.hasOption("a")); ref {cmd} [1011-1011],
+ assertTrue(cmd.hasOption("c")); ref {cmd} [1012-1012]
+[m[m22.08.2022 - 11:39:37.077 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testPropertyOptionMultipleValues has 2 assertions: 
+ assertTrue(cmd.hasOption("k")); ref {cmd} [1027-1027],
+ assertTrue(Arrays.equals(values, cmd.getOptionValues('k'))); ref {values, cmd, Arrays} [1028-1028]
+[m[m22.08.2022 - 11:39:37.078 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testPropertyOverrideValues has 5 assertions: 
+ assertTrue(cmd.hasOption("j")); ref {cmd} [1044-1044],
+ assertEquals("found", cmd.getOptionValue("j")); ref {cmd} [1045-1045],
+ assertTrue(cmd.hasOption("i")); ref {cmd} [1046-1046],
+ assertEquals("ink", cmd.getOptionValue("i")); ref {cmd} [1047-1047],
+ assertTrue(!cmd.hasOption("fake")); ref {cmd} [1048-1048]
+[m[m22.08.2022 - 11:39:37.078 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testPropertyOptionRequired has 1 assertions: 
+ assertTrue(cmd.hasOption("f")); ref {cmd} [1061-1061]
+[m[m22.08.2022 - 11:39:37.078 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testPropertyOptionUnexpected has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.079 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ParserTestCase::testPropertyOptionGroup has 4 assertions: 
+ assertTrue(cmd.hasOption("a")); ref {cmd} [1103-1103],
+ assertFalse(cmd.hasOption("b")); ref {cmd} [1104-1104],
+ assertTrue(cmd.hasOption("x")); ref {cmd} [1105-1105],
+ assertFalse(cmd.hasOption("y")); ref {cmd} [1106-1106]
+[m[m22.08.2022 - 11:39:37.088 [INFO ] ParsingStrategy.parseTestSuite() - Found 12 test cases
+[m[m22.08.2022 - 11:39:37.089 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValueTest::testShortNoArg has 2 assertions: 
+ assertTrue(_cl.hasOption("a")); ref {_cl} [62-62],
+ assertNull(_cl.getOptionValue("a")); ref {_cl} [63-63]
+[m[m22.08.2022 - 11:39:37.089 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValueTest::testShortWithArg has 3 assertions: 
+ assertTrue(_cl.hasOption("b")); ref {_cl} [69-69],
+ assertNotNull(_cl.getOptionValue("b")); ref {_cl} [70-70],
+ assertEquals(_cl.getOptionValue("b"), "foo"); ref {_cl} [71-71]
+[m[m22.08.2022 - 11:39:37.089 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValueTest::testLongNoArg has 2 assertions: 
+ assertTrue(_cl.hasOption("c")); ref {_cl} [77-77],
+ assertNull(_cl.getOptionValue("c")); ref {_cl} [78-78]
+[m[m22.08.2022 - 11:39:37.090 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValueTest::testLongWithArg has 3 assertions: 
+ assertTrue(_cl.hasOption("d")); ref {_cl} [84-84],
+ assertNotNull(_cl.getOptionValue("d")); ref {_cl} [85-85],
+ assertEquals(_cl.getOptionValue("d"), "bar"); ref {_cl} [86-86]
+[m[m22.08.2022 - 11:39:37.090 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValueTest::testShortOptionalArgNoValue has 2 assertions: 
+ assertTrue(cmd.hasOption("e")); ref {cmd} [96-96],
+ assertNull(cmd.getOptionValue("e")); ref {cmd} [97-97]
+[m[m22.08.2022 - 11:39:37.090 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValueTest::testShortOptionalArgValue has 2 assertions: 
+ assertTrue(cmd.hasOption("e")); ref {cmd} [107-107],
+ assertEquals("everything", cmd.getOptionValue("e")); ref {cmd} [108-108]
+[m[m22.08.2022 - 11:39:37.090 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValueTest::testLongOptionalNoValue has 2 assertions: 
+ assertTrue(cmd.hasOption("fish")); ref {cmd} [118-118],
+ assertNull(cmd.getOptionValue("fish")); ref {cmd} [119-119]
+[m[m22.08.2022 - 11:39:37.091 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValueTest::testLongOptionalArgValue has 2 assertions: 
+ assertTrue(cmd.hasOption("fish")); ref {cmd} [129-129],
+ assertEquals("face", cmd.getOptionValue("fish")); ref {cmd} [130-130]
+[m[m22.08.2022 - 11:39:37.091 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValueTest::testShortOptionalArgValues has 5 assertions: 
+ assertTrue(cmd.hasOption("j")); ref {cmd} [140-140],
+ assertEquals("ink", cmd.getOptionValue("j")); ref {cmd} [141-141],
+ assertEquals("ink", cmd.getOptionValues("j")[0]); ref {cmd} [142-142],
+ assertEquals("idea", cmd.getOptionValues("j")[1]); ref {cmd} [143-143],
+ assertEquals(cmd.getArgs().length, 0); ref {cmd.getArgs().length, cmd} [144-144]
+[m[m22.08.2022 - 11:39:37.091 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValueTest::testLongOptionalArgValues has 5 assertions: 
+ assertTrue(cmd.hasOption("gravy")); ref {cmd} [154-154],
+ assertEquals("gold", cmd.getOptionValue("gravy")); ref {cmd} [155-155],
+ assertEquals("gold", cmd.getOptionValues("gravy")[0]); ref {cmd} [156-156],
+ assertEquals("garden", cmd.getOptionValues("gravy")[1]); ref {cmd} [157-157],
+ assertEquals(cmd.getArgs().length, 0); ref {cmd.getArgs().length, cmd} [158-158]
+[m[m22.08.2022 - 11:39:37.092 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValueTest::testShortOptionalNArgValues has 7 assertions: 
+ assertTrue(cmd.hasOption("i")); ref {cmd} [168-168],
+ assertEquals("ink", cmd.getOptionValue("i")); ref {cmd} [169-169],
+ assertEquals("ink", cmd.getOptionValues("i")[0]); ref {cmd} [170-170],
+ assertEquals("idea", cmd.getOptionValues("i")[1]); ref {cmd} [171-171],
+ assertEquals(cmd.getArgs().length, 2); ref {cmd.getArgs().length, cmd} [172-172],
+ assertEquals("isotope", cmd.getArgs()[0]); ref {cmd} [173-173],
+ assertEquals("ice", cmd.getArgs()[1]); ref {cmd} [174-174]
+[m[m22.08.2022 - 11:39:37.092 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValueTest::testLongOptionalNArgValues has 6 assertions: 
+ assertTrue(cmd.hasOption("hide")); ref {cmd} [187-187],
+ assertEquals("house", cmd.getOptionValue("hide")); ref {cmd} [188-188],
+ assertEquals("house", cmd.getOptionValues("hide")[0]); ref {cmd} [189-189],
+ assertEquals("hair", cmd.getOptionValues("hide")[1]); ref {cmd} [190-190],
+ assertEquals(cmd.getArgs().length, 1); ref {cmd.getArgs().length, cmd} [191-191],
+ assertEquals("head", cmd.getArgs()[0]); ref {cmd} [192-192]
+[m[m22.08.2022 - 11:39:37.093 [INFO ] ParsingStrategy.parseTestSuite() - Found 21 test cases
+[m[m22.08.2022 - 11:39:37.093 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testDoubleDash2 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.094 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testLongWithoutEqualSingleDash has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.094 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testAmbiguousLongWithoutEqualSingleDash has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.094 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testNegativeOption has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.094 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testLongWithUnexpectedArgument1 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.094 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testLongWithUnexpectedArgument2 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.095 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testShortWithUnexpectedArgument has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.095 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testUnambiguousPartialLongOption1 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.095 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testUnambiguousPartialLongOption2 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.095 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testUnambiguousPartialLongOption3 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.095 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testUnambiguousPartialLongOption4 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.096 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testAmbiguousPartialLongOption1 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.096 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testAmbiguousPartialLongOption2 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.096 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testAmbiguousPartialLongOption3 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.096 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testAmbiguousPartialLongOption4 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.096 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testPartialLongOptionSingleDash has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.097 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testBursting has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.097 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testUnrecognizedOptionWithBursting has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.097 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testMissingArgWithBursting has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.097 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testStopBursting has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.097 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.GnuParserTest::testStopBursting2 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.098 [INFO ] ParsingStrategy.parseTestSuite() - Found 9 test cases
+[m[m22.08.2022 - 11:39:37.098 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PosixParserTest::testDoubleDash2 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.098 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PosixParserTest::testLongWithoutEqualSingleDash has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.099 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PosixParserTest::testAmbiguousLongWithoutEqualSingleDash has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.099 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PosixParserTest::testNegativeOption has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.099 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PosixParserTest::testLongWithUnexpectedArgument1 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.099 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PosixParserTest::testLongWithEqualSingleDash has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.100 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PosixParserTest::testShortWithEqual has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.100 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PosixParserTest::testUnambiguousPartialLongOption4 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.100 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PosixParserTest::testAmbiguousPartialLongOption4 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.102 [INFO ] ParsingStrategy.parseTestSuite() - Found 3 test cases
+[m[m22.08.2022 - 11:39:37.102 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ArgumentIsOptionTest::testOptionAndOptionWithArgument has 4 assertions: 
+ assertTrue("Confirm -p is set", cl.hasOption("p")); ref {cl} [50-50],
+ assertTrue("Confirm -attr is set", cl.hasOption("attr")); ref {cl} [51-51],
+ assertTrue("Confirm arg of -attr", cl.getOptionValue("attr").equals("p")); ref {cl} [52-52],
+ assertTrue("Confirm all arguments recognized", cl.getArgs().length == 0); ref {cl.getArgs().length, cl} [53-53]
+[m[m22.08.2022 - 11:39:37.103 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ArgumentIsOptionTest::testOptionWithArgument has 4 assertions: 
+ assertFalse("Confirm -p is set", cl.hasOption("p")); ref {cl} [65-65],
+ assertTrue("Confirm -attr is set", cl.hasOption("attr")); ref {cl} [66-66],
+ assertTrue("Confirm arg of -attr", cl.getOptionValue("attr").equals("p")); ref {cl} [67-68],
+ assertTrue("Confirm all arguments recognized", cl.getArgs().length == 0); ref {cl.getArgs().length, cl} [69-69]
+[m[m22.08.2022 - 11:39:37.103 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ArgumentIsOptionTest::testOption has 3 assertions: 
+ assertTrue("Confirm -p is set", cl.hasOption("p")); ref {cl} [80-80],
+ assertFalse("Confirm -attr is not set", cl.hasOption("attr")); ref {cl} [81-81],
+ assertTrue("Confirm all arguments recognized", cl.getArgs().length == 0); ref {cl.getArgs().length, cl} [82-82]
+[m[m22.08.2022 - 11:39:37.104 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m22.08.2022 - 11:39:37.104 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI133Test::testOrder has 1 assertions: 
+ assertFalse(line.hasOption(null)); ref {line} [39-39]
+[m[m22.08.2022 - 11:39:37.129 [INFO ] ParsingStrategy.parseTestSuite() - Found 25 test cases
+[m[m22.08.2022 - 11:39:37.129 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testFindWrapPos has 7 assertions: 
+ // text width should be max 8; the wrap position is 7
+assertEquals("wrap position", 7, hf.findWrapPos(text, 8, 0)); ref {text, hf} [44-44],
+ // starting from 8 must give -1 - the wrap pos is after end
+assertEquals("wrap position 2", -1, hf.findWrapPos(text, 8, 8)); ref {text, hf} [47-47],
+ assertEquals("wrap position 3", 3, hf.findWrapPos(text, 3, 0)); ref {text, hf} [51-51],
+ assertEquals("wrap position 4", 6, hf.findWrapPos(text, 6, 0)); ref {text, hf} [55-55],
+ assertEquals("wrap position 4", -1, hf.findWrapPos(text, 6, 7)); ref {text, hf} [56-56],
+ assertEquals("wrap position 5", 7, hf.findWrapPos(text, 6, 0)); ref {text, hf} [59-59],
+ assertEquals("wrap position 6", 7, hf.findWrapPos(text, 6, 0)); ref {text, hf} [62-62]
+[m[m22.08.2022 - 11:39:37.129 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testRenderWrappedTextWordCut has 1 assertions: 
+ assertEquals("cut and wrap", expected, sb.toString()); ref {expected, sb} [76-76]
+[m[m22.08.2022 - 11:39:37.130 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testRenderWrappedTextSingleLine has 1 assertions: 
+ assertEquals("single line text", expected, sb.toString()); ref {expected, sb} [91-91]
+[m[m22.08.2022 - 11:39:37.130 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testRenderWrappedTextSingleLinePadded has 1 assertions: 
+ assertEquals("single line padded text", expected, sb.toString()); ref {expected, sb} [106-106]
+[m[m22.08.2022 - 11:39:37.130 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testRenderWrappedTextSingleLinePadded2 has 1 assertions: 
+ assertEquals("single line padded text 2", expected, sb.toString()); ref {expected, sb} [123-123]
+[m[m22.08.2022 - 11:39:37.130 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testRenderWrappedTextMultiLine has 1 assertions: 
+ assertEquals("multi line text", expected, sb.toString()); ref {expected, sb} [138-138]
+[m[m22.08.2022 - 11:39:37.130 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testRenderWrappedTextMultiLinePadded has 1 assertions: 
+ assertEquals("multi-line padded text", expected, sb.toString()); ref {expected, sb} [156-156]
+[m[m22.08.2022 - 11:39:37.130 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testPrintOptions has 5 assertions: 
+ assertEquals("simple non-wrapped option", expected, sb.toString()); ref {expected, sb} [174-174],
+ assertEquals("simple wrapped option", expected, sb.toString()); ref {expected, sb} [181-181],
+ assertEquals("long non-wrapped option", expected, sb.toString()); ref {expected, sb} [188-188],
+ assertEquals("long wrapped option", expected, sb.toString()); ref {expected, sb} [195-195],
+ assertEquals("multiple wrapped options", expected, sb.toString()); ref {expected, sb} [206-206]
+[m[m22.08.2022 - 11:39:37.131 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testPrintHelpWithEmptySyntax has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.131 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testAutomaticUsage has 2 assertions: 
+ assertEquals("simple auto usage", expected, out.toString().trim()); ref {expected, out} [246-246],
+ assertEquals("simple auto usage", expected, out.toString().trim()); ref {expected, out} [254-254]
+[m[m22.08.2022 - 11:39:37.131 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testPrintUsage has 1 assertions: 
+ assertEquals("usage: app [-a] [-b] [-c]" + EOL, bytesOut.toString()); ref {EOL, bytesOut} [275-275]
+[m[m22.08.2022 - 11:39:37.131 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testPrintSortedUsage has 1 assertions: 
+ assertEquals("usage: app [-c] [-b] [-a]" + EOL, out.toString()); ref {EOL, out} [300-300]
+[m[m22.08.2022 - 11:39:37.131 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testPrintSortedUsageWithNullComparator has 1 assertions: 
+ assertEquals("usage: app [-c] [-b] [-a]" + EOL, out.toString()); ref {EOL, out} [317-317]
+[m[m22.08.2022 - 11:39:37.131 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testPrintOptionGroupUsage has 1 assertions: 
+ assertEquals("usage: app [-a | -b | -c]" + EOL, out.toString()); ref {EOL, out} [336-336]
+[m[m22.08.2022 - 11:39:37.132 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testPrintRequiredOptionGroupUsage has 1 assertions: 
+ assertEquals("usage: app -a | -b | -c" + EOL, out.toString()); ref {EOL, out} [356-356]
+[m[m22.08.2022 - 11:39:37.132 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testPrintOptionWithEmptyArgNameUsage has 1 assertions: 
+ assertEquals("usage: app -f" + EOL, out.toString()); ref {EOL, out} [374-374]
+[m[m22.08.2022 - 11:39:37.132 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testDefaultArgName has 1 assertions: 
+ assertEquals("usage: app -f <argument>" + EOL, out.toString()); ref {EOL, out} [391-391]
+[m[m22.08.2022 - 11:39:37.132 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testRtrim has 3 assertions: 
+ assertEquals(null, formatter.rtrim(null)); ref {formatter} [399-399],
+ assertEquals("", formatter.rtrim("")); ref {formatter} [400-400],
+ assertEquals("  foo", formatter.rtrim("  foo  ")); ref {formatter} [401-401]
+[m[m22.08.2022 - 11:39:37.132 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testAccessors has 8 assertions: 
+ assertEquals("arg name", "argname", formatter.getArgName()); ref {formatter} [410-410],
+ assertEquals("desc padding", 3, formatter.getDescPadding()); ref {formatter} [413-413],
+ assertEquals("left padding", 7, formatter.getLeftPadding()); ref {formatter} [416-416],
+ assertEquals("long opt prefix", "~~", formatter.getLongOptPrefix()); ref {formatter} [419-419],
+ assertEquals("new line", "\n", formatter.getNewLine()); ref {formatter} [422-422],
+ assertEquals("opt prefix", "~", formatter.getOptPrefix()); ref {formatter} [425-425],
+ assertEquals("syntax prefix", "-> ", formatter.getSyntaxPrefix()); ref {formatter} [428-428],
+ assertEquals("width", 80, formatter.getWidth()); ref {formatter} [431-431]
+[m[m22.08.2022 - 11:39:37.133 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testHeaderStartingWithLineSeparator has 1 assertions: 
+ assertEquals("usage: foobar" + EOL + "" + EOL + "Header" + EOL + "" + EOL + "Footer" + EOL, out.toString()); ref {EOL, out} [444-450]
+[m[m22.08.2022 - 11:39:37.133 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testIndentedHeaderAndFooter has 1 assertions: 
+ assertEquals("usage: foobar" + EOL + "  Header1" + EOL + "  Header2" + EOL + "" + EOL + "  Footer1" + EOL + "  Footer2" + EOL, out.toString()); ref {EOL, out} [464-471]
+[m[m22.08.2022 - 11:39:37.133 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testOptionWithoutShortFormat has 1 assertions: 
+ assertEquals("usage: foobar [-a] [--bbb] [-c]" + EOL + "  -a,--aaa  aaaaaaa" + EOL + "     --bbb  bbbbbbb" + EOL + "  -c        ccccccc" + EOL, out.toString()); ref {EOL, out} [486-491]
+[m[m22.08.2022 - 11:39:37.133 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testOptionWithoutShortFormat2 has 1 assertions: 
+ assertEquals("usage: commandline [-a <arg>] [--config <arg>] [-h] [-l <arg>] [-n] [-r <arg>]" + EOL + "       [-s <arg>] [-t] [-v]" + EOL + "header" + EOL + "  -a,--age <arg>      Age (in days) of cache item before being recomputed" + EOL + "     --config <arg>   Use the specified configuration file" + EOL + "  -h,--help           print this message" + EOL + "  -l,--limit <arg>    Set time limit for execution, in mintues" + EOL + "  -n,--new            Create NLT cache entries only for new items" + EOL + "  -r,--results <arg>  Number of results per item" + EOL + "  -s,--server <arg>   The NLT server address" + EOL + "  -t,--tracker        Create NLT cache entries only for tracker items" + EOL + "  -v,--version        print version information" + EOL + "footer" + EOL, out.toString()); ref {EOL, out} [549-563]
+[m[m22.08.2022 - 11:39:37.133 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testHelpWithLongOptSeparator has 3 assertions: 
+ assertEquals(HelpFormatter.DEFAULT_LONG_OPT_SEPARATOR, formatter.getLongOptSeparator()); ref {HelpFormatter, formatter, HelpFormatter.DEFAULT_LONG_OPT_SEPARATOR} [575-575],
+ assertEquals("=", formatter.getLongOptSeparator()); ref {formatter} [577-577],
+ assertEquals("usage: create" + EOL + "header" + EOL + "     --age=<arg>    the age" + EOL + "  -f <arg>          the file" + EOL + "  -s,--size=<SIZE>  the size" + EOL + "footer" + EOL, out.toString()); ref {EOL, out} [583-590]
+[m[m22.08.2022 - 11:39:37.134 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.HelpFormatterTest::testUsageWithLongOptSeparator has 1 assertions: 
+ assertEquals("usage: create [--age=<arg>] [-f <arg>] [-s <SIZE>]", out.toString().trim()); ref {out} [608-608]
+[m[m22.08.2022 - 11:39:37.143 [INFO ] ParsingStrategy.parseTestSuite() - Found 4 test cases
+[m[m22.08.2022 - 11:39:37.143 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI162Test::testInfiniteLoop has 1 assertions: 
+ assertEquals(expected, sw.toString()); ref {sw, expected} [63-63]
+[m[m22.08.2022 - 11:39:37.143 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI162Test::testPrintHelpLongLines has 1 assertions: 
+ assertEquals(expected, sw.toString()); ref {sw, expected} [310-310]
+[m[m22.08.2022 - 11:39:37.143 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI162Test::testLongLineChunking has 1 assertions: 
+ assertEquals("Long arguments did not split as expected", expected, sw.toString()); ref {sw, expected} [342-342]
+[m[m22.08.2022 - 11:39:37.144 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI162Test::testLongLineChunkingIndentIgnored has 1 assertions: 
+ assertEquals("Long arguments did not split as expected", expected, sw.toString()); ref {sw, expected} [360-360]
+[m[m22.08.2022 - 11:39:37.145 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m22.08.2022 - 11:39:37.145 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI13Test::testCLI13 has 4 assertions: 
+ assertEquals("true", commandLine.getOptionValue(debugOpt)); ref {debugOpt, commandLine} [49-49],
+ assertEquals("true", commandLine.getOptionValue('d')); ref {commandLine} [50-50],
+ assertTrue(commandLine.hasOption('d')); ref {commandLine} [51-51],
+ assertTrue(commandLine.hasOption(debugOpt)); ref {debugOpt, commandLine} [52-52]
+[m[m22.08.2022 - 11:39:37.146 [INFO ] ParsingStrategy.parseTestSuite() - Found 24 test cases
+[m[m22.08.2022 - 11:39:37.146 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testDoubleDash2 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.146 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testLongWithoutEqualSingleDash has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.146 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testAmbiguousLongWithoutEqualSingleDash has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.146 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testNegativeOption has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.147 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testPropertiesOption1 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.147 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testPropertiesOption2 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.147 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testShortWithEqual has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.147 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testShortWithoutEqual has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.147 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testLongWithEqualDoubleDash has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.147 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testLongWithEqualSingleDash has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.148 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testUnambiguousPartialLongOption1 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.148 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testUnambiguousPartialLongOption2 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.148 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testUnambiguousPartialLongOption3 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.148 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testUnambiguousPartialLongOption4 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.148 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testAmbiguousPartialLongOption1 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.148 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testAmbiguousPartialLongOption2 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.149 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testAmbiguousPartialLongOption3 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.149 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testAmbiguousPartialLongOption4 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.149 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testPartialLongOptionSingleDash has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.149 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testBursting has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.149 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testUnrecognizedOptionWithBursting has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.149 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testMissingArgWithBursting has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.149 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testStopBursting has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.150 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.BasicParserTest::testStopBursting2 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.151 [INFO ] ParsingStrategy.parseTestSuite() - Found 3 test cases
+[m[m22.08.2022 - 11:39:37.152 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI265Test::shouldParseShortOptionWithValue has 2 assertions: 
+ assertEquals("path/to/my/db", commandLine.getOptionValue("t1")); ref {commandLine} [61-61],
+ assertFalse(commandLine.hasOption("last")); ref {commandLine} [62-62]
+[m[m22.08.2022 - 11:39:37.152 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI265Test::shouldParseShortOptionWithoutValue has 3 assertions: 
+ assertTrue(commandLine.hasOption("t1")); ref {commandLine} [71-71],
+ assertNotEquals("Second option has been used as value for first option", "-last", commandLine.getOptionValue("t1")); ref {commandLine} [72-72],
+ assertTrue("Second option has not been detected", commandLine.hasOption("last")); ref {commandLine} [73-73]
+[m[m22.08.2022 - 11:39:37.152 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI265Test::shouldParseConcatenatedShortOptions has 5 assertions: 
+ assertTrue(commandLine.hasOption("t1")); ref {commandLine} [82-82],
+ assertNull(commandLine.getOptionValue("t1")); ref {commandLine} [83-83],
+ assertTrue(commandLine.hasOption("a")); ref {commandLine} [84-84],
+ assertTrue(commandLine.hasOption("b")); ref {commandLine} [85-85],
+ assertFalse(commandLine.hasOption("last")); ref {commandLine} [86-86]
+[m[m22.08.2022 - 11:39:37.159 [INFO ] ParsingStrategy.parseTestSuite() - Found 13 test cases
+[m[m22.08.2022 - 11:39:37.159 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionGroupTest::testSingleOptionFromGroup has 6 assertions: 
+ assertTrue("Confirm -r is NOT set", !cl.hasOption("r")); ref {cl} [71-71],
+ assertTrue("Confirm -f is set", cl.hasOption("f")); ref {cl} [72-72],
+ assertTrue("Confirm -d is NOT set", !cl.hasOption("d")); ref {cl} [73-73],
+ assertTrue("Confirm -s is NOT set", !cl.hasOption("s")); ref {cl} [74-74],
+ assertTrue("Confirm -c is NOT set", !cl.hasOption("c")); ref {cl} [75-75],
+ assertTrue("Confirm no extra args", cl.getArgList().size() == 0); ref {cl} [76-76]
+[m[m22.08.2022 - 11:39:37.160 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionGroupTest::testSingleOption has 6 assertions: 
+ assertTrue("Confirm -r is set", cl.hasOption("r")); ref {cl} [86-86],
+ assertTrue("Confirm -f is NOT set", !cl.hasOption("f")); ref {cl} [87-87],
+ assertTrue("Confirm -d is NOT set", !cl.hasOption("d")); ref {cl} [88-88],
+ assertTrue("Confirm -s is NOT set", !cl.hasOption("s")); ref {cl} [89-89],
+ assertTrue("Confirm -c is NOT set", !cl.hasOption("c")); ref {cl} [90-90],
+ assertTrue("Confirm no extra args", cl.getArgList().size() == 0); ref {cl} [91-91]
+[m[m22.08.2022 - 11:39:37.160 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionGroupTest::testTwoValidOptions has 6 assertions: 
+ assertTrue("Confirm -r is set", cl.hasOption("r")); ref {cl} [101-101],
+ assertTrue("Confirm -f is set", cl.hasOption("f")); ref {cl} [102-102],
+ assertTrue("Confirm -d is NOT set", !cl.hasOption("d")); ref {cl} [103-103],
+ assertTrue("Confirm -s is NOT set", !cl.hasOption("s")); ref {cl} [104-104],
+ assertTrue("Confirm -c is NOT set", !cl.hasOption("c")); ref {cl} [105-105],
+ assertTrue("Confirm no extra args", cl.getArgList().size() == 0); ref {cl} [106-106]
+[m[m22.08.2022 - 11:39:37.160 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionGroupTest::testSingleLongOption has 6 assertions: 
+ assertTrue("Confirm -r is NOT set", !cl.hasOption("r")); ref {cl} [116-116],
+ assertTrue("Confirm -f is set", cl.hasOption("f")); ref {cl} [117-117],
+ assertTrue("Confirm -d is NOT set", !cl.hasOption("d")); ref {cl} [118-118],
+ assertTrue("Confirm -s is NOT set", !cl.hasOption("s")); ref {cl} [119-119],
+ assertTrue("Confirm -c is NOT set", !cl.hasOption("c")); ref {cl} [120-120],
+ assertTrue("Confirm no extra args", cl.getArgList().size() == 0); ref {cl} [121-121]
+[m[m22.08.2022 - 11:39:37.160 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionGroupTest::testTwoValidLongOptions has 6 assertions: 
+ assertTrue("Confirm -r is set", cl.hasOption("r")); ref {cl} [131-131],
+ assertTrue("Confirm -f is set", cl.hasOption("f")); ref {cl} [132-132],
+ assertTrue("Confirm -d is NOT set", !cl.hasOption("d")); ref {cl} [133-133],
+ assertTrue("Confirm -s is NOT set", !cl.hasOption("s")); ref {cl} [134-134],
+ assertTrue("Confirm -c is NOT set", !cl.hasOption("c")); ref {cl} [135-135],
+ assertTrue("Confirm no extra args", cl.getArgList().size() == 0); ref {cl} [136-136]
+[m[m22.08.2022 - 11:39:37.161 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionGroupTest::testNoOptionsExtraArgs has 6 assertions: 
+ assertTrue("Confirm -r is NOT set", !cl.hasOption("r")); ref {cl} [146-146],
+ assertTrue("Confirm -f is NOT set", !cl.hasOption("f")); ref {cl} [147-147],
+ assertTrue("Confirm -d is NOT set", !cl.hasOption("d")); ref {cl} [148-148],
+ assertTrue("Confirm -s is NOT set", !cl.hasOption("s")); ref {cl} [149-149],
+ assertTrue("Confirm -c is NOT set", !cl.hasOption("c")); ref {cl} [150-150],
+ assertTrue("Confirm TWO extra args", cl.getArgList().size() == 2); ref {cl} [151-151]
+[m[m22.08.2022 - 11:39:37.161 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionGroupTest::testTwoOptionsFromGroup has 3 assertions: 
+ assertNotNull("null option group", e.getOptionGroup()); ref {e} [166-166],
+ assertEquals("selected option", "f", e.getOptionGroup().getSelected()); ref {e} [167-167],
+ assertEquals("option", "d", e.getOption().getOpt()); ref {e} [168-168]
+[m[m22.08.2022 - 11:39:37.161 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionGroupTest::testTwoLongOptionsFromGroup has 3 assertions: 
+ assertNotNull("null option group", e.getOptionGroup()); ref {e} [184-184],
+ assertEquals("selected option", "f", e.getOptionGroup().getSelected()); ref {e} [185-185],
+ assertEquals("option", "d", e.getOption().getOpt()); ref {e} [186-186]
+[m[m22.08.2022 - 11:39:37.161 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionGroupTest::testTwoOptionsFromDifferentGroup has 6 assertions: 
+ assertTrue("Confirm -r is NOT set", !cl.hasOption("r")); ref {cl} [196-196],
+ assertTrue("Confirm -f is set", cl.hasOption("f")); ref {cl} [197-197],
+ assertTrue("Confirm -d is NOT set", !cl.hasOption("d")); ref {cl} [198-198],
+ assertTrue("Confirm -s is set", cl.hasOption("s")); ref {cl} [199-199],
+ assertTrue("Confirm -c is NOT set", !cl.hasOption("c")); ref {cl} [200-200],
+ assertTrue("Confirm NO extra args", cl.getArgList().size() == 0); ref {cl} [201-201]
+[m[m22.08.2022 - 11:39:37.161 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionGroupTest::testTwoOptionsFromGroupWithProperties has 2 assertions: 
+ assertTrue(cl.hasOption("f")); ref {cl} [213-213],
+ assertTrue(!cl.hasOption("d")); ref {cl} [214-214]
+[m[m22.08.2022 - 11:39:37.162 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionGroupTest::testValidLongOnlyOptions has 2 assertions: 
+ assertTrue("Confirm --export is set", cl1.hasOption("export")); ref {cl1} [221-221],
+ assertTrue("Confirm --import is set", cl2.hasOption("import")); ref {cl2} [224-224]
+[m[m22.08.2022 - 11:39:37.162 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionGroupTest::testToString has 2 assertions: 
+ assertEquals("[--foo Foo, --bar Bar]", group1.toString()); ref {group1} [235-235],
+ assertEquals("[-f Foo, -b Bar]", group2.toString()); ref {group2} [243-243]
+[m[m22.08.2022 - 11:39:37.162 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionGroupTest::testGetNames has 4 assertions: 
+ assertNotNull("null names", group.getNames()); ref {group} [254-254],
+ assertEquals(2, group.getNames().size()); ref {group} [255-255],
+ assertTrue(group.getNames().contains("a")); ref {group} [256-256],
+ assertTrue(group.getNames().contains("b")); ref {group} [257-257]
+[m[m22.08.2022 - 11:39:37.165 [INFO ] ParsingStrategy.parseTestSuite() - Found 9 test cases
+[m[m22.08.2022 - 11:39:37.166 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionBuilderTest::testCompleteOption has 7 assertions: 
+ assertEquals("s", simple.getOpt()); ref {simple} [40-40],
+ assertEquals("simple option", simple.getLongOpt()); ref {simple} [41-41],
+ assertEquals("this is a simple option", simple.getDescription()); ref {simple} [42-42],
+ assertEquals(simple.getType(), Float.class); ref {simple} [43-43],
+ assertTrue(simple.hasArg()); ref {simple} [44-44],
+ assertTrue(simple.isRequired()); ref {simple} [45-45],
+ assertTrue(simple.hasArgs()); ref {simple} [46-46]
+[m[m22.08.2022 - 11:39:37.166 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionBuilderTest::testTwoCompleteOptions has 14 assertions: 
+ assertEquals("s", simple.getOpt()); ref {simple} [59-59],
+ assertEquals("simple option", simple.getLongOpt()); ref {simple} [60-60],
+ assertEquals("this is a simple option", simple.getDescription()); ref {simple} [61-61],
+ assertEquals(simple.getType(), Float.class); ref {simple} [62-62],
+ assertTrue(simple.hasArg()); ref {simple} [63-63],
+ assertTrue(simple.isRequired()); ref {simple} [64-64],
+ assertTrue(simple.hasArgs()); ref {simple} [65-65],
+ assertEquals("d", simple.getOpt()); ref {simple} [72-72],
+ assertEquals("dimple option", simple.getLongOpt()); ref {simple} [73-73],
+ assertEquals("this is a dimple option", simple.getDescription()); ref {simple} [74-74],
+ assertEquals(String.class, simple.getType()); ref {simple} [75-75],
+ assertTrue(simple.hasArg()); ref {simple} [76-76],
+ assertTrue(!simple.isRequired()); ref {simple} [77-77],
+ assertTrue(!simple.hasArgs()); ref {simple} [78-78]
+[m[m22.08.2022 - 11:39:37.166 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionBuilderTest::testBaseOptionCharOpt has 3 assertions: 
+ assertEquals("o", base.getOpt()); ref {base} [86-86],
+ assertEquals("option description", base.getDescription()); ref {base} [87-87],
+ assertTrue(!base.hasArg()); ref {base} [88-88]
+[m[m22.08.2022 - 11:39:37.167 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionBuilderTest::testBaseOptionStringOpt has 3 assertions: 
+ assertEquals("o", base.getOpt()); ref {base} [96-96],
+ assertEquals("option description", base.getDescription()); ref {base} [97-97],
+ assertTrue(!base.hasArg()); ref {base} [98-98]
+[m[m22.08.2022 - 11:39:37.167 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionBuilderTest::testSpecialOptChars has 2 assertions: 
+ assertEquals("?", opt1.getOpt()); ref {opt1} [106-106],
+ assertEquals("@", opt2.getOpt()); ref {opt2} [110-110]
+[m[m22.08.2022 - 11:39:37.167 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionBuilderTest::testOptionArgNumbers has 1 assertions: 
+ assertEquals(2, opt.getArgs()); ref {opt} [127-127]
+[m[m22.08.2022 - 11:39:37.167 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionBuilderTest::testIllegalOptions has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.167 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionBuilderTest::testCreateIncompleteOption has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.167 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionBuilderTest::testBuilderIsResettedAlways has 2 assertions: 
+ assertNull("we inherited a description", OptionBuilder.create('x').getDescription()); ref {OptionBuilder} [187-187],
+ assertNull("we inherited a description", OptionBuilder.create('x').getDescription()); ref {OptionBuilder} [198-198]
+[m[m22.08.2022 - 11:39:37.175 [INFO ] ParsingStrategy.parseTestSuite() - Found 5 test cases
+[m[m22.08.2022 - 11:39:37.175 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ApplicationTest::testLs has 2 assertions: 
+ assertTrue(line.hasOption("block-size")); ref {line} [64-64],
+ assertEquals(line.getOptionValue("block-size"), "10"); ref {line} [65-65]
+[m[m22.08.2022 - 11:39:37.175 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ApplicationTest::testAnt has 6 assertions: 
+ assertEquals("property", opts[0]); ref {opts} [101-101],
+ assertEquals("value", opts[1]); ref {opts} [102-102],
+ assertEquals("property1", opts[2]); ref {opts} [103-103],
+ assertEquals("value1", opts[3]); ref {opts} [104-104],
+ // check single value
+assertEquals(line.getOptionValue("buildfile"), "mybuild.xml"); ref {line} [107-107],
+ // check option
+assertTrue(line.hasOption("projecthelp")); ref {line} [110-110]
+[m[m22.08.2022 - 11:39:37.176 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ApplicationTest::testGroovy has 2 assertions: 
+ assertTrue(line.hasOption('e')); ref {line} [177-177],
+ assertEquals("println 'hello'", line.getOptionValue('e')); ref {line} [178-178]
+[m[m22.08.2022 - 11:39:37.176 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ApplicationTest::testMan has 1 assertions: 
+ assertEquals("usage: man [-c|-f|-k|-w|-tZT device] [-adlhu7V] [-Mpath]" + EOL + "           [-Ppager] [-Slist] [-msystem] [-pstring]" + EOL + "           [-Llocale] [-eextension] [section] page ..." + EOL + " -7,--ascii                display ASCII translation or" + EOL + "                           certain latin1 chars." + EOL + " -a,--all                  find all matching manual pages." + EOL + " -c,--catman               used by catman to reformat out of" + EOL + "                           date cat pages." + EOL + " -d,--debug                emit debugging messages." + EOL + " -D,--default              reset all options to their" + EOL + "                           default values." + EOL + " -e,--extension            limit search to extension type" + EOL + "                           'extension'." + EOL + " -f,--whatis               equivalent to whatis." + EOL + " -h,--help                 show this usage message." + EOL + " -k,--apropos              equivalent to apropos." + EOL + " -l,--local-file           interpret 'page' argument(s) as" + EOL + "                           local filename(s)" + EOL + " -L,--locale <arg>         define the locale for this" + EOL + "                           particular man search." + EOL + " -M,--manpath <arg>        set search path for manual pages" + EOL + "                           to 'path'." + EOL + " -m,--systems <arg>        search for man pages from other" + EOL + "                           unix system(s)." + EOL + " -P,--pager <arg>          use program 'pager' to display" + EOL + "                           output." + EOL + " -p,--preprocessor <arg>   string indicates which" + EOL + "                           preprocessor to run." + EOL + "                           e - [n]eqn  p - pic     t - tbl" + EOL + "                           g - grap    r - refer   v -" + EOL + "                           vgrind" + EOL + " -r,--prompt <arg>         provide 'less' pager with prompt." + EOL + " -S,--sections <arg>       use colon separated section list." + EOL + " -t,--troff                use troff format pages." + EOL + " -T,--troff-device <arg>   use groff with selected device." + EOL + " -u,--update               force a cache consistency check." + EOL + " -V,--version              show version." + EOL + " -w,--location             print physical location of man" + EOL + "                           page(s)." + EOL + " -Z,--ditroff              use groff with selected device." + EOL, out.toString()); ref {EOL, out} [229-269]
+[m[m22.08.2022 - 11:39:37.176 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ApplicationTest::testNLT has 6 assertions: 
+ assertTrue(line.hasOption("v")); ref {line} [333-333],
+ assertEquals(line.getOptionValue("l"), "10"); ref {line} [334-334],
+ assertEquals(line.getOptionValue("limit"), "10"); ref {line} [335-335],
+ assertEquals(line.getOptionValue("a"), "5"); ref {line} [336-336],
+ assertEquals(line.getOptionValue("age"), "5"); ref {line} [337-337],
+ assertEquals(line.getOptionValue("file"), "filename"); ref {line} [338-338]
+[m[m22.08.2022 - 11:39:37.180 [INFO ] ParsingStrategy.parseTestSuite() - Found 9 test cases
+[m[m22.08.2022 - 11:39:37.180 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionTest::testClear has 3 assertions: 
+ assertEquals(0, option.getValuesList().size()); ref {option} [50-50],
+ assertEquals(1, option.getValuesList().size()); ref {option} [52-52],
+ assertEquals(0, option.getValuesList().size()); ref {option} [54-54]
+[m[m22.08.2022 - 11:39:37.181 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionTest::testClone has 6 assertions: 
+ assertEquals(a, b); ref {a, b} [63-63],
+ assertNotSame(a, b); ref {a, b} [64-64],
+ assertEquals("", b.getDescription()); ref {b} [66-66],
+ assertEquals(1, a.getArgs()); ref {a} [70-70],
+ assertEquals(0, a.getValuesList().size()); ref {a} [71-71],
+ assertEquals(2, b.getValues().length); ref {b, b.getValues().length} [72-72]
+[m[m22.08.2022 - 11:39:37.181 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionTest::testSubclass has 2 assertions: 
+ assertEquals("myfile.txt", clone.getValue()); ref {clone} [99-99],
+ assertEquals(DefaultOption.class, clone.getClass()); ref {clone} [100-100]
+[m[m22.08.2022 - 11:39:37.181 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionTest::testHasArgName has 3 assertions: 
+ assertFalse(option.hasArgName()); ref {option} [109-109],
+ assertFalse(option.hasArgName()); ref {option} [112-112],
+ assertTrue(option.hasArgName()); ref {option} [115-115]
+[m[m22.08.2022 - 11:39:37.181 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionTest::testHasArgs has 5 assertions: 
+ assertFalse(option.hasArgs()); ref {option} [124-124],
+ assertFalse(option.hasArgs()); ref {option} [127-127],
+ assertTrue(option.hasArgs()); ref {option} [130-130],
+ assertTrue(option.hasArgs()); ref {option} [133-133],
+ assertFalse(option.hasArgs()); ref {option} [136-136]
+[m[m22.08.2022 - 11:39:37.181 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionTest::testGetValue has 5 assertions: 
+ assertEquals("default", option.getValue("default")); ref {option} [145-145],
+ assertEquals(null, option.getValue(0)); ref {option} [146-146],
+ assertEquals("foo", option.getValue()); ref {option} [150-150],
+ assertEquals("foo", option.getValue(0)); ref {option} [151-151],
+ assertEquals("foo", option.getValue("default")); ref {option} [152-152]
+[m[m22.08.2022 - 11:39:37.181 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionTest::testBuilderMethods has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.182 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionTest::testBuilderInsufficientParams1 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.182 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionTest::testBuilderInsufficientParams2 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.184 [INFO ] ParsingStrategy.parseTestSuite() - Found 7 test cases
+[m[m22.08.2022 - 11:39:37.185 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValuesTest::testShortArgs has 4 assertions: 
+ assertTrue("Option a is not set", cmd.hasOption("a")); ref {cmd} [76-76],
+ assertTrue("Option c is not set", cmd.hasOption("c")); ref {cmd} [77-77],
+ assertNull(cmd.getOptionValues("a")); ref {cmd} [79-79],
+ assertNull(cmd.getOptionValues("c")); ref {cmd} [80-80]
+[m[m22.08.2022 - 11:39:37.185 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValuesTest::testShortArgsWithValue has 6 assertions: 
+ assertTrue("Option b is not set", cmd.hasOption("b")); ref {cmd} [86-86],
+ assertTrue(cmd.getOptionValue("b").equals("foo")); ref {cmd} [87-87],
+ assertEquals(1, cmd.getOptionValues("b").length); ref {cmd, cmd.getOptionValues("b").length} [88-88],
+ assertTrue("Option d is not set", cmd.hasOption("d")); ref {cmd} [90-90],
+ assertTrue(cmd.getOptionValue("d").equals("bar")); ref {cmd} [91-91],
+ assertEquals(1, cmd.getOptionValues("d").length); ref {cmd.getOptionValues("d").length, cmd} [92-92]
+[m[m22.08.2022 - 11:39:37.185 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValuesTest::testMultipleArgValues has 2 assertions: 
+ assertTrue("Option e is not set", cmd.hasOption("e")); ref {cmd} [98-98],
+ assertArrayEquals(new String[] { "one", "two" }, cmd.getOptionValues("e")); ref {cmd} [99-99]
+[m[m22.08.2022 - 11:39:37.185 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValuesTest::testTwoArgValues has 2 assertions: 
+ assertTrue("Option g is not set", cmd.hasOption("g")); ref {cmd} [105-105],
+ assertArrayEquals(new String[] { "val1", "val2" }, cmd.getOptionValues("g")); ref {cmd} [106-106]
+[m[m22.08.2022 - 11:39:37.185 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValuesTest::testComplexValues has 3 assertions: 
+ assertTrue("Option i is not set", cmd.hasOption("i")); ref {cmd} [112-112],
+ assertTrue("Option h is not set", cmd.hasOption("h")); ref {cmd} [113-113],
+ assertArrayEquals(new String[] { "val1", "val2" }, cmd.getOptionValues("h")); ref {cmd} [114-114]
+[m[m22.08.2022 - 11:39:37.185 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValuesTest::testExtraArgs has 1 assertions: 
+ assertArrayEquals("Extra args", new String[] { "arg1", "arg2", "arg3" }, cmd.getArgs()); ref {cmd} [120-120]
+[m[m22.08.2022 - 11:39:37.186 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.ValuesTest::testCharSeparator has 12 assertions: 
+ // tests the char methods of CommandLine that delegate to the String methods
+assertTrue("Option j is not set", cmd.hasOption("j")); ref {cmd} [127-127],
+ assertTrue("Option j is not set", cmd.hasOption('j')); ref {cmd} [128-128],
+ assertArrayEquals(new String[] { "key", "value", "key", "value" }, cmd.getOptionValues("j")); ref {cmd} [129-129],
+ assertArrayEquals(new String[] { "key", "value", "key", "value" }, cmd.getOptionValues('j')); ref {cmd} [130-130],
+ assertTrue("Option k is not set", cmd.hasOption("k")); ref {cmd} [132-132],
+ assertTrue("Option k is not set", cmd.hasOption('k')); ref {cmd} [133-133],
+ assertArrayEquals(new String[] { "key1", "value1", "key2", "value2" }, cmd.getOptionValues("k")); ref {cmd} [134-134],
+ assertArrayEquals(new String[] { "key1", "value1", "key2", "value2" }, cmd.getOptionValues('k')); ref {cmd} [135-135],
+ assertTrue("Option m is not set", cmd.hasOption("m")); ref {cmd} [137-137],
+ assertTrue("Option m is not set", cmd.hasOption('m')); ref {cmd} [138-138],
+ assertArrayEquals(new String[] { "key", "value" }, cmd.getOptionValues("m")); ref {cmd} [139-139],
+ assertArrayEquals(new String[] { "key", "value" }, cmd.getOptionValues('m')); ref {cmd} [140-140]
+[m[m22.08.2022 - 11:39:37.188 [INFO ] ParsingStrategy.parseTestSuite() - Found 4 test cases
+[m[m22.08.2022 - 11:39:37.188 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.CommandLineTest::testGetOptionProperties has 7 assertions: 
+ assertNotNull("null properties", props); ref {props} [43-43],
+ assertEquals("number of properties in " + props, 4, props.size()); ref {props} [44-44],
+ assertEquals("property 1", "value1", props.getProperty("param1")); ref {props} [45-45],
+ assertEquals("property 2", "value2", props.getProperty("param2")); ref {props} [46-46],
+ assertEquals("property 3", "true", props.getProperty("param3")); ref {props} [47-47],
+ assertEquals("property 4", "value4", props.getProperty("param4")); ref {props} [48-48],
+ assertEquals("property with long format", "bar", cl.getOptionProperties("property").getProperty("foo")); ref {cl} [50-50]
+[m[m22.08.2022 - 11:39:37.189 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.CommandLineTest::testGetOptions has 3 assertions: 
+ assertNotNull(cmd.getOptions()); ref {cmd} [57-57],
+ assertEquals(0, cmd.getOptions().length); ref {cmd.getOptions().length, cmd} [58-58],
+ assertEquals(3, cmd.getOptions().length); ref {cmd.getOptions().length, cmd} [64-64]
+[m[m22.08.2022 - 11:39:37.189 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.CommandLineTest::testGetParsedOptionValue has 2 assertions: 
+ assertEquals(123, ((Number) cmd.getParsedOptionValue("i")).intValue()); ref {cmd} [76-76],
+ assertEquals("foo", cmd.getParsedOptionValue("f")); ref {cmd} [77-77]
+[m[m22.08.2022 - 11:39:37.189 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.CommandLineTest::testBuilder has 3 assertions: 
+ assertEquals("foo", cmd.getArgs()[0]); ref {cmd} [89-89],
+ assertEquals("bar", cmd.getArgList().get(1)); ref {cmd} [90-90],
+ assertEquals("T", cmd.getOptions()[0].getOpt()); ref {cmd} [91-91]
+[m[m22.08.2022 - 11:39:37.190 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m22.08.2022 - 11:39:37.190 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI18Test::testCLI18 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.193 [INFO ] ParsingStrategy.parseTestSuite() - Found 10 test cases
+[m[m22.08.2022 - 11:39:37.194 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionsTest::testSimple has 2 assertions: 
+ assertTrue(opts.hasOption("a")); ref {opts} [41-41],
+ assertTrue(opts.hasOption("b")); ref {opts} [42-42]
+[m[m22.08.2022 - 11:39:37.194 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionsTest::testDuplicateSimple has 1 assertions: 
+ assertEquals("last one in wins", "toggle -a*", opts.getOption("a").getDescription()); ref {opts} [52-52]
+[m[m22.08.2022 - 11:39:37.194 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionsTest::testLong has 2 assertions: 
+ assertTrue(opts.hasOption("a")); ref {opts} [63-63],
+ assertTrue(opts.hasOption("b")); ref {opts} [64-64]
+[m[m22.08.2022 - 11:39:37.194 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionsTest::testDuplicateLong has 1 assertions: 
+ assertEquals("last one in wins", "toggle -a*", opts.getOption("a").getDescription()); ref {opts} [73-73]
+[m[m22.08.2022 - 11:39:37.194 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionsTest::testHelpOptions has 2 assertions: 
+ assertTrue("Everything in all should be in help", helpOptions.containsAll(allOptions)); ref {allOptions, helpOptions} [104-104],
+ assertTrue("Everything in help should be in all", allOptions.containsAll(helpOptions)); ref {allOptions, helpOptions} [105-105]
+[m[m22.08.2022 - 11:39:37.194 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionsTest::testMissingOptionException has 1 assertions: 
+ assertEquals("Missing required option: f", e.getMessage()); ref {e} [120-120]
+[m[m22.08.2022 - 11:39:37.195 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionsTest::testMissingOptionsException has 1 assertions: 
+ assertEquals("Missing required options: f, x", e.getMessage()); ref {e} [137-137]
+[m[m22.08.2022 - 11:39:37.195 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionsTest::testToString has 3 assertions: 
+ assertNotNull("null string returned", s); ref {s} [149-149],
+ assertTrue("foo option missing", s.toLowerCase().contains("foo")); ref {s} [150-150],
+ assertTrue("bar option missing", s.toLowerCase().contains("bar")); ref {s} [151-151]
+[m[m22.08.2022 - 11:39:37.195 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionsTest::testGetOptionsGroups has 2 assertions: 
+ assertNotNull(options.getOptionGroups()); ref {options} [170-170],
+ assertEquals(2, options.getOptionGroups().size()); ref {options} [171-171]
+[m[m22.08.2022 - 11:39:37.195 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.OptionsTest::testGetMatchingOpts has 3 assertions: 
+ assertTrue(options.getMatchingOptions("foo").isEmpty()); ref {options} [181-181],
+ assertEquals(1, options.getMatchingOptions("version").size()); ref {options} [182-182],
+ assertEquals(2, options.getMatchingOptions("ver").size()); ref {options} [183-183]
+[m[m22.08.2022 - 11:39:37.200 [INFO ] ParsingStrategy.parseTestSuite() - Found 9 test cases
+[m[m22.08.2022 - 11:39:37.201 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PatternOptionBuilderTest::testSimplePattern has 20 assertions: 
+ assertEquals("flag a", "foo", line.getOptionValue("a")); ref {line} [49-49],
+ assertEquals("string flag a", "foo", line.getOptionObject("a")); ref {line} [50-50],
+ assertEquals("object flag b", new Vector<Object>(), line.getOptionObject("b")); ref {line} [51-51],
+ assertTrue("boolean true flag c", line.hasOption("c")); ref {line} [52-52],
+ assertFalse("boolean false flag d", line.hasOption("d")); ref {line} [53-53],
+ assertEquals("file flag e", new File("build.xml"), line.getOptionObject("e")); ref {line} [54-54],
+ assertEquals("class flag f", Calendar.class, line.getOptionObject("f")); ref {line} [55-55],
+ assertEquals("number flag n", new Double(4.5), line.getOptionObject("n")); ref {line} [56-56],
+ assertEquals("url flag t", new URL("http://commons.apache.org"), line.getOptionObject("t")); ref {line} [57-57],
+ // tests the char methods of CommandLine that delegate to the String methods
+assertEquals("flag a", "foo", line.getOptionValue('a')); ref {line} [60-60],
+ assertEquals("string flag a", "foo", line.getOptionObject('a')); ref {line} [61-61],
+ assertEquals("object flag b", new Vector<Object>(), line.getOptionObject('b')); ref {line} [62-62],
+ assertTrue("boolean true flag c", line.hasOption('c')); ref {line} [63-63],
+ assertFalse("boolean false flag d", line.hasOption('d')); ref {line} [64-64],
+ assertEquals("file flag e", new File("build.xml"), line.getOptionObject('e')); ref {line} [65-65],
+ assertEquals("class flag f", Calendar.class, line.getOptionObject('f')); ref {line} [66-66],
+ assertEquals("number flag n", new Double(4.5), line.getOptionObject('n')); ref {line} [67-67],
+ assertEquals("url flag t", new URL("http://commons.apache.org"), line.getOptionObject('t')); ref {line} [68-68],
+ assertEquals("files flag m", new File[0], line.getOptionObject('m')); ref {line} [72-72],
+ assertEquals("date flag z", new Date(1023400137276L), line.getOptionObject('z')); ref {line} [80-80]
+[m[m22.08.2022 - 11:39:37.201 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PatternOptionBuilderTest::testEmptyPattern has 1 assertions: 
+ assertTrue(options.getOptions().isEmpty()); ref {options} [91-91]
+[m[m22.08.2022 - 11:39:37.201 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PatternOptionBuilderTest::testUntypedPattern has 6 assertions: 
+ assertTrue(line.hasOption('a')); ref {line} [101-101],
+ assertNull("value a", line.getOptionObject('a')); ref {line} [102-102],
+ assertTrue(line.hasOption('b')); ref {line} [103-103],
+ assertNull("value b", line.getOptionObject('b')); ref {line} [104-104],
+ assertTrue(line.hasOption('c')); ref {line} [105-105],
+ assertNull("value c", line.getOptionObject('c')); ref {line} [106-106]
+[m[m22.08.2022 - 11:39:37.201 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PatternOptionBuilderTest::testNumberPattern has 5 assertions: 
+ assertEquals("n object class", Long.class, line.getOptionObject("n").getClass()); ref {line} [116-116],
+ assertEquals("n value", new Long(1), line.getOptionObject("n")); ref {line} [117-117],
+ assertEquals("d object class", Double.class, line.getOptionObject("d").getClass()); ref {line} [119-119],
+ assertEquals("d value", new Double(2.1), line.getOptionObject("d")); ref {line} [120-120],
+ assertNull("x object", line.getOptionObject("x")); ref {line} [122-122]
+[m[m22.08.2022 - 11:39:37.201 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PatternOptionBuilderTest::testClassPattern has 2 assertions: 
+ assertEquals("c value", Calendar.class, line.getOptionObject("c")); ref {line} [132-132],
+ assertNull("d value", line.getOptionObject("d")); ref {line} [133-133]
+[m[m22.08.2022 - 11:39:37.201 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PatternOptionBuilderTest::testObjectPattern has 3 assertions: 
+ assertEquals("o value", "", line.getOptionObject("o")); ref {line} [143-143],
+ assertNull("i value", line.getOptionObject("i")); ref {line} [144-144],
+ assertNull("n value", line.getOptionObject("n")); ref {line} [145-145]
+[m[m22.08.2022 - 11:39:37.202 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PatternOptionBuilderTest::testURLPattern has 2 assertions: 
+ assertEquals("u value", new URL("http://commons.apache.org"), line.getOptionObject("u")); ref {line} [155-155],
+ assertNull("v value", line.getOptionObject("v")); ref {line} [156-156]
+[m[m22.08.2022 - 11:39:37.202 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PatternOptionBuilderTest::testExistingFilePattern has 1 assertions: 
+ assertEquals("f value", new File("test.properties"), line.getOptionObject("f")); ref {line} [166-166]
+[m[m22.08.2022 - 11:39:37.202 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.PatternOptionBuilderTest::testRequiredOption has 2 assertions: 
+ assertEquals(1, e.getMissingOptions().size()); ref {e} [184-184],
+ assertTrue(e.getMissingOptions().contains("n")); ref {e} [185-185]
+[m[m22.08.2022 - 11:39:37.203 [INFO ] ParsingStrategy.parseTestSuite() - Found 2 test cases
+[m[m22.08.2022 - 11:39:37.203 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI266Test::testOptionComparatorDefaultOrder has 1 assertions: 
+ Assert.assertEquals(o.getOpt(), sortOrder.get(i)); ref {Assert, sortOrder, i, o} [46-46]
+[m[m22.08.2022 - 11:39:37.204 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI266Test::testOptionComparatorInsertedOrder has 1 assertions: 
+ Assert.assertEquals(o.getOpt(), insertedOrder.get(i)); ref {Assert, insertedOrder, i, o} [56-56]
+[m[m22.08.2022 - 11:39:37.204 [INFO ] ParsingStrategy.parseTestSuite() - Found 2 test cases
+[m[m22.08.2022 - 11:39:37.204 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.UtilTest::testStripLeadingHyphens has 4 assertions: 
+ assertEquals("f", Util.stripLeadingHyphens("-f")); ref {Util} [30-30],
+ assertEquals("foo", Util.stripLeadingHyphens("--foo")); ref {Util} [31-31],
+ assertEquals("-foo", Util.stripLeadingHyphens("---foo")); ref {Util} [32-32],
+ assertNull(Util.stripLeadingHyphens(null)); ref {Util} [33-33]
+[m[m22.08.2022 - 11:39:37.205 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.UtilTest::testStripLeadingAndTrailingQuotes has 5 assertions: 
+ assertEquals("foo", Util.stripLeadingAndTrailingQuotes("\"foo\"")); ref {Util} [39-39],
+ assertEquals("foo \"bar\"", Util.stripLeadingAndTrailingQuotes("foo \"bar\"")); ref {Util} [40-40],
+ assertEquals("\"foo\" bar", Util.stripLeadingAndTrailingQuotes("\"foo\" bar")); ref {Util} [41-41],
+ assertEquals("\"foo\" and \"bar\"", Util.stripLeadingAndTrailingQuotes("\"foo\" and \"bar\"")); ref {Util} [42-42],
+ assertEquals("\"", Util.stripLeadingAndTrailingQuotes("\"")); ref {Util} [43-43]
+[m[m22.08.2022 - 11:39:37.206 [INFO ] ParsingStrategy.parseTestSuite() - Found 4 test cases
+[m[m22.08.2022 - 11:39:37.206 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI71Test::testBasic has 2 assertions: 
+ assertEquals("Caesar", line.getOptionValue("a")); ref {line} [57-57],
+ assertEquals("A", line.getOptionValue("k")); ref {line} [58-58]
+[m[m22.08.2022 - 11:39:37.206 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI71Test::testMistakenArgument has 2 assertions: 
+ assertEquals("Caesar", line.getOptionValue("a")); ref {line} [67-67],
+ assertEquals("a", line.getOptionValue("k")); ref {line} [68-68]
+[m[m22.08.2022 - 11:39:37.207 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI71Test::testLackOfError has 1 assertions: 
+ assertEquals("option missing an argument", "k", e.getOption().getOpt()); ref {e} [78-78]
+[m[m22.08.2022 - 11:39:37.207 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI71Test::testGetsDefaultIfOptional has 2 assertions: 
+ assertEquals("Caesar", line.getOptionValue("a")); ref {line} [88-88],
+ assertEquals("a", line.getOptionValue('k', "a")); ref {line} [89-89]
+[m[m22.08.2022 - 11:39:37.207 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m22.08.2022 - 11:39:37.208 [INFO ] ParsingStrategy.parseTestSuite() - Found 2 test cases
+[m[m22.08.2022 - 11:39:37.208 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI148Test::testWorkaround1 has 1 assertions: 
+ assertEquals("-something", commandLine.getOptionValue('t')); ref {commandLine} [53-53]
+[m[m22.08.2022 - 11:39:37.208 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI148Test::testWorkaround2 has 1 assertions: 
+ assertEquals("-something", commandLine.getOptionValue('t')); ref {commandLine} [63-63]
+[m[m22.08.2022 - 11:39:37.208 [INFO ] ParsingStrategy.parseTestSuite() - Found 2 test cases
+[m[m22.08.2022 - 11:39:37.209 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI252Test::testExactOptionNameMatch has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.209 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugCLI252Test::testAmbiquousOptionName has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.216 [INFO ] ParsingStrategy.parseTestSuite() - Found 12 test cases
+[m[m22.08.2022 - 11:39:37.216 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugsTest::test11457 has 1 assertions: 
+ assertTrue(cmd.hasOption("verbose")); ref {cmd} [57-57]
+[m[m22.08.2022 - 11:39:37.216 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugsTest::test11458 has 10 assertions: 
+ assertEquals(values[0], "JAVA_HOME"); ref {values} [74-74],
+ assertEquals(values[1], "/opt/java"); ref {values} [75-75],
+ assertEquals(values[0], "file1"); ref {values} [79-79],
+ assertEquals(values[1], "file2"); ref {values} [80-80],
+ assertEquals(values[2], "file3"); ref {values} [81-81],
+ assertEquals(opt.getValue(0), "JAVA_HOME"); ref {opt} [90-90],
+ assertEquals(opt.getValue(1), "/opt/java"); ref {opt} [91-91],
+ assertEquals(opt.getValue(0), "file1"); ref {opt} [94-94],
+ assertEquals(opt.getValue(1), "file2"); ref {opt} [95-95],
+ assertEquals(opt.getValue(2), "file3"); ref {opt} [96-96]
+[m[m22.08.2022 - 11:39:37.216 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugsTest::test11680 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.216 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugsTest::test11456 has 2 assertions: 
+ assertEquals(cmd.getOptionValue('b'), "value"); ref {cmd} [132-132],
+ assertEquals(cmd.getOptionValue('b'), "value"); ref {cmd} [143-143]
+[m[m22.08.2022 - 11:39:37.217 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugsTest::test12210 has 2 assertions: 
+ // process the exec_op1 and exec_opt2...
+assertTrue(cmd.hasOption("exec_opt1")); ref {cmd} [190-190],
+ assertTrue(cmd.hasOption("exec_opt2")); ref {cmd} [191-191]
+[m[m22.08.2022 - 11:39:37.217 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugsTest::test13425 has 0 assertions: 
+ 
+[m[m22.08.2022 - 11:39:37.217 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugsTest::test13666 has 1 assertions: 
+ assertEquals("usage: dir" + eol + " -d <arg>   dir" + eol, bytes.toString()); ref {eol, bytes} [257-257]
+[m[m22.08.2022 - 11:39:37.217 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugsTest::test13935 has 2 assertions: 
+ assertNotNull(line); ref {line} [304-304],
+ assertNotNull(line); ref {line} [309-309]
+[m[m22.08.2022 - 11:39:37.217 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugsTest::test14786 has 1 assertions: 
+ assertTrue(line.hasOption("test")); ref {line} [325-325]
+[m[m22.08.2022 - 11:39:37.217 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugsTest::test15046 has 2 assertions: 
+ assertEquals(line.getOptionValue('z'), "c"); ref {line} [342-342],
+ assertTrue(!line.hasOption("c")); ref {line} [343-343]
+[m[m22.08.2022 - 11:39:37.217 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugsTest::test15648 has 1 assertions: 
+ assertEquals("Two Words", line.getOptionValue("m")); ref {line} [355-355]
+[m[m22.08.2022 - 11:39:37.217 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.apache.commons.cli.bug.BugsTest::test31148 has 2 assertions: 
+ assertTrue(cl.hasOption('o')); ref {cl} [373-373],
+ assertEquals("ovalue", cl.getOptionValue('o')); ref {cl} [374-374]
+[m[m22.08.2022 - 11:39:37.223 [INFO ] ParsingStrategy.mergePartialSuites() - ====================================================================
+[m[m22.08.2022 - 11:39:37.224 [INFO ] ParsingStrategy.mergePartialSuites() - Finished parsing the test suite.
+[m[m22.08.2022 - 11:39:37.225 [INFO ] ParsingStrategy.mergePartialSuites() - It contains 318 test cases and 933 assertions.
+[m[m22.08.2022 - 11:39:37.313 [INFO ] JUnitTestSuiteReducer.reduce() - Starting test suite reduction
+[m[32m22.08.2022 - 12:02:27.397 [DEBUG] GeneticReductionStrategy.reduce() - Jenetics Statistics:
+[m[32m22.08.2022 - 12:02:27.419 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m22.08.2022 - 12:02:27.419 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Time statistics                                                          |
+[m[32m22.08.2022 - 12:02:27.419 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m22.08.2022 - 12:02:27.419 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |             Selection: sum=0.126442268000 s; mean=0.001470258930 s        |
+[m[32m22.08.2022 - 12:02:27.419 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |              Altering: sum=7.859694593000 s; mean=0.091391797593 s        |
+[m[32m22.08.2022 - 12:02:27.419 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |   Fitness calculation: sum=1347.951593374000 s; mean=15.673855736907 s    |
+[m[32m22.08.2022 - 12:02:27.419 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |     Overall execution: sum=1355.930700079000 s; mean=15.766636047430 s    |
+[m[32m22.08.2022 - 12:02:27.420 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m22.08.2022 - 12:02:27.420 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Evolution statistics                                                     |
+[m[32m22.08.2022 - 12:02:27.420 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m22.08.2022 - 12:02:27.420 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |           Generations: 86                                                 |
+[m[32m22.08.2022 - 12:02:27.420 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |               Altered: sum=41,348,383; mean=480795.151162791              |
+[m[32m22.08.2022 - 12:02:27.420 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                Killed: sum=0; mean=0.000000000                            |
+[m[32m22.08.2022 - 12:02:27.420 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |              Invalids: sum=0; mean=0.000000000                            |
+[m[32m22.08.2022 - 12:02:27.420 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m22.08.2022 - 12:02:27.420 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Population statistics                                                    |
+[m[32m22.08.2022 - 12:02:27.420 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m22.08.2022 - 12:02:27.420 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                   Age: max=53; mean=2.517502; var=21.718284               |
+[m[32m22.08.2022 - 12:02:27.421 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |               Fitness:                                                    |
+[m[32m22.08.2022 - 12:02:27.421 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      min  = -1.000000000000                               |
+[m[32m22.08.2022 - 12:02:27.421 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      max  = 794.000000000000                              |
+[m[32m22.08.2022 - 12:02:27.421 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      mean = 335.525360465116                              |
+[m[32m22.08.2022 - 12:02:27.421 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      var  = 116169.020819685930                           |
+[m[32m22.08.2022 - 12:02:27.421 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      std  = 340.835768104942                              |
+[m[32m22.08.2022 - 12:02:27.421 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m22.08.2022 - 12:02:27.421 [DEBUG] GeneticReductionStrategy.reduce() - Best Result:
+[m[32m22.08.2022 - 12:02:27.425 [DEBUG] GeneticReductionStrategy.reduce() - [00110111|11111011|11111101|11010000|01011110|11111001|10001010|01000111|01011100|01010010|00111010|01110111|11111111|11111111|11111111|11111111|11111110|11111001|11001001|00011101|01011110|11111111|11111000|01100111|11111111|01101111|11111111|11111111|11111011|11111111|11111001|10110101|01111100|11100011|01110111|10000100|00111101|10100000|01100111|10000011] -> 794
+[m[32m22.08.2022 - 12:02:27.525 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShortWithArg
+[m[32m22.08.2022 - 12:02:27.525 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongNoArg
+[m[32m22.08.2022 - 12:02:27.525 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongWithArg
+[m[32m22.08.2022 - 12:02:27.525 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShortOptionalArgValue
+[m[32m22.08.2022 - 12:02:27.525 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongOptionalNoValue
+[m[32m22.08.2022 - 12:02:27.525 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShortOptionalArgValues
+[m[32m22.08.2022 - 12:02:27.525 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShortOptionalNArgValues
+[m[32m22.08.2022 - 12:02:27.525 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMultiple
+[m[32m22.08.2022 - 12:02:27.525 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMultipleWithLong
+[m[32m22.08.2022 - 12:02:27.525 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnrecognizedOption
+[m[32m22.08.2022 - 12:02:27.525 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingArg
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDoubleDash1
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSingleDash
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testStopAtExpectedArg
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testNegativeArgument
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testArgumentStartingWithHyphen
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShortWithEqual
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShortWithoutEqual
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongWithEqualDoubleDash
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongWithEqualSingleDash
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongWithoutEqualDoubleDash
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertiesOption2
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testWithRequiredOption
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingRequiredOption
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingRequiredOptions
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingRequiredGroup
+[m[32m22.08.2022 - 12:02:27.526 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOptionGroup
+[m[32m22.08.2022 - 12:02:27.527 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOptionGroupLong
+[m[32m22.08.2022 - 12:02:27.527 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testReuseOptionsTwice
+[m[32m22.08.2022 - 12:02:27.527 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionSingularValue
+[m[32m22.08.2022 - 12:02:27.527 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionFlags
+[m[32m22.08.2022 - 12:02:27.527 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionMultipleValues
+[m[32m22.08.2022 - 12:02:27.527 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOverrideValues
+[m[32m22.08.2022 - 12:02:27.527 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionRequired
+[m[32m22.08.2022 - 12:02:27.527 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionUnexpected
+[m[32m22.08.2022 - 12:02:27.527 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionGroup
+[m[32m22.08.2022 - 12:02:27.527 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSimpleShort
+[m[32m22.08.2022 - 12:02:27.527 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMultiple
+[m[32m22.08.2022 - 12:02:27.527 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnrecognizedOption
+[m[32m22.08.2022 - 12:02:27.527 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingArg
+[m[32m22.08.2022 - 12:02:27.527 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDoubleDash1
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSingleDash
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testStopAtExpectedArg
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testStopAtNonOptionShort
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testArgumentStartingWithHyphen
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongWithEqualDoubleDash
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongWithoutEqualDoubleDash
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongWithUnexpectedArgument2
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertiesOption1
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnambiguousPartialLongOption1
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testAmbiguousPartialLongOption1
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testAmbiguousPartialLongOption2
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testAmbiguousPartialLongOption3
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPartialLongOptionSingleDash
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOptionAndRequiredOption
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingRequiredOption
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingRequiredOptions
+[m[32m22.08.2022 - 12:02:27.528 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOptionGroupLong
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testReuseOptionsTwice
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testBursting
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingArgWithBursting
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testStopBursting
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testStopBursting2
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionMultipleValues
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionUnexpected
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOptionWithArgument
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOrder
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFindWrapPos
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testRenderWrappedTextWordCut
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testRenderWrappedTextSingleLine
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testRenderWrappedTextSingleLinePadded2
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testRenderWrappedTextMultiLine
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPrintOptions
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPrintHelpWithEmptySyntax
+[m[32m22.08.2022 - 12:02:27.529 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testAutomaticUsage
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPrintSortedUsage
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPrintSortedUsageWithNullComparator
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPrintOptionGroupUsage
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPrintRequiredOptionGroupUsage
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDefaultArgName
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testRtrim
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testAccessors
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testHeaderStartingWithLineSeparator
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIndentedHeaderAndFooter
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOptionWithoutShortFormat
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOptionWithoutShortFormat2
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testHelpWithLongOptSeparator
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongLineChunkingIndentIgnored
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnrecognizedOption
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingArg
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDoubleDash1
+[m[32m22.08.2022 - 12:02:27.530 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSingleDash
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testArgumentStartingWithHyphen
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongWithUnexpectedArgument1
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testWithRequiredOption
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingRequiredGroup
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOptionGroup
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnlimitedArgs
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionSingularValue
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionFlags
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOverrideValues
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionRequired
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionUnexpected
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionGroup
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping shouldParseShortOptionWithValue
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping shouldParseShortOptionWithoutValue
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSingleOptionFromGroup
+[m[32m22.08.2022 - 12:02:27.531 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTwoValidOptions
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTwoValidLongOptions
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testNoOptionsExtraArgs
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTwoOptionsFromGroup
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTwoLongOptionsFromGroup
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTwoOptionsFromDifferentGroup
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidLongOnlyOptions
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testToString
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGetNames
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTwoCompleteOptions
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIllegalOptions
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testBuilderIsResettedAlways
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testAnt
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroovy
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testClear
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testClone
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSubclass
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testHasArgName
+[m[32m22.08.2022 - 12:02:27.532 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testHasArgs
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGetValue
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testBuilderMethods
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testBuilderInsufficientParams1
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testBuilderInsufficientParams2
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShortArgs
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShortArgsWithValue
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMultipleArgValues
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExtraArgs
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCharSeparator
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGetOptions
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGetParsedOptionValue
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testBuilder
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCLI18
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSimple
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDuplicateSimple
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLong
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDuplicateLong
+[m[32m22.08.2022 - 12:02:27.533 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testHelpOptions
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingOptionException
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingOptionsException
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testToString
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGetOptionsGroups
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGetMatchingOpts
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSimplePattern
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testEmptyPattern
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUntypedPattern
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testNumberPattern
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testClassPattern
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testObjectPattern
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testURLPattern
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExistingFilePattern
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testRequiredOption
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOptionComparatorDefaultOrder
+[m[32m22.08.2022 - 12:02:27.534 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOptionComparatorInsertedOrder
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testStripLeadingAndTrailingQuotes
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testBasic
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMistakenArgument
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLackOfError
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGetsDefaultIfOptional
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSimpleShort
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSimpleLong
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMultiple
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnrecognizedOption
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingArg
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDoubleDash1
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDoubleDash2
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSingleDash
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testStopAtUnexpectedArg
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testStopAtNonOptionShort
+[m[32m22.08.2022 - 12:02:27.535 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testStopAtNonOptionLong
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testNegativeArgument
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testNegativeOption
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShortWithEqual
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShortWithoutEqual
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongWithEqualDoubleDash
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongWithoutEqualSingleDash
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testAmbiguousLongWithoutEqualSingleDash
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongWithoutEqualDoubleDash
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongWithUnexpectedArgument2
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShortWithUnexpectedArgument
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertiesOption2
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnambiguousPartialLongOption1
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnambiguousPartialLongOption2
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnambiguousPartialLongOption3
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnambiguousPartialLongOption4
+[m[32m22.08.2022 - 12:02:27.536 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testAmbiguousPartialLongOption2
+[m[32m22.08.2022 - 12:02:27.537 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testAmbiguousPartialLongOption3
+[m[32m22.08.2022 - 12:02:27.537 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testWithRequiredOption
+[m[32m22.08.2022 - 12:02:27.537 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingRequiredOption
+[m[32m22.08.2022 - 12:02:27.537 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOptionGroup
+[m[32m22.08.2022 - 12:02:27.537 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOptionGroupLong
+[m[32m22.08.2022 - 12:02:27.537 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testReuseOptionsTwice
+[m[32m22.08.2022 - 12:02:27.537 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnrecognizedOptionWithBursting
+[m[32m22.08.2022 - 12:02:27.537 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingArgWithBursting
+[m[32m22.08.2022 - 12:02:27.537 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testStopBursting
+[m[32m22.08.2022 - 12:02:27.537 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testStopBursting2
+[m[32m22.08.2022 - 12:02:27.537 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnlimitedArgs
+[m[32m22.08.2022 - 12:02:27.537 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionSingularValue
+[m[32m22.08.2022 - 12:02:27.537 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionFlags
+[m[32m22.08.2022 - 12:02:27.537 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionMultipleValues
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOverrideValues
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionRequired
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionUnexpected
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPropertyOptionGroup
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExactOptionNameMatch
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testAmbiquousOptionName
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test11457
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test11458
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test11680
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test12210
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test13425
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test13666
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test13935
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test14786
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test15648
+[m[32m22.08.2022 - 12:02:27.538 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test31148
+[m[m22.08.2022 - 12:02:27.542 [INFO ] JUnitTestSuiteReducer.reduce() - Finished test suite reduction
+[m[m22.08.2022 - 12:02:27.542 [INFO ] JUnitTestSuiteReducer.reduce() - Reduced test suite from 318 to 222 test cases: 96 redundant test cases found
+[m[m22.08.2022 - 12:02:27.544 [INFO ] JUnitTestSuiteReducer.generateReport() - Generated report and wrote it to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/tsr-report-%x%.xml
+[m[m22.08.2022 - 12:02:27.544 [INFO ] CompilationUnitExtractor.parseCompilationUnitsFromFilePath() - Collecting compilation units from File Path /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/commons-cli/src/test/java
+[m[m22.08.2022 - 12:02:27.785 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ValueTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/ValueTest.java
+[m[m22.08.2022 - 12:02:27.794 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ParserTestCase.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/ParserTestCase.java
+[m[m22.08.2022 - 12:02:27.795 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote GnuParserTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/GnuParserTest.java
+[m[m22.08.2022 - 12:02:27.796 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote PosixParserTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/PosixParserTest.java
+[m[m22.08.2022 - 12:02:27.797 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ArgumentIsOptionTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/ArgumentIsOptionTest.java
+[m[m22.08.2022 - 12:02:27.798 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BugCLI133Test.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/bug/BugCLI133Test.java
+[m[m22.08.2022 - 12:02:27.803 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote HelpFormatterTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/HelpFormatterTest.java
+[m[m22.08.2022 - 12:02:27.807 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BugCLI162Test.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/bug/BugCLI162Test.java
+[m[m22.08.2022 - 12:02:27.807 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BugCLI13Test.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/bug/BugCLI13Test.java
+[m[m22.08.2022 - 12:02:27.809 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BasicParserTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/BasicParserTest.java
+[m[m22.08.2022 - 12:02:27.810 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BugCLI265Test.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/bug/BugCLI265Test.java
+[m[m22.08.2022 - 12:02:27.812 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote OptionGroupTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/OptionGroupTest.java
+[m[m22.08.2022 - 12:02:27.813 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote OptionBuilderTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/OptionBuilderTest.java
+[m[m22.08.2022 - 12:02:27.816 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ApplicationTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/ApplicationTest.java
+[m[m22.08.2022 - 12:02:27.818 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote OptionTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/OptionTest.java
+[m[m22.08.2022 - 12:02:27.819 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ValuesTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/ValuesTest.java
+[m[m22.08.2022 - 12:02:27.820 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote CommandLineTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/CommandLineTest.java
+[m[m22.08.2022 - 12:02:27.821 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BugCLI18Test.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/bug/BugCLI18Test.java
+[m[m22.08.2022 - 12:02:27.822 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote OptionsTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/OptionsTest.java
+[m[m22.08.2022 - 12:02:27.824 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote PatternOptionBuilderTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/PatternOptionBuilderTest.java
+[m[m22.08.2022 - 12:02:27.825 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BugCLI266Test.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/bug/BugCLI266Test.java
+[m[m22.08.2022 - 12:02:27.826 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote UtilTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/UtilTest.java
+[m[m22.08.2022 - 12:02:27.827 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BugCLI71Test.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/bug/BugCLI71Test.java
+[m[m22.08.2022 - 12:02:27.827 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote DefaultParserTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/DefaultParserTest.java
+[m[m22.08.2022 - 12:02:27.828 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BugCLI148Test.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/bug/BugCLI148Test.java
+[m[m22.08.2022 - 12:02:27.829 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BugCLI252Test.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/bug/BugCLI252Test.java
+[m[m22.08.2022 - 12:02:27.832 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote BugsTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen/org/apache/commons/cli/bug/BugsTest.java
+[m[m22.08.2022 - 12:02:27.832 [INFO ] JUnitJSRFacade.logTime() - ******************************************************************
+[m[m22.08.2022 - 12:02:27.832 [INFO ] JUnitJSRFacade.logTime() - * Facade Statistics:
+[m[m22.08.2022 - 12:02:27.833 [INFO ] JUnitJSRFacade.logTime() - * Parsing took: 0.724 seconds
+[m[m22.08.2022 - 12:02:27.833 [INFO ] JUnitJSRFacade.logTime() - * Reduction took: 1370.318 seconds
+[m[m22.08.2022 - 12:02:27.833 [INFO ] JUnitJSRFacade.logTime() - * Serialization took: 0.288 seconds
+[m[m22.08.2022 - 12:02:27.833 [INFO ] JUnitJSRFacade.logTime() - * Overall: 1371.33 seconds
+[m[m22.08.2022 - 12:02:27.833 [INFO ] JUnitJSRFacade.logTime() - ******************************************************************
+[mSuccessfully reduced your test suite!
++----------------------------------- Summary -----------------------------------+
+| Test suite size: 318 test cases
++-------------------------------------------------------------------------------+
+| Found 222 relevant test cases:
+|    org.apache.commons.cli.ValueTest:testShortWithArg
+|    org.apache.commons.cli.ValueTest:testLongNoArg
+|    org.apache.commons.cli.ValueTest:testLongWithArg
+|    org.apache.commons.cli.ValueTest:testShortOptionalArgValue
+|    org.apache.commons.cli.ValueTest:testLongOptionalNoValue
+|    org.apache.commons.cli.ValueTest:testShortOptionalArgValues
+|    org.apache.commons.cli.ValueTest:testShortOptionalNArgValues
+|    org.apache.commons.cli.GnuParserTest:testMultiple
+|    org.apache.commons.cli.GnuParserTest:testMultipleWithLong
+|    org.apache.commons.cli.GnuParserTest:testUnrecognizedOption
+|    org.apache.commons.cli.GnuParserTest:testMissingArg
+|    org.apache.commons.cli.GnuParserTest:testDoubleDash1
+|    org.apache.commons.cli.GnuParserTest:testSingleDash
+|    org.apache.commons.cli.GnuParserTest:testStopAtExpectedArg
+|    org.apache.commons.cli.GnuParserTest:testNegativeArgument
+|    org.apache.commons.cli.GnuParserTest:testArgumentStartingWithHyphen
+|    org.apache.commons.cli.GnuParserTest:testShortWithEqual
+|    org.apache.commons.cli.GnuParserTest:testShortWithoutEqual
+|    org.apache.commons.cli.GnuParserTest:testLongWithEqualDoubleDash
+|    org.apache.commons.cli.GnuParserTest:testLongWithEqualSingleDash
+|    org.apache.commons.cli.GnuParserTest:testLongWithoutEqualDoubleDash
+|    org.apache.commons.cli.GnuParserTest:testPropertiesOption2
+|    org.apache.commons.cli.GnuParserTest:testWithRequiredOption
+|    org.apache.commons.cli.GnuParserTest:testMissingRequiredOption
+|    org.apache.commons.cli.GnuParserTest:testMissingRequiredOptions
+|    org.apache.commons.cli.GnuParserTest:testMissingRequiredGroup
+|    org.apache.commons.cli.GnuParserTest:testOptionGroup
+|    org.apache.commons.cli.GnuParserTest:testOptionGroupLong
+|    org.apache.commons.cli.GnuParserTest:testReuseOptionsTwice
+|    org.apache.commons.cli.GnuParserTest:testPropertyOptionSingularValue
+|    org.apache.commons.cli.GnuParserTest:testPropertyOptionFlags
+|    org.apache.commons.cli.GnuParserTest:testPropertyOptionMultipleValues
+|    org.apache.commons.cli.GnuParserTest:testPropertyOverrideValues
+|    org.apache.commons.cli.GnuParserTest:testPropertyOptionRequired
+|    org.apache.commons.cli.GnuParserTest:testPropertyOptionUnexpected
+|    org.apache.commons.cli.GnuParserTest:testPropertyOptionGroup
+|    org.apache.commons.cli.PosixParserTest:testSimpleShort
+|    org.apache.commons.cli.PosixParserTest:testMultiple
+|    org.apache.commons.cli.PosixParserTest:testUnrecognizedOption
+|    org.apache.commons.cli.PosixParserTest:testMissingArg
+|    org.apache.commons.cli.PosixParserTest:testDoubleDash1
+|    org.apache.commons.cli.PosixParserTest:testSingleDash
+|    org.apache.commons.cli.PosixParserTest:testStopAtExpectedArg
+|    org.apache.commons.cli.PosixParserTest:testStopAtNonOptionShort
+|    org.apache.commons.cli.PosixParserTest:testArgumentStartingWithHyphen
+|    org.apache.commons.cli.PosixParserTest:testLongWithEqualDoubleDash
+|    org.apache.commons.cli.PosixParserTest:testLongWithoutEqualDoubleDash
+|    org.apache.commons.cli.PosixParserTest:testLongWithUnexpectedArgument2
+|    org.apache.commons.cli.PosixParserTest:testPropertiesOption1
+|    org.apache.commons.cli.PosixParserTest:testUnambiguousPartialLongOption1
+|    org.apache.commons.cli.PosixParserTest:testAmbiguousPartialLongOption1
+|    org.apache.commons.cli.PosixParserTest:testAmbiguousPartialLongOption2
+|    org.apache.commons.cli.PosixParserTest:testAmbiguousPartialLongOption3
+|    org.apache.commons.cli.PosixParserTest:testPartialLongOptionSingleDash
+|    org.apache.commons.cli.PosixParserTest:testOptionAndRequiredOption
+|    org.apache.commons.cli.PosixParserTest:testMissingRequiredOption
+|    org.apache.commons.cli.PosixParserTest:testMissingRequiredOptions
+|    org.apache.commons.cli.PosixParserTest:testOptionGroupLong
+|    org.apache.commons.cli.PosixParserTest:testReuseOptionsTwice
+|    org.apache.commons.cli.PosixParserTest:testBursting
+|    org.apache.commons.cli.PosixParserTest:testMissingArgWithBursting
+|    org.apache.commons.cli.PosixParserTest:testStopBursting
+|    org.apache.commons.cli.PosixParserTest:testStopBursting2
+|    org.apache.commons.cli.PosixParserTest:testPropertyOptionMultipleValues
+|    org.apache.commons.cli.PosixParserTest:testPropertyOptionUnexpected
+|    org.apache.commons.cli.ArgumentIsOptionTest:testOptionWithArgument
+|    org.apache.commons.cli.bug.BugCLI133Test:testOrder
+|    org.apache.commons.cli.HelpFormatterTest:testFindWrapPos
+|    org.apache.commons.cli.HelpFormatterTest:testRenderWrappedTextWordCut
+|    org.apache.commons.cli.HelpFormatterTest:testRenderWrappedTextSingleLine
+|    org.apache.commons.cli.HelpFormatterTest:testRenderWrappedTextSingleLinePadded2
+|    org.apache.commons.cli.HelpFormatterTest:testRenderWrappedTextMultiLine
+|    org.apache.commons.cli.HelpFormatterTest:testPrintOptions
+|    org.apache.commons.cli.HelpFormatterTest:testPrintHelpWithEmptySyntax
+|    org.apache.commons.cli.HelpFormatterTest:testAutomaticUsage
+|    org.apache.commons.cli.HelpFormatterTest:testPrintSortedUsage
+|    org.apache.commons.cli.HelpFormatterTest:testPrintSortedUsageWithNullComparator
+|    org.apache.commons.cli.HelpFormatterTest:testPrintOptionGroupUsage
+|    org.apache.commons.cli.HelpFormatterTest:testPrintRequiredOptionGroupUsage
+|    org.apache.commons.cli.HelpFormatterTest:testDefaultArgName
+|    org.apache.commons.cli.HelpFormatterTest:testRtrim
+|    org.apache.commons.cli.HelpFormatterTest:testAccessors
+|    org.apache.commons.cli.HelpFormatterTest:testHeaderStartingWithLineSeparator
+|    org.apache.commons.cli.HelpFormatterTest:testIndentedHeaderAndFooter
+|    org.apache.commons.cli.HelpFormatterTest:testOptionWithoutShortFormat
+|    org.apache.commons.cli.HelpFormatterTest:testOptionWithoutShortFormat2
+|    org.apache.commons.cli.HelpFormatterTest:testHelpWithLongOptSeparator
+|    org.apache.commons.cli.bug.BugCLI162Test:testLongLineChunkingIndentIgnored
+|    org.apache.commons.cli.BasicParserTest:testUnrecognizedOption
+|    org.apache.commons.cli.BasicParserTest:testMissingArg
+|    org.apache.commons.cli.BasicParserTest:testDoubleDash1
+|    org.apache.commons.cli.BasicParserTest:testSingleDash
+|    org.apache.commons.cli.BasicParserTest:testArgumentStartingWithHyphen
+|    org.apache.commons.cli.BasicParserTest:testLongWithUnexpectedArgument1
+|    org.apache.commons.cli.BasicParserTest:testWithRequiredOption
+|    org.apache.commons.cli.BasicParserTest:testMissingRequiredGroup
+|    org.apache.commons.cli.BasicParserTest:testOptionGroup
+|    org.apache.commons.cli.BasicParserTest:testUnlimitedArgs
+|    org.apache.commons.cli.BasicParserTest:testPropertyOptionSingularValue
+|    org.apache.commons.cli.BasicParserTest:testPropertyOptionFlags
+|    org.apache.commons.cli.BasicParserTest:testPropertyOverrideValues
+|    org.apache.commons.cli.BasicParserTest:testPropertyOptionRequired
+|    org.apache.commons.cli.BasicParserTest:testPropertyOptionUnexpected
+|    org.apache.commons.cli.BasicParserTest:testPropertyOptionGroup
+|    org.apache.commons.cli.bug.BugCLI265Test:shouldParseShortOptionWithValue
+|    org.apache.commons.cli.bug.BugCLI265Test:shouldParseShortOptionWithoutValue
+|    org.apache.commons.cli.OptionGroupTest:testSingleOptionFromGroup
+|    org.apache.commons.cli.OptionGroupTest:testTwoValidOptions
+|    org.apache.commons.cli.OptionGroupTest:testTwoValidLongOptions
+|    org.apache.commons.cli.OptionGroupTest:testNoOptionsExtraArgs
+|    org.apache.commons.cli.OptionGroupTest:testTwoOptionsFromGroup
+|    org.apache.commons.cli.OptionGroupTest:testTwoLongOptionsFromGroup
+|    org.apache.commons.cli.OptionGroupTest:testTwoOptionsFromDifferentGroup
+|    org.apache.commons.cli.OptionGroupTest:testValidLongOnlyOptions
+|    org.apache.commons.cli.OptionGroupTest:testToString
+|    org.apache.commons.cli.OptionGroupTest:testGetNames
+|    org.apache.commons.cli.OptionBuilderTest:testTwoCompleteOptions
+|    org.apache.commons.cli.OptionBuilderTest:testIllegalOptions
+|    org.apache.commons.cli.OptionBuilderTest:testBuilderIsResettedAlways
+|    org.apache.commons.cli.ApplicationTest:testAnt
+|    org.apache.commons.cli.ApplicationTest:testGroovy
+|    org.apache.commons.cli.OptionTest:testClear
+|    org.apache.commons.cli.OptionTest:testClone
+|    org.apache.commons.cli.OptionTest:testSubclass
+|    org.apache.commons.cli.OptionTest:testHasArgName
+|    org.apache.commons.cli.OptionTest:testHasArgs
+|    org.apache.commons.cli.OptionTest:testGetValue
+|    org.apache.commons.cli.OptionTest:testBuilderMethods
+|    org.apache.commons.cli.OptionTest:testBuilderInsufficientParams1
+|    org.apache.commons.cli.OptionTest:testBuilderInsufficientParams2
+|    org.apache.commons.cli.ValuesTest:testShortArgs
+|    org.apache.commons.cli.ValuesTest:testShortArgsWithValue
+|    org.apache.commons.cli.ValuesTest:testMultipleArgValues
+|    org.apache.commons.cli.ValuesTest:testExtraArgs
+|    org.apache.commons.cli.ValuesTest:testCharSeparator
+|    org.apache.commons.cli.CommandLineTest:testGetOptions
+|    org.apache.commons.cli.CommandLineTest:testGetParsedOptionValue
+|    org.apache.commons.cli.CommandLineTest:testBuilder
+|    org.apache.commons.cli.bug.BugCLI18Test:testCLI18
+|    org.apache.commons.cli.OptionsTest:testSimple
+|    org.apache.commons.cli.OptionsTest:testDuplicateSimple
+|    org.apache.commons.cli.OptionsTest:testLong
+|    org.apache.commons.cli.OptionsTest:testDuplicateLong
+|    org.apache.commons.cli.OptionsTest:testHelpOptions
+|    org.apache.commons.cli.OptionsTest:testMissingOptionException
+|    org.apache.commons.cli.OptionsTest:testMissingOptionsException
+|    org.apache.commons.cli.OptionsTest:testToString
+|    org.apache.commons.cli.OptionsTest:testGetOptionsGroups
+|    org.apache.commons.cli.OptionsTest:testGetMatchingOpts
+|    org.apache.commons.cli.PatternOptionBuilderTest:testSimplePattern
+|    org.apache.commons.cli.PatternOptionBuilderTest:testEmptyPattern
+|    org.apache.commons.cli.PatternOptionBuilderTest:testUntypedPattern
+|    org.apache.commons.cli.PatternOptionBuilderTest:testNumberPattern
+|    org.apache.commons.cli.PatternOptionBuilderTest:testClassPattern
+|    org.apache.commons.cli.PatternOptionBuilderTest:testObjectPattern
+|    org.apache.commons.cli.PatternOptionBuilderTest:testURLPattern
+|    org.apache.commons.cli.PatternOptionBuilderTest:testExistingFilePattern
+|    org.apache.commons.cli.PatternOptionBuilderTest:testRequiredOption
+|    org.apache.commons.cli.bug.BugCLI266Test:testOptionComparatorDefaultOrder
+|    org.apache.commons.cli.bug.BugCLI266Test:testOptionComparatorInsertedOrder
+|    org.apache.commons.cli.UtilTest:testStripLeadingAndTrailingQuotes
+|    org.apache.commons.cli.bug.BugCLI71Test:testBasic
+|    org.apache.commons.cli.bug.BugCLI71Test:testMistakenArgument
+|    org.apache.commons.cli.bug.BugCLI71Test:testLackOfError
+|    org.apache.commons.cli.bug.BugCLI71Test:testGetsDefaultIfOptional
+|    org.apache.commons.cli.DefaultParserTest:testSimpleShort
+|    org.apache.commons.cli.DefaultParserTest:testSimpleLong
+|    org.apache.commons.cli.DefaultParserTest:testMultiple
+|    org.apache.commons.cli.DefaultParserTest:testUnrecognizedOption
+|    org.apache.commons.cli.DefaultParserTest:testMissingArg
+|    org.apache.commons.cli.DefaultParserTest:testDoubleDash1
+|    org.apache.commons.cli.DefaultParserTest:testDoubleDash2
+|    org.apache.commons.cli.DefaultParserTest:testSingleDash
+|    org.apache.commons.cli.DefaultParserTest:testStopAtUnexpectedArg
+|    org.apache.commons.cli.DefaultParserTest:testStopAtNonOptionShort
+|    org.apache.commons.cli.DefaultParserTest:testStopAtNonOptionLong
+|    org.apache.commons.cli.DefaultParserTest:testNegativeArgument
+|    org.apache.commons.cli.DefaultParserTest:testNegativeOption
+|    org.apache.commons.cli.DefaultParserTest:testShortWithEqual
+|    org.apache.commons.cli.DefaultParserTest:testShortWithoutEqual
+|    org.apache.commons.cli.DefaultParserTest:testLongWithEqualDoubleDash
+|    org.apache.commons.cli.DefaultParserTest:testLongWithoutEqualSingleDash
+|    org.apache.commons.cli.DefaultParserTest:testAmbiguousLongWithoutEqualSingleDash
+|    org.apache.commons.cli.DefaultParserTest:testLongWithoutEqualDoubleDash
+|    org.apache.commons.cli.DefaultParserTest:testLongWithUnexpectedArgument2
+|    org.apache.commons.cli.DefaultParserTest:testShortWithUnexpectedArgument
+|    org.apache.commons.cli.DefaultParserTest:testPropertiesOption2
+|    org.apache.commons.cli.DefaultParserTest:testUnambiguousPartialLongOption1
+|    org.apache.commons.cli.DefaultParserTest:testUnambiguousPartialLongOption2
+|    org.apache.commons.cli.DefaultParserTest:testUnambiguousPartialLongOption3
+|    org.apache.commons.cli.DefaultParserTest:testUnambiguousPartialLongOption4
+|    org.apache.commons.cli.DefaultParserTest:testAmbiguousPartialLongOption2
+|    org.apache.commons.cli.DefaultParserTest:testAmbiguousPartialLongOption3
+|    org.apache.commons.cli.DefaultParserTest:testWithRequiredOption
+|    org.apache.commons.cli.DefaultParserTest:testMissingRequiredOption
+|    org.apache.commons.cli.DefaultParserTest:testOptionGroup
+|    org.apache.commons.cli.DefaultParserTest:testOptionGroupLong
+|    org.apache.commons.cli.DefaultParserTest:testReuseOptionsTwice
+|    org.apache.commons.cli.DefaultParserTest:testUnrecognizedOptionWithBursting
+|    org.apache.commons.cli.DefaultParserTest:testMissingArgWithBursting
+|    org.apache.commons.cli.DefaultParserTest:testStopBursting
+|    org.apache.commons.cli.DefaultParserTest:testStopBursting2
+|    org.apache.commons.cli.DefaultParserTest:testUnlimitedArgs
+|    org.apache.commons.cli.DefaultParserTest:testPropertyOptionSingularValue
+|    org.apache.commons.cli.DefaultParserTest:testPropertyOptionFlags
+|    org.apache.commons.cli.DefaultParserTest:testPropertyOptionMultipleValues
+|    org.apache.commons.cli.DefaultParserTest:testPropertyOverrideValues
+|    org.apache.commons.cli.DefaultParserTest:testPropertyOptionRequired
+|    org.apache.commons.cli.DefaultParserTest:testPropertyOptionUnexpected
+|    org.apache.commons.cli.DefaultParserTest:testPropertyOptionGroup
+|    org.apache.commons.cli.bug.BugCLI252Test:testExactOptionNameMatch
+|    org.apache.commons.cli.bug.BugCLI252Test:testAmbiquousOptionName
+|    org.apache.commons.cli.bug.BugsTest:test11457
+|    org.apache.commons.cli.bug.BugsTest:test11458
+|    org.apache.commons.cli.bug.BugsTest:test11680
+|    org.apache.commons.cli.bug.BugsTest:test12210
+|    org.apache.commons.cli.bug.BugsTest:test13425
+|    org.apache.commons.cli.bug.BugsTest:test13666
+|    org.apache.commons.cli.bug.BugsTest:test13935
+|    org.apache.commons.cli.bug.BugsTest:test14786
+|    org.apache.commons.cli.bug.BugsTest:test15648
+|    org.apache.commons.cli.bug.BugsTest:test31148
++-------------------------------------------------------------------------------+
+| Found 96 redundant test cases:
+|    org.apache.commons.cli.ValueTest:testShortNoArg
+|    org.apache.commons.cli.ValueTest:testShortOptionalArgNoValue
+|    org.apache.commons.cli.ValueTest:testLongOptionalArgValue
+|    org.apache.commons.cli.ValueTest:testLongOptionalArgValues
+|    org.apache.commons.cli.ValueTest:testLongOptionalNArgValues
+|    org.apache.commons.cli.GnuParserTest:testSimpleShort
+|    org.apache.commons.cli.GnuParserTest:testSimpleLong
+|    org.apache.commons.cli.GnuParserTest:testStopAtUnexpectedArg
+|    org.apache.commons.cli.GnuParserTest:testStopAtNonOptionShort
+|    org.apache.commons.cli.GnuParserTest:testStopAtNonOptionLong
+|    org.apache.commons.cli.GnuParserTest:testPropertiesOption1
+|    org.apache.commons.cli.GnuParserTest:testOptionAndRequiredOption
+|    org.apache.commons.cli.GnuParserTest:testUnlimitedArgs
+|    org.apache.commons.cli.PosixParserTest:testSimpleLong
+|    org.apache.commons.cli.PosixParserTest:testMultipleWithLong
+|    org.apache.commons.cli.PosixParserTest:testStopAtUnexpectedArg
+|    org.apache.commons.cli.PosixParserTest:testStopAtNonOptionLong
+|    org.apache.commons.cli.PosixParserTest:testNegativeArgument
+|    org.apache.commons.cli.PosixParserTest:testShortWithoutEqual
+|    org.apache.commons.cli.PosixParserTest:testShortWithUnexpectedArgument
+|    org.apache.commons.cli.PosixParserTest:testPropertiesOption2
+|    org.apache.commons.cli.PosixParserTest:testUnambiguousPartialLongOption2
+|    org.apache.commons.cli.PosixParserTest:testUnambiguousPartialLongOption3
+|    org.apache.commons.cli.PosixParserTest:testWithRequiredOption
+|    org.apache.commons.cli.PosixParserTest:testMissingRequiredGroup
+|    org.apache.commons.cli.PosixParserTest:testOptionGroup
+|    org.apache.commons.cli.PosixParserTest:testUnrecognizedOptionWithBursting
+|    org.apache.commons.cli.PosixParserTest:testUnlimitedArgs
+|    org.apache.commons.cli.PosixParserTest:testPropertyOptionSingularValue
+|    org.apache.commons.cli.PosixParserTest:testPropertyOptionFlags
+|    org.apache.commons.cli.PosixParserTest:testPropertyOverrideValues
+|    org.apache.commons.cli.PosixParserTest:testPropertyOptionRequired
+|    org.apache.commons.cli.PosixParserTest:testPropertyOptionGroup
+|    org.apache.commons.cli.ArgumentIsOptionTest:testOptionAndOptionWithArgument
+|    org.apache.commons.cli.ArgumentIsOptionTest:testOption
+|    org.apache.commons.cli.HelpFormatterTest:testRenderWrappedTextSingleLinePadded
+|    org.apache.commons.cli.HelpFormatterTest:testRenderWrappedTextMultiLinePadded
+|    org.apache.commons.cli.HelpFormatterTest:testPrintUsage
+|    org.apache.commons.cli.HelpFormatterTest:testPrintOptionWithEmptyArgNameUsage
+|    org.apache.commons.cli.HelpFormatterTest:testUsageWithLongOptSeparator
+|    org.apache.commons.cli.bug.BugCLI162Test:testInfiniteLoop
+|    org.apache.commons.cli.bug.BugCLI162Test:testPrintHelpLongLines
+|    org.apache.commons.cli.bug.BugCLI162Test:testLongLineChunking
+|    org.apache.commons.cli.bug.BugCLI13Test:testCLI13
+|    org.apache.commons.cli.BasicParserTest:testSimpleShort
+|    org.apache.commons.cli.BasicParserTest:testSimpleLong
+|    org.apache.commons.cli.BasicParserTest:testMultiple
+|    org.apache.commons.cli.BasicParserTest:testMultipleWithLong
+|    org.apache.commons.cli.BasicParserTest:testStopAtUnexpectedArg
+|    org.apache.commons.cli.BasicParserTest:testStopAtExpectedArg
+|    org.apache.commons.cli.BasicParserTest:testStopAtNonOptionShort
+|    org.apache.commons.cli.BasicParserTest:testStopAtNonOptionLong
+|    org.apache.commons.cli.BasicParserTest:testNegativeArgument
+|    org.apache.commons.cli.BasicParserTest:testLongWithoutEqualDoubleDash
+|    org.apache.commons.cli.BasicParserTest:testLongWithUnexpectedArgument2
+|    org.apache.commons.cli.BasicParserTest:testShortWithUnexpectedArgument
+|    org.apache.commons.cli.BasicParserTest:testOptionAndRequiredOption
+|    org.apache.commons.cli.BasicParserTest:testMissingRequiredOption
+|    org.apache.commons.cli.BasicParserTest:testMissingRequiredOptions
+|    org.apache.commons.cli.BasicParserTest:testOptionGroupLong
+|    org.apache.commons.cli.BasicParserTest:testReuseOptionsTwice
+|    org.apache.commons.cli.BasicParserTest:testPropertyOptionMultipleValues
+|    org.apache.commons.cli.bug.BugCLI265Test:shouldParseConcatenatedShortOptions
+|    org.apache.commons.cli.OptionGroupTest:testSingleOption
+|    org.apache.commons.cli.OptionGroupTest:testSingleLongOption
+|    org.apache.commons.cli.OptionGroupTest:testTwoOptionsFromGroupWithProperties
+|    org.apache.commons.cli.OptionBuilderTest:testCompleteOption
+|    org.apache.commons.cli.OptionBuilderTest:testBaseOptionCharOpt
+|    org.apache.commons.cli.OptionBuilderTest:testBaseOptionStringOpt
+|    org.apache.commons.cli.OptionBuilderTest:testSpecialOptChars
+|    org.apache.commons.cli.OptionBuilderTest:testOptionArgNumbers
+|    org.apache.commons.cli.OptionBuilderTest:testCreateIncompleteOption
+|    org.apache.commons.cli.ApplicationTest:testLs
+|    org.apache.commons.cli.ApplicationTest:testMan
+|    org.apache.commons.cli.ApplicationTest:testNLT
+|    org.apache.commons.cli.ValuesTest:testTwoArgValues
+|    org.apache.commons.cli.ValuesTest:testComplexValues
+|    org.apache.commons.cli.CommandLineTest:testGetOptionProperties
+|    org.apache.commons.cli.UtilTest:testStripLeadingHyphens
+|    org.apache.commons.cli.DefaultParserTest:testMultipleWithLong
+|    org.apache.commons.cli.DefaultParserTest:testStopAtExpectedArg
+|    org.apache.commons.cli.DefaultParserTest:testArgumentStartingWithHyphen
+|    org.apache.commons.cli.DefaultParserTest:testLongWithEqualSingleDash
+|    org.apache.commons.cli.DefaultParserTest:testLongWithUnexpectedArgument1
+|    org.apache.commons.cli.DefaultParserTest:testPropertiesOption1
+|    org.apache.commons.cli.DefaultParserTest:testAmbiguousPartialLongOption1
+|    org.apache.commons.cli.DefaultParserTest:testAmbiguousPartialLongOption4
+|    org.apache.commons.cli.DefaultParserTest:testPartialLongOptionSingleDash
+|    org.apache.commons.cli.DefaultParserTest:testOptionAndRequiredOption
+|    org.apache.commons.cli.DefaultParserTest:testMissingRequiredOptions
+|    org.apache.commons.cli.DefaultParserTest:testMissingRequiredGroup
+|    org.apache.commons.cli.DefaultParserTest:testBursting
+|    org.apache.commons.cli.bug.BugCLI148Test:testWorkaround1
+|    org.apache.commons.cli.bug.BugCLI148Test:testWorkaround2
+|    org.apache.commons.cli.bug.BugsTest:test11456
+|    org.apache.commons.cli.bug.BugsTest:test15046
++-------------------------------------------------------------------------------+
+| Wrote reduced test suite code to: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/commons-cli/lc/genetic_0.7_0.5/gen
++-------------------------------------------------------------------------------+

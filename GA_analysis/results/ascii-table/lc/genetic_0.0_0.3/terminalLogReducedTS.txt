@@ -1,0 +1,146 @@
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+[32m21.08.2022 - 17:50:33.393 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Current absolute path is: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/ascii-table
+[m[32m21.08.2022 - 17:50:33.396 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/ascii-table/target/ascii-table-1.2.0-fat-tests.jar
+[m[32m21.08.2022 - 17:50:33.396 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to slicer: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/JSR/slicer/Slicer4J
+[m[32m21.08.2022 - 17:50:33.396 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to out dir: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/ascii-table/lc/genetic_0.0_0.3
+[m[32m21.08.2022 - 17:50:33.397 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to out logging jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/JSR/slicer/DynamicSlicingCore/DynamicSlicingLoggingClasses/DynamicSlicingLogger.jar
+[m[m21.08.2022 - 17:50:33.473 [INFO ] ParsingStrategy.parseTestSuiteFromFilePath() - Parsing test suite from File Path
+[m[m21.08.2022 - 17:50:33.473 [INFO ] CompilationUnitExtractor.parseCompilationUnitsFromFilePath() - Collecting compilation units from File Path /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/ascii-table/src/test/java
+[m[m21.08.2022 - 17:50:33.759 [INFO ] ParsingStrategy.parseTestSuite() - Found 20 test cases
+[m[m21.08.2022 - 17:50:33.761 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableDefault has 2 assertions: 
+ assertEquals(expected, actualArray); ref {actualArray, expected} [47-47],
+ assertEquals(expected, actualObjects); ref {actualObjects, expected} [48-48]
+[m[m21.08.2022 - 17:50:33.762 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableWithHeader has 2 assertions: 
+ assertEquals(expected, actualArray); ref {actualArray, expected} [79-79],
+ assertEquals(expected, actualObjects); ref {actualObjects, expected} [80-80]
+[m[m21.08.2022 - 17:50:33.762 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableWithHeaderAndFooter has 2 assertions: 
+ assertEquals(expected, actualArray); ref {actualArray, expected} [113-113],
+ assertEquals(expected, actualObjects); ref {actualObjects, expected} [114-114]
+[m[m21.08.2022 - 17:50:33.762 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableDefaultNoOutsideBorder has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [142-142]
+[m[m21.08.2022 - 17:50:33.762 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableDefaultNoDataSeparators has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [169-169]
+[m[m21.08.2022 - 17:50:33.763 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableDefaultNoDataSeparatorsNoOutsideBorders has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [194-194]
+[m[m21.08.2022 - 17:50:33.763 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableDefaultNoBorders has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [217-217]
+[m[m21.08.2022 - 17:50:33.763 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableDefaultFancyBorders has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [247-247]
+[m[m21.08.2022 - 17:50:33.763 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableWithAlignments has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [277-277]
+[m[m21.08.2022 - 17:50:33.763 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableWithMaxWidth has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [316-316]
+[m[m21.08.2022 - 17:50:33.764 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testTableWithParagraphs has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [362-362]
+[m[m21.08.2022 - 17:50:33.764 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testValidateNullInHeader has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [378-378]
+[m[m21.08.2022 - 17:50:33.764 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testValidateNullInData has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [394-394]
+[m[m21.08.2022 - 17:50:33.764 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testValidateDifferentSizedHeaderDataColumns has 2 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [414-414],
+ assertEquals(expected, actual); ref {actual, expected} [429-429]
+[m[m21.08.2022 - 17:50:33.764 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testValidateTooFewHeaderColumns has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [447-447]
+[m[m21.08.2022 - 17:50:33.765 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testObjectDataArray has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [458-458]
+[m[m21.08.2022 - 17:50:33.765 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::calculatesCorrectColumnWidthWithLineBreak has 1 assertions: 
+ assertEquals(expected, actual); ref {actual, expected} [470-470]
+[m[m21.08.2022 - 17:50:33.765 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testValidateTooFewBorderChars has 0 assertions: 
+ 
+[m[m21.08.2022 - 17:50:33.765 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testTextSplitting has 1 assertions: 
+ assertEquals(expected, AsciiTable.splitTextIntoLinesOfMaxLength(str, 12)); ref {str, expected, AsciiTable} [489-489]
+[m[m21.08.2022 - 17:50:33.766 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.AsciiTableTest::testJustify has 6 assertions: 
+ assertJustify(expected[i], string, values()[i], 14, 0); ref {string, expected, i} [498-498],
+ assertJustify(expectedWithPadding[i], string, values()[i], 14, 3); ref {string, expectedWithPadding, i} [499-499],
+ assertJustify(expectedOddLengthCenter, string, CENTER, 9, 0); ref {CENTER, expectedOddLengthCenter, string} [503-503],
+ // Justifying to same length or less is a no-op
+assertJustify(string, string, CENTER, string.length(), 0); ref {CENTER, string} [506-506],
+ assertJustify(string, string, CENTER, string.length() - 1, 0); ref {CENTER, string} [507-507],
+ // Since padding is included in length, justifying to same length with padding should be no-op
+assertJustify(string, string, CENTER, string.length(), 3); ref {CENTER, string} [510-510]
+[m[m21.08.2022 - 17:50:33.767 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m21.08.2022 - 17:50:33.767 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase com.github.freva.asciitable.LineUtilsTest::linesIteratorTest has 1 assertions: 
+ assertEquals(Arrays.asList("", "", "Some text", "", "more text", "text", "end"), LineUtils.lines("\n\nSome text\r\n\rmore text\rtext\nend").collect(Collectors.toList())); ref {Collectors, LineUtils, Arrays} [14-15]
+[m[m21.08.2022 - 17:50:33.769 [INFO ] ParsingStrategy.mergePartialSuites() - ====================================================================
+[m[m21.08.2022 - 17:50:33.769 [INFO ] ParsingStrategy.mergePartialSuites() - Finished parsing the test suite.
+[m[m21.08.2022 - 17:50:33.771 [INFO ] ParsingStrategy.mergePartialSuites() - It contains 21 test cases and 29 assertions.
+[m[m21.08.2022 - 17:50:33.791 [INFO ] JUnitTestSuiteReducer.reduce() - Starting test suite reduction
+[m[32m21.08.2022 - 17:50:45.133 [DEBUG] GeneticReductionStrategy.reduce() - Jenetics Statistics:
+[m[32m21.08.2022 - 17:50:45.151 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m21.08.2022 - 17:50:45.151 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Time statistics                                                          |
+[m[32m21.08.2022 - 17:50:45.151 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m21.08.2022 - 17:50:45.151 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |             Selection: sum=0.086770761000 s; mean=0.003213731889 s        |
+[m[32m21.08.2022 - 17:50:45.151 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |              Altering: sum=0.191779332000 s; mean=0.007102938222 s        |
+[m[32m21.08.2022 - 17:50:45.151 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |   Fitness calculation: sum=10.771427240000 s; mean=0.398941749630 s       |
+[m[32m21.08.2022 - 17:50:45.152 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |     Overall execution: sum=11.023781057000 s; mean=0.408288187296 s       |
+[m[32m21.08.2022 - 17:50:45.152 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m21.08.2022 - 17:50:45.152 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Evolution statistics                                                     |
+[m[32m21.08.2022 - 17:50:45.152 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m21.08.2022 - 17:50:45.152 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |           Generations: 27                                                 |
+[m[32m21.08.2022 - 17:50:45.152 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |               Altered: sum=511,525; mean=18945.370370370                  |
+[m[32m21.08.2022 - 17:50:45.152 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                Killed: sum=0; mean=0.000000000                            |
+[m[32m21.08.2022 - 17:50:45.152 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |              Invalids: sum=0; mean=0.000000000                            |
+[m[32m21.08.2022 - 17:50:45.152 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m21.08.2022 - 17:50:45.152 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Population statistics                                                    |
+[m[32m21.08.2022 - 17:50:45.152 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m21.08.2022 - 17:50:45.153 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                   Age: max=26; mean=2.109244; var=8.561062                |
+[m[32m21.08.2022 - 17:50:45.153 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |               Fitness:                                                    |
+[m[32m21.08.2022 - 17:50:45.153 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      min  = -1.000000000000                               |
+[m[32m21.08.2022 - 17:50:45.153 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      max  = 189.000000000000                              |
+[m[32m21.08.2022 - 17:50:45.153 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      mean = 101.327703703704                              |
+[m[32m21.08.2022 - 17:50:45.153 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      var  = 3451.303656976334                             |
+[m[32m21.08.2022 - 17:50:45.153 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      std  = 58.747797039347                               |
+[m[32m21.08.2022 - 17:50:45.153 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m21.08.2022 - 17:50:45.153 [DEBUG] GeneticReductionStrategy.reduce() - Best Result:
+[m[32m21.08.2022 - 17:50:45.154 [DEBUG] GeneticReductionStrategy.reduce() - [00000100|11100010|00000110] -> 189
+[m[32m21.08.2022 - 17:50:45.156 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTableWithAlignments
+[m[32m21.08.2022 - 17:50:45.156 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTableWithParagraphs
+[m[32m21.08.2022 - 17:50:45.156 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateDifferentSizedHeaderDataColumns
+[m[32m21.08.2022 - 17:50:45.157 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testObjectDataArray
+[m[32m21.08.2022 - 17:50:45.157 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateTooFewBorderChars
+[m[32m21.08.2022 - 17:50:45.157 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTextSplitting
+[m[32m21.08.2022 - 17:50:45.157 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testJustify
+[m[m21.08.2022 - 17:50:45.157 [INFO ] JUnitTestSuiteReducer.reduce() - Finished test suite reduction
+[m[m21.08.2022 - 17:50:45.157 [INFO ] JUnitTestSuiteReducer.reduce() - Reduced test suite from 21 to 7 test cases: 14 redundant test cases found
+[m[m21.08.2022 - 17:50:45.159 [INFO ] JUnitTestSuiteReducer.generateReport() - Generated report and wrote it to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/ascii-table/lc/genetic_0.0_0.3/tsr-report-%x%.xml
+[m[m21.08.2022 - 17:50:45.159 [INFO ] CompilationUnitExtractor.parseCompilationUnitsFromFilePath() - Collecting compilation units from File Path /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/ascii-table/src/test/java
+[m[m21.08.2022 - 17:50:45.263 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote AsciiTableTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/ascii-table/lc/genetic_0.0_0.3/gen/com/github/freva/asciitable/AsciiTableTest.java
+[m[m21.08.2022 - 17:50:45.264 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote LineUtilsTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/ascii-table/lc/genetic_0.0_0.3/gen/com/github/freva/asciitable/LineUtilsTest.java
+[m[m21.08.2022 - 17:50:45.264 [INFO ] JUnitJSRFacade.logTime() - ******************************************************************
+[m[m21.08.2022 - 17:50:45.264 [INFO ] JUnitJSRFacade.logTime() - * Facade Statistics:
+[m[m21.08.2022 - 17:50:45.265 [INFO ] JUnitJSRFacade.logTime() - * Parsing took: 0.298 seconds
+[m[m21.08.2022 - 17:50:45.265 [INFO ] JUnitJSRFacade.logTime() - * Reduction took: 11.388 seconds
+[m[m21.08.2022 - 17:50:45.265 [INFO ] JUnitJSRFacade.logTime() - * Serialization took: 0.105 seconds
+[m[m21.08.2022 - 17:50:45.265 [INFO ] JUnitJSRFacade.logTime() - * Overall: 11.791 seconds
+[m[m21.08.2022 - 17:50:45.265 [INFO ] JUnitJSRFacade.logTime() - ******************************************************************
+[mSuccessfully reduced your test suite!
++----------------------------------- Summary -----------------------------------+
+| Test suite size: 21 test cases
++-------------------------------------------------------------------------------+
+| Found 7 relevant test cases:
+|    com.github.freva.asciitable.AsciiTableTest:testTableWithAlignments
+|    com.github.freva.asciitable.AsciiTableTest:testTableWithParagraphs
+|    com.github.freva.asciitable.AsciiTableTest:testValidateDifferentSizedHeaderDataColumns
+|    com.github.freva.asciitable.AsciiTableTest:testObjectDataArray
+|    com.github.freva.asciitable.AsciiTableTest:testValidateTooFewBorderChars
+|    com.github.freva.asciitable.AsciiTableTest:testTextSplitting
+|    com.github.freva.asciitable.AsciiTableTest:testJustify
++-------------------------------------------------------------------------------+
+| Found 14 redundant test cases:
+|    com.github.freva.asciitable.AsciiTableTest:testTableDefault
+|    com.github.freva.asciitable.AsciiTableTest:testTableWithHeader
+|    com.github.freva.asciitable.AsciiTableTest:testTableWithHeaderAndFooter
+|    com.github.freva.asciitable.AsciiTableTest:testTableDefaultNoOutsideBorder
+|    com.github.freva.asciitable.AsciiTableTest:testTableDefaultNoDataSeparators
+|    com.github.freva.asciitable.AsciiTableTest:testTableDefaultNoDataSeparatorsNoOutsideBorders
+|    com.github.freva.asciitable.AsciiTableTest:testTableDefaultNoBorders
+|    com.github.freva.asciitable.AsciiTableTest:testTableDefaultFancyBorders
+|    com.github.freva.asciitable.AsciiTableTest:testTableWithMaxWidth
+|    com.github.freva.asciitable.AsciiTableTest:testValidateNullInHeader
+|    com.github.freva.asciitable.AsciiTableTest:testValidateNullInData
+|    com.github.freva.asciitable.AsciiTableTest:testValidateTooFewHeaderColumns
+|    com.github.freva.asciitable.AsciiTableTest:calculatesCorrectColumnWidthWithLineBreak
+|    com.github.freva.asciitable.LineUtilsTest:linesIteratorTest
++-------------------------------------------------------------------------------+
+| Wrote reduced test suite code to: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/ascii-table/lc/genetic_0.0_0.3/gen
++-------------------------------------------------------------------------------+

@@ -1,0 +1,340 @@
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+[32m23.08.2022 - 08:26:55.286 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Current absolute path is: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/json-simple
+[m[32m23.08.2022 - 08:26:55.289 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/json-simple/target/json-simple-1.1.1-fat-tests.jar
+[m[32m23.08.2022 - 08:26:55.289 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to slicer: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/JSR/slicer/Slicer4J
+[m[32m23.08.2022 - 08:26:55.290 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to out dir: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/json-simple/lc/genetic_0.5_0.8
+[m[32m23.08.2022 - 08:26:55.290 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to out logging jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/JSR/slicer/DynamicSlicingCore/DynamicSlicingLoggingClasses/DynamicSlicingLogger.jar
+[m[m23.08.2022 - 08:26:55.370 [INFO ] ParsingStrategy.parseTestSuiteFromFilePath() - Parsing test suite from File Path
+[m[m23.08.2022 - 08:26:55.370 [INFO ] CompilationUnitExtractor.parseCompilationUnitsFromFilePath() - Collecting compilation units from File Path /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/json-simple/src/test/java
+[m[m23.08.2022 - 08:26:55.628 [INFO ] ParsingStrategy.parseTestSuite() - Found 10 test cases
+[m[m23.08.2022 - 08:26:55.630 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONValueTest::testByteArrayToString has 8 assertions: 
+ assertEquals("null", JSONValue.toJSONString((byte[]) null)); ref {JSONValue} [15-15],
+ assertEquals("[]", JSONValue.toJSONString(new byte[0])); ref {JSONValue} [16-16],
+ assertEquals("[12]", JSONValue.toJSONString(new byte[] { 12 })); ref {JSONValue} [17-17],
+ assertEquals("[-7,22,86,-99]", JSONValue.toJSONString(new byte[] { -7, 22, 86, -99 })); ref {JSONValue} [18-18],
+ assertEquals("null", writer.toString()); ref {writer} [24-24],
+ assertEquals("[]", writer.toString()); ref {writer} [28-28],
+ assertEquals("[12]", writer.toString()); ref {writer} [32-32],
+ assertEquals("[-7,22,86,-99]", writer.toString()); ref {writer} [36-36]
+[m[m23.08.2022 - 08:26:55.630 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONValueTest::testShortArrayToString has 8 assertions: 
+ assertEquals("null", JSONValue.toJSONString((short[]) null)); ref {JSONValue} [41-41],
+ assertEquals("[]", JSONValue.toJSONString(new short[0])); ref {JSONValue} [42-42],
+ assertEquals("[12]", JSONValue.toJSONString(new short[] { 12 })); ref {JSONValue} [43-43],
+ assertEquals("[-7,22,86,-99]", JSONValue.toJSONString(new short[] { -7, 22, 86, -99 })); ref {JSONValue} [44-44],
+ assertEquals("null", writer.toString()); ref {writer} [50-50],
+ assertEquals("[]", writer.toString()); ref {writer} [54-54],
+ assertEquals("[12]", writer.toString()); ref {writer} [58-58],
+ assertEquals("[-7,22,86,-99]", writer.toString()); ref {writer} [62-62]
+[m[m23.08.2022 - 08:26:55.631 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONValueTest::testIntArrayToString has 8 assertions: 
+ assertEquals("null", JSONValue.toJSONString((int[]) null)); ref {JSONValue} [67-67],
+ assertEquals("[]", JSONValue.toJSONString(new int[0])); ref {JSONValue} [68-68],
+ assertEquals("[12]", JSONValue.toJSONString(new int[] { 12 })); ref {JSONValue} [69-69],
+ assertEquals("[-7,22,86,-99]", JSONValue.toJSONString(new int[] { -7, 22, 86, -99 })); ref {JSONValue} [70-70],
+ assertEquals("null", writer.toString()); ref {writer} [76-76],
+ assertEquals("[]", writer.toString()); ref {writer} [80-80],
+ assertEquals("[12]", writer.toString()); ref {writer} [84-84],
+ assertEquals("[-7,22,86,-99]", writer.toString()); ref {writer} [88-88]
+[m[m23.08.2022 - 08:26:55.631 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONValueTest::testLongArrayToString has 8 assertions: 
+ assertEquals("null", JSONValue.toJSONString((long[]) null)); ref {JSONValue} [93-93],
+ assertEquals("[]", JSONValue.toJSONString(new long[0])); ref {JSONValue} [94-94],
+ assertEquals("[12]", JSONValue.toJSONString(new long[] { 12 })); ref {JSONValue} [95-95],
+ assertEquals("[-7,22,9223372036854775807,-99]", JSONValue.toJSONString(new long[] { -7, 22, 9223372036854775807L, -99 })); ref {JSONValue} [96-96],
+ assertEquals("null", writer.toString()); ref {writer} [102-102],
+ assertEquals("[]", writer.toString()); ref {writer} [106-106],
+ assertEquals("[12]", writer.toString()); ref {writer} [110-110],
+ assertEquals("[-7,22,86,-99]", writer.toString()); ref {writer} [114-114]
+[m[m23.08.2022 - 08:26:55.632 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONValueTest::testFloatArrayToString has 8 assertions: 
+ assertEquals("null", JSONValue.toJSONString((float[]) null)); ref {JSONValue} [119-119],
+ assertEquals("[]", JSONValue.toJSONString(new float[0])); ref {JSONValue} [120-120],
+ assertEquals("[12.8]", JSONValue.toJSONString(new float[] { 12.8f })); ref {JSONValue} [121-121],
+ assertEquals("[-7.1,22.234,86.7,-99.02]", JSONValue.toJSONString(new float[] { -7.1f, 22.234f, 86.7f, -99.02f })); ref {JSONValue} [122-122],
+ assertEquals("null", writer.toString()); ref {writer} [128-128],
+ assertEquals("[]", writer.toString()); ref {writer} [132-132],
+ assertEquals("[12.8]", writer.toString()); ref {writer} [136-136],
+ assertEquals("[-7.1,22.234,86.7,-99.02]", writer.toString()); ref {writer} [140-140]
+[m[m23.08.2022 - 08:26:55.632 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONValueTest::testDoubleArrayToString has 8 assertions: 
+ assertEquals("null", JSONValue.toJSONString((double[]) null)); ref {JSONValue} [145-145],
+ assertEquals("[]", JSONValue.toJSONString(new double[0])); ref {JSONValue} [146-146],
+ assertEquals("[12.8]", JSONValue.toJSONString(new double[] { 12.8 })); ref {JSONValue} [147-147],
+ assertEquals("[-7.1,22.234,86.7,-99.02]", JSONValue.toJSONString(new double[] { -7.1, 22.234, 86.7, -99.02 })); ref {JSONValue} [148-148],
+ assertEquals("null", writer.toString()); ref {writer} [154-154],
+ assertEquals("[]", writer.toString()); ref {writer} [158-158],
+ assertEquals("[12.8]", writer.toString()); ref {writer} [162-162],
+ assertEquals("[-7.1,22.234,86.7,-99.02]", writer.toString()); ref {writer} [166-166]
+[m[m23.08.2022 - 08:26:55.633 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONValueTest::testBooleanArrayToString has 8 assertions: 
+ assertEquals("null", JSONValue.toJSONString((boolean[]) null)); ref {JSONValue} [171-171],
+ assertEquals("[]", JSONValue.toJSONString(new boolean[0])); ref {JSONValue} [172-172],
+ assertEquals("[true]", JSONValue.toJSONString(new boolean[] { true })); ref {JSONValue} [173-173],
+ assertEquals("[true,false,true]", JSONValue.toJSONString(new boolean[] { true, false, true })); ref {JSONValue} [174-174],
+ assertEquals("null", writer.toString()); ref {writer} [180-180],
+ assertEquals("[]", writer.toString()); ref {writer} [184-184],
+ assertEquals("[true]", writer.toString()); ref {writer} [188-188],
+ assertEquals("[true,false,true]", writer.toString()); ref {writer} [192-192]
+[m[m23.08.2022 - 08:26:55.633 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONValueTest::testCharArrayToString has 8 assertions: 
+ assertEquals("null", JSONValue.toJSONString((char[]) null)); ref {JSONValue} [197-197],
+ assertEquals("[]", JSONValue.toJSONString(new char[0])); ref {JSONValue} [198-198],
+ assertEquals("[\"a\"]", JSONValue.toJSONString(new char[] { 'a' })); ref {JSONValue} [199-199],
+ assertEquals("[\"a\",\"b\",\"c\"]", JSONValue.toJSONString(new char[] { 'a', 'b', 'c' })); ref {JSONValue} [200-200],
+ assertEquals("null", writer.toString()); ref {writer} [206-206],
+ assertEquals("[]", writer.toString()); ref {writer} [210-210],
+ assertEquals("[\"a\"]", writer.toString()); ref {writer} [214-214],
+ assertEquals("[\"a\",\"b\",\"c\"]", writer.toString()); ref {writer} [218-218]
+[m[m23.08.2022 - 08:26:55.634 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONValueTest::testObjectArrayToString has 8 assertions: 
+ assertEquals("null", JSONValue.toJSONString((Object[]) null)); ref {JSONValue} [223-223],
+ assertEquals("[]", JSONValue.toJSONString(new Object[0])); ref {JSONValue} [224-224],
+ assertEquals("[\"Hello\"]", JSONValue.toJSONString(new Object[] { "Hello" })); ref {JSONValue} [225-225],
+ assertEquals("[\"Hello\",12,[1,2,3]]", JSONValue.toJSONString(new Object[] { "Hello", new Integer(12), new int[] { 1, 2, 3 } })); ref {JSONValue} [226-226],
+ assertEquals("null", writer.toString()); ref {writer} [232-232],
+ assertEquals("[]", writer.toString()); ref {writer} [236-236],
+ assertEquals("[\"Hello\"]", writer.toString()); ref {writer} [240-240],
+ assertEquals("[\"Hello\",12,[1,2,3]]", writer.toString()); ref {writer} [244-244]
+[m[m23.08.2022 - 08:26:55.634 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONValueTest::testArraysOfArrays has 4 assertions: 
+ assertEquals(expectedNestedIntString, JSONValue.toJSONString(nestedIntArray)); ref {JSONValue, nestedIntArray, expectedNestedIntString} [255-255],
+ assertEquals(expectedNestedIntString, writer.toString()); ref {expectedNestedIntString, writer} [259-259],
+ assertEquals(expectedNestedStringString, JSONValue.toJSONString(nestedStringArray)); ref {JSONValue, expectedNestedStringString, nestedStringArray} [264-264],
+ assertEquals(expectedNestedStringString, writer.toString()); ref {expectedNestedStringString, writer} [268-268]
+[m[m23.08.2022 - 08:26:55.649 [INFO ] ParsingStrategy.parseTestSuite() - Found 2 test cases
+[m[m23.08.2022 - 08:26:55.650 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.Test1::testDecode has 18 assertions: 
+ assertEquals("{\"1\":{\"2\":{\"3\":{\"4\":[5,{\"6\":7}]}}}}", array.get(1).toString()); ref {array} [42-42],
+ assertEquals("{\"2\":{\"3\":{\"4\":[5,{\"6\":7}]}}}", obj2.get("1").toString()); ref {obj2} [47-47],
+ assertEquals("{}", obj.toString()); ref {obj} [51-51],
+ assertEquals("[5]", obj.toString()); ref {obj} [55-55],
+ assertEquals("[5,2]", obj.toString()); ref {obj} [59-59],
+ assertEquals("hello\bworld\"abc\tdef\\ghi\rjkl\n123中", ((List) obj).get(0).toString()); ref {obj} [63-63],
+ assertEquals(ParseException.ERROR_UNEXPECTED_TOKEN, pe.getErrorType()); ref {pe, ParseException.ERROR_UNEXPECTED_TOKEN, ParseException} [71-71],
+ assertEquals(8, pe.getPosition()); ref {pe} [72-72],
+ assertEquals(ParseException.ERROR_UNEXPECTED_TOKEN, pe.getErrorType()); ref {pe, ParseException.ERROR_UNEXPECTED_TOKEN, ParseException} [80-80],
+ assertEquals(8, pe.getPosition()); ref {pe} [81-81],
+ assertEquals(ParseException.ERROR_UNEXPECTED_TOKEN, pe.getErrorType()); ref {pe, ParseException.ERROR_UNEXPECTED_TOKEN, ParseException} [90-90],
+ assertEquals(6, pe.getPosition()); ref {pe} [91-91],
+ assertEquals(24, pe.getPosition()); ref {pe} [100-100],
+ assertEquals("{\"first\":123,\"second\":[4,5,6],\"third\":789}", JSONValue.toJSONString(json)); ref {JSONValue, json} [138-138],
+ assertEquals("id1", keyFinder.getValue()); ref {keyFinder} [287-287],
+ assertTrue(keyFinder.getValue() instanceof Number); ref {keyFinder} [289-289],
+ assertEquals("123", String.valueOf(keyFinder.getValue())); ref {keyFinder, String} [290-290],
+ assertTrue(null == keyFinder.getValue()); ref {keyFinder} [293-293]
+[m[m23.08.2022 - 08:26:55.651 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.Test1::testEncode has 8 assertions: 
+ assertEquals("[\"abc\\u0010a\\/\",123,222.123,true]", array1.toString()); ref {array1} [314-314],
+ assertEquals("{\"array1\":[\"abc\\u0010a\\/\",123,222.123,true]}", obj1.toString()); ref {obj1} [321-321],
+ assertEquals("[\"abc\\u0010a\\/\",123,222.123,true,{}]", array1.toString()); ref {array1} [328-328],
+ assertEquals("[\"abc\\u0010a\\/\",123,222.123,true,null]", JSONArray.toJSONString(list)); ref {JSONArray, list} [339-339],
+ assertEquals("{\"array1\":[\"abc\\u0010a\\/\",123,222.123,true,null]}", JSONObject.toJSONString(map)); ref {JSONObject, map} [346-346],
+ assertEquals("[{\"k11\":\"v11\",\"k12\":\"v12\",\"k13\":\"v13\"},{\"k21\":\"v21\",\"k22\":\"v22\",\"k23\":\"v23\"}]", jsonString); ref {jsonString} [362-362],
+ assertEquals("[{\"k11\":\"v11\",\"k12\":\"v12\",\"k13\":\"v13\"},{\"k21\":\"v21\",\"k22\":\"v22\",\"k23\":\"v23\"}]", jsonString); ref {jsonString} [368-368],
+ assertEquals("[{\"k11\":\"v11\",\"k12\":\"v12\",\"k13\":\"v13\",\"k14\":{\"k31\":\"v3\",\"k32\":123.45,\"k33\":false,\"k34\":null,\"k35\":[\"vvv\",\"1.23456789123456789\",true,null]}},{\"k21\":\"v21\",\"k22\":\"v22\",\"k23\":\"v23\"}]", jsonString); ref {jsonString} [386-386]
+[m[m23.08.2022 - 08:26:55.655 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m23.08.2022 - 08:26:55.656 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.parser.YylexTest::testYylex has 15 assertions: 
+ assertEquals(Yytoken.TYPE_VALUE, token.type); ref {Yytoken, Yytoken.TYPE_VALUE, token.type, token} [21-21],
+ assertEquals("/", token.value); ref {token.value, token} [22-22],
+ assertEquals(Yytoken.TYPE_VALUE, token.type); ref {Yytoken, Yytoken.TYPE_VALUE, token.type, token} [29-29],
+ assertEquals("abc/\r\b\n\t\f\\", token.value); ref {token.value, token} [30-30],
+ assertEquals(Yytoken.TYPE_LEFT_SQUARE, token.type); ref {Yytoken, token.type, Yytoken.TYPE_LEFT_SQUARE, token} [37-37],
+ assertEquals(Yytoken.TYPE_LEFT_BRACE, token.type); ref {Yytoken, token.type, Yytoken.TYPE_LEFT_BRACE, token} [39-39],
+ assertEquals(Yytoken.TYPE_RIGHT_BRACE, token.type); ref {Yytoken, token.type, Yytoken.TYPE_RIGHT_BRACE, token} [41-41],
+ assertEquals(ParseException.ERROR_UNEXPECTED_CHAR, e.getErrorType()); ref {ParseException.ERROR_UNEXPECTED_CHAR, e, ParseException} [54-54],
+ assertEquals(0, e.getPosition()); ref {e} [55-55],
+ assertEquals(new Character('\b'), e.getUnexpectedObject()); ref {e} [56-56],
+ assertTrue(err != null); ref {err} [61-61],
+ assertEquals(ParseException.ERROR_UNEXPECTED_CHAR, e.getErrorType()); ref {ParseException.ERROR_UNEXPECTED_CHAR, e, ParseException} [75-75],
+ assertEquals(new Character('a'), e.getUnexpectedObject()); ref {e} [76-76],
+ assertEquals(1, e.getPosition()); ref {e} [77-77],
+ assertTrue(err != null); ref {err} [82-82]
+[m[m23.08.2022 - 08:26:55.668 [INFO ] ParsingStrategy.parseTestSuite() - Found 13 test cases
+[m[m23.08.2022 - 08:26:55.668 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONArrayTest::testJSONArray has 1 assertions: 
+ assertEquals("[]", jsonArray.toJSONString()); ref {jsonArray} [23-23]
+[m[m23.08.2022 - 08:26:55.668 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONArrayTest::testJSONArrayCollection has 1 assertions: 
+ assertEquals("[\"First item\",\"Second item\"]", jsonArray.toJSONString()); ref {jsonArray} [34-34]
+[m[m23.08.2022 - 08:26:55.669 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONArrayTest::testWriteJSONStringCollectionWriter has 3 assertions: 
+ assertTrue(parsedArray.containsAll(jsonArray)); ref {parsedArray, jsonArray} [51-51],
+ assertTrue(jsonArray.containsAll(parsedArray)); ref {jsonArray, parsedArray} [52-52],
+ assertEquals(2, jsonArray.size()); ref {jsonArray} [53-53]
+[m[m23.08.2022 - 08:26:55.669 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONArrayTest::testToJSONStringCollection has 3 assertions: 
+ assertTrue(parsedArray.containsAll(jsonArray)); ref {parsedArray, jsonArray} [67-67],
+ assertTrue(jsonArray.containsAll(parsedArray)); ref {jsonArray, parsedArray} [68-68],
+ assertEquals(2, jsonArray.size()); ref {jsonArray} [69-69]
+[m[m23.08.2022 - 08:26:55.669 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONArrayTest::testByteArrayToString has 8 assertions: 
+ assertEquals("null", JSONArray.toJSONString((byte[]) null)); ref {JSONArray} [74-74],
+ assertEquals("[]", JSONArray.toJSONString(new byte[0])); ref {JSONArray} [75-75],
+ assertEquals("[12]", JSONArray.toJSONString(new byte[] { 12 })); ref {JSONArray} [76-76],
+ assertEquals("[-7,22,86,-99]", JSONArray.toJSONString(new byte[] { -7, 22, 86, -99 })); ref {JSONArray} [77-77],
+ assertEquals("null", writer.toString()); ref {writer} [83-83],
+ assertEquals("[]", writer.toString()); ref {writer} [87-87],
+ assertEquals("[12]", writer.toString()); ref {writer} [91-91],
+ assertEquals("[-7,22,86,-99]", writer.toString()); ref {writer} [95-95]
+[m[m23.08.2022 - 08:26:55.670 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONArrayTest::testShortArrayToString has 8 assertions: 
+ assertEquals("null", JSONArray.toJSONString((short[]) null)); ref {JSONArray} [100-100],
+ assertEquals("[]", JSONArray.toJSONString(new short[0])); ref {JSONArray} [101-101],
+ assertEquals("[12]", JSONArray.toJSONString(new short[] { 12 })); ref {JSONArray} [102-102],
+ assertEquals("[-7,22,86,-99]", JSONArray.toJSONString(new short[] { -7, 22, 86, -99 })); ref {JSONArray} [103-103],
+ assertEquals("null", writer.toString()); ref {writer} [109-109],
+ assertEquals("[]", writer.toString()); ref {writer} [113-113],
+ assertEquals("[12]", writer.toString()); ref {writer} [117-117],
+ assertEquals("[-7,22,86,-99]", writer.toString()); ref {writer} [121-121]
+[m[m23.08.2022 - 08:26:55.670 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONArrayTest::testIntArrayToString has 8 assertions: 
+ assertEquals("null", JSONArray.toJSONString((int[]) null)); ref {JSONArray} [126-126],
+ assertEquals("[]", JSONArray.toJSONString(new int[0])); ref {JSONArray} [127-127],
+ assertEquals("[12]", JSONArray.toJSONString(new int[] { 12 })); ref {JSONArray} [128-128],
+ assertEquals("[-7,22,86,-99]", JSONArray.toJSONString(new int[] { -7, 22, 86, -99 })); ref {JSONArray} [129-129],
+ assertEquals("null", writer.toString()); ref {writer} [135-135],
+ assertEquals("[]", writer.toString()); ref {writer} [139-139],
+ assertEquals("[12]", writer.toString()); ref {writer} [143-143],
+ assertEquals("[-7,22,86,-99]", writer.toString()); ref {writer} [147-147]
+[m[m23.08.2022 - 08:26:55.670 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONArrayTest::testLongArrayToString has 8 assertions: 
+ assertEquals("null", JSONArray.toJSONString((long[]) null)); ref {JSONArray} [152-152],
+ assertEquals("[]", JSONArray.toJSONString(new long[0])); ref {JSONArray} [153-153],
+ assertEquals("[12]", JSONArray.toJSONString(new long[] { 12 })); ref {JSONArray} [154-154],
+ assertEquals("[-7,22,9223372036854775807,-99]", JSONArray.toJSONString(new long[] { -7, 22, 9223372036854775807L, -99 })); ref {JSONArray} [155-155],
+ assertEquals("null", writer.toString()); ref {writer} [161-161],
+ assertEquals("[]", writer.toString()); ref {writer} [165-165],
+ assertEquals("[12]", writer.toString()); ref {writer} [169-169],
+ assertEquals("[-7,22,86,-99]", writer.toString()); ref {writer} [173-173]
+[m[m23.08.2022 - 08:26:55.671 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONArrayTest::testFloatArrayToString has 8 assertions: 
+ assertEquals("null", JSONArray.toJSONString((float[]) null)); ref {JSONArray} [178-178],
+ assertEquals("[]", JSONArray.toJSONString(new float[0])); ref {JSONArray} [179-179],
+ assertEquals("[12.8]", JSONArray.toJSONString(new float[] { 12.8f })); ref {JSONArray} [180-180],
+ assertEquals("[-7.1,22.234,86.7,-99.02]", JSONArray.toJSONString(new float[] { -7.1f, 22.234f, 86.7f, -99.02f })); ref {JSONArray} [181-181],
+ assertEquals("null", writer.toString()); ref {writer} [187-187],
+ assertEquals("[]", writer.toString()); ref {writer} [191-191],
+ assertEquals("[12.8]", writer.toString()); ref {writer} [195-195],
+ assertEquals("[-7.1,22.234,86.7,-99.02]", writer.toString()); ref {writer} [199-199]
+[m[m23.08.2022 - 08:26:55.671 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONArrayTest::testDoubleArrayToString has 8 assertions: 
+ assertEquals("null", JSONArray.toJSONString((double[]) null)); ref {JSONArray} [204-204],
+ assertEquals("[]", JSONArray.toJSONString(new double[0])); ref {JSONArray} [205-205],
+ assertEquals("[12.8]", JSONArray.toJSONString(new double[] { 12.8 })); ref {JSONArray} [206-206],
+ assertEquals("[-7.1,22.234,86.7,-99.02]", JSONArray.toJSONString(new double[] { -7.1, 22.234, 86.7, -99.02 })); ref {JSONArray} [207-207],
+ assertEquals("null", writer.toString()); ref {writer} [213-213],
+ assertEquals("[]", writer.toString()); ref {writer} [217-217],
+ assertEquals("[12.8]", writer.toString()); ref {writer} [221-221],
+ assertEquals("[-7.1,22.234,86.7,-99.02]", writer.toString()); ref {writer} [225-225]
+[m[m23.08.2022 - 08:26:55.672 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONArrayTest::testBooleanArrayToString has 8 assertions: 
+ assertEquals("null", JSONArray.toJSONString((boolean[]) null)); ref {JSONArray} [230-230],
+ assertEquals("[]", JSONArray.toJSONString(new boolean[0])); ref {JSONArray} [231-231],
+ assertEquals("[true]", JSONArray.toJSONString(new boolean[] { true })); ref {JSONArray} [232-232],
+ assertEquals("[true,false,true]", JSONArray.toJSONString(new boolean[] { true, false, true })); ref {JSONArray} [233-233],
+ assertEquals("null", writer.toString()); ref {writer} [239-239],
+ assertEquals("[]", writer.toString()); ref {writer} [243-243],
+ assertEquals("[true]", writer.toString()); ref {writer} [247-247],
+ assertEquals("[true,false,true]", writer.toString()); ref {writer} [251-251]
+[m[m23.08.2022 - 08:26:55.672 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONArrayTest::testCharArrayToString has 8 assertions: 
+ assertEquals("null", JSONArray.toJSONString((char[]) null)); ref {JSONArray} [256-256],
+ assertEquals("[]", JSONArray.toJSONString(new char[0])); ref {JSONArray} [257-257],
+ assertEquals("[\"a\"]", JSONArray.toJSONString(new char[] { 'a' })); ref {JSONArray} [258-258],
+ assertEquals("[\"a\",\"b\",\"c\"]", JSONArray.toJSONString(new char[] { 'a', 'b', 'c' })); ref {JSONArray} [259-259],
+ assertEquals("null", writer.toString()); ref {writer} [265-265],
+ assertEquals("[]", writer.toString()); ref {writer} [269-269],
+ assertEquals("[\"a\"]", writer.toString()); ref {writer} [273-273],
+ assertEquals("[\"a\",\"b\",\"c\"]", writer.toString()); ref {writer} [277-277]
+[m[m23.08.2022 - 08:26:55.672 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase org.json.simple.JSONArrayTest::testObjectArrayToString has 8 assertions: 
+ assertEquals("null", JSONArray.toJSONString((Object[]) null)); ref {JSONArray} [282-282],
+ assertEquals("[]", JSONArray.toJSONString(new Object[0])); ref {JSONArray} [283-283],
+ assertEquals("[\"Hello\"]", JSONArray.toJSONString(new Object[] { "Hello" })); ref {JSONArray} [284-284],
+ assertEquals("[\"Hello\",12,[1,2,3]]", JSONArray.toJSONString(new Object[] { "Hello", new Integer(12), new int[] { 1, 2, 3 } })); ref {JSONArray} [285-285],
+ assertEquals("null", writer.toString()); ref {writer} [291-291],
+ assertEquals("[]", writer.toString()); ref {writer} [295-295],
+ assertEquals("[\"Hello\"]", writer.toString()); ref {writer} [299-299],
+ assertEquals("[\"Hello\",12,[1,2,3]]", writer.toString()); ref {writer} [303-303]
+[m[m23.08.2022 - 08:26:55.674 [INFO ] ParsingStrategy.mergePartialSuites() - ====================================================================
+[m[m23.08.2022 - 08:26:55.675 [INFO ] ParsingStrategy.mergePartialSuites() - Finished parsing the test suite.
+[m[m23.08.2022 - 08:26:55.676 [INFO ] ParsingStrategy.mergePartialSuites() - It contains 26 test cases and 197 assertions.
+[m[m23.08.2022 - 08:26:55.698 [INFO ] JUnitTestSuiteReducer.reduce() - Starting test suite reduction
+[m[32m23.08.2022 - 08:27:01.583 [DEBUG] GeneticReductionStrategy.reduce() - Jenetics Statistics:
+[m[32m23.08.2022 - 08:27:01.599 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m23.08.2022 - 08:27:01.600 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Time statistics                                                          |
+[m[32m23.08.2022 - 08:27:01.600 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m23.08.2022 - 08:27:01.600 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |             Selection: sum=0.072232443000 s; mean=0.004815496200 s        |
+[m[32m23.08.2022 - 08:27:01.600 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |              Altering: sum=0.223723251000 s; mean=0.014914883400 s        |
+[m[32m23.08.2022 - 08:27:01.600 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |   Fitness calculation: sum=5.330121231000 s; mean=0.355341415400 s        |
+[m[32m23.08.2022 - 08:27:01.600 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |     Overall execution: sum=5.595843315000 s; mean=0.373056221000 s        |
+[m[32m23.08.2022 - 08:27:01.600 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m23.08.2022 - 08:27:01.600 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Evolution statistics                                                     |
+[m[32m23.08.2022 - 08:27:01.600 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m23.08.2022 - 08:27:01.601 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |           Generations: 15                                                 |
+[m[32m23.08.2022 - 08:27:01.601 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |               Altered: sum=979,450; mean=65296.666666667                  |
+[m[32m23.08.2022 - 08:27:01.601 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                Killed: sum=0; mean=0.000000000                            |
+[m[32m23.08.2022 - 08:27:01.601 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |              Invalids: sum=0; mean=0.000000000                            |
+[m[32m23.08.2022 - 08:27:01.601 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m23.08.2022 - 08:27:01.601 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Population statistics                                                    |
+[m[32m23.08.2022 - 08:27:01.601 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m23.08.2022 - 08:27:01.601 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                   Age: max=14; mean=2.300547; var=14.026619               |
+[m[32m23.08.2022 - 08:27:01.601 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |               Fitness:                                                    |
+[m[32m23.08.2022 - 08:27:01.601 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      min  = -1.000000000000                               |
+[m[32m23.08.2022 - 08:27:01.601 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      max  = 636.000000000000                              |
+[m[32m23.08.2022 - 08:27:01.602 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      mean = 273.091093333333                              |
+[m[32m23.08.2022 - 08:27:01.602 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      var  = 96730.562749507950                            |
+[m[32m23.08.2022 - 08:27:01.602 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      std  = 311.015373815360                              |
+[m[32m23.08.2022 - 08:27:01.602 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m23.08.2022 - 08:27:01.602 [DEBUG] GeneticReductionStrategy.reduce() - Best Result:
+[m[32m23.08.2022 - 08:27:01.603 [DEBUG] GeneticReductionStrategy.reduce() - [00000011|11011111|11101111|00111111] -> 636
+[m[32m23.08.2022 - 08:27:01.605 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testByteArrayToString
+[m[32m23.08.2022 - 08:27:01.606 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShortArrayToString
+[m[32m23.08.2022 - 08:27:01.606 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIntArrayToString
+[m[32m23.08.2022 - 08:27:01.606 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongArrayToString
+[m[32m23.08.2022 - 08:27:01.606 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFloatArrayToString
+[m[32m23.08.2022 - 08:27:01.606 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDoubleArrayToString
+[m[32m23.08.2022 - 08:27:01.606 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testBooleanArrayToString
+[m[32m23.08.2022 - 08:27:01.606 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCharArrayToString
+[m[32m23.08.2022 - 08:27:01.606 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testArraysOfArrays
+[m[32m23.08.2022 - 08:27:01.606 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDecode
+[m[32m23.08.2022 - 08:27:01.606 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testEncode
+[m[32m23.08.2022 - 08:27:01.606 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testYylex
+[m[32m23.08.2022 - 08:27:01.606 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testToJSONStringCollection
+[m[32m23.08.2022 - 08:27:01.607 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testByteArrayToString
+[m[32m23.08.2022 - 08:27:01.607 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShortArrayToString
+[m[32m23.08.2022 - 08:27:01.607 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIntArrayToString
+[m[32m23.08.2022 - 08:27:01.607 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLongArrayToString
+[m[32m23.08.2022 - 08:27:01.607 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFloatArrayToString
+[m[32m23.08.2022 - 08:27:01.607 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDoubleArrayToString
+[m[32m23.08.2022 - 08:27:01.607 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testBooleanArrayToString
+[m[32m23.08.2022 - 08:27:01.607 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCharArrayToString
+[m[32m23.08.2022 - 08:27:01.607 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testObjectArrayToString
+[m[m23.08.2022 - 08:27:01.608 [INFO ] JUnitTestSuiteReducer.reduce() - Finished test suite reduction
+[m[m23.08.2022 - 08:27:01.608 [INFO ] JUnitTestSuiteReducer.reduce() - Reduced test suite from 26 to 22 test cases: 4 redundant test cases found
+[m[m23.08.2022 - 08:27:01.609 [INFO ] JUnitTestSuiteReducer.generateReport() - Generated report and wrote it to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/json-simple/lc/genetic_0.5_0.8/tsr-report-%x%.xml
+[m[m23.08.2022 - 08:27:01.610 [INFO ] CompilationUnitExtractor.parseCompilationUnitsFromFilePath() - Collecting compilation units from File Path /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/json-simple/src/test/java
+[m[m23.08.2022 - 08:27:01.715 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote JSONValueTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/json-simple/lc/genetic_0.5_0.8/gen/org/json/simple/JSONValueTest.java
+[m[m23.08.2022 - 08:27:01.721 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote Test1.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/json-simple/lc/genetic_0.5_0.8/gen/org/json/simple/Test1.java
+[m[m23.08.2022 - 08:27:01.723 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote YylexTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/json-simple/lc/genetic_0.5_0.8/gen/org/json/simple/parser/YylexTest.java
+[m[m23.08.2022 - 08:27:01.727 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote JSONArrayTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/json-simple/lc/genetic_0.5_0.8/gen/org/json/simple/JSONArrayTest.java
+[m[m23.08.2022 - 08:27:01.727 [INFO ] JUnitJSRFacade.logTime() - ******************************************************************
+[m[m23.08.2022 - 08:27:01.727 [INFO ] JUnitJSRFacade.logTime() - * Facade Statistics:
+[m[m23.08.2022 - 08:27:01.728 [INFO ] JUnitJSRFacade.logTime() - * Parsing took: 0.307 seconds
+[m[m23.08.2022 - 08:27:01.728 [INFO ] JUnitJSRFacade.logTime() - * Reduction took: 5.934 seconds
+[m[m23.08.2022 - 08:27:01.728 [INFO ] JUnitJSRFacade.logTime() - * Serialization took: 0.117 seconds
+[m[m23.08.2022 - 08:27:01.728 [INFO ] JUnitJSRFacade.logTime() - * Overall: 6.358 seconds
+[m[m23.08.2022 - 08:27:01.728 [INFO ] JUnitJSRFacade.logTime() - ******************************************************************
+[mSuccessfully reduced your test suite!
++----------------------------------- Summary -----------------------------------+
+| Test suite size: 26 test cases
++-------------------------------------------------------------------------------+
+| Found 22 relevant test cases:
+|    org.json.simple.JSONValueTest:testByteArrayToString
+|    org.json.simple.JSONValueTest:testShortArrayToString
+|    org.json.simple.JSONValueTest:testIntArrayToString
+|    org.json.simple.JSONValueTest:testLongArrayToString
+|    org.json.simple.JSONValueTest:testFloatArrayToString
+|    org.json.simple.JSONValueTest:testDoubleArrayToString
+|    org.json.simple.JSONValueTest:testBooleanArrayToString
+|    org.json.simple.JSONValueTest:testCharArrayToString
+|    org.json.simple.JSONValueTest:testArraysOfArrays
+|    org.json.simple.Test1:testDecode
+|    org.json.simple.Test1:testEncode
+|    org.json.simple.parser.YylexTest:testYylex
+|    org.json.simple.JSONArrayTest:testToJSONStringCollection
+|    org.json.simple.JSONArrayTest:testByteArrayToString
+|    org.json.simple.JSONArrayTest:testShortArrayToString
+|    org.json.simple.JSONArrayTest:testIntArrayToString
+|    org.json.simple.JSONArrayTest:testLongArrayToString
+|    org.json.simple.JSONArrayTest:testFloatArrayToString
+|    org.json.simple.JSONArrayTest:testDoubleArrayToString
+|    org.json.simple.JSONArrayTest:testBooleanArrayToString
+|    org.json.simple.JSONArrayTest:testCharArrayToString
+|    org.json.simple.JSONArrayTest:testObjectArrayToString
++-------------------------------------------------------------------------------+
+| Found 4 redundant test cases:
+|    org.json.simple.JSONValueTest:testObjectArrayToString
+|    org.json.simple.JSONArrayTest:testJSONArray
+|    org.json.simple.JSONArrayTest:testJSONArrayCollection
+|    org.json.simple.JSONArrayTest:testWriteJSONStringCollectionWriter
++-------------------------------------------------------------------------------+
+| Wrote reduced test suite code to: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/json-simple/lc/genetic_0.5_0.8/gen
++-------------------------------------------------------------------------------+

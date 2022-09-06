@@ -1,0 +1,1756 @@
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+[32m31.08.2022 - 00:33:58.175 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Current absolute path is: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j
+[m[32m31.08.2022 - 00:33:58.178 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/target/exp4j-0.4.9-SNAPSHOT-fat-tests.jar
+[m[32m31.08.2022 - 00:33:58.178 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to slicer: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/JSR/slicer/Slicer4J
+[m[32m31.08.2022 - 00:33:58.178 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to out dir: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/exp4j/lc/genetic_0.8_0.7
+[m[32m31.08.2022 - 00:33:58.178 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to out logging jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/JSR/slicer/DynamicSlicingCore/DynamicSlicingLoggingClasses/DynamicSlicingLogger.jar
+[m[m31.08.2022 - 00:33:58.806 [INFO ] ParsingStrategy.parseTestSuiteFromFilePath() - Parsing test suite from File Path
+[m[m31.08.2022 - 00:33:58.806 [INFO ] CompilationUnitExtractor.parseCompilationUnitsFromFilePath() - Collecting compilation units from File Path /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/src/test/java
+[m[m31.08.2022 - 00:33:59.317 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m31.08.2022 - 00:33:59.455 [INFO ] ParsingStrategy.parseTestSuite() - Found 219 test cases
+[m[m31.08.2022 - 00:33:59.456 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder1 has 1 assertions: 
+ assertEquals(3d, result, 0d); ref {result} [40-40]
+[m[m31.08.2022 - 00:33:59.457 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder2 has 1 assertions: 
+ assertEquals(-1d, result, 0d); ref {result} [51-51]
+[m[m31.08.2022 - 00:33:59.457 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder3 has 1 assertions: 
+ assertEquals(expected, result, 0d); ref {result, expected} [64-64]
+[m[m31.08.2022 - 00:33:59.457 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder4 has 1 assertions: 
+ assertEquals(expected, result, 0d); ref {result, expected} [82-82]
+[m[m31.08.2022 - 00:33:59.458 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder5 has 1 assertions: 
+ assertEquals(expected, result, 0d); ref {result, expected} [104-104]
+[m[m31.08.2022 - 00:33:59.458 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder6 has 1 assertions: 
+ assertEquals(expected, result, 0d); ref {result, expected} [134-134]
+[m[m31.08.2022 - 00:33:59.458 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder7 has 2 assertions: 
+ assertFalse(res.isValid()); ref {res} [143-143],
+ assertEquals(res.getErrors().size(), 1); ref {res} [144-144]
+[m[m31.08.2022 - 00:33:59.459 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder8 has 2 assertions: 
+ assertFalse(res.isValid()); ref {res} [153-153],
+ assertEquals(res.getErrors().size(), 3); ref {res} [154-154]
+[m[m31.08.2022 - 00:33:59.459 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder9 has 1 assertions: 
+ assertTrue(res.isValid()); ref {res} [164-164]
+[m[m31.08.2022 - 00:33:59.459 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testValidationDocExample has 3 assertions: 
+ assertFalse(res.isValid()); ref {res} [173-173],
+ assertEquals(1, res.getErrors().size()); ref {res} [174-174],
+ assertTrue(res.isValid()); ref {res} [178-178]
+[m[m31.08.2022 - 00:33:59.460 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder10 has 1 assertions: 
+ assertEquals(10d, result, 0d); ref {result} [186-186]
+[m[m31.08.2022 - 00:33:59.460 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder11 has 1 assertions: 
+ assertEquals(0.111d, result, 0d); ref {result} [194-194]
+[m[m31.08.2022 - 00:33:59.460 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder12 has 1 assertions: 
+ assertEquals(11.1d, result, 0d); ref {result} [202-202]
+[m[m31.08.2022 - 00:33:59.460 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder13 has 1 assertions: 
+ assertEquals(-9d, result, 0d); ref {result} [210-210]
+[m[m31.08.2022 - 00:33:59.461 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder14 has 1 assertions: 
+ assertEquals(9d, result, 0d); ref {result} [218-218]
+[m[m31.08.2022 - 00:33:59.461 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder15 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.461 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder16 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.461 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder17 has 3 assertions: 
+ assertFalse(res.isValid()); ref {res} [244-244],
+ assertEquals(1, res.getErrors().size()); ref {res} [245-245],
+ assertEquals("Too many operators", res.getErrors().get(0)); ref {res} [246-246]
+[m[m31.08.2022 - 00:33:59.462 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder18 has 3 assertions: 
+ assertFalse(res.isValid()); ref {res} [255-255],
+ assertEquals(1, res.getErrors().size()); ref {res} [256-256],
+ assertEquals("Too many operators", res.getErrors().get(0)); ref {res} [257-257]
+[m[m31.08.2022 - 00:33:59.462 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder19 has 3 assertions: 
+ assertFalse(res.isValid()); ref {res} [266-266],
+ assertEquals(1, res.getErrors().size()); ref {res} [267-267],
+ assertEquals("Too many operators", res.getErrors().get(0)); ref {res} [268-268]
+[m[m31.08.2022 - 00:33:59.462 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction1 has 1 assertions: 
+ assertEquals(result, PI, 0.0); ref {result, PI} [288-288]
+[m[m31.08.2022 - 00:33:59.463 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction2 has 1 assertions: 
+ assertEquals(result, log(log(1)), 0.0); ref {result} [306-306]
+[m[m31.08.2022 - 00:33:59.463 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction3 has 1 assertions: 
+ assertEquals(result, 1 * E * PI, 0.0); ref {result, E, PI} [332-332]
+[m[m31.08.2022 - 00:33:59.463 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction4 has 1 assertions: 
+ assertEquals(result, log(varX) * E, 0.0); ref {result, E, varX} [351-351]
+[m[m31.08.2022 - 00:33:59.463 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction5 has 1 assertions: 
+ assertEquals(result, log(varX) * E * PI, 0.0); ref {result, E, varX, PI} [378-378]
+[m[m31.08.2022 - 00:33:59.464 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction6 has 1 assertions: 
+ assertEquals(result, log(varX) * E * PI, 0.0); ref {result, E, varX, PI} [404-404]
+[m[m31.08.2022 - 00:33:59.464 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction7 has 1 assertions: 
+ assertEquals(0.5d, e.evaluate(), 0.0); ref {e} [421-421]
+[m[m31.08.2022 - 00:33:59.464 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction10 has 1 assertions: 
+ assertEquals(2, e.evaluate(), 0.0); ref {e} [440-440]
+[m[m31.08.2022 - 00:33:59.464 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction11 has 1 assertions: 
+ assertEquals(pow(2, 4), e.evaluate(), 0.0); ref {e} [460-460]
+[m[m31.08.2022 - 00:33:59.465 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction12 has 1 assertions: 
+ assertEquals(51.13d, e.evaluate(), 0.0); ref {e} [481-481]
+[m[m31.08.2022 - 00:33:59.465 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction13 has 1 assertions: 
+ assertEquals(varX, e.evaluate(), 0.0); ref {e, varX} [505-505]
+[m[m31.08.2022 - 00:33:59.465 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction14 has 1 assertions: 
+ assertEquals(expected, actual, 0.0); ref {actual, expected} [525-525]
+[m[m31.08.2022 - 00:33:59.465 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction15 has 1 assertions: 
+ assertEquals(expected, actual, 0.0); ref {actual, expected} [545-545]
+[m[m31.08.2022 - 00:33:59.466 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction16 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [564-564]
+[m[m31.08.2022 - 00:33:59.466 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction17 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [583-583]
+[m[m31.08.2022 - 00:33:59.466 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction18 has 1 assertions: 
+ assertEquals(10, calculated, 0.0); ref {calculated} [605-605]
+[m[m31.08.2022 - 00:33:59.466 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction19 has 1 assertions: 
+ assertEquals(Math.pow(2, 3), calculated, 0d); ref {Math, calculated} [623-623]
+[m[m31.08.2022 - 00:33:59.467 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction20 has 2 assertions: 
+ assertEquals(3, maxFunction.getNumArguments()); ref {maxFunction} [647-647],
+ assertEquals(3, calculated, 0.0); ref {calculated} [648-648]
+[m[m31.08.2022 - 00:33:59.467 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testOperators1 has 6 assertions: 
+ assertEquals(1d, e.evaluate(), 0.0); ref {e} [674-674],
+ assertEquals(2d, e.evaluate(), 0.0); ref {e} [677-677],
+ assertEquals(6d, e.evaluate(), 0.0); ref {e} [680-680],
+ assertEquals(24d, e.evaluate(), 0.0); ref {e} [683-683],
+ assertEquals(120d, e.evaluate(), 0.0); ref {e} [686-686],
+ assertEquals(39916800d, e.evaluate(), 0.0); ref {e} [689-689]
+[m[m31.08.2022 - 00:33:59.467 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testOperators2 has 3 assertions: 
+ assertEquals(64d, e.evaluate(), 0d); ref {e} [714-714],
+ assertEquals(36d, e.evaluate(), 0.0); ref {e} [717-717],
+ assertEquals(Math.pow(-6d, -1), actual, 0d); ref {actual, Math} [721-721]
+[m[m31.08.2022 - 00:33:59.468 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testOperators3 has 4 assertions: 
+ assertEquals(0d, e.evaluate(), 0.0); ref {e} [739-739],
+ assertEquals(1d, e.evaluate(), 0.0); ref {e} [742-742],
+ assertEquals(0d, e.evaluate(), 0.0); ref {e} [745-745],
+ assertEquals(0d, e.evaluate(), 0.0); ref {e} [748-748]
+[m[m31.08.2022 - 00:33:59.468 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testModulo1 has 1 assertions: 
+ assertEquals(1d, result, 0.0); ref {result} [755-755]
+[m[m31.08.2022 - 00:33:59.469 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testOperators4 has 9 assertions: 
+ assertEquals(0d, e.evaluate(), 0.0); ref {e} [791-791],
+ assertEquals(1d, e.evaluate(), 0.0); ref {e} [794-794],
+ assertEquals(3d, e.evaluate(), 0.0); ref {e} [797-797],
+ assertEquals(1d, e.evaluate(), 0.0); ref {e} [800-800],
+ assertEquals(1d, e.evaluate(), 0.0); ref {e} [804-804],
+ assertEquals(1d, e.evaluate(), 0.0); ref {e} [808-808],
+ assertEquals(0d, e.evaluate(), 0.0); ref {e} [812-812],
+ assertEquals(1d, e.evaluate(), 0.0); ref {e} [816-816],
+ assertEquals(1d, e.evaluate(), 0.0); ref {e} [820-820]
+[m[m31.08.2022 - 00:33:59.469 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testInvalidOperator1 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.469 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testInvalidFunction1 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.469 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testInvalidFunction2 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.469 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder01 has 1 assertions: 
+ assertEquals(13d, result, 0.0); ref {result} [866-866]
+[m[m31.08.2022 - 00:33:59.470 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder02 has 1 assertions: 
+ assertEquals(13d, result, 0.0); ref {result} [877-877]
+[m[m31.08.2022 - 00:33:59.470 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder03 has 1 assertions: 
+ assertEquals(result, 7 * varX + 3 * varY - pow(log(varY / varX * 12), varY), 0.0); ref {result, varY, varX} [891-891]
+[m[m31.08.2022 - 00:33:59.470 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder04 has 2 assertions: 
+ assertEquals(result, 7 * varX + 3 * varY - pow(log(varY / varX * 12), varY), 0.0); ref {result, varY, varX} [905-905],
+ assertEquals(result, 7 * varX + 3 * varY - pow(log(varY / varX * 12), varY), 0.0); ref {result, varY, varX} [911-911]
+[m[m31.08.2022 - 00:33:59.470 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder05 has 1 assertions: 
+ assertEquals(result, 3 * varY, 0.0); ref {result, varY} [924-924]
+[m[m31.08.2022 - 00:33:59.470 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder06 has 1 assertions: 
+ assertEquals(result, varX * varY * varZ, 0.0); ref {result, varZ, varY, varX} [939-939]
+[m[m31.08.2022 - 00:33:59.471 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder07 has 1 assertions: 
+ assertEquals(result, log(sin(varX)), 0.0); ref {result, varX} [950-950]
+[m[m31.08.2022 - 00:33:59.471 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionBuilder08 has 1 assertions: 
+ assertEquals(result, log(sin(varX)), 0.0); ref {result, varX} [961-961]
+[m[m31.08.2022 - 00:33:59.471 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testSameName has 2 assertions: 
+ assertFalse(res.isValid()); ref {res} [980-980],
+ assertEquals(1, res.getErrors().size()); ref {res} [981-981]
+[m[m31.08.2022 - 00:33:59.471 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testInvalidFunction has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.472 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testMissingVar has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.472 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testUnaryMinusPowerPrecedence has 1 assertions: 
+ assertEquals(-1d, e.evaluate(), 0d); ref {e} [1008-1008]
+[m[m31.08.2022 - 00:33:59.472 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testUnaryMinus has 1 assertions: 
+ assertEquals(-1d, e.evaluate(), 0d); ref {e} [1015-1015]
+[m[m31.08.2022 - 00:33:59.472 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression1 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1026-1026]
+[m[m31.08.2022 - 00:33:59.472 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression10 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1037-1037]
+[m[m31.08.2022 - 00:33:59.473 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression11 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1051-1051]
+[m[m31.08.2022 - 00:33:59.473 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression12 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1060-1060]
+[m[m31.08.2022 - 00:33:59.473 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression13 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1069-1069]
+[m[m31.08.2022 - 00:33:59.473 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression14 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1078-1078]
+[m[m31.08.2022 - 00:33:59.474 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression15 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1087-1087]
+[m[m31.08.2022 - 00:33:59.474 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression16 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1096-1096]
+[m[m31.08.2022 - 00:33:59.474 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression17 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1110-1110]
+[m[m31.08.2022 - 00:33:59.474 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression18 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1119-1119]
+[m[m31.08.2022 - 00:33:59.474 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression19 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1128-1128]
+[m[m31.08.2022 - 00:33:59.475 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression2 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1139-1139]
+[m[m31.08.2022 - 00:33:59.475 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression20 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1148-1148]
+[m[m31.08.2022 - 00:33:59.475 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression21 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0d); ref {e, expected} [1160-1160]
+[m[m31.08.2022 - 00:33:59.475 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionPower has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0d); ref {e, expected} [1169-1169]
+[m[m31.08.2022 - 00:33:59.476 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpressionMultiplication has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0d); ref {e, expected} [1178-1178]
+[m[m31.08.2022 - 00:33:59.476 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression22 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1190-1190]
+[m[m31.08.2022 - 00:33:59.476 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression23 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1202-1202]
+[m[m31.08.2022 - 00:33:59.476 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression24 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1211-1211]
+[m[m31.08.2022 - 00:33:59.476 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression25 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1220-1220]
+[m[m31.08.2022 - 00:33:59.476 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression26 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1229-1229]
+[m[m31.08.2022 - 00:33:59.477 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression27 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1238-1238]
+[m[m31.08.2022 - 00:33:59.477 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression28 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1247-1247]
+[m[m31.08.2022 - 00:33:59.477 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression29 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1256-1256]
+[m[m31.08.2022 - 00:33:59.477 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testVarName1 has 1 assertions: 
+ assertEquals(12.23, e.evaluate(), 0.0); ref {e} [1266-1266]
+[m[m31.08.2022 - 00:33:59.477 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testMisplacedSeparator has 1 assertions: 
+ assertEquals(12.23, e.evaluate(), 0.0); ref {e} [1275-1275]
+[m[m31.08.2022 - 00:33:59.477 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testInvalidVarName has 1 assertions: 
+ assertEquals(12.23, e.evaluate(), 0.0); ref {e} [1284-1284]
+[m[m31.08.2022 - 00:33:59.477 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testVarMap has 1 assertions: 
+ assertEquals(12.23d * 2d - 3.3d, e.evaluate(), 0.0); ref {e} [1297-1297]
+[m[m31.08.2022 - 00:33:59.478 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testInvalidNumberOfArguments1 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.478 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testInvalidNumberOfArguments2 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.478 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression3 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1335-1335]
+[m[m31.08.2022 - 00:33:59.478 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression30 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1344-1344]
+[m[m31.08.2022 - 00:33:59.478 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression31 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1356-1356]
+[m[m31.08.2022 - 00:33:59.478 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression32 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1368-1368]
+[m[m31.08.2022 - 00:33:59.478 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression33 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1380-1380]
+[m[m31.08.2022 - 00:33:59.479 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression34 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1389-1389]
+[m[m31.08.2022 - 00:33:59.479 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression40 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1398-1398]
+[m[m31.08.2022 - 00:33:59.479 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression41 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1407-1407]
+[m[m31.08.2022 - 00:33:59.479 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression42 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1419-1419]
+[m[m31.08.2022 - 00:33:59.479 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression43 has 1 assertions: 
+ assertEquals(expected, result, 0.0); ref {result, expected} [1429-1429]
+[m[m31.08.2022 - 00:33:59.479 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression44 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [1438-1438]
+[m[m31.08.2022 - 00:33:59.479 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression45 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.479 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression46 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.480 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression48 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.480 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression49 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.480 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression50 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.480 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression51 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.480 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression52 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.480 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression53 has 2 assertions: 
+ assertTrue(exp.validate().isValid()); ref {exp} [1505-1505],
+ assertEquals(14d * 2d * 1.5d, exp.evaluate(), 0d); ref {exp} [1506-1506]
+[m[m31.08.2022 - 00:33:59.480 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression54 has 1 assertions: 
+ assertEquals(-3d, e.evaluate(), 0d); ref {e} [1516-1516]
+[m[m31.08.2022 - 00:33:59.480 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression55 has 1 assertions: 
+ assertEquals(sin(2d) * 2, e.evaluate(), 0.0); ref {e} [1526-1526]
+[m[m31.08.2022 - 00:33:59.481 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression56 has 1 assertions: 
+ assertEquals(sin(6d) * 2d, e.evaluate(), 0.0); ref {e} [1536-1536]
+[m[m31.08.2022 - 00:33:59.481 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testDocumentationExample1 has 1 assertions: 
+ assertEquals(expected, result, 0d); ref {result, expected} [1548-1548]
+[m[m31.08.2022 - 00:33:59.481 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testDocumentationExample2 has 1 assertions: 
+ assertEquals(expected, result.get(), 0d); ref {result, expected} [1561-1561]
+[m[m31.08.2022 - 00:33:59.481 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testDocumentationExample3 has 1 assertions: 
+ assertEquals(2d * Math.cos(0.5d * 0.25d), result, 0d); ref {result, Math} [1572-1572]
+[m[m31.08.2022 - 00:33:59.481 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testDocumentationExample4 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0d); ref {e, expected} [1580-1580]
+[m[m31.08.2022 - 00:33:59.481 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testDocumentationExample5 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0d); ref {e, expected} [1589-1589]
+[m[m31.08.2022 - 00:33:59.481 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testDocumentationExample6 has 1 assertions: 
+ assertEquals(expected, result, 0d); ref {result, expected} [1606-1606]
+[m[m31.08.2022 - 00:33:59.482 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testDocumentationExample7 has 1 assertions: 
+ assertEquals(expected, result, 0d); ref {result, expected} [1628-1628]
+[m[m31.08.2022 - 00:33:59.482 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testDocumentationExample8 has 1 assertions: 
+ assertEquals(expected, result, 0d); ref {result, expected} [1658-1658]
+[m[m31.08.2022 - 00:33:59.482 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testDocumentationExample9 has 2 assertions: 
+ assertEquals(0d, e.evaluate(), 0.0); ref {e} [1677-1677],
+ assertEquals(1d, e.evaluate(), 0.0); ref {e} [1680-1680]
+[m[m31.08.2022 - 00:33:59.482 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testDocumentationExample10 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.482 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testDocumentationExample11 has 3 assertions: 
+ assertFalse(res.isValid()); ref {res} [1705-1705],
+ assertEquals(1, res.getErrors().size()); ref {res} [1706-1706],
+ assertTrue(res.isValid()); ref {res} [1710-1710]
+[m[m31.08.2022 - 00:33:59.482 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testDocumentationExample12 has 2 assertions: 
+ assertTrue(res.isValid()); ref {res} [1720-1720],
+ assertNull(res.getErrors()); ref {res} [1721-1721]
+[m[m31.08.2022 - 00:33:59.482 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression57 has 1 assertions: 
+ assertEquals(Double.POSITIVE_INFINITY, e.evaluate(), 0.0); ref {e, Double.POSITIVE_INFINITY, Double} [1731-1731]
+[m[m31.08.2022 - 00:33:59.483 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression58 has 1 assertions: 
+ assertTrue(Double.isNaN(e.evaluate())); ref {e, Double} [1739-1739]
+[m[m31.08.2022 - 00:33:59.483 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression59 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.483 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression60 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.483 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression61 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.483 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression62 has 1 assertions: 
+ assertEquals(E * 1.0 * pow(10, 5) + 5, e.evaluate(), 0.0); ref {E, e} [1772-1772]
+[m[m31.08.2022 - 00:33:59.483 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression63 has 1 assertions: 
+ assertEquals(Math.log10(5), e.evaluate(), 0d); ref {e, Math} [1779-1779]
+[m[m31.08.2022 - 00:33:59.483 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression64 has 1 assertions: 
+ assertEquals(Math.log(5) / Math.log(2), e.evaluate(), 0d); ref {e, Math} [1786-1786]
+[m[m31.08.2022 - 00:33:59.483 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression65 has 1 assertions: 
+ assertEquals(2d, e.evaluate(), 0d); ref {e} [1796-1796]
+[m[m31.08.2022 - 00:33:59.484 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression66 has 1 assertions: 
+ assertEquals(2d, e.evaluate(), 0d); ref {e} [1806-1806]
+[m[m31.08.2022 - 00:33:59.484 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression67 has 1 assertions: 
+ assertEquals(2 * Math.E * Math.sin(Math.PI / 2d), e.evaluate(), 0d); ref {e, Math.PI, Math, Math.E} [1817-1817]
+[m[m31.08.2022 - 00:33:59.484 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression68 has 1 assertions: 
+ assertEquals(2 * Math.E, e.evaluate(), 0d); ref {e, Math, Math.E} [1826-1826]
+[m[m31.08.2022 - 00:33:59.484 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression69 has 1 assertions: 
+ assertEquals(4 * Math.E, e.evaluate(), 0d); ref {e, Math, Math.E} [1835-1835]
+[m[m31.08.2022 - 00:33:59.484 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression70 has 1 assertions: 
+ assertEquals(2 * Math.E * Math.E, e.evaluate(), 0d); ref {e, Math, Math.E} [1844-1844]
+[m[m31.08.2022 - 00:33:59.484 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression71 has 1 assertions: 
+ assertEquals(2 * Math.E * Math.E, e.evaluate(), 0d); ref {e, Math, Math.E} [1853-1853]
+[m[m31.08.2022 - 00:33:59.484 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression72 has 1 assertions: 
+ assertEquals(2 * Math.cos(Math.E), e.evaluate(), 0d); ref {e, Math, Math.E} [1862-1862]
+[m[m31.08.2022 - 00:33:59.484 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression73 has 1 assertions: 
+ assertEquals(2 * Math.cos(Math.E), e.evaluate(), 0d); ref {e, Math, Math.E} [1871-1871]
+[m[m31.08.2022 - 00:33:59.485 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression74 has 1 assertions: 
+ assertEquals(-2d * Math.cos(Math.E), e.evaluate(), 0d); ref {e, Math, Math.E} [1880-1880]
+[m[m31.08.2022 - 00:33:59.485 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression75 has 1 assertions: 
+ assertEquals(-2d * Math.cos(Math.E), e.evaluate(), 0d); ref {e, Math, Math.E} [1889-1889]
+[m[m31.08.2022 - 00:33:59.485 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression76 has 1 assertions: 
+ assertEquals(-E * Math.cos(Math.E), e.evaluate(), 0d); ref {E, e, Math, Math.E} [1898-1898]
+[m[m31.08.2022 - 00:33:59.485 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression77 has 1 assertions: 
+ assertEquals(-E * E * Math.cos(Math.E), e.evaluate(), 0d); ref {E, e, Math, Math.E} [1907-1907]
+[m[m31.08.2022 - 00:33:59.485 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression78 has 1 assertions: 
+ assertEquals(E * E * Math.cos(Math.E), e.evaluate(), 0d); ref {E, e, Math, Math.E} [1916-1916]
+[m[m31.08.2022 - 00:33:59.485 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression79 has 1 assertions: 
+ assertEquals(E * E * Math.cos(Math.E), e.evaluate(), 0d); ref {E, e, Math, Math.E} [1925-1925]
+[m[m31.08.2022 - 00:33:59.485 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression80 has 1 assertions: 
+ assertEquals(sqrt(2) * E * Math.cos(Math.E), e.evaluate(), 0d); ref {E, e, Math, Math.E} [1935-1935]
+[m[m31.08.2022 - 00:33:59.485 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression81 has 1 assertions: 
+ assertEquals(cos(sqrt(2) * E), e.evaluate(), 0d); ref {E, e} [1945-1945]
+[m[m31.08.2022 - 00:33:59.486 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression82 has 1 assertions: 
+ assertEquals(cos(2 * E), e.evaluate(), 0d); ref {E, e} [1954-1954]
+[m[m31.08.2022 - 00:33:59.486 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression83 has 1 assertions: 
+ assertEquals(cos(E * log(E * sqrt(2))), e.evaluate(), 0d); ref {E, e} [1964-1964]
+[m[m31.08.2022 - 00:33:59.486 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression84 has 1 assertions: 
+ assertEquals(3d * E, e.evaluate(), 0d); ref {E, e} [1973-1973]
+[m[m31.08.2022 - 00:33:59.486 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression85 has 1 assertions: 
+ assertEquals(3d, e.evaluate(), 0d); ref {e} [1982-1982]
+[m[m31.08.2022 - 00:33:59.486 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testSpaceBetweenNumbers has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.486 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testUnaryMinusInParenthesisSpace has 1 assertions: 
+ assertEquals(1d, calculated, 0.0); ref {calculated} [1997-1997]
+[m[m31.08.2022 - 00:33:59.486 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testUnaryMinusSpace has 1 assertions: 
+ assertEquals(1d, calculated, 0.0); ref {calculated} [2004-2004]
+[m[m31.08.2022 - 00:33:59.486 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testUnaryMinusSpaces has 1 assertions: 
+ assertEquals(0d, calculated, 0.0); ref {calculated} [2011-2011]
+[m[m31.08.2022 - 00:33:59.487 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testUnaryMinusSpace1 has 1 assertions: 
+ assertEquals(calculated, -1d, 0.0); ref {calculated} [2018-2018]
+[m[m31.08.2022 - 00:33:59.487 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression4 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2029-2029]
+[m[m31.08.2022 - 00:33:59.487 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression5 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2040-2040]
+[m[m31.08.2022 - 00:33:59.487 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression6 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2051-2051]
+[m[m31.08.2022 - 00:33:59.487 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression7 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2062-2062]
+[m[m31.08.2022 - 00:33:59.487 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression8 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2073-2073]
+[m[m31.08.2022 - 00:33:59.487 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testExpression9 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2084-2084]
+[m[m31.08.2022 - 00:33:59.487 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFailUnknownFunction1 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.487 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFailUnknownFunction2 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.488 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFailUnknownFunction3 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.488 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction22 has 1 assertions: 
+ assertEquals(e.evaluate(), cos(1d), 0.0); ref {e} [2122-2122]
+[m[m31.08.2022 - 00:33:59.488 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction23 has 1 assertions: 
+ assertEquals(log1p(1d), e.evaluate(), 0d); ref {e} [2131-2131]
+[m[m31.08.2022 - 00:33:59.488 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testFunction24 has 1 assertions: 
+ assertEquals(27d, e.evaluate(), 0d); ref {e} [2140-2140]
+[m[m31.08.2022 - 00:33:59.488 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfix1 has 1 assertions: 
+ assertEquals(expected, actual, 0.0); ref {actual, expected} [2151-2151]
+[m[m31.08.2022 - 00:33:59.488 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixEverything has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2162-2162]
+[m[m31.08.2022 - 00:33:59.488 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixExponentiation1 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2173-2173]
+[m[m31.08.2022 - 00:33:59.488 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixExponentiation2 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2184-2184]
+[m[m31.08.2022 - 00:33:59.489 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixExponentiation3 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2198-2198]
+[m[m31.08.2022 - 00:33:59.489 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixExponentiation4 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2212-2212]
+[m[m31.08.2022 - 00:33:59.489 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction1 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2223-2223]
+[m[m31.08.2022 - 00:33:59.489 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction10 has 1 assertions: 
+ assertEquals(expected, e.setVariable("x", x).evaluate(), 0.0); ref {e, expected, x} [2236-2236]
+[m[m31.08.2022 - 00:33:59.489 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction11 has 1 assertions: 
+ assertEquals(expected, e.setVariable("x", x).evaluate(), 0.0); ref {e, expected, x} [2251-2251]
+[m[m31.08.2022 - 00:33:59.489 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction12 has 2 assertions: 
+ assertTrue(Double.isNaN(e.setVariable("x", x).evaluate())); ref {e, x, Double} [2268-2268],
+ assertEquals(expected, e.setVariable("x", x).evaluate(), 0.0); ref {e, expected, x} [2270-2270]
+[m[m31.08.2022 - 00:33:59.489 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction13 has 2 assertions: 
+ assertTrue(Double.isNaN(e.setVariable("x", x).evaluate())); ref {e, x, Double} [2286-2286],
+ assertEquals(expected, e.setVariable("x", x).evaluate(), 0.0); ref {e, expected, x} [2288-2288]
+[m[m31.08.2022 - 00:33:59.489 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction14 has 2 assertions: 
+ assertTrue(Double.isNaN(e.setVariable("x", x).evaluate())); ref {e, x, Double} [2304-2304],
+ assertEquals(expected, e.setVariable("x", x).evaluate(), 0.0); ref {e, expected, x} [2306-2306]
+[m[m31.08.2022 - 00:33:59.490 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction15 has 2 assertions: 
+ assertTrue(Double.isNaN(e.setVariable("x", x).evaluate())); ref {e, x, Double} [2322-2322],
+ assertEquals(expected, e.setVariable("x", x).evaluate(), 0.0); ref {e, expected, x} [2324-2324]
+[m[m31.08.2022 - 00:33:59.490 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction16 has 1 assertions: 
+ assertEquals(expected, e.setVariable("x", x).evaluate(), 0.0); ref {e, expected, x} [2339-2339]
+[m[m31.08.2022 - 00:33:59.490 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction17 has 1 assertions: 
+ assertEquals(expected, e.setVariable("x", x).evaluate(), 0.0); ref {e, expected, x} [2353-2353]
+[m[m31.08.2022 - 00:33:59.490 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction18 has 1 assertions: 
+ assertEquals(expected, e.setVariable("x", x).evaluate(), 0.0); ref {e, expected, x} [2367-2367]
+[m[m31.08.2022 - 00:33:59.490 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction19 has 1 assertions: 
+ assertEquals(expected, e.setVariable("x", x).evaluate(), 0.0); ref {e, expected, x} [2381-2381]
+[m[m31.08.2022 - 00:33:59.490 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction20 has 1 assertions: 
+ assertEquals(expected, e.setVariable("x", x).evaluate(), 0.0); ref {e, expected, x} [2395-2395]
+[m[m31.08.2022 - 00:33:59.490 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction21 has 1 assertions: 
+ assertEquals(expected, e.setVariable("x", x).evaluate(), 0.0); ref {e, expected, x} [2409-2409]
+[m[m31.08.2022 - 00:33:59.490 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction2 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2421-2421]
+[m[m31.08.2022 - 00:33:59.490 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction3 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2432-2432]
+[m[m31.08.2022 - 00:33:59.491 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction5 has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2443-2443]
+[m[m31.08.2022 - 00:33:59.491 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction6 has 1 assertions: 
+ assertEquals(expected, e.setVariable("x", x).setVariable("y", y).evaluate(), 0.0); ref {e, expected, x, y} [2457-2458]
+[m[m31.08.2022 - 00:33:59.491 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction7 has 1 assertions: 
+ assertEquals(expected, e.setVariable("x", x).evaluate(), 0.0); ref {e, expected, x} [2471-2471]
+[m[m31.08.2022 - 00:33:59.491 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction8 has 1 assertions: 
+ assertEquals(expected, e.setVariable("e", E).evaluate(), 0.0); ref {e, E, expected} [2483-2483]
+[m[m31.08.2022 - 00:33:59.491 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixFunction9 has 1 assertions: 
+ assertEquals(expected, e.setVariable("x", x).evaluate(), 0.0); ref {e, expected, x} [2496-2496]
+[m[m31.08.2022 - 00:33:59.491 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixInvalidVariableName has 1 assertions: 
+ assertEquals(expected, e.setVariable("x", x).setVariable("log", log).evaluate(), 0.0); ref {e, log, expected, x} [2510-2511]
+[m[m31.08.2022 - 00:33:59.491 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixParenthesis has 1 assertions: 
+ assertEquals(expected, e.evaluate(), 0.0); ref {e, expected} [2522-2522]
+[m[m31.08.2022 - 00:33:59.491 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testPostfixVariables has 1 assertions: 
+ assertEquals(expected, e.setVariable("x", x).setVariable("pi", pi).evaluate(), 0.0); ref {e, expected, x, pi} [2536-2537]
+[m[m31.08.2022 - 00:33:59.492 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testUnicodeVariable1 has 1 assertions: 
+ assertEquals(E, e.evaluate(), 0d); ref {E, e} [2546-2546]
+[m[m31.08.2022 - 00:33:59.492 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testUnicodeVariable2 has 1 assertions: 
+ assertEquals(log(3 * E + 1), e.evaluate(), 0d); ref {E, e} [2555-2555]
+[m[m31.08.2022 - 00:33:59.492 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testUnicodeVariable3 has 1 assertions: 
+ assertEquals(log(PI), e.evaluate(), 0d); ref {e, PI} [2573-2573]
+[m[m31.08.2022 - 00:33:59.492 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testUnicodeVariable4 has 1 assertions: 
+ assertEquals(3 * log(PI * E * 6), e.evaluate(), 0d); ref {E, e, PI} [2592-2592]
+[m[m31.08.2022 - 00:33:59.492 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testImplicitMultiplicationOffNumber has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.492 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testImplicitMultiplicationOffVariable has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.492 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testImplicitMultiplicationOffParentheses has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.492 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testImplicitMultiplicationOffFunction has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.492 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testImplicitMultiplicationOnNumber has 1 assertions: 
+ assertEquals(4d, e.evaluate(), 0d); ref {e} [2638-2638]
+[m[m31.08.2022 - 00:33:59.493 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testImplicitMultiplicationOnVariable has 1 assertions: 
+ assertEquals(4d, e.evaluate(), 0d); ref {e} [2647-2647]
+[m[m31.08.2022 - 00:33:59.493 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testImplicitMultiplicationOnParentheses has 1 assertions: 
+ assertEquals(4d, e.evaluate(), 0d); ref {e} [2656-2656]
+[m[m31.08.2022 - 00:33:59.493 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testImplicitMultiplicationOnFunction has 1 assertions: 
+ assertEquals(2 * log(2), e.evaluate(), 0d); ref {e} [2665-2665]
+[m[m31.08.2022 - 00:33:59.493 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testSecondArgumentNegative has 1 assertions: 
+ assertEquals(-2d, result, 0d); ref {result} [2682-2682]
+[m[m31.08.2022 - 00:33:59.493 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testVariableWithDot has 1 assertions: 
+ assertEquals(3d, result, 0d); ref {result} [2693-2693]
+[m[m31.08.2022 - 00:33:59.493 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testTwoAdjacentOperators has 1 assertions: 
+ assertEquals(expected, result, 0d); ref {result, expected} [2723-2723]
+[m[m31.08.2022 - 00:33:59.493 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testGetVariableNames1 has 3 assertions: 
+ assertTrue(variableNames.contains("a")); ref {variableNames} [2732-2732],
+ assertTrue(variableNames.contains("b")); ref {variableNames} [2733-2733],
+ assertTrue(variableNames.contains("c")); ref {variableNames} [2734-2734]
+[m[m31.08.2022 - 00:33:59.493 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testGetVariableNames2 has 3 assertions: 
+ assertTrue(variableNames.contains("bar")); ref {variableNames} [2743-2743],
+ assertTrue(variableNames.contains("FOO.s")); ref {variableNames} [2744-2744],
+ assertTrue(variableNames.contains("c")); ref {variableNames} [2745-2745]
+[m[m31.08.2022 - 00:33:59.493 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testSameVariableAndBuiltinFunctionName has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.494 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testSameVariableAndUserFunctionName has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.494 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testSignum has 6 assertions: 
+ assertEquals(1, e.evaluate(), 0d); ref {e} [2772-2772],
+ assertEquals(-1, e.evaluate(), 0d); ref {e} [2776-2776],
+ assertEquals(1, e.evaluate(), 0d); ref {e} [2780-2780],
+ assertEquals(-1, e.evaluate(), 0d); ref {e} [2784-2784],
+ assertEquals(-1, e.evaluate(), 0d); ref {e} [2788-2788],
+ assertEquals(-1, e.evaluate(), 0d); ref {e} [2792-2792]
+[m[m31.08.2022 - 00:33:59.494 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionBuilderTest::testCustomPercent has 2 assertions: 
+ assertEquals(0d, 900, e.evaluate()); ref {e} [2813-2813],
+ assertEquals(0d, 1000d * 0.12d, e.evaluate()); ref {e} [2818-2818]
+[m[m31.08.2022 - 00:33:59.500 [INFO ] ParsingStrategy.parseTestSuite() - Found 24 test cases
+[m[m31.08.2022 - 00:33:59.501 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateNumber has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [73-73]
+[m[m31.08.2022 - 00:33:59.501 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateNumberPositive has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [81-81]
+[m[m31.08.2022 - 00:33:59.501 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateNumberNegative has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [89-89]
+[m[m31.08.2022 - 00:33:59.501 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateOperator has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [98-98]
+[m[m31.08.2022 - 00:33:59.501 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateFunction has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [107-107]
+[m[m31.08.2022 - 00:33:59.501 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateFunctionPositive has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [116-116]
+[m[m31.08.2022 - 00:33:59.502 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateFunctionNegative has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [125-125]
+[m[m31.08.2022 - 00:33:59.502 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateFunctionAndOperator has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [134-134]
+[m[m31.08.2022 - 00:33:59.502 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateFunctionWithTwoArguments has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [144-144]
+[m[m31.08.2022 - 00:33:59.502 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateFunctionWithTwoArgumentsAndOperator has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [154-154]
+[m[m31.08.2022 - 00:33:59.502 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateFunctionWithThreeArguments has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [164-164]
+[m[m31.08.2022 - 00:33:59.502 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateFunctionWithThreeArgumentsAndOperator has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [174-174]
+[m[m31.08.2022 - 00:33:59.502 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateFunctionWithTwoAndThreeArguments has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [184-184]
+[m[m31.08.2022 - 00:33:59.502 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateFunctionWithTwoAndThreeArgumentsAndOperator has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [194-194]
+[m[m31.08.2022 - 00:33:59.503 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateFunctionWithTwoAndThreeArgumentsAndMultipleOperator has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [204-204]
+[m[m31.08.2022 - 00:33:59.503 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateFunctionWithSevenArguments has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [213-213]
+[m[m31.08.2022 - 00:33:59.503 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateFunctionWithSevenArgumentsAndOperator has 1 assertions: 
+ Assert.assertTrue(result.isValid()); ref {result, Assert} [222-222]
+[m[m31.08.2022 - 00:33:59.503 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateInvalidFunction has 1 assertions: 
+ Assert.assertFalse(result.isValid()); ref {result, Assert} [232-232]
+[m[m31.08.2022 - 00:33:59.503 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateInvalidOperand has 1 assertions: 
+ Assert.assertFalse(result.isValid()); ref {result, Assert} [240-240]
+[m[m31.08.2022 - 00:33:59.503 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateInvalidFunctionWithTooFewArguments has 1 assertions: 
+ Assert.assertFalse(result.isValid()); ref {result, Assert} [249-249]
+[m[m31.08.2022 - 00:33:59.503 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateInvalidFunctionWithTooFewArgumentsAndOperands has 1 assertions: 
+ Assert.assertFalse(result.isValid()); ref {result, Assert} [258-258]
+[m[m31.08.2022 - 00:33:59.503 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateInvalidFunctionWithManyArguments has 1 assertions: 
+ Assert.assertFalse(result.isValid()); ref {result, Assert} [267-267]
+[m[m31.08.2022 - 00:33:59.503 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testValidateInvalidOperator has 1 assertions: 
+ Assert.assertFalse(result.isValid()); ref {result, Assert} [275-275]
+[m[m31.08.2022 - 00:33:59.504 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionValidateTest::testNoArgFunctionValidation has 4 assertions: 
+ assertTrue(e.validate().isValid()); ref {e} [291-291],
+ assertTrue(e.validate().isValid()); ref {e} [296-296],
+ assertTrue(e.validate().isValid()); ref {e} [301-301],
+ assertTrue(e.validate().isValid()); ref {e} [306-306]
+[m[m31.08.2022 - 00:33:59.505 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m31.08.2022 - 00:33:59.505 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ConcurrencyTests::testFutureEvaluation has 2 assertions: 
+ assertEquals(correct1[i], (Double) results1[i].get(), 0d); ref {correct1, results1, i} [58-58],
+ assertEquals(correct2[i], (Double) results2[i].get(), 0d); ref {results2, i, correct2} [59-59]
+[m[m31.08.2022 - 00:33:59.522 [INFO ] ParsingStrategy.parseTestSuite() - Found 22 test cases
+[m[m31.08.2022 - 00:33:59.523 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization1 has 1 assertions: 
+ assertNumberToken(tokenizer.nextToken(), 1.222331d); ref {tokenizer} [33-33]
+[m[m31.08.2022 - 00:33:59.523 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization2 has 1 assertions: 
+ assertNumberToken(tokenizer.nextToken(), .222331d); ref {tokenizer} [39-39]
+[m[m31.08.2022 - 00:33:59.523 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization3 has 1 assertions: 
+ assertNumberToken(tokenizer.nextToken(), 300d); ref {tokenizer} [45-45]
+[m[m31.08.2022 - 00:33:59.523 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization4 has 7 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [52-52],
+ assertNumberToken(tokenizer.nextToken(), 3d); ref {tokenizer} [53-53],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [55-55],
+ assertOperatorToken(tokenizer.nextToken(), "+", 2, Operator.PRECEDENCE_ADDITION); ref {Operator, Operator.PRECEDENCE_ADDITION, tokenizer} [56-56],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [58-58],
+ assertNumberToken(tokenizer.nextToken(), 1d); ref {tokenizer} [59-59],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [61-61]
+[m[m31.08.2022 - 00:33:59.523 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization5 has 5 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [68-68],
+ assertOperatorToken(tokenizer.nextToken(), "+", 1, Operator.PRECEDENCE_UNARY_PLUS); ref {Operator, Operator.PRECEDENCE_UNARY_PLUS, tokenizer} [69-69],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [71-71],
+ assertNumberToken(tokenizer.nextToken(), 3d); ref {tokenizer} [72-72],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [74-74]
+[m[m31.08.2022 - 00:33:59.523 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization6 has 5 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [81-81],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [82-82],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [84-84],
+ assertNumberToken(tokenizer.nextToken(), 3d); ref {tokenizer} [85-85],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [87-87]
+[m[m31.08.2022 - 00:33:59.523 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization7 has 15 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [94-94],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [95-95],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [97-97],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [98-98],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [100-100],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [101-101],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [103-103],
+ assertOperatorToken(tokenizer.nextToken(), "+", 1, Operator.PRECEDENCE_UNARY_PLUS); ref {Operator, Operator.PRECEDENCE_UNARY_PLUS, tokenizer} [104-104],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [106-106],
+ assertOperatorToken(tokenizer.nextToken(), "+", 1, Operator.PRECEDENCE_UNARY_PLUS); ref {Operator, Operator.PRECEDENCE_UNARY_PLUS, tokenizer} [107-107],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [109-109],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [110-110],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [112-112],
+ assertNumberToken(tokenizer.nextToken(), 3d); ref {tokenizer} [113-113],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [115-115]
+[m[m31.08.2022 - 00:33:59.524 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization8 has 15 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [122-122],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [123-123],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [125-125],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [126-126],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [128-128],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [129-129],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [131-131],
+ assertOperatorToken(tokenizer.nextToken(), "+", 1, Operator.PRECEDENCE_UNARY_PLUS); ref {Operator, Operator.PRECEDENCE_UNARY_PLUS, tokenizer} [132-132],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [134-134],
+ assertOperatorToken(tokenizer.nextToken(), "+", 1, Operator.PRECEDENCE_UNARY_PLUS); ref {Operator, Operator.PRECEDENCE_UNARY_PLUS, tokenizer} [135-135],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [137-137],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [138-138],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [140-140],
+ assertNumberToken(tokenizer.nextToken(), 3.004d); ref {tokenizer} [141-141],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [143-143]
+[m[m31.08.2022 - 00:33:59.524 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization9 has 9 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [150-150],
+ assertNumberToken(tokenizer.nextToken(), 3d); ref {tokenizer} [151-151],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [153-153],
+ assertOperatorToken(tokenizer.nextToken(), "+", 2, Operator.PRECEDENCE_ADDITION); ref {Operator, Operator.PRECEDENCE_ADDITION, tokenizer} [154-154],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [156-156],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [157-157],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [159-159],
+ assertNumberToken(tokenizer.nextToken(), 1d); ref {tokenizer} [160-160],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [162-162]
+[m[m31.08.2022 - 00:33:59.524 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization10 has 19 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [169-169],
+ assertNumberToken(tokenizer.nextToken(), 3d); ref {tokenizer} [170-170],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [172-172],
+ assertOperatorToken(tokenizer.nextToken(), "+", 2, Operator.PRECEDENCE_ADDITION); ref {Operator, Operator.PRECEDENCE_ADDITION, tokenizer} [173-173],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [175-175],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [176-176],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [178-178],
+ assertNumberToken(tokenizer.nextToken(), 1d); ref {tokenizer} [179-179],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [181-181],
+ assertOperatorToken(tokenizer.nextToken(), "-", 2, Operator.PRECEDENCE_SUBTRACTION); ref {Operator, Operator.PRECEDENCE_SUBTRACTION, tokenizer} [182-182],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [184-184],
+ assertNumberToken(tokenizer.nextToken(), 0.32d); ref {tokenizer} [185-185],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [187-187],
+ assertOperatorToken(tokenizer.nextToken(), "+", 2, Operator.PRECEDENCE_ADDITION); ref {Operator, Operator.PRECEDENCE_ADDITION, tokenizer} [188-188],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [190-190],
+ assertOperatorToken(tokenizer.nextToken(), "+", 1, Operator.PRECEDENCE_UNARY_PLUS); ref {Operator, Operator.PRECEDENCE_UNARY_PLUS, tokenizer} [191-191],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [193-193],
+ assertNumberToken(tokenizer.nextToken(), 2d); ref {tokenizer} [194-194],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [196-196]
+[m[m31.08.2022 - 00:33:59.524 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization11 has 5 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [203-203],
+ assertNumberToken(tokenizer.nextToken(), 2d); ref {tokenizer} [204-204],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [206-206],
+ assertOperatorToken(tokenizer.nextToken(), "+", 2, Operator.PRECEDENCE_ADDITION); ref {Operator, Operator.PRECEDENCE_ADDITION, tokenizer} [207-207],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [209-209]
+[m[m31.08.2022 - 00:33:59.525 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization12 has 9 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [216-216],
+ assertFunctionToken(tokenizer.nextToken(), "log", 1); ref {tokenizer} [217-217],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [219-219],
+ assertOpenParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [220-220],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [222-222],
+ assertNumberToken(tokenizer.nextToken(), 1d); ref {tokenizer} [223-223],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [225-225],
+ assertCloseParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [226-226],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [228-228]
+[m[m31.08.2022 - 00:33:59.525 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization13 has 3 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [235-235],
+ assertVariableToken(tokenizer.nextToken(), "x"); ref {tokenizer} [236-236],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [238-238]
+[m[m31.08.2022 - 00:33:59.525 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization14 has 17 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [245-245],
+ assertNumberToken(tokenizer.nextToken(), 2d); ref {tokenizer} [246-246],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [248-248],
+ assertOperatorToken(tokenizer.nextToken(), "*", 2, Operator.PRECEDENCE_MULTIPLICATION); ref {Operator, Operator.PRECEDENCE_MULTIPLICATION, tokenizer} [249-249],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [251-251],
+ assertVariableToken(tokenizer.nextToken(), "x"); ref {tokenizer} [252-252],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [254-254],
+ assertOperatorToken(tokenizer.nextToken(), "-", 2, Operator.PRECEDENCE_SUBTRACTION); ref {Operator, Operator.PRECEDENCE_SUBTRACTION, tokenizer} [255-255],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [257-257],
+ assertFunctionToken(tokenizer.nextToken(), "log", 1); ref {tokenizer} [258-258],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [260-260],
+ assertOpenParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [261-261],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [263-263],
+ assertNumberToken(tokenizer.nextToken(), 3d); ref {tokenizer} [264-264],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [266-266],
+ assertCloseParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [267-267],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [269-269]
+[m[m31.08.2022 - 00:33:59.525 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization15 has 17 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [276-276],
+ assertNumberToken(tokenizer.nextToken(), 2d); ref {tokenizer} [277-277],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [279-279],
+ assertOperatorToken(tokenizer.nextToken(), "*", 2, Operator.PRECEDENCE_MULTIPLICATION); ref {Operator, Operator.PRECEDENCE_MULTIPLICATION, tokenizer} [280-280],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [282-282],
+ assertVariableToken(tokenizer.nextToken(), "xlog"); ref {tokenizer} [283-283],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [285-285],
+ assertOperatorToken(tokenizer.nextToken(), "+", 2, Operator.PRECEDENCE_ADDITION); ref {Operator, Operator.PRECEDENCE_ADDITION, tokenizer} [286-286],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [288-288],
+ assertFunctionToken(tokenizer.nextToken(), "log", 1); ref {tokenizer} [289-289],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [291-291],
+ assertOpenParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [292-292],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [294-294],
+ assertNumberToken(tokenizer.nextToken(), 3d); ref {tokenizer} [295-295],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [297-297],
+ assertCloseParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [298-298],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [300-300]
+[m[m31.08.2022 - 00:33:59.525 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization16 has 19 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [307-307],
+ assertNumberToken(tokenizer.nextToken(), 2d); ref {tokenizer} [308-308],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [310-310],
+ assertOperatorToken(tokenizer.nextToken(), "*", 2, Operator.PRECEDENCE_MULTIPLICATION); ref {Operator, Operator.PRECEDENCE_MULTIPLICATION, tokenizer} [311-311],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [313-313],
+ assertVariableToken(tokenizer.nextToken(), "x"); ref {tokenizer} [314-314],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [316-316],
+ assertOperatorToken(tokenizer.nextToken(), "+", 2, Operator.PRECEDENCE_ADDITION); ref {Operator, Operator.PRECEDENCE_ADDITION, tokenizer} [317-317],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [319-319],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [320-320],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [322-322],
+ assertFunctionToken(tokenizer.nextToken(), "log", 1); ref {tokenizer} [323-323],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [325-325],
+ assertOpenParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [326-326],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [328-328],
+ assertNumberToken(tokenizer.nextToken(), 3d); ref {tokenizer} [329-329],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [331-331],
+ assertCloseParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [332-332],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [334-334]
+[m[m31.08.2022 - 00:33:59.526 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization17 has 19 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [341-341],
+ assertNumberToken(tokenizer.nextToken(), 2d); ref {tokenizer} [342-342],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [344-344],
+ assertOperatorToken(tokenizer.nextToken(), "*", 2, Operator.PRECEDENCE_MULTIPLICATION); ref {Operator, Operator.PRECEDENCE_MULTIPLICATION, tokenizer} [345-345],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [347-347],
+ assertVariableToken(tokenizer.nextToken(), "x"); ref {tokenizer} [348-348],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [350-350],
+ assertOperatorToken(tokenizer.nextToken(), "+", 2, Operator.PRECEDENCE_ADDITION); ref {Operator, Operator.PRECEDENCE_ADDITION, tokenizer} [351-351],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [353-353],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [354-354],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [356-356],
+ assertFunctionToken(tokenizer.nextToken(), "log", 1); ref {tokenizer} [357-357],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [359-359],
+ assertOpenParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [360-360],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [362-362],
+ assertNumberToken(tokenizer.nextToken(), 3d); ref {tokenizer} [363-363],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [365-365],
+ assertCloseParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [366-366],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [368-368]
+[m[m31.08.2022 - 00:33:59.526 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization18 has 9 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [385-385],
+ assertFunctionToken(tokenizer.nextToken(), "log2", 1); ref {tokenizer} [386-386],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [388-388],
+ assertOpenParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [389-389],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [391-391],
+ assertNumberToken(tokenizer.nextToken(), 4d); ref {tokenizer} [392-392],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [394-394],
+ assertCloseParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [395-395],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [397-397]
+[m[m31.08.2022 - 00:33:59.526 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization19 has 13 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [417-417],
+ assertFunctionToken(tokenizer.nextToken(), "avg", 2); ref {tokenizer} [418-418],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [420-420],
+ assertOpenParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [421-421],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [423-423],
+ assertNumberToken(tokenizer.nextToken(), 1d); ref {tokenizer} [424-424],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [426-426],
+ assertFunctionSeparatorToken(tokenizer.nextToken()); ref {tokenizer} [427-427],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [429-429],
+ assertNumberToken(tokenizer.nextToken(), 2d); ref {tokenizer} [430-430],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [432-432],
+ assertCloseParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [433-433],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [435-435]
+[m[m31.08.2022 - 00:33:59.526 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization20 has 5 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [451-451],
+ assertNumberToken(tokenizer.nextToken(), 2d); ref {tokenizer} [452-452],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [454-454],
+ assertOperatorToken(tokenizer.nextToken(), "!", factorial.getNumOperands(), factorial.getPrecedence()); ref {factorial, tokenizer} [455-455],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [457-457]
+[m[m31.08.2022 - 00:33:59.527 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization21 has 37 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [464-464],
+ assertFunctionToken(tokenizer.nextToken(), "log", 1); ref {tokenizer} [465-465],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [467-467],
+ assertOpenParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [468-468],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [470-470],
+ assertVariableToken(tokenizer.nextToken(), "x"); ref {tokenizer} [471-471],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [473-473],
+ assertCloseParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [474-474],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [476-476],
+ assertOperatorToken(tokenizer.nextToken(), "-", 2, Operator.PRECEDENCE_SUBTRACTION); ref {Operator, Operator.PRECEDENCE_SUBTRACTION, tokenizer} [477-477],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [479-479],
+ assertVariableToken(tokenizer.nextToken(), "y"); ref {tokenizer} [480-480],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [482-482],
+ assertOperatorToken(tokenizer.nextToken(), "*", 2, Operator.PRECEDENCE_MULTIPLICATION); ref {Operator, Operator.PRECEDENCE_MULTIPLICATION, tokenizer} [483-483],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [485-485],
+ assertOpenParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [486-486],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [488-488],
+ assertFunctionToken(tokenizer.nextToken(), "sqrt", 1); ref {tokenizer} [489-489],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [491-491],
+ assertOpenParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [492-492],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [494-494],
+ assertVariableToken(tokenizer.nextToken(), "x"); ref {tokenizer} [495-495],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [497-497],
+ assertOperatorToken(tokenizer.nextToken(), "^", 2, Operator.PRECEDENCE_POWER); ref {Operator, Operator.PRECEDENCE_POWER, tokenizer} [498-498],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [500-500],
+ assertFunctionToken(tokenizer.nextToken(), "cos", 1); ref {tokenizer} [501-501],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [503-503],
+ assertOpenParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [504-504],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [506-506],
+ assertVariableToken(tokenizer.nextToken(), "y"); ref {tokenizer} [507-507],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [509-509],
+ assertCloseParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [510-510],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [512-512],
+ assertCloseParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [513-513],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [515-515],
+ assertCloseParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [516-516],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [518-518]
+[m[m31.08.2022 - 00:33:59.527 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerTest::testTokenization22 has 17 assertions: 
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [525-525],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [526-526],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [528-528],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [529-529],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [531-531],
+ assertNumberToken(tokenizer.nextToken(), 2d); ref {tokenizer} [532-532],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [534-534],
+ assertOperatorToken(tokenizer.nextToken(), "*", 2, Operator.PRECEDENCE_MULTIPLICATION); ref {Operator, Operator.PRECEDENCE_MULTIPLICATION, tokenizer} [535-535],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [537-537],
+ assertOpenParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [538-538],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [540-540],
+ assertOperatorToken(tokenizer.nextToken(), "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokenizer} [541-541],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [543-543],
+ assertNumberToken(tokenizer.nextToken(), 14d); ref {tokenizer} [544-544],
+ assertTrue(tokenizer.hasNext()); ref {tokenizer} [546-546],
+ assertCloseParenthesesToken(tokenizer.nextToken()); ref {tokenizer} [547-547],
+ assertFalse(tokenizer.hasNext()); ref {tokenizer} [549-549]
+[m[m31.08.2022 - 00:33:59.532 [INFO ] ParsingStrategy.parseTestSuite() - Found 10 test cases
+[m[m31.08.2022 - 00:33:59.532 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionTest::testExpression1 has 1 assertions: 
+ assertEquals(5d, exp.evaluate(), 0d); ref {exp} [41-41]
+[m[m31.08.2022 - 00:33:59.532 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionTest::testExpression2 has 1 assertions: 
+ assertEquals(0d, exp.evaluate(), 0d); ref {exp} [51-51]
+[m[m31.08.2022 - 00:33:59.533 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionTest::testGetVariableNames1 has 1 assertions: 
+ assertEquals(2, exp.getVariableNames().size()); ref {exp} [63-63]
+[m[m31.08.2022 - 00:33:59.533 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionTest::testFactorial has 20 assertions: 
+ assertEquals(8d, e.evaluate(), 0d); ref {e} [90-90],
+ assertEquals(4d, e.evaluate(), 0d); ref {e} [95-95],
+ assertEquals(6, e.evaluate(), 0); ref {e} [100-100],
+ assertEquals(720, e.evaluate(), 0); ref {e} [105-105],
+ assertEquals(10, e.evaluate(), 0); ref {e} [110-110],
+ assertEquals(12, e.evaluate(), 0); ref {e} [115-115],
+ assertTrue(e.validate().isValid()); ref {e} [120-120],
+ assertEquals(6, e.evaluate(), 0); ref {e} [121-121],
+ assertTrue(e.validate().isValid()); ref {e} [126-126],
+ assertEquals(720, e.evaluate(), 0); ref {e} [127-127],
+ assertTrue(e.validate().isValid()); ref {e} [132-132],
+ assertEquals(10, e.evaluate(), 0); ref {e} [133-133],
+ assertTrue(e.validate().isValid()); ref {e} [138-138],
+ assertEquals(12, e.evaluate(), 0); ref {e} [139-139],
+ assertTrue(e.validate().isValid()); ref {e} [144-144],
+ assertEquals(12, e.evaluate(), 0); ref {e} [145-145],
+ assertTrue(e.validate().isValid()); ref {e} [150-150],
+ assertEquals(10, e.evaluate(), 0); ref {e} [151-151],
+ assertTrue(e.validate().isValid()); ref {e} [156-156],
+ assertEquals(22, e.evaluate(), 0); ref {e} [157-157]
+[m[m31.08.2022 - 00:33:59.533 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionTest::testCotangent1 has 1 assertions: 
+ assertEquals(1 / Math.tan(1), e.evaluate(), 0d); ref {e, Math} [164-164]
+[m[m31.08.2022 - 00:33:59.533 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionTest::testInvalidCotangent1 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.533 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionTest::testOperatorFactorial2 has 1 assertions: 
+ assertFalse(e.validate().isValid()); ref {e} [198-198]
+[m[m31.08.2022 - 00:33:59.533 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionTest::testInvalidFactorial2 has 1 assertions: 
+ assertFalse(e.validate().isValid()); ref {e} [223-223]
+[m[m31.08.2022 - 00:33:59.533 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionTest::testClearVariables has 1 assertions: 
+ assertEquals(3.0, result, 3.0 - result); ref {result} [240-240]
+[m[m31.08.2022 - 00:33:59.534 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ExpressionTest::evaluateFamily has 2 assertions: 
+ executor.execute(() -> {
+    double x = Math.random();
+    e.setVariable("x", x);
+    try {
+        Thread.sleep(100);
+    } catch (InterruptedException e1) {
+        e1.printStackTrace();
+    }
+    assertEquals(Math.sin(x), e.evaluate(), 0f);
+}); ref {e, executor, x, Math, e1, Thread} [273-282],
+ assertEquals(Math.sin(x), e.evaluate(), 0f); ref {e, x, Math} [281-281]
+[m[m31.08.2022 - 00:33:59.535 [INFO ] ParsingStrategy.parseTestSuite() - Found 6 test cases
+[m[m31.08.2022 - 00:33:59.535 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerUnknownTokenOrVariableTest::testTokenizationOfUnknownVariable has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.535 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerUnknownTokenOrVariableTest::testTokenizationOfUnknownVariable1Details has 4 assertions: 
+ Assert.fail("Variable 'x' should be unknown!"); ref {Assert} [32-32],
+ Assert.assertEquals("x", e.getToken()); ref {Assert, e} [34-34],
+ Assert.assertEquals(4, e.getPosition()); ref {Assert, e} [35-35],
+ Assert.assertEquals("3 + x", e.getExpression()); ref {Assert, e} [36-36]
+[m[m31.08.2022 - 00:33:59.536 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerUnknownTokenOrVariableTest::testTokenizationOfUnknownVariable2Details has 4 assertions: 
+ Assert.fail("Variable 'x' should be unknown!"); ref {Assert} [47-47],
+ Assert.assertEquals("x", e.getToken()); ref {Assert, e} [49-49],
+ Assert.assertEquals(0, e.getPosition()); ref {Assert, e} [50-50],
+ Assert.assertEquals("x + 3", e.getExpression()); ref {Assert, e} [51-51]
+[m[m31.08.2022 - 00:33:59.536 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerUnknownTokenOrVariableTest::testTokenizationOfUnknownFunction has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.536 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerUnknownTokenOrVariableTest::testTokenizationOfUnknownFunction1Details has 4 assertions: 
+ Assert.fail("Function 'p' should be unknown!"); ref {Assert} [72-72],
+ Assert.assertEquals("p", e.getToken()); ref {Assert, e} [74-74],
+ Assert.assertEquals(4, e.getPosition()); ref {Assert, e} [75-75],
+ Assert.assertEquals("3 + p(1)", e.getExpression()); ref {Assert, e} [76-76]
+[m[m31.08.2022 - 00:33:59.536 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.tokenizer.TokenizerUnknownTokenOrVariableTest::testTokenizationOfUnknownFunction2Details has 4 assertions: 
+ Assert.fail("Function 'p' should be unknown!"); ref {Assert} [87-87],
+ Assert.assertEquals("p", e.getToken()); ref {Assert, e} [89-89],
+ Assert.assertEquals(0, e.getPosition()); ref {Assert, e} [90-90],
+ Assert.assertEquals("p(1) + 3", e.getExpression()); ref {Assert, e} [91-91]
+[m[m31.08.2022 - 00:33:59.558 [INFO ] ParsingStrategy.parseTestSuite() - Found 9 test cases
+[m[m31.08.2022 - 00:33:59.559 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.shuntingyard.ShuntingYardTest::testShuntingYard1 has 3 assertions: 
+ assertNumberToken(tokens[0], 2d); ref {tokens} [35-35],
+ assertNumberToken(tokens[1], 3d); ref {tokens} [36-36],
+ assertOperatorToken(tokens[2], "+", 2, Operator.PRECEDENCE_ADDITION); ref {Operator, tokens, Operator.PRECEDENCE_ADDITION} [37-37]
+[m[m31.08.2022 - 00:33:59.559 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.shuntingyard.ShuntingYardTest::testShuntingYard2 has 3 assertions: 
+ assertNumberToken(tokens[0], 3d); ref {tokens} [44-44],
+ assertVariableToken(tokens[1], "x"); ref {tokens} [45-45],
+ assertOperatorToken(tokens[2], "*", 2, Operator.PRECEDENCE_MULTIPLICATION); ref {Operator, tokens, Operator.PRECEDENCE_MULTIPLICATION} [46-46]
+[m[m31.08.2022 - 00:33:59.559 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.shuntingyard.ShuntingYardTest::testShuntingYard3 has 2 assertions: 
+ assertNumberToken(tokens[0], 3d); ref {tokens} [53-53],
+ assertOperatorToken(tokens[1], "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokens} [54-54]
+[m[m31.08.2022 - 00:33:59.559 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.shuntingyard.ShuntingYardTest::testShuntingYard4 has 4 assertions: 
+ assertNumberToken(tokens[0], 2d); ref {tokens} [61-61],
+ assertNumberToken(tokens[1], 2d); ref {tokens} [62-62],
+ assertOperatorToken(tokens[2], "^", 2, Operator.PRECEDENCE_POWER); ref {Operator, tokens, Operator.PRECEDENCE_POWER} [63-63],
+ assertOperatorToken(tokens[3], "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokens} [64-64]
+[m[m31.08.2022 - 00:33:59.559 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.shuntingyard.ShuntingYardTest::testShuntingYard5 has 4 assertions: 
+ assertNumberToken(tokens[0], 2d); ref {tokens} [71-71],
+ assertNumberToken(tokens[1], 2d); ref {tokens} [72-72],
+ assertOperatorToken(tokens[2], "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokens} [73-73],
+ assertOperatorToken(tokens[3], "^", 2, Operator.PRECEDENCE_POWER); ref {Operator, tokens, Operator.PRECEDENCE_POWER} [74-74]
+[m[m31.08.2022 - 00:33:59.559 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.shuntingyard.ShuntingYardTest::testShuntingYard6 has 7 assertions: 
+ assertNumberToken(tokens[0], 2d); ref {tokens} [81-81],
+ assertNumberToken(tokens[1], 2d); ref {tokens} [82-82],
+ assertOperatorToken(tokens[2], "+", 1, Operator.PRECEDENCE_UNARY_PLUS); ref {Operator, Operator.PRECEDENCE_UNARY_PLUS, tokens} [83-83],
+ assertOperatorToken(tokens[3], "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokens} [84-84],
+ assertOperatorToken(tokens[4], "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokens} [85-85],
+ assertOperatorToken(tokens[5], "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokens} [86-86],
+ assertOperatorToken(tokens[6], "^", 2, Operator.PRECEDENCE_POWER); ref {Operator, tokens, Operator.PRECEDENCE_POWER} [87-87]
+[m[m31.08.2022 - 00:33:59.560 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.shuntingyard.ShuntingYardTest::testShuntingYard7 has 5 assertions: 
+ assertNumberToken(tokens[0], 2d); ref {tokens} [114-114],
+ assertNumberToken(tokens[1], 2d); ref {tokens} [115-115],
+ assertOperatorToken(tokens[2], "!", 1, Operator.PRECEDENCE_POWER + 1); ref {Operator, tokens, Operator.PRECEDENCE_POWER} [116-116],
+ assertOperatorToken(tokens[3], "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokens} [117-117],
+ assertOperatorToken(tokens[4], "^", 2, Operator.PRECEDENCE_POWER); ref {Operator, tokens, Operator.PRECEDENCE_POWER} [118-118]
+[m[m31.08.2022 - 00:33:59.560 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.shuntingyard.ShuntingYardTest::testShuntingYard8 has 4 assertions: 
+ assertNumberToken(tokens[0], 3d); ref {tokens} [125-125],
+ assertNumberToken(tokens[1], 2d); ref {tokens} [126-126],
+ assertOperatorToken(tokens[2], "^", 2, Operator.PRECEDENCE_POWER); ref {Operator, tokens, Operator.PRECEDENCE_POWER} [127-127],
+ assertOperatorToken(tokens[3], "-", 1, Operator.PRECEDENCE_UNARY_MINUS); ref {Operator, Operator.PRECEDENCE_UNARY_MINUS, tokens} [128-128]
+[m[m31.08.2022 - 00:33:59.560 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.shuntingyard.ShuntingYardTest::testShuntingYard9 has 2 assertions: 
+ assertNumberToken(tokens[0], 1d); ref {tokens} [145-145],
+ assertOperatorToken(tokens[1], "$", 1, Operator.PRECEDENCE_DIVISION); ref {Operator, tokens, Operator.PRECEDENCE_DIVISION} [146-146]
+[m[m31.08.2022 - 00:33:59.562 [INFO ] ParsingStrategy.parseTestSuite() - Found 12 test cases
+[m[m31.08.2022 - 00:33:59.562 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ArrayStackTest::testConstructor has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.562 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ArrayStackTest::testPushNoSize has 1 assertions: 
+ assertEquals(3, stack.size()); ref {stack} [45-45]
+[m[m31.08.2022 - 00:33:59.562 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ArrayStackTest::testPushLessSize has 1 assertions: 
+ assertEquals(5, stack.size()); ref {stack} [56-56]
+[m[m31.08.2022 - 00:33:59.562 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ArrayStackTest::testPeek has 3 assertions: 
+ assertEquals(4d, stack.peek(), 0d); ref {stack} [67-67],
+ assertEquals(4d, stack.peek(), 0d); ref {stack} [68-68],
+ assertEquals(4d, stack.peek(), 0d); ref {stack} [69-69]
+[m[m31.08.2022 - 00:33:59.562 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ArrayStackTest::testPeek2 has 2 assertions: 
+ assertEquals(old, stack.peek(), 0d); ref {stack, old} [78-78],
+ assertEquals(old, stack.peek(), 0d); ref {stack, old} [81-81]
+[m[m31.08.2022 - 00:33:59.563 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ArrayStackTest::testPeekNoData has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.563 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ArrayStackTest::testPop has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.563 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ArrayStackTest::testPop2 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.563 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ArrayStackTest::testPop3 has 4 assertions: 
+ assertEquals(1, stack.size()); ref {stack} [123-123],
+ assertEquals(i, stack.pop(), 0d); ref {stack, i} [124-124],
+ assertEquals(0, stack.size()); ref {stack} [127-127],
+ assertTrue(stack.isEmpty()); ref {stack} [128-128]
+[m[m31.08.2022 - 00:33:59.563 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ArrayStackTest::testPopNoData has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.564 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ArrayStackTest::testIsEmpty has 8 assertions: 
+ assertTrue(stack.isEmpty()); ref {stack} [140-140],
+ assertFalse(stack.isEmpty()); ref {stack} [142-142],
+ assertFalse(stack.isEmpty()); ref {stack} [144-144],
+ assertFalse(stack.isEmpty()); ref {stack} [146-146],
+ assertTrue(stack.isEmpty()); ref {stack} [150-150],
+ assertFalse(stack.isEmpty()); ref {stack} [152-152],
+ assertFalse(stack.isEmpty()); ref {stack} [154-154],
+ assertTrue(stack.isEmpty()); ref {stack} [156-156]
+[m[m31.08.2022 - 00:33:59.564 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.ArrayStackTest::testSize has 4 assertions: 
+ assertEquals(0, stack.size()); ref {stack} [162-162],
+ assertEquals(1, stack.size()); ref {stack} [164-164],
+ assertEquals(1, stack.size()); ref {stack} [166-166],
+ assertEquals(0, stack.size()); ref {stack} [168-168]
+[m[m31.08.2022 - 00:33:59.565 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m31.08.2022 - 00:33:59.565 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.PerformanceTest::testBenches has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.584 [INFO ] ParsingStrategy.parseTestSuite() - Found 9 test cases
+[m[m31.08.2022 - 00:33:59.585 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.FunctionsTest::testFunctionNameNull has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.585 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.FunctionsTest::testFunctionNameEmpty has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.585 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.FunctionsTest::testFunctionNameZeroArgs has 1 assertions: 
+ assertEquals(0f, f.apply(), 0f); ref {f} [54-54]
+[m[m31.08.2022 - 00:33:59.585 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.FunctionsTest::testFunctionNameNegativeArgs has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.585 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.FunctionsTest::testIllegalFunctionName1 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.585 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.FunctionsTest::testIllegalFunctionName2 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.585 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.FunctionsTest::testIllegalFunctionName3 has 0 assertions: 
+ 
+[m[m31.08.2022 - 00:33:59.585 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.FunctionsTest::testGetAllowedFunctionChars has 54 assertions: 
+ assertEquals(53, chars.length); ref {chars.length, chars} [100-100],
+ assertTrue(Arrays.binarySearch(chars, 'a') > -1); ref {Arrays, chars} [102-102],
+ assertTrue(Arrays.binarySearch(chars, 'b') > -1); ref {Arrays, chars} [103-103],
+ assertTrue(Arrays.binarySearch(chars, 'c') > -1); ref {Arrays, chars} [104-104],
+ assertTrue(Arrays.binarySearch(chars, 'd') > -1); ref {Arrays, chars} [105-105],
+ assertTrue(Arrays.binarySearch(chars, 'e') > -1); ref {Arrays, chars} [106-106],
+ assertTrue(Arrays.binarySearch(chars, 'f') > -1); ref {Arrays, chars} [107-107],
+ assertTrue(Arrays.binarySearch(chars, 'g') > -1); ref {Arrays, chars} [108-108],
+ assertTrue(Arrays.binarySearch(chars, 'h') > -1); ref {Arrays, chars} [109-109],
+ assertTrue(Arrays.binarySearch(chars, 'i') > -1); ref {Arrays, chars} [110-110],
+ assertTrue(Arrays.binarySearch(chars, 'j') > -1); ref {Arrays, chars} [111-111],
+ assertTrue(Arrays.binarySearch(chars, 'k') > -1); ref {Arrays, chars} [112-112],
+ assertTrue(Arrays.binarySearch(chars, 'l') > -1); ref {Arrays, chars} [113-113],
+ assertTrue(Arrays.binarySearch(chars, 'm') > -1); ref {Arrays, chars} [114-114],
+ assertTrue(Arrays.binarySearch(chars, 'n') > -1); ref {Arrays, chars} [115-115],
+ assertTrue(Arrays.binarySearch(chars, 'o') > -1); ref {Arrays, chars} [116-116],
+ assertTrue(Arrays.binarySearch(chars, 'p') > -1); ref {Arrays, chars} [117-117],
+ assertTrue(Arrays.binarySearch(chars, 'q') > -1); ref {Arrays, chars} [118-118],
+ assertTrue(Arrays.binarySearch(chars, 'r') > -1); ref {Arrays, chars} [119-119],
+ assertTrue(Arrays.binarySearch(chars, 's') > -1); ref {Arrays, chars} [120-120],
+ assertTrue(Arrays.binarySearch(chars, 't') > -1); ref {Arrays, chars} [121-121],
+ assertTrue(Arrays.binarySearch(chars, 'u') > -1); ref {Arrays, chars} [122-122],
+ assertTrue(Arrays.binarySearch(chars, 'v') > -1); ref {Arrays, chars} [123-123],
+ assertTrue(Arrays.binarySearch(chars, 'w') > -1); ref {Arrays, chars} [124-124],
+ assertTrue(Arrays.binarySearch(chars, 'x') > -1); ref {Arrays, chars} [125-125],
+ assertTrue(Arrays.binarySearch(chars, 'y') > -1); ref {Arrays, chars} [126-126],
+ assertTrue(Arrays.binarySearch(chars, 'z') > -1); ref {Arrays, chars} [127-127],
+ assertTrue(Arrays.binarySearch(chars, 'A') > -1); ref {Arrays, chars} [128-128],
+ assertTrue(Arrays.binarySearch(chars, 'B') > -1); ref {Arrays, chars} [129-129],
+ assertTrue(Arrays.binarySearch(chars, 'C') > -1); ref {Arrays, chars} [130-130],
+ assertTrue(Arrays.binarySearch(chars, 'D') > -1); ref {Arrays, chars} [131-131],
+ assertTrue(Arrays.binarySearch(chars, 'E') > -1); ref {Arrays, chars} [132-132],
+ assertTrue(Arrays.binarySearch(chars, 'F') > -1); ref {Arrays, chars} [133-133],
+ assertTrue(Arrays.binarySearch(chars, 'G') > -1); ref {Arrays, chars} [134-134],
+ assertTrue(Arrays.binarySearch(chars, 'H') > -1); ref {Arrays, chars} [135-135],
+ assertTrue(Arrays.binarySearch(chars, 'I') > -1); ref {Arrays, chars} [136-136],
+ assertTrue(Arrays.binarySearch(chars, 'J') > -1); ref {Arrays, chars} [137-137],
+ assertTrue(Arrays.binarySearch(chars, 'K') > -1); ref {Arrays, chars} [138-138],
+ assertTrue(Arrays.binarySearch(chars, 'L') > -1); ref {Arrays, chars} [139-139],
+ assertTrue(Arrays.binarySearch(chars, 'M') > -1); ref {Arrays, chars} [140-140],
+ assertTrue(Arrays.binarySearch(chars, 'N') > -1); ref {Arrays, chars} [141-141],
+ assertTrue(Arrays.binarySearch(chars, 'O') > -1); ref {Arrays, chars} [142-142],
+ assertTrue(Arrays.binarySearch(chars, 'P') > -1); ref {Arrays, chars} [143-143],
+ assertTrue(Arrays.binarySearch(chars, 'Q') > -1); ref {Arrays, chars} [144-144],
+ assertTrue(Arrays.binarySearch(chars, 'R') > -1); ref {Arrays, chars} [145-145],
+ assertTrue(Arrays.binarySearch(chars, 'S') > -1); ref {Arrays, chars} [146-146],
+ assertTrue(Arrays.binarySearch(chars, 'T') > -1); ref {Arrays, chars} [147-147],
+ assertTrue(Arrays.binarySearch(chars, 'U') > -1); ref {Arrays, chars} [148-148],
+ assertTrue(Arrays.binarySearch(chars, 'V') > -1); ref {Arrays, chars} [149-149],
+ assertTrue(Arrays.binarySearch(chars, 'W') > -1); ref {Arrays, chars} [150-150],
+ assertTrue(Arrays.binarySearch(chars, 'X') > -1); ref {Arrays, chars} [151-151],
+ assertTrue(Arrays.binarySearch(chars, 'Y') > -1); ref {Arrays, chars} [152-152],
+ assertTrue(Arrays.binarySearch(chars, 'Z') > -1); ref {Arrays, chars} [153-153],
+ assertTrue(Arrays.binarySearch(chars, '_') > -1); ref {Arrays, chars} [154-154]
+[m[m31.08.2022 - 00:33:59.586 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase net.objecthunter.exp4j.FunctionsTest::testCheckFunctionNames has 23 assertions: 
+ assertTrue(Function.isValidFunctionName("log")); ref {Function} [159-159],
+ assertTrue(Function.isValidFunctionName("sin")); ref {Function} [160-160],
+ assertTrue(Function.isValidFunctionName("abz")); ref {Function} [161-161],
+ assertTrue(Function.isValidFunctionName("alongfunctionnamecanhappen")); ref {Function} [162-162],
+ assertTrue(Function.isValidFunctionName("_log")); ref {Function} [163-163],
+ assertTrue(Function.isValidFunctionName("__blah")); ref {Function} [164-164],
+ assertTrue(Function.isValidFunctionName("foox")); ref {Function} [165-165],
+ assertTrue(Function.isValidFunctionName("aZ")); ref {Function} [166-166],
+ assertTrue(Function.isValidFunctionName("Za")); ref {Function} [167-167],
+ assertTrue(Function.isValidFunctionName("ZZaa")); ref {Function} [168-168],
+ assertTrue(Function.isValidFunctionName("_")); ref {Function} [169-169],
+ assertTrue(Function.isValidFunctionName("log2")); ref {Function} [170-170],
+ assertTrue(Function.isValidFunctionName("lo32g2")); ref {Function} [171-171],
+ assertTrue(Function.isValidFunctionName("_o45g2")); ref {Function} [172-172],
+ assertFalse(Function.isValidFunctionName("&")); ref {Function} [174-174],
+ assertFalse(Function.isValidFunctionName("_+log")); ref {Function} [175-175],
+ assertFalse(Function.isValidFunctionName("_k&l")); ref {Function} [176-176],
+ assertFalse(Function.isValidFunctionName("k&l")); ref {Function} [177-177],
+ assertFalse(Function.isValidFunctionName("+log")); ref {Function} [178-178],
+ assertFalse(Function.isValidFunctionName("fo-o")); ref {Function} [179-179],
+ assertFalse(Function.isValidFunctionName("log+")); ref {Function} [180-180],
+ assertFalse(Function.isValidFunctionName("perc%")); ref {Function} [181-181],
+ assertFalse(Function.isValidFunctionName("del$a")); ref {Function} [182-182]
+[m[m31.08.2022 - 00:33:59.588 [INFO ] ParsingStrategy.mergePartialSuites() - ====================================================================
+[m[m31.08.2022 - 00:33:59.588 [INFO ] ParsingStrategy.mergePartialSuites() - Finished parsing the test suite.
+[m[m31.08.2022 - 00:33:59.590 [INFO ] ParsingStrategy.mergePartialSuites() - It contains 312 test cases and 694 assertions.
+[m[m31.08.2022 - 00:33:59.643 [INFO ] JUnitTestSuiteReducer.reduce() - Starting test suite reduction
+[m[32m31.08.2022 - 00:36:05.042 [DEBUG] GeneticReductionStrategy.reduce() - Jenetics Statistics:
+[m[32m31.08.2022 - 00:36:05.060 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m31.08.2022 - 00:36:05.060 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Time statistics                                                          |
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |             Selection: sum=0.070243247000 s; mean=0.004682883133 s        |
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |              Altering: sum=1.632560403000 s; mean=0.108837360200 s        |
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |   Fitness calculation: sum=117.817674848000 s; mean=7.854511656533 s      |
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |     Overall execution: sum=119.499282638000 s; mean=7.966618842533 s      |
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Evolution statistics                                                     |
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |           Generations: 15                                                 |
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |               Altered: sum=9,920,091; mean=661339.400000000               |
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                Killed: sum=0; mean=0.000000000                            |
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |              Invalids: sum=0; mean=0.000000000                            |
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Population statistics                                                    |
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m31.08.2022 - 00:36:05.061 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                   Age: max=14; mean=2.101253; var=12.472847               |
+[m[32m31.08.2022 - 00:36:05.062 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |               Fitness:                                                    |
+[m[32m31.08.2022 - 00:36:05.062 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      min  = -1.000000000000                               |
+[m[32m31.08.2022 - 00:36:05.062 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      max  = 1.000000000000                                |
+[m[32m31.08.2022 - 00:36:05.062 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      mean = -0.127253333333                               |
+[m[32m31.08.2022 - 00:36:05.062 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      var  = 0.983819706752                                |
+[m[32m31.08.2022 - 00:36:05.062 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      std  = 0.991876860680                                |
+[m[32m31.08.2022 - 00:36:05.062 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m31.08.2022 - 00:36:05.062 [DEBUG] GeneticReductionStrategy.reduce() - Best Result:
+[m[32m31.08.2022 - 00:36:05.063 [DEBUG] GeneticReductionStrategy.reduce() - [11111111|11111110|11111111|11111111|11111111|11111111|11111101|11111111|10111111|01111111|11111111|11111111|11111111|11111111|11111111|11111110|11111111|11111111|11111111|11111111|11110101|11111111|11111111|11111111|11111101|11111111|11111111|11111111|11111111|11111111|11111111|11111110|10111111|11111101|11111111|01111110|11111101|11111111|11111111] -> 1
+[m[32m31.08.2022 - 00:36:05.214 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder2
+[m[32m31.08.2022 - 00:36:05.214 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder3
+[m[32m31.08.2022 - 00:36:05.214 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder4
+[m[32m31.08.2022 - 00:36:05.214 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder5
+[m[32m31.08.2022 - 00:36:05.214 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder6
+[m[32m31.08.2022 - 00:36:05.214 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder7
+[m[32m31.08.2022 - 00:36:05.214 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder8
+[m[32m31.08.2022 - 00:36:05.214 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder9
+[m[32m31.08.2022 - 00:36:05.214 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidationDocExample
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder10
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder11
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder12
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder13
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder14
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder15
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder16
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder17
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder18
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder19
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction1
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction2
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction3
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction4
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction5
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction6
+[m[32m31.08.2022 - 00:36:05.215 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction7
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction10
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction11
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction12
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction13
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction14
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction15
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction16
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction18
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction20
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOperators1
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOperators2
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOperators3
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testModulo1
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOperators4
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testInvalidOperator1
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testInvalidFunction1
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testInvalidFunction2
+[m[32m31.08.2022 - 00:36:05.216 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder01
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder02
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder03
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder04
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder05
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder06
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder07
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionBuilder08
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSameName
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testInvalidFunction
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMissingVar
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnaryMinusPowerPrecedence
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnaryMinus
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression1
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression10
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression11
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression12
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression13
+[m[32m31.08.2022 - 00:36:05.217 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression15
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression16
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression17
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression18
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression19
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression2
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression20
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression21
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionPower
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpressionMultiplication
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression22
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression24
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression25
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression26
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression27
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression28
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression29
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testVarName1
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMisplacedSeparator
+[m[32m31.08.2022 - 00:36:05.218 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testInvalidVarName
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testVarMap
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testInvalidNumberOfArguments1
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testInvalidNumberOfArguments2
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression3
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression30
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression31
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression32
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression33
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression34
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression40
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression42
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression43
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression44
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression45
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression46
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression48
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression49
+[m[32m31.08.2022 - 00:36:05.219 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression50
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression51
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression52
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression53
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression54
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression55
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression56
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDocumentationExample1
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDocumentationExample2
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDocumentationExample3
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDocumentationExample4
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDocumentationExample5
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDocumentationExample6
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDocumentationExample7
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDocumentationExample9
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDocumentationExample10
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDocumentationExample11
+[m[32m31.08.2022 - 00:36:05.220 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression57
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression58
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression59
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression60
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression61
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression62
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression63
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression64
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression65
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression66
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression67
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression68
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression69
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression70
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression71
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression72
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression73
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression74
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression75
+[m[32m31.08.2022 - 00:36:05.221 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression76
+[m[32m31.08.2022 - 00:36:05.222 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression77
+[m[32m31.08.2022 - 00:36:05.222 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression78
+[m[32m31.08.2022 - 00:36:05.222 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression79
+[m[32m31.08.2022 - 00:36:05.222 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression80
+[m[32m31.08.2022 - 00:36:05.222 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression81
+[m[32m31.08.2022 - 00:36:05.222 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression82
+[m[32m31.08.2022 - 00:36:05.222 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression83
+[m[32m31.08.2022 - 00:36:05.222 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression84
+[m[32m31.08.2022 - 00:36:05.222 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression85
+[m[32m31.08.2022 - 00:36:05.222 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSpaceBetweenNumbers
+[m[32m31.08.2022 - 00:36:05.222 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnaryMinusInParenthesisSpace
+[m[32m31.08.2022 - 00:36:05.222 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnaryMinusSpace
+[m[32m31.08.2022 - 00:36:05.222 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnaryMinusSpaces
+[m[32m31.08.2022 - 00:36:05.222 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnaryMinusSpace1
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression5
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression6
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression7
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression8
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression9
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFailUnknownFunction1
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFailUnknownFunction2
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFailUnknownFunction3
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction22
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction23
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunction24
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfix1
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixEverything
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixExponentiation2
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixExponentiation3
+[m[32m31.08.2022 - 00:36:05.223 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixExponentiation4
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction1
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction10
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction11
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction12
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction13
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction14
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction15
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction16
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction17
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction18
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction19
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction20
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction21
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction2
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction3
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction5
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction6
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction7
+[m[32m31.08.2022 - 00:36:05.224 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction8
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixFunction9
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixInvalidVariableName
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixParenthesis
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPostfixVariables
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnicodeVariable1
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnicodeVariable2
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnicodeVariable3
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUnicodeVariable4
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testImplicitMultiplicationOffNumber
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testImplicitMultiplicationOffVariable
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testImplicitMultiplicationOffParentheses
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testImplicitMultiplicationOffFunction
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testImplicitMultiplicationOnNumber
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testImplicitMultiplicationOnVariable
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testImplicitMultiplicationOnParentheses
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testImplicitMultiplicationOnFunction
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSecondArgumentNegative
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testVariableWithDot
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTwoAdjacentOperators
+[m[32m31.08.2022 - 00:36:05.225 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGetVariableNames1
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGetVariableNames2
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSameVariableAndBuiltinFunctionName
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSameVariableAndUserFunctionName
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSignum
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCustomPercent
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateNumber
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateNumberPositive
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateNumberNegative
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateOperator
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateFunction
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateFunctionPositive
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateFunctionNegative
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateFunctionAndOperator
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateFunctionWithTwoArguments
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateFunctionWithTwoArgumentsAndOperator
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateFunctionWithThreeArguments
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateFunctionWithThreeArgumentsAndOperator
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateFunctionWithTwoAndThreeArguments
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateFunctionWithTwoAndThreeArgumentsAndOperator
+[m[32m31.08.2022 - 00:36:05.226 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateFunctionWithTwoAndThreeArgumentsAndMultipleOperator
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateFunctionWithSevenArgumentsAndOperator
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateInvalidFunction
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateInvalidOperand
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateInvalidFunctionWithTooFewArgumentsAndOperands
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateInvalidFunctionWithManyArguments
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testValidateInvalidOperator
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testNoArgFunctionValidation
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFutureEvaluation
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization1
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization2
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization3
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization4
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization5
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization6
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization7
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization8
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization9
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization10
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization11
+[m[32m31.08.2022 - 00:36:05.227 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization12
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization13
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization14
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization15
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization16
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization17
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization18
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization19
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization21
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenization22
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression1
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExpression2
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGetVariableNames1
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFactorial
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCotangent1
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testInvalidCotangent1
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOperatorFactorial2
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testClearVariables
+[m[32m31.08.2022 - 00:36:05.228 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenizationOfUnknownVariable
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenizationOfUnknownVariable1Details
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenizationOfUnknownVariable2Details
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenizationOfUnknownFunction
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenizationOfUnknownFunction1Details
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTokenizationOfUnknownFunction2Details
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShuntingYard1
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShuntingYard2
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShuntingYard3
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShuntingYard4
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShuntingYard5
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShuntingYard6
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShuntingYard7
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShuntingYard8
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShuntingYard9
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConstructor
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPushNoSize
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPushLessSize
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPeek
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPeek2
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPeekNoData
+[m[32m31.08.2022 - 00:36:05.229 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPop
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPop2
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPop3
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPopNoData
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIsEmpty
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSize
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testBenches
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunctionNameNull
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunctionNameEmpty
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunctionNameZeroArgs
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFunctionNameNegativeArgs
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIllegalFunctionName1
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIllegalFunctionName2
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIllegalFunctionName3
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGetAllowedFunctionChars
+[m[32m31.08.2022 - 00:36:05.230 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCheckFunctionNames
+[m[m31.08.2022 - 00:36:05.234 [INFO ] JUnitTestSuiteReducer.reduce() - Finished test suite reduction
+[m[m31.08.2022 - 00:36:05.234 [INFO ] JUnitTestSuiteReducer.reduce() - Reduced test suite from 312 to 298 test cases: 14 redundant test cases found
+[m[m31.08.2022 - 00:36:05.236 [INFO ] JUnitTestSuiteReducer.generateReport() - Generated report and wrote it to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/exp4j/lc/genetic_0.8_0.7/tsr-report-%x%.xml
+[m[m31.08.2022 - 00:36:05.236 [INFO ] CompilationUnitExtractor.parseCompilationUnitsFromFilePath() - Collecting compilation units from File Path /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/exp4j/src/test/java
+[m[m31.08.2022 - 00:36:05.457 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ExpressionBuilderTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/exp4j/lc/genetic_0.8_0.7/gen/net/objecthunter/exp4j/ExpressionBuilderTest.java
+[m[m31.08.2022 - 00:36:05.460 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ExpressionValidateTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/exp4j/lc/genetic_0.8_0.7/gen/net/objecthunter/exp4j/ExpressionValidateTest.java
+[m[m31.08.2022 - 00:36:05.461 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ConcurrencyTests.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/exp4j/lc/genetic_0.8_0.7/gen/net/objecthunter/exp4j/ConcurrencyTests.java
+[m[m31.08.2022 - 00:36:05.464 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote TokenizerTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/exp4j/lc/genetic_0.8_0.7/gen/net/objecthunter/exp4j/tokenizer/TokenizerTest.java
+[m[m31.08.2022 - 00:36:05.466 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ExpressionTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/exp4j/lc/genetic_0.8_0.7/gen/net/objecthunter/exp4j/ExpressionTest.java
+[m[m31.08.2022 - 00:36:05.467 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote TokenizerUnknownTokenOrVariableTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/exp4j/lc/genetic_0.8_0.7/gen/net/objecthunter/exp4j/tokenizer/TokenizerUnknownTokenOrVariableTest.java
+[m[m31.08.2022 - 00:36:05.467 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote TestUtil.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/exp4j/lc/genetic_0.8_0.7/gen/net/objecthunter/exp4j/TestUtil.java
+[m[m31.08.2022 - 00:36:05.469 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ShuntingYardTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/exp4j/lc/genetic_0.8_0.7/gen/net/objecthunter/exp4j/shuntingyard/ShuntingYardTest.java
+[m[m31.08.2022 - 00:36:05.470 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ArrayStackTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/exp4j/lc/genetic_0.8_0.7/gen/net/objecthunter/exp4j/ArrayStackTest.java
+[m[m31.08.2022 - 00:36:05.472 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote PerformanceTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/exp4j/lc/genetic_0.8_0.7/gen/net/objecthunter/exp4j/PerformanceTest.java
+[m[m31.08.2022 - 00:36:05.474 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote FunctionsTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/exp4j/lc/genetic_0.8_0.7/gen/net/objecthunter/exp4j/FunctionsTest.java
+[m[m31.08.2022 - 00:36:05.474 [INFO ] JUnitJSRFacade.logTime() - ******************************************************************
+[m[m31.08.2022 - 00:36:05.474 [INFO ] JUnitJSRFacade.logTime() - * Facade Statistics:
+[m[m31.08.2022 - 00:36:05.474 [INFO ] JUnitJSRFacade.logTime() - * Parsing took: 0.784 seconds
+[m[m31.08.2022 - 00:36:05.474 [INFO ] JUnitJSRFacade.logTime() - * Reduction took: 125.646 seconds
+[m[m31.08.2022 - 00:36:05.474 [INFO ] JUnitJSRFacade.logTime() - * Serialization took: 0.238 seconds
+[m[m31.08.2022 - 00:36:05.474 [INFO ] JUnitJSRFacade.logTime() - * Overall: 126.668 seconds
+[m[m31.08.2022 - 00:36:05.474 [INFO ] JUnitJSRFacade.logTime() - ******************************************************************
+[mSuccessfully reduced your test suite!
++----------------------------------- Summary -----------------------------------+
+| Test suite size: 312 test cases
++-------------------------------------------------------------------------------+
+| Found 298 relevant test cases:
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder2
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder3
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder4
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder5
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder6
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder7
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder8
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder9
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testValidationDocExample
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder10
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder11
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder12
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder13
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder14
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder15
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder16
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder17
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder18
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder19
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction2
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction3
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction4
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction5
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction6
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction7
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction10
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction11
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction12
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction13
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction14
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction15
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction16
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction18
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction20
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testOperators1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testOperators2
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testOperators3
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testModulo1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testOperators4
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testInvalidOperator1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testInvalidFunction1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testInvalidFunction2
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder01
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder02
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder03
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder04
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder05
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder06
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder07
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder08
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testSameName
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testInvalidFunction
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testMissingVar
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testUnaryMinusPowerPrecedence
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testUnaryMinus
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression10
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression11
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression12
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression13
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression15
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression16
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression17
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression18
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression19
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression2
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression20
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression21
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionPower
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionMultiplication
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression22
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression24
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression25
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression26
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression27
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression28
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression29
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testVarName1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testMisplacedSeparator
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testInvalidVarName
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testVarMap
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testInvalidNumberOfArguments1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testInvalidNumberOfArguments2
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression3
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression30
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression31
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression32
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression33
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression34
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression40
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression42
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression43
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression44
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression45
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression46
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression48
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression49
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression50
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression51
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression52
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression53
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression54
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression55
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression56
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testDocumentationExample1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testDocumentationExample2
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testDocumentationExample3
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testDocumentationExample4
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testDocumentationExample5
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testDocumentationExample6
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testDocumentationExample7
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testDocumentationExample9
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testDocumentationExample10
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testDocumentationExample11
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression57
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression58
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression59
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression60
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression61
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression62
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression63
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression64
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression65
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression66
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression67
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression68
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression69
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression70
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression71
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression72
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression73
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression74
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression75
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression76
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression77
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression78
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression79
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression80
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression81
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression82
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression83
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression84
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression85
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testSpaceBetweenNumbers
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testUnaryMinusInParenthesisSpace
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testUnaryMinusSpace
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testUnaryMinusSpaces
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testUnaryMinusSpace1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression5
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression6
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression7
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression8
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression9
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFailUnknownFunction1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFailUnknownFunction2
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFailUnknownFunction3
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction22
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction23
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction24
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfix1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixEverything
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixExponentiation2
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixExponentiation3
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixExponentiation4
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction10
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction11
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction12
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction13
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction14
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction15
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction16
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction17
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction18
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction19
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction20
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction21
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction2
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction3
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction5
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction6
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction7
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction8
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixFunction9
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixInvalidVariableName
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixParenthesis
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixVariables
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testUnicodeVariable1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testUnicodeVariable2
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testUnicodeVariable3
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testUnicodeVariable4
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testImplicitMultiplicationOffNumber
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testImplicitMultiplicationOffVariable
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testImplicitMultiplicationOffParentheses
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testImplicitMultiplicationOffFunction
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testImplicitMultiplicationOnNumber
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testImplicitMultiplicationOnVariable
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testImplicitMultiplicationOnParentheses
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testImplicitMultiplicationOnFunction
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testSecondArgumentNegative
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testVariableWithDot
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testTwoAdjacentOperators
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testGetVariableNames1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testGetVariableNames2
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testSameVariableAndBuiltinFunctionName
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testSameVariableAndUserFunctionName
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testSignum
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testCustomPercent
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateNumber
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateNumberPositive
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateNumberNegative
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateOperator
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateFunction
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateFunctionPositive
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateFunctionNegative
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateFunctionAndOperator
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateFunctionWithTwoArguments
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateFunctionWithTwoArgumentsAndOperator
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateFunctionWithThreeArguments
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateFunctionWithThreeArgumentsAndOperator
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateFunctionWithTwoAndThreeArguments
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateFunctionWithTwoAndThreeArgumentsAndOperator
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateFunctionWithTwoAndThreeArgumentsAndMultipleOperator
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateFunctionWithSevenArgumentsAndOperator
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateInvalidFunction
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateInvalidOperand
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateInvalidFunctionWithTooFewArgumentsAndOperands
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateInvalidFunctionWithManyArguments
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateInvalidOperator
+|    net.objecthunter.exp4j.ExpressionValidateTest:testNoArgFunctionValidation
+|    net.objecthunter.exp4j.ConcurrencyTests:testFutureEvaluation
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization1
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization2
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization3
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization4
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization5
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization6
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization7
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization8
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization9
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization10
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization11
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization12
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization13
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization14
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization15
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization16
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization17
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization18
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization19
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization21
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization22
+|    net.objecthunter.exp4j.ExpressionTest:testExpression1
+|    net.objecthunter.exp4j.ExpressionTest:testExpression2
+|    net.objecthunter.exp4j.ExpressionTest:testGetVariableNames1
+|    net.objecthunter.exp4j.ExpressionTest:testFactorial
+|    net.objecthunter.exp4j.ExpressionTest:testCotangent1
+|    net.objecthunter.exp4j.ExpressionTest:testInvalidCotangent1
+|    net.objecthunter.exp4j.ExpressionTest:testOperatorFactorial2
+|    net.objecthunter.exp4j.ExpressionTest:testClearVariables
+|    net.objecthunter.exp4j.tokenizer.TokenizerUnknownTokenOrVariableTest:testTokenizationOfUnknownVariable
+|    net.objecthunter.exp4j.tokenizer.TokenizerUnknownTokenOrVariableTest:testTokenizationOfUnknownVariable1Details
+|    net.objecthunter.exp4j.tokenizer.TokenizerUnknownTokenOrVariableTest:testTokenizationOfUnknownVariable2Details
+|    net.objecthunter.exp4j.tokenizer.TokenizerUnknownTokenOrVariableTest:testTokenizationOfUnknownFunction
+|    net.objecthunter.exp4j.tokenizer.TokenizerUnknownTokenOrVariableTest:testTokenizationOfUnknownFunction1Details
+|    net.objecthunter.exp4j.tokenizer.TokenizerUnknownTokenOrVariableTest:testTokenizationOfUnknownFunction2Details
+|    net.objecthunter.exp4j.shuntingyard.ShuntingYardTest:testShuntingYard1
+|    net.objecthunter.exp4j.shuntingyard.ShuntingYardTest:testShuntingYard2
+|    net.objecthunter.exp4j.shuntingyard.ShuntingYardTest:testShuntingYard3
+|    net.objecthunter.exp4j.shuntingyard.ShuntingYardTest:testShuntingYard4
+|    net.objecthunter.exp4j.shuntingyard.ShuntingYardTest:testShuntingYard5
+|    net.objecthunter.exp4j.shuntingyard.ShuntingYardTest:testShuntingYard6
+|    net.objecthunter.exp4j.shuntingyard.ShuntingYardTest:testShuntingYard7
+|    net.objecthunter.exp4j.shuntingyard.ShuntingYardTest:testShuntingYard8
+|    net.objecthunter.exp4j.shuntingyard.ShuntingYardTest:testShuntingYard9
+|    net.objecthunter.exp4j.ArrayStackTest:testConstructor
+|    net.objecthunter.exp4j.ArrayStackTest:testPushNoSize
+|    net.objecthunter.exp4j.ArrayStackTest:testPushLessSize
+|    net.objecthunter.exp4j.ArrayStackTest:testPeek
+|    net.objecthunter.exp4j.ArrayStackTest:testPeek2
+|    net.objecthunter.exp4j.ArrayStackTest:testPeekNoData
+|    net.objecthunter.exp4j.ArrayStackTest:testPop
+|    net.objecthunter.exp4j.ArrayStackTest:testPop2
+|    net.objecthunter.exp4j.ArrayStackTest:testPop3
+|    net.objecthunter.exp4j.ArrayStackTest:testPopNoData
+|    net.objecthunter.exp4j.ArrayStackTest:testIsEmpty
+|    net.objecthunter.exp4j.ArrayStackTest:testSize
+|    net.objecthunter.exp4j.PerformanceTest:testBenches
+|    net.objecthunter.exp4j.FunctionsTest:testFunctionNameNull
+|    net.objecthunter.exp4j.FunctionsTest:testFunctionNameEmpty
+|    net.objecthunter.exp4j.FunctionsTest:testFunctionNameZeroArgs
+|    net.objecthunter.exp4j.FunctionsTest:testFunctionNameNegativeArgs
+|    net.objecthunter.exp4j.FunctionsTest:testIllegalFunctionName1
+|    net.objecthunter.exp4j.FunctionsTest:testIllegalFunctionName2
+|    net.objecthunter.exp4j.FunctionsTest:testIllegalFunctionName3
+|    net.objecthunter.exp4j.FunctionsTest:testGetAllowedFunctionChars
+|    net.objecthunter.exp4j.FunctionsTest:testCheckFunctionNames
++-------------------------------------------------------------------------------+
+| Found 14 redundant test cases:
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpressionBuilder1
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction17
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testFunction19
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression14
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression23
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression41
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testDocumentationExample8
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testDocumentationExample12
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testExpression4
+|    net.objecthunter.exp4j.ExpressionBuilderTest:testPostfixExponentiation1
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateFunctionWithSevenArguments
+|    net.objecthunter.exp4j.ExpressionValidateTest:testValidateInvalidFunctionWithTooFewArguments
+|    net.objecthunter.exp4j.tokenizer.TokenizerTest:testTokenization20
+|    net.objecthunter.exp4j.ExpressionTest:testInvalidFactorial2
++-------------------------------------------------------------------------------+
+| Wrote reduced test suite code to: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/exp4j/lc/genetic_0.8_0.7/gen
++-------------------------------------------------------------------------------+

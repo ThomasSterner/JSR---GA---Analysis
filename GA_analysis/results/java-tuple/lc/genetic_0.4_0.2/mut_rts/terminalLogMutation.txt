@@ -1,0 +1,359 @@
+HEAD is now at 2b555fb add commons-cli rts results
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] Inspecting build with total of 1 modules...
+[[1;34mINFO[m] Installing Nexus Staging features:
+[[1;34mINFO[m]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36mcom.andrebreves:java-tuple[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding com.andrebreves:java-tuple 1.2.1[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target
+[[1;34mINFO[m] Deleting /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/src/main/java (includes = [**/*], excludes = [])
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.6:prepare-agent[m [1m(default)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/thomas/.m2/repository/org/jacoco/org.jacoco.agent/0.8.6/org.jacoco.agent-0.8.6-runtime.jar=destfile=/home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(compile-tuple-generator)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 6 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/tuple-generator
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.0.0:java[m [1m(generate-tuple-code)[m @ [36mjava-tuple[0;1m ---[m
+Tuple.java      - generating src/main/java/com/andrebreves/tuple/Tuple.java
+Tuple0.java     - generating src/main/java/com/andrebreves/tuple/Tuple0.java
+Tuple1.java     - generating src/main/java/com/andrebreves/tuple/Tuple1.java
+Tuple2.java     - generating src/main/java/com/andrebreves/tuple/Tuple2.java
+Tuple3.java     - generating src/main/java/com/andrebreves/tuple/Tuple3.java
+Tuple4.java     - generating src/main/java/com/andrebreves/tuple/Tuple4.java
+Tuple5.java     - generating src/main/java/com/andrebreves/tuple/Tuple5.java
+Tuple6.java     - generating src/main/java/com/andrebreves/tuple/Tuple6.java
+Tuple7.java     - generating src/main/java/com/andrebreves/tuple/Tuple7.java
+Tuple8.java     - generating src/main/java/com/andrebreves/tuple/Tuple8.java
+Tuple9.java     - generating src/main/java/com/andrebreves/tuple/Tuple9.java
+Tuple10.java    - generating src/main/java/com/andrebreves/tuple/Tuple10.java
+Tuple11.java    - generating src/main/java/com/andrebreves/tuple/Tuple11.java
+Tuple12.java    - generating src/main/java/com/andrebreves/tuple/Tuple12.java
+Tuple13.java    - generating src/main/java/com/andrebreves/tuple/Tuple13.java
+Tuple14.java    - generating src/main/java/com/andrebreves/tuple/Tuple14.java
+Tuple15.java    - generating src/main/java/com/andrebreves/tuple/Tuple15.java
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 17 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 17 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.andrebreves.tuple.TupleTest
+Tests run: 136, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.133 sec
+Running com.andrebreves.tuple.Tuple6Test
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.002 sec
+Running com.andrebreves.tuple.Tuple3Test
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.008 sec
+Running com.andrebreves.tuple.Tuple4Test
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.012 sec
+Running com.andrebreves.tuple.Tuple5Test
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.01 sec
+Running com.andrebreves.tuple.Tuple9Test
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.004 sec
+Running com.andrebreves.tuple.Tuple15Test
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.011 sec
+Running com.andrebreves.tuple.Tuple13Test
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec
+Running com.andrebreves.tuple.Tuple8Test
+Tests run: 41, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.005 sec
+Running com.andrebreves.tuple.Tuple12Test
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 sec
+Running com.andrebreves.tuple.Tuple10Test
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.andrebreves.tuple.Tuple0Test
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.006 sec
+Running com.andrebreves.tuple.Tuple11Test
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.001 sec
+Running com.andrebreves.tuple.Tuple2Test
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.014 sec
+Running com.andrebreves.tuple.Tuple14Test
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.007 sec
+Running com.andrebreves.tuple.Tuple1Test
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.007 sec
+Running com.andrebreves.tuple.Tuple7Test
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.004 sec
+
+Results :
+
+Tests run: 793, Failures: 0, Errors: 0, Skipped: 38
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.6:report[m [1m(report)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] Loading execution data file /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/jacoco.exec
+[[1;34mINFO[m] Analyzed bundle 'com.andrebreves:java-tuple' with 17 classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/java-tuple-1.2.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:2.6:single[m [1m(make-assembly)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/java-tuple-1.2.1-fat-tests.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mmaven-source-plugin:3.2.1:jar[m [1m(attach-sources)[0;1m > [0;1mgenerate-sources[m @ [36mjava-tuple[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.6:prepare-agent[m [1m(default)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/thomas/.m2/repository/org/jacoco/org.jacoco.agent/0.8.6/org.jacoco.agent-0.8.6-runtime.jar=destfile=/home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(compile-tuple-generator)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 6 source files to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/tuple-generator
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.0.0:java[m [1m(generate-tuple-code)[m @ [36mjava-tuple[0;1m ---[m
+Tuple.java      - generating src/main/java/com/andrebreves/tuple/Tuple.java
+Tuple0.java     - generating src/main/java/com/andrebreves/tuple/Tuple0.java
+Tuple1.java     - generating src/main/java/com/andrebreves/tuple/Tuple1.java
+Tuple2.java     - generating src/main/java/com/andrebreves/tuple/Tuple2.java
+Tuple3.java     - generating src/main/java/com/andrebreves/tuple/Tuple3.java
+Tuple4.java     - generating src/main/java/com/andrebreves/tuple/Tuple4.java
+Tuple5.java     - generating src/main/java/com/andrebreves/tuple/Tuple5.java
+Tuple6.java     - generating src/main/java/com/andrebreves/tuple/Tuple6.java
+Tuple7.java     - generating src/main/java/com/andrebreves/tuple/Tuple7.java
+Tuple8.java     - generating src/main/java/com/andrebreves/tuple/Tuple8.java
+Tuple9.java     - generating src/main/java/com/andrebreves/tuple/Tuple9.java
+Tuple10.java    - generating src/main/java/com/andrebreves/tuple/Tuple10.java
+Tuple11.java    - generating src/main/java/com/andrebreves/tuple/Tuple11.java
+Tuple12.java    - generating src/main/java/com/andrebreves/tuple/Tuple12.java
+Tuple13.java    - generating src/main/java/com/andrebreves/tuple/Tuple13.java
+Tuple14.java    - generating src/main/java/com/andrebreves/tuple/Tuple14.java
+Tuple15.java    - generating src/main/java/com/andrebreves/tuple/Tuple15.java
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mmaven-source-plugin:3.2.1:jar[m [1m(attach-sources)[0;1m < [0;1mgenerate-sources[m @ [36mjava-tuple[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-source-plugin:3.2.1:jar[m [1m(attach-sources)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/java-tuple-1.2.1-sources.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-javadoc-plugin:3.2.0:jar[m [1m(attach-javadocs)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] No previous run data found, generating javadoc.
+[[1;34mINFO[m] 
+Loading source files for package com.andrebreves.tuple...
+Constructing Javadoc information...
+Standard Doclet version 11.0.16
+Building tree for all the packages and classes...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple0.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple1.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple10.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple11.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple12.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple13.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple14.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple15.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple2.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple3.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple4.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple5.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple6.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple7.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple8.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/Tuple9.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/package-summary.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/package-tree.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/constant-values.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple1.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple11.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple10.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple0.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple2.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple7.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple4.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple13.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple12.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple3.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple6.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple5.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple9.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple8.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple15.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/class-use/Tuple14.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/com/andrebreves/tuple/package-use.html...
+Building index for all the packages and classes...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/overview-tree.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/index-all.html...
+Building index for all classes...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/allclasses-index.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/allpackages-index.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/deprecated-list.html...
+Building index for all classes...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/allclasses.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/allclasses.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/index.html...
+Generating /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/apidocs/help-doc.html...
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/java-tuple-1.2.1-javadoc.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-gpg-plugin:1.6:sign[m [1m(sign-artifacts)[m @ [36mjava-tuple[0;1m ---[m
+gpg: no default secret key: No secret key
+gpg: signing failed: No secret key
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  8.389 s
+[[1;34mINFO[m] Finished at: 2022-08-26T07:11:17+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-gpg-plugin:1.6:sign[m [1m(sign-artifacts)[m on project [36mjava-tuple[m: [1;31mExit code: 2[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] Inspecting build with total of 1 modules...
+[[1;34mINFO[m] Installing Nexus Staging features:
+[[1;34mINFO[m]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36mcom.andrebreves:java-tuple[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding com.andrebreves:java-tuple 1.2.1[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:2.6:single[m [1m(default-cli)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] Reading assembly descriptor: src/assembly/assembly.xml
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] The assembly descriptor contains a filesystem-root relative reference, which is not cross platform compatible /
+[[1;33mWARNING[m] Cannot include project artifact: com.andrebreves:java-tuple:jar:1.2.1; it doesn't have an associated file or directory.
+[[1;34mINFO[m] Building jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/java-tuple-1.2.1-fat-tests.jar
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.963 s
+[[1;34mINFO[m] Finished at: 2022-08-26T07:11:19+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] Inspecting build with total of 1 modules...
+[[1;34mINFO[m] Installing Nexus Staging features:
+[[1;34mINFO[m]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36mcom.andrebreves:java-tuple[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding com.andrebreves:java-tuple 1.2.1[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mpitest-maven:1.7.2:mutationCoverage[m [1m(default-cli)[m @ [36mjava-tuple[0;1m ---[m
+[[1;34mINFO[m] Found plugin : Default csv report plugin
+[[1;34mINFO[m] Found plugin : Default xml report plugin
+[[1;34mINFO[m] Found plugin : Default html report plugin
+[[1;34mINFO[m] Found plugin : Static initializer code detector plugin
+[[1;34mINFO[m] Found plugin : Excluded annotations plugin
+[[1;34mINFO[m] Found plugin : Try with resources filter
+[[1;34mINFO[m] Found plugin : Inlined finally block filter plugin
+[[1;34mINFO[m] Found plugin : Implicit null check filter
+[[1;34mINFO[m] Found plugin : Method reference null check filter
+[[1;34mINFO[m] Found plugin : For each loop filter
+[[1;34mINFO[m] Found plugin : Enum constructor filter
+[[1;34mINFO[m] Found plugin : Record junk mutation filter
+[[1;34mINFO[m] Found plugin : Logging calls filter
+[[1;34mINFO[m] Found plugin : Infinite for loop filter
+[[1;34mINFO[m] Found plugin : Long running iterator loop filter
+[[1;34mINFO[m] Found plugin : For loop counter filter
+[[1;34mINFO[m] Found plugin : Kotlin junk mutations filter
+[[1;34mINFO[m] Found plugin : Max mutations per class limit
+[[1;34mINFO[m] Found plugin : Equals shortcut equivalent mutant filter
+[[1;34mINFO[m] Found plugin : Trivial return vals equivalence filter
+[[1;34mINFO[m] Found plugin : Mutant export plugin
+[[1;34mINFO[m] Found shared classpath plugin : Default mutation engine
+[[1;34mINFO[m] Found shared classpath plugin : JUnit plugin
+[[1;34mINFO[m] Found shared classpath plugin : TestNG plugin
+[[1;34mINFO[m] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,RETURN_VALS,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_RETURN_VALUES_MUTATOR,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_INTEGER,ABS,AOD1,AOD2,AOR1,AOR2,AOR3,AOR4,CRCR1,CRCR2,CRCR3,CRCR4,CRCR5,CRCR6,OBBN1,OBBN2,OBBN3,ROR1,ROR2,ROR3,ROR4,ROR5,UOI1,UOI2,UOI3,UOI4
+[[1;34mINFO[m] Adding org.pitest:pitest to SUT classpath
+[[1;34mINFO[m] Mutating from /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/java-tuple/target/classes
+[[1;34mINFO[m] Defaulting target classes to match packages in build directory
+[[1;34mINFO[m] Defaulting target tests to match packages in test build directory
+7:11:21 AM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+7:11:21 AM PIT >> INFO : Incremental analysis reduced number of mutations by 0
+7:11:21 AM PIT >> INFO : Created  17 mutation test units in pre scan
+7:11:22 AM PIT >> INFO : Sending 33 test classes to minion
+7:11:22 AM PIT >> INFO : Sent tests to minion
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/7:11:23 AM PIT >> INFO : Calculated coverage in 1 seconds.
+7:11:23 AM PIT >> INFO : Incremental analysis reduced number of mutations by 0
+7:11:23 AM PIT >> INFO : Created  17 mutation test units
+/-\|/-\|/-\|/-\|/7:11:45 AM PIT >> INFO : Completed in 23 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator
+>> Generated 195 Killed 178 (91%)
+> KILLED 178 SURVIVED 15 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 2 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 31 Killed 31 (100%)
+> KILLED 31 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 528 Killed 511 (97%)
+> KILLED 511 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 17 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 18 Killed 17 (94%)
+> KILLED 17 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 1 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 348 Killed 348 (100%)
+> KILLED 348 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : 1 seconds
+> build mutation tests : < 1 second
+> run mutation analysis : 21 seconds
+--------------------------------------------------------------------------------
+> Total  : 23 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 1073/1093 (98%)
+>> Generated 1120 mutations Killed 1085 (97%)
+>> Mutations with no coverage 20. Test strength 99%
+>> Ran 1512 tests (1.35 tests per mutation)
+
+Pitest development is currently supported by GroupCDG.
+Enhanced functionality available at https://pitest.groupcdg.com/
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  24.837 s
+[[1;34mINFO[m] Finished at: 2022-08-26T07:11:45+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+HEAD is now at 2b555fb add commons-cli rts results

@@ -1,0 +1,1738 @@
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+[32m03.09.2022 - 19:49:46.138 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Current absolute path is: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/lambdaj
+[m[32m03.09.2022 - 19:49:46.141 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/lambdaj/target/lambdaj-2.4.1-SNAPSHOT-fat-tests.jar
+[m[32m03.09.2022 - 19:49:46.141 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to slicer: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/JSR/slicer/Slicer4J
+[m[32m03.09.2022 - 19:49:46.141 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to out dir: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5
+[m[32m03.09.2022 - 19:49:46.142 [DEBUG] Slicer4JSlicingStrategy.logPaths() - Path to out logging jar: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/JSR/slicer/DynamicSlicingCore/DynamicSlicingLoggingClasses/DynamicSlicingLogger.jar
+[m[m03.09.2022 - 19:49:46.498 [INFO ] ParsingStrategy.parseTestSuiteFromFilePath() - Parsing test suite from File Path
+[m[m03.09.2022 - 19:49:46.498 [INFO ] CompilationUnitExtractor.parseCompilationUnitsFromFilePath() - Collecting compilation units from File Path /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/lambdaj/src/test/java
+[m[m03.09.2022 - 19:49:46.968 [INFO ] ParsingStrategy.parseTestSuite() - Found 4 test cases
+[m[m03.09.2022 - 19:49:46.971 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaGroupTest::testGroupByAge has 16 assertions: 
+ assertFalse(group.isLeaf()); ref {group} [33-33],
+ assertEquals(4, group.getSize()); ref {group} [34-34],
+ assertEquals(3, group.subgroups().size()); ref {group} [35-35],
+ assertTrue(keys.contains("29")); ref {keys} [38-38],
+ assertTrue(keys.contains("35")); ref {keys} [39-39],
+ assertTrue(keys.contains("39")); ref {keys} [40-40],
+ assertTrue(group.findAll().contains(me)); ref {me, group} [42-42],
+ assertTrue(group.findAll().contains(biagio)); ref {biagio, group} [43-43],
+ assertTrue(group.findAll().contains(luca)); ref {luca, group} [44-44],
+ assertTrue(group.findAll().contains(celestino)); ref {celestino, group} [45-45],
+ assertTrue(group29aged.isLeaf()); ref {group29aged} [48-48],
+ assertEquals(2, group29aged.getSize()); ref {group29aged} [49-49],
+ assertEquals(0, group29aged.keySet().size()); ref {group29aged} [50-50],
+ assertEquals(0, group29aged.subgroups().size()); ref {group29aged} [51-51],
+ assertTrue(persons29Aged.contains(luca)); ref {luca, persons29Aged} [54-54],
+ assertTrue(persons29Aged.contains(celestino)); ref {persons29Aged, celestino} [55-55]
+[m[m03.09.2022 - 19:49:46.971 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaGroupTest::testGroupByAgeAsPersonsWithName has 7 assertions: 
+ assertEquals(0, group.getHeads().size()); ref {group} [63-63],
+ assertEquals("", group.getHeadValue("name")); ref {group} [64-64],
+ assertEquals(2, group35aged.getHeads().size()); ref {group35aged} [67-67],
+ assertTrue(group35aged.getHeads().contains("age")); ref {group35aged} [68-68],
+ assertEquals("35", group35aged.getHeadValue("age")); ref {group35aged} [69-69],
+ assertTrue(group35aged.getHeads().contains("name")); ref {group35aged} [70-70],
+ assertEquals("Mario", group35aged.getHeadValue("name")); ref {group35aged} [71-71]
+[m[m03.09.2022 - 19:49:46.971 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaGroupTest::testGroupByAgeAndName has 4 assertions: 
+ assertFalse(group29aged.isLeaf()); ref {group29aged} [81-81],
+ assertTrue(persons29Aged.contains(luca)); ref {luca, persons29Aged} [84-84],
+ assertTrue(persons29Aged.contains(celestino)); ref {persons29Aged, celestino} [85-85],
+ assertTrue(groupLuca.findAll().contains(luca)); ref {groupLuca, luca} [88-88]
+[m[m03.09.2022 - 19:49:46.972 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaGroupTest::testGroupAndSubgroup has 11 assertions: 
+ assertEquals(4, group.getSize()); ref {group} [96-96],
+ assertEquals(3, group.subgroups().size()); ref {group} [97-97],
+ assertFalse(group.isLeaf()); ref {group} [98-98],
+ assertEquals(me, group.first()); ref {me, group} [99-99],
+ assertNull(group.key()); ref {group} [100-100],
+ assertFalse(subgroup.isLeaf()); ref {subgroup} [103-103],
+ assertEquals(me, subgroup.first()); ref {subgroup, me} [104-104],
+ assertEquals(me.getAge(), subgroup.key()); ref {subgroup, me} [105-105],
+ assertTrue(subsubgroup.isLeaf()); ref {subsubgroup} [108-108],
+ assertEquals(me, subgroup.first()); ref {subgroup, me} [109-109],
+ assertEquals(me.getFirstName(), subsubgroup.key()); ref {subsubgroup, me} [110-110]
+[m[m03.09.2022 - 19:49:46.974 [INFO ] ParsingStrategy.parseTestSuite() - Found 2 test cases
+[m[m03.09.2022 - 19:49:46.975 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.DelayedClosureTest::testWithTransaction has 1 assertions: 
+ assertEquals("BEGIN -- Hello ! -- COMMIT", sw.toString()); ref {sw} [29-29]
+[m[m03.09.2022 - 19:49:46.975 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.DelayedClosureTest::testMyGrep has 3 assertions: 
+ assertEquals(2, resultList.size()); ref {resultList} [45-45],
+ assertEquals("Yop", resultList.get(0)); ref {resultList} [46-46],
+ assertEquals("Kiki", resultList.get(1)); ref {resultList} [47-47]
+[m[m03.09.2022 - 19:49:46.975 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:46.975 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:46.977 [INFO ] ParsingStrategy.parseTestSuite() - Found 3 test cases
+[m[m03.09.2022 - 19:49:46.977 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.PrimitiveReferenceTest::testStressParameterlessFilter has 1 assertions: 
+ assertEquals("Mismatch at iteration " + t + " on parameterless filter,", ITEMS, l.size()); ref {t, ITEMS, l} [37-37]
+[m[m03.09.2022 - 19:49:46.977 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.PrimitiveReferenceTest::testStressPrimitiveParameterFilter has 1 assertions: 
+ assertEquals("Mismatch at iteration " + t + " on parameter filter,", ITEMS, l.size()); ref {t, ITEMS, l} [45-45]
+[m[m03.09.2022 - 19:49:46.977 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.PrimitiveReferenceTest::testStressParameterFilter has 1 assertions: 
+ assertEquals("Mismatch at iteration " + t + " on parameter filter,", ITEMS, l.size()); ref {t, ITEMS, l} [53-53]
+[m[m03.09.2022 - 19:49:46.978 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:46.978 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:46.978 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:46.979 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:46.979 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:46.980 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m03.09.2022 - 19:49:46.980 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.aggregate.AggregateTest::testAggregateGrossPremium has 1 assertions: 
+ assertEquals(money("1,412,321,057.24 GBP").getValue(), totalizer.getPremium().getValue(), 0.000001); ref {totalizer} [24-24]
+[m[m03.09.2022 - 19:49:46.980 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:46.981 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m03.09.2022 - 19:49:46.982 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ConstructorBugTest::callsFromConstructorAreForwarded has 3 assertions: 
+ // Fail - is 20
+assertEquals(70, sumFrom(asList(item1, item2)).getValue()); ref {item2, item1} [38-38],
+ // Fail - is 10
+assertEquals(20, item1.getValue()); ref {item1} [39-39],
+ // Fail - is 10
+assertEquals(50, item2.getValue()); ref {item2} [40-40]
+[m[m03.09.2022 - 19:49:46.986 [INFO ] ParsingStrategy.parseTestSuite() - Found 4 test cases
+[m[m03.09.2022 - 19:49:46.987 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.SwitcherTest::testExecSwitch has 7 assertions: 
+ assertTrue(9 == switcher.exec("+", 6, 3)); ref {switcher} [45-45],
+ assertTrue(3 == switcher.exec("-", 6, 3)); ref {switcher} [46-46],
+ assertTrue(18 == switcher.exec("*", 6, 3)); ref {switcher} [47-47],
+ assertTrue(2 == switcher.exec("/", 6, 3)); ref {switcher} [48-48],
+ assertNull(switcher.exec("?", 6, 3)); ref {switcher} [49-49],
+ assertTrue(9 == switcher.exec("?", 6, 3)); ref {switcher} [52-52],
+ assertTrue(0 == switcher.exec("?", 6, 3)); ref {switcher} [55-55]
+[m[m03.09.2022 - 19:49:46.987 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.SwitcherTest::testExecAllSwitch has 3 assertions: 
+ assertEquals(2, results.size()); ref {results} [67-67],
+ assertTrue(9 == results.get(0)); ref {results} [68-68],
+ assertTrue(18 == results.get(1)); ref {results} [69-69]
+[m[m03.09.2022 - 19:49:46.987 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.SwitcherTest::testSwitchOnPersons has 3 assertions: 
+ assertEquals("me", switcher.exec(new Person("me", 35))); ref {switcher} [80-80],
+ assertEquals("adult", switcher.exec(new Person("sister", 31))); ref {switcher} [81-81],
+ assertEquals("old", switcher.exec(new Person("dad", 71))); ref {switcher} [82-82]
+[m[m03.09.2022 - 19:49:46.987 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.SwitcherTest::testSwitchAsFactory has 4 assertions: 
+ assertEquals("Irma", sis.getFirstName()); ref {sis} [93-93],
+ assertEquals(31, sis.getAge()); ref {sis} [94-94],
+ assertEquals("Domenico", dad.getFirstName()); ref {dad} [97-97],
+ assertEquals(70, dad.getAge()); ref {dad} [98-98]
+[m[m03.09.2022 - 19:49:46.988 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:46.988 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.006 [INFO ] ParsingStrategy.parseTestSuite() - Found 25 test cases
+[m[m03.09.2022 - 19:49:47.006 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testForEach has 1 assertions: 
+ assertEquals("Fusco", person.getLastName()); ref {person} [35-35]
+[m[m03.09.2022 - 19:49:47.006 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testForEachForProxy has 1 assertions: 
+ assertEquals("Di Fusco", person.getLastName()); ref {person} [46-46]
+[m[m03.09.2022 - 19:49:47.006 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testSelectPersonWith4LettersName has 2 assertions: 
+ assertThat(results.size(), is(equalTo(1))); ref {results} [81-81],
+ assertThat(results.iterator().next().getFirstName(), is(equalTo("Irma"))); ref {results} [82-82]
+[m[m03.09.2022 - 19:49:47.007 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testSortOnAge has 14 assertions: 
+ assertSame(luca, sorted.get(0)); ref {sorted, luca} [90-90],
+ assertSame(celestino, sorted.get(1)); ref {sorted, celestino} [91-91],
+ assertSame(me, sorted.get(2)); ref {sorted, me} [92-92],
+ assertSame(biagio, sorted.get(3)); ref {sorted, biagio} [93-93],
+ assertSame(biagio, sorted.get(0)); ref {sorted, biagio} [96-96],
+ assertSame(me, sorted.get(1)); ref {sorted, me} [97-97],
+ assertSame(luca, sorted.get(2)); ref {sorted, luca} [98-98],
+ assertSame(celestino, sorted.get(3)); ref {sorted, celestino} [99-99],
+ assertSame(luca, sortedCollection.iterator().next()); ref {luca, sortedCollection} [103-103],
+ assertSame(luca, personArray[0]); ref {luca, personArray} [106-106],
+ assertSame(celestino, personArray[1]); ref {celestino, personArray} [107-107],
+ assertSame(me, personArray[2]); ref {me, personArray} [108-108],
+ assertSame(biagio, personArray[3]); ref {biagio, personArray} [109-109],
+ assertSame(luca, sortedIterable.iterator().next()); ref {luca, sortedIterable} [113-113]
+[m[m03.09.2022 - 19:49:47.007 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testFindOldest has 2 assertions: 
+ assertSame(biagio, oldest); ref {biagio, oldest} [121-121],
+ assertSame(biagio, alphabeticalFirst); ref {biagio, alphabeticalFirst} [124-124]
+[m[m03.09.2022 - 19:49:47.007 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testRetainWithHaving has 3 assertions: 
+ assertEquals(2, friends29aged.size()); ref {friends29aged} [132-132],
+ assertSame(luca, friendsIterator.next()); ref {luca, friendsIterator} [134-134],
+ assertSame(celestino, friendsIterator.next()); ref {celestino, friendsIterator} [135-135]
+[m[m03.09.2022 - 19:49:47.008 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testSelectDistinctAge has 3 assertions: 
+ assertEquals(3, distinctAgedPerson.size()); ref {distinctAgedPerson} [142-142],
+ assertTrue(distinctAges.contains(me.getAge()) && distinctAges.contains(biagio.getAge()) && distinctAges.contains(luca.getAge())); ref {biagio, luca, me, distinctAges} [144-144],
+ assertEquals(3, distinctAgedPersonCollection.size()); ref {distinctAgedPersonCollection} [148-148]
+[m[m03.09.2022 - 19:49:47.008 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testSelectDistinct has 1 assertions: 
+ assertThat(results.size(), is(equalTo(3))); ref {results} [157-157]
+[m[m03.09.2022 - 19:49:47.008 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testRemoveNull has 5 assertions: 
+ assertThat(results.size(), is(equalTo(3))); ref {results} [163-163],
+ assertFalse(results.contains(null)); ref {results} [164-164],
+ assertThat(resultsCollection.size(), is(equalTo(3))); ref {resultsCollection} [167-167],
+ assertFalse(resultsCollection.contains(null)); ref {resultsCollection} [168-168],
+ assertNotNull(s); ref {s} [171-171]
+[m[m03.09.2022 - 19:49:47.008 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testReplace has 6 assertions: 
+ assertEquals("xxx", results.get(0)); ref {results} [177-177],
+ assertEquals("second", results.get(1)); ref {results} [178-178],
+ assertEquals("third", results.get(2)); ref {results} [179-179],
+ assertEquals("xxx", results.get(3)); ref {results} [180-180],
+ assertEquals("xxx", resultsCollection.iterator().next()); ref {resultsCollection} [183-183],
+ assertEquals("xxx", resultsIterable.iterator().next()); ref {resultsIterable} [186-186]
+[m[m03.09.2022 - 19:49:47.009 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testProjectDto has 3 assertions: 
+ assertEquals(meAndMyFriends.size(), meAndMyFriendsDto.size()); ref {meAndMyFriendsDto, meAndMyFriends} [194-194],
+ assertEquals(meAndMyFriends.get(i).getFirstName(), meAndMyFriendsDto.get(i).getName()); ref {meAndMyFriendsDto, i, meAndMyFriends} [196-196],
+ assertEquals(meAndMyFriends.get(i).getAge(), meAndMyFriendsDto.get(i).getAge()); ref {meAndMyFriendsDto, i, meAndMyFriends} [197-197]
+[m[m03.09.2022 - 19:49:47.009 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testTypedSumMinMax has 3 assertions: 
+ assertThat(meAndMyFriends.sumFrom().getAge(), is(equalTo(35 + 29 + 39 + 29))); ref {meAndMyFriends} [210-210],
+ assertThat(meAndMyFriends.minFrom().getAge(), is(equalTo(29))); ref {meAndMyFriends} [211-211],
+ assertThat(meAndMyFriends.maxFrom().getAge(), is(equalTo(39))); ref {meAndMyFriends} [212-212]
+[m[m03.09.2022 - 19:49:47.009 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testTypedSum2 has 1 assertions: 
+ assertThat(totalBestFriendAge, is(equalTo(35 * 3))); ref {totalBestFriendAge} [221-221]
+[m[m03.09.2022 - 19:49:47.009 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testExtractAges has 6 assertions: 
+ assertThat(ages.get(0), is(equalTo(35))); ref {ages} [228-228],
+ assertThat(ages.get(1), is(equalTo(29))); ref {ages} [229-229],
+ assertThat(ages.get(2), is(equalTo(39))); ref {ages} [230-230],
+ assertThat(ages.get(3), is(equalTo(29))); ref {ages} [231-231],
+ assertThat(agesCollection.iterator().next(), is(equalTo(35))); ref {agesCollection} [235-235],
+ assertThat(agesIterable.iterator().next(), is(equalTo(35))); ref {agesIterable} [239-239]
+[m[m03.09.2022 - 19:49:47.010 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testSelectFirst has 2 assertions: 
+ assertNull(person34Aged); ref {person34Aged} [247-247],
+ assertSame(luca, person29Aged); ref {luca, person29Aged} [250-250]
+[m[m03.09.2022 - 19:49:47.010 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testExists has 2 assertions: 
+ assertFalse(meAndMyFriends.exists(having(on(Person.class).getAge(), equalTo(34)))); ref {meAndMyFriends} [256-256],
+ assertTrue(meAndMyFriends.exists(having(on(Person.class).getAge(), equalTo(35)))); ref {meAndMyFriends} [257-257]
+[m[m03.09.2022 - 19:49:47.010 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testAll has 2 assertions: 
+ assertFalse(meAndMyFriends.all(having(on(Person.class).getAge(), equalTo(35)))); ref {meAndMyFriends} [263-263],
+ assertTrue(meAndMyFriends.all(instanceOf(Person.class))); ref {meAndMyFriends} [264-264]
+[m[m03.09.2022 - 19:49:47.010 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testSelectUnique has 2 assertions: 
+ assertNull(person34Aged); ref {person34Aged} [272-272],
+ assertSame(me, person35Aged); ref {me, person35Aged} [275-275]
+[m[m03.09.2022 - 19:49:47.011 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testSelectStringsThatEndsWithD has 5 assertions: 
+ assertThat(results.size(), is(equalTo(2))); ref {results} [287-287],
+ assertThat(results, hasItems("second", "third")); ref {results} [288-288],
+ assertThat(resultsCollection.size(), is(equalTo(2))); ref {resultsCollection} [292-292],
+ assertThat(resultsCollection, hasItems("second", "third")); ref {resultsCollection} [293-293],
+ assertThat(resultsIterable, hasItems("second", "third")); ref {resultsIterable} [297-297]
+[m[m03.09.2022 - 19:49:47.011 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testJoin has 1 assertions: 
+ assertThat(result, is(equalTo("first, second, third"))); ref {result} [304-304]
+[m[m03.09.2022 - 19:49:47.011 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testJoinFrom has 2 assertions: 
+ assertThat(result, is(equalTo("france, brazil"))); ref {result} [311-311],
+ assertThat(result, is(equalTo("france - brazil"))); ref {result} [313-313]
+[m[m03.09.2022 - 19:49:47.011 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testExtract has 6 assertions: 
+ assertThat(countries, hasItem("france")); ref {countries} [320-320],
+ assertThat(countries, hasItem("brazil")); ref {countries} [321-321],
+ assertThat(countries, hasItem("france")); ref {countries} [325-325],
+ assertThat(countries, hasItem("brazil")); ref {countries} [326-326],
+ assertThat(countries, hasItem("france")); ref {countries} [330-330],
+ assertThat(countries, hasItem("brazil")); ref {countries} [331-331]
+[m[m03.09.2022 - 19:49:47.011 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testConvert has 3 assertions: 
+ assertEquals(strings.get(i++).length(), length); ref {strings, length, i} [339-339],
+ assertEquals(strings.get(i++).length(), length); ref {strings, length, i} [344-344],
+ assertEquals(strings.get(i++).length(), length); ref {strings, length, i} [349-349]
+[m[m03.09.2022 - 19:49:47.012 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testConvertMap has 1 assertions: 
+ assertEquals("Fusco", convertedMap.get("Mario")); ref {convertedMap} [356-356]
+[m[m03.09.2022 - 19:49:47.012 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionsTest::testIndex has 2 assertions: 
+ assertSame(frenchExposure, indexed.get("france")); ref {frenchExposure, indexed} [365-365],
+ assertSame(brazilianExposure, indexed.get("brazil")); ref {indexed, brazilianExposure} [366-366]
+[m[m03.09.2022 - 19:49:47.013 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m03.09.2022 - 19:49:47.013 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.proxy.nodefconstructor.ProxyNoDefaultConstructorTest::testProxyNoDefaultConstructor has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.014 [INFO ] ParsingStrategy.parseTestSuite() - Found 3 test cases
+[m[m03.09.2022 - 19:49:47.014 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.closure.FileParserImplicitClosureTest::testPrintFile has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.014 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.closure.FileParserImplicitClosureTest::testReadFile has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.014 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.closure.FileParserImplicitClosureTest::testCountFile has 1 assertions: 
+ assertEquals(9, lineCounter); ref {lineCounter} [46-46]
+[m[m03.09.2022 - 19:49:47.015 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.016 [INFO ] ParsingStrategy.parseTestSuite() - Found 3 test cases
+[m[m03.09.2022 - 19:49:47.017 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.argument.ArgumentsFactoryTest::testCreateArgumentPlaceholder has 15 assertions: 
+ assertThat(createArgumentPlaceholder(String.class), instanceOf(String.class)); ref {} [23-23],
+ assertThat(createArgumentPlaceholder(StringBuilder.class), instanceOf(StringBuilder.class)); ref {} [24-24],
+ assertThat(createArgumentPlaceholder(Integer.class), instanceOf(Integer.class)); ref {} [25-25],
+ assertThat(createArgumentPlaceholder(Long.class), instanceOf(Long.class)); ref {} [26-26],
+ assertThat(createArgumentPlaceholder(Long.TYPE), instanceOf(Long.class)); ref {Long, Long.TYPE} [27-27],
+ assertThat(createArgumentPlaceholder(Float.class), instanceOf(Float.class)); ref {} [28-28],
+ assertThat(createArgumentPlaceholder(Double.class), instanceOf(Double.class)); ref {} [29-29],
+ assertThat(createArgumentPlaceholder(Short.class), instanceOf(Short.class)); ref {} [30-30],
+ assertThat(createArgumentPlaceholder(Short.TYPE), instanceOf(Short.class)); ref {Short.TYPE, Short} [31-31],
+ assertThat(createArgumentPlaceholder(Byte.class), instanceOf(Byte.class)); ref {} [32-32],
+ assertThat(createArgumentPlaceholder(Boolean.class), instanceOf(Boolean.class)); ref {} [33-33],
+ assertThat(createArgumentPlaceholder(Character.class), instanceOf(Character.class)); ref {} [34-34],
+ assertThat(createArgumentPlaceholder(Character.TYPE), instanceOf(Character.class)); ref {Character.TYPE, Character} [35-35],
+ assertThat(createArgumentPlaceholder(Date.class), instanceOf(Date.class)); ref {} [36-36],
+ assertThat(createArgumentPlaceholder(UUID.class), instanceOf(UUID.class)); ref {} [37-37]
+[m[m03.09.2022 - 19:49:47.017 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.argument.ArgumentsFactoryTest::testCreateArgumentPlaceholderForUnknownClass has 2 assertions: 
+ assertFalse(createArgumentPlaceholder(IntegerWrapper.class).equals(createArgumentPlaceholder(IntegerWrapper.class))); ref {} [42-42],
+ assertFalse(createArgumentPlaceholder(StringWrapper.class).equals(createArgumentPlaceholder(StringWrapper.class))); ref {} [43-43]
+[m[m03.09.2022 - 19:49:47.017 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.argument.ArgumentsFactoryTest::testArgumentsFactoryForFinalClasses has 3 assertions: 
+ assertFalse(createArgumentPlaceholder(DateTime.class).equals(createArgumentPlaceholder(DateTime.class))); ref {} [53-53],
+ assertFalse(createArgumentPlaceholder(LocalDate.class).equals(createArgumentPlaceholder(LocalDate.class))); ref {} [55-55],
+ assertTrue(createArgumentPlaceholder(LocalDate.class).equals(createArgumentPlaceholder(LocalDate.class))); ref {} [57-57]
+[m[m03.09.2022 - 19:49:47.019 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m03.09.2022 - 19:49:47.019 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.closure.FaillingClosureTest::testSpeculation has 1 assertions: 
+ /* Print whatever the speculation returns */
+assertEquals(i, (Integer) 3); ref {i} [44-44]
+[m[m03.09.2022 - 19:49:47.020 [INFO ] ParsingStrategy.parseTestSuite() - Found 2 test cases
+[m[m03.09.2022 - 19:49:47.021 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.argument.InvocationSequenceTest::verifyEquals has 2 assertions: 
+ assertFalse(invocationSequenceCar.equals(invocationSequencePerson)); ref {invocationSequenceCar, invocationSequencePerson} [30-30],
+ assertFalse(invocationSequenceCar.hashCode() == invocationSequencePerson.hashCode()); ref {invocationSequenceCar, invocationSequencePerson} [31-31]
+[m[m03.09.2022 - 19:49:47.021 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.argument.InvocationSequenceTest::testProject has 2 assertions: 
+ assertThat(project(cars, SimpleBrand.class, on(Car.class)), hasItem(new SimpleBrand("Ford"))); ref {cars} [37-37],
+ assertThat(project(cars, SimpleBrand.class, on(Car.class).getBrand()), hasItem(new SimpleBrand("Ford"))); ref {cars} [38-38]
+[m[m03.09.2022 - 19:49:47.053 [INFO ] ParsingStrategy.parseTestSuite() - Found 78 test cases
+[m[m03.09.2022 - 19:49:47.054 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testArgument has 13 assertions: 
+ assertEquals("bestFriend", bestFriendArgument.getInkvokedPropertyName()); ref {bestFriendArgument} [41-41],
+ assertEquals(Person.class, bestFriendArgument.getRootArgumentClass()); ref {bestFriendArgument} [42-42],
+ assertEquals(Person.class, bestFriendArgument.getReturnType()); ref {bestFriendArgument} [43-43],
+ assertEquals("[public ch.lambdaj.mock.Person ch.lambdaj.mock.Person.getBestFriend()]", bestFriendArgument.toString()); ref {bestFriendArgument} [44-44],
+ assertEquals(bestFriendArgument, argument(on(Person.class).getBestFriend())); ref {bestFriendArgument} [45-45],
+ assertEquals("bestFriend.age", bestFriendAgeArgument.getInkvokedPropertyName()); ref {bestFriendAgeArgument} [48-48],
+ assertEquals(Person.class, bestFriendAgeArgument.getRootArgumentClass()); ref {bestFriendAgeArgument} [49-49],
+ assertEquals(Integer.TYPE, bestFriendAgeArgument.getReturnType()); ref {Integer.TYPE, Integer, bestFriendAgeArgument} [50-50],
+ assertEquals("[public ch.lambdaj.mock.Person ch.lambdaj.mock.Person.getBestFriend(), public int ch.lambdaj.mock.Person.getAge()]", bestFriendAgeArgument.toString()); ref {bestFriendAgeArgument} [51-51],
+ assertEquals("bestFriend.bestFriend.age", bestFriendOfBestFriendAgeArgument.getInkvokedPropertyName()); ref {bestFriendOfBestFriendAgeArgument} [54-54],
+ assertEquals("[public ch.lambdaj.mock.Person ch.lambdaj.mock.Person.getBestFriend(), public ch.lambdaj.mock.Person ch.lambdaj.mock.Person.getBestFriend(), public int ch.lambdaj.mock.Person.getAge()]", bestFriendOfBestFriendAgeArgument.toString()); ref {bestFriendOfBestFriendAgeArgument} [55-55],
+ assertEquals(biagio, bestFriendArgument.evaluate(me)); ref {biagio, bestFriendArgument, me} [58-58],
+ assertEquals(biagio.getAge(), (int) bestFriendAgeArgument.evaluate(me)); ref {bestFriendAgeArgument, biagio, me} [59-59]
+[m[m03.09.2022 - 19:49:47.054 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testForEach has 1 assertions: 
+ assertEquals("Fusco", person.getLastName()); ref {person} [67-67]
+[m[m03.09.2022 - 19:49:47.055 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testForEachThrowingException has 1 assertions: 
+ assertEquals("Cannot set last name", e.getMessage()); ref {e} [77-77]
+[m[m03.09.2022 - 19:49:47.055 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testForEachOnIterator has 1 assertions: 
+ assertEquals("Fusco", person.getLastName()); ref {person} [85-85]
+[m[m03.09.2022 - 19:49:47.055 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testForEachOnArray has 3 assertions: 
+ assertEquals("Fusco", dad.getLastName()); ref {dad} [96-96],
+ assertEquals("Fusco", me.getLastName()); ref {me} [97-97],
+ assertEquals("Fusco", sis.getLastName()); ref {sis} [98-98]
+[m[m03.09.2022 - 19:49:47.055 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testFailingForEach has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.055 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testForEachForProxy has 1 assertions: 
+ assertEquals("Di Fusco", person.getLastName()); ref {person} [122-122]
+[m[m03.09.2022 - 19:49:47.055 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testForEachWithNoEmptyConstructor has 1 assertions: 
+ assertEquals("Fusco", person.getLastName()); ref {person} [157-157]
+[m[m03.09.2022 - 19:49:47.055 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testIllegalForEach has 1 assertions: 
+ assertTrue(e.getMessage().contains("Unable to proxy the final class")); ref {e} [188-188]
+[m[m03.09.2022 - 19:49:47.056 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectOnNull has 2 assertions: 
+ assertTrue(result.isEmpty()); ref {result} [200-200],
+ assertTrue(result.isEmpty()); ref {result} [204-204]
+[m[m03.09.2022 - 19:49:47.056 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectPersonWith4LettersName has 2 assertions: 
+ assertThat(results.size(), is(equalTo(1))); ref {results} [211-211],
+ assertThat(results.iterator().next().getFirstName(), is(equalTo("Irma"))); ref {results} [212-212]
+[m[m03.09.2022 - 19:49:47.056 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testFilterPersonWith4LettersName has 2 assertions: 
+ assertThat(results.size(), is(equalTo(1))); ref {results} [219-219],
+ assertThat(results.iterator().next().getFirstName(), is(equalTo("Irma"))); ref {results} [220-220]
+[m[m03.09.2022 - 19:49:47.056 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSortOnAge has 4 assertions: 
+ assertSame(luca, sorted.get(0)); ref {sorted, luca} [228-228],
+ assertSame(celestino, sorted.get(1)); ref {sorted, celestino} [229-229],
+ assertSame(me, sorted.get(2)); ref {sorted, me} [230-230],
+ assertSame(biagio, sorted.get(3)); ref {sorted, biagio} [231-231]
+[m[m03.09.2022 - 19:49:47.056 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSortOnAgeWithNull has 5 assertions: 
+ assertSame(luca, sorted.get(0)); ref {sorted, luca} [239-239],
+ assertSame(celestino, sorted.get(1)); ref {sorted, celestino} [240-240],
+ assertSame(me, sorted.get(2)); ref {sorted, me} [241-241],
+ assertSame(biagio, sorted.get(3)); ref {sorted, biagio} [242-242],
+ assertNull(sorted.get(4)); ref {sorted} [243-243]
+[m[m03.09.2022 - 19:49:47.057 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSortOnAgeArgument has 8 assertions: 
+ assertSame(luca, sorted.get(0)); ref {sorted, luca} [251-251],
+ assertSame(celestino, sorted.get(1)); ref {sorted, celestino} [252-252],
+ assertSame(me, sorted.get(2)); ref {sorted, me} [253-253],
+ assertSame(biagio, sorted.get(3)); ref {sorted, biagio} [254-254],
+ assertSame(biagio, descSorted.get(0)); ref {biagio, descSorted} [257-257],
+ assertSame(me, descSorted.get(1)); ref {me, descSorted} [258-258],
+ assertSame(luca, descSorted.get(2)); ref {luca, descSorted} [259-259],
+ assertSame(celestino, descSorted.get(3)); ref {descSorted, celestino} [260-260]
+[m[m03.09.2022 - 19:49:47.057 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSortIgnoreCase has 12 assertions: 
+ assertSame(biagio, sorted.get(0)); ref {sorted, biagio} [269-269],
+ assertSame(celestino, sorted.get(1)); ref {sorted, celestino} [270-270],
+ assertSame(me, sorted.get(2)); ref {sorted, me} [271-271],
+ assertSame(luca, sorted.get(3)); ref {sorted, luca} [272-272],
+ assertSame(biagio, sortedIgnoreCase.get(0)); ref {sortedIgnoreCase, biagio} [275-275],
+ assertSame(celestino, sortedIgnoreCase.get(1)); ref {sortedIgnoreCase, celestino} [276-276],
+ assertSame(luca, sortedIgnoreCase.get(2)); ref {sortedIgnoreCase, luca} [277-277],
+ assertSame(me, sortedIgnoreCase.get(3)); ref {sortedIgnoreCase, me} [278-278],
+ assertSame(me, sortedDescIgnoreCase.get(0)); ref {sortedDescIgnoreCase, me} [281-281],
+ assertSame(luca, sortedDescIgnoreCase.get(1)); ref {luca, sortedDescIgnoreCase} [282-282],
+ assertSame(celestino, sortedDescIgnoreCase.get(2)); ref {sortedDescIgnoreCase, celestino} [283-283],
+ assertSame(biagio, sortedDescIgnoreCase.get(3)); ref {biagio, sortedDescIgnoreCase} [284-284]
+[m[m03.09.2022 - 19:49:47.057 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testFindOldest has 2 assertions: 
+ assertSame(biagio, oldest); ref {biagio, oldest} [294-294],
+ assertSame(biagio, alphabeticalFirst); ref {biagio, alphabeticalFirst} [297-297]
+[m[m03.09.2022 - 19:49:47.057 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testFindOldestOnArray has 2 assertions: 
+ assertSame(biagio, oldest); ref {biagio, oldest} [305-305],
+ assertSame(biagio, alphabeticalFirst); ref {biagio, alphabeticalFirst} [308-308]
+[m[m03.09.2022 - 19:49:47.058 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSortOnNameLenght has 4 assertions: 
+ assertSame(luca, sorted.get(0)); ref {sorted, luca} [318-318],
+ assertSame(me, sorted.get(1)); ref {sorted, me} [319-319],
+ assertSame(biagio, sorted.get(2)); ref {sorted, biagio} [320-320],
+ assertSame(celestino, sorted.get(3)); ref {sorted, celestino} [321-321]
+[m[m03.09.2022 - 19:49:47.058 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectWithHaving has 3 assertions: 
+ assertEquals(2, friends29aged.size()); ref {friends29aged} [329-329],
+ assertSame(luca, friendsIterator.next()); ref {luca, friendsIterator} [331-331],
+ assertSame(celestino, friendsIterator.next()); ref {celestino, friendsIterator} [332-332]
+[m[m03.09.2022 - 19:49:47.058 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectIteratorWithHaving has 3 assertions: 
+ assertSame(luca, friends29agedIterator.next()); ref {luca, friends29agedIterator} [340-340],
+ assertSame(celestino, friends29agedIterator.next()); ref {friends29agedIterator, celestino} [341-341],
+ assertFalse(friends29agedIterator.hasNext()); ref {friends29agedIterator} [342-342]
+[m[m03.09.2022 - 19:49:47.058 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectOnForEach has 2 assertions: 
+ assertSame(celestino, friends29aged.get(0)); ref {friends29aged, celestino} [353-353],
+ assertSame(luca, friends29aged.get(1)); ref {luca, friends29aged} [354-354]
+[m[m03.09.2022 - 19:49:47.058 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectWithHavingInOr has 4 assertions: 
+ assertEquals(3, friends29aged.size()); ref {friends29aged} [362-362],
+ assertSame(me, friendsIterator.next()); ref {me, friendsIterator} [364-364],
+ assertSame(luca, friendsIterator.next()); ref {luca, friendsIterator} [365-365],
+ assertSame(celestino, friendsIterator.next()); ref {celestino, friendsIterator} [366-366]
+[m[m03.09.2022 - 19:49:47.058 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectDistinctAge has 1 assertions: 
+ assertEquals(3, distinctAgePersons.size()); ref {distinctAgePersons} [373-373]
+[m[m03.09.2022 - 19:49:47.059 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectDistinctOnAge has 3 assertions: 
+ assertEquals(3, distinctAgePersons.size()); ref {distinctAgePersons} [380-380],
+ assertEquals(3, distinctAges.size()); ref {distinctAges} [383-383],
+ assertTrue(distinctAges.contains(me.getAge()) && distinctAges.contains(biagio.getAge()) && distinctAges.contains(luca.getAge())); ref {biagio, luca, me, distinctAges} [384-384]
+[m[m03.09.2022 - 19:49:47.059 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testArgumentIdentity has 5 assertions: 
+ assertTrue(on(Person.class).getAge() == on(Person.class).getAge()); ref {} [389-389],
+ assertEquals("[public boolean ch.lambdaj.mock.Person.isYoungerThan(int) with args 30]", argument(isYoungerThan).toString()); ref {isYoungerThan} [391-391],
+ assertTrue(on(Person.class).isYoungerThan(30) == isYoungerThan); ref {isYoungerThan} [393-393],
+ assertFalse(on(Person.class).isYoungerThan(25) == on(Person.class).isYoungerThan(30)); ref {} [394-394],
+ assertTrue(on(Person.class).getGender() == on(Person.class).getGender()); ref {} [395-395]
+[m[m03.09.2022 - 19:49:47.059 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectOnBooleanWithHaving has 5 assertions: 
+ assertEquals(2, youngFriends.size()); ref {youngFriends} [403-403],
+ assertSame(luca, youngFriends.get(0)); ref {luca, youngFriends} [404-404],
+ assertSame(celestino, youngFriends.get(1)); ref {youngFriends, celestino} [405-405],
+ assertTrue(youngestFriends.isEmpty()); ref {youngestFriends} [408-408],
+ assertEquals(4, notSoYoungFriends.size()); ref {notSoYoungFriends} [411-411]
+[m[m03.09.2022 - 19:49:47.059 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectOnFailingMethod has 1 assertions: 
+ assertEquals(0, youngFriends.size()); ref {youngFriends} [418-418]
+[m[m03.09.2022 - 19:49:47.059 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectOnDateWithHaving has 3 assertions: 
+ assertEquals(2, youngFriends.size()); ref {youngFriends} [427-427],
+ assertSame(luca, youngFriends.get(0)); ref {luca, youngFriends} [428-428],
+ assertSame(celestino, youngFriends.get(1)); ref {youngFriends, celestino} [429-429]
+[m[m03.09.2022 - 19:49:47.059 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectOnEnumMustFailWithHaving has 1 assertions: 
+ assertEquals(4, maleFriends.size()); ref {maleFriends} [437-437]
+[m[m03.09.2022 - 19:49:47.060 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testProject has 3 assertions: 
+ assertEquals(meAndMyFriends.size(), projection.size()); ref {projection, meAndMyFriends} [445-445],
+ assertEquals(meAndMyFriends.get(i).getFirstName(), projection.get(i).get("name")); ref {i, projection, meAndMyFriends} [447-447],
+ assertEquals(meAndMyFriends.get(i).getAge(), projection.get(i).get("age")); ref {i, projection, meAndMyFriends} [448-448]
+[m[m03.09.2022 - 19:49:47.060 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testProjectDto has 3 assertions: 
+ assertEquals(meAndMyFriends.size(), meAndMyFriendsDto.size()); ref {meAndMyFriendsDto, meAndMyFriends} [457-457],
+ assertEquals(meAndMyFriends.get(i).getFirstName(), meAndMyFriendsDto.get(i).getName()); ref {meAndMyFriendsDto, i, meAndMyFriends} [459-459],
+ assertEquals(meAndMyFriends.get(i).getAge(), meAndMyFriendsDto.get(i).getAge()); ref {meAndMyFriendsDto, i, meAndMyFriends} [460-460]
+[m[m03.09.2022 - 19:49:47.060 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testInvalidProjectDto has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.060 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testFilter has 3 assertions: 
+ assertEquals(2, biggerThan3.size()); ref {biggerThan3} [484-484],
+ assertEquals(4, (int) biggerThan3.get(0)); ref {biggerThan3} [485-485],
+ assertEquals(5, (int) biggerThan3.get(1)); ref {biggerThan3} [486-486]
+[m[m03.09.2022 - 19:49:47.060 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testFilterArray has 3 assertions: 
+ assertEquals(2, biggerThan3.size()); ref {biggerThan3} [492-492],
+ assertEquals(4, (int) biggerThan3.get(0)); ref {biggerThan3} [493-493],
+ assertEquals(5, (int) biggerThan3.get(1)); ref {biggerThan3} [494-494]
+[m[m03.09.2022 - 19:49:47.060 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testFilterOnCustomMatcher has 4 assertions: 
+ assertEquals(3, odds.size()); ref {odds} [510-510],
+ assertEquals(1, (int) odds.get(0)); ref {odds} [511-511],
+ assertEquals(3, (int) odds.get(1)); ref {odds} [512-512],
+ assertEquals(5, (int) odds.get(2)); ref {odds} [513-513]
+[m[m03.09.2022 - 19:49:47.061 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testFilterWithHaving has 3 assertions: 
+ assertEquals(2, oldFriends.size()); ref {oldFriends} [521-521],
+ assertSame(me, friendsIterator.next()); ref {me, friendsIterator} [523-523],
+ assertSame(biagio, friendsIterator.next()); ref {biagio, friendsIterator} [524-524]
+[m[m03.09.2022 - 19:49:47.061 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testRepeatedSum has 4 assertions: 
+ assertEquals((Float) 4.4f, sum(meAndMyFriends, on(Person.class).getFloat())); ref {meAndMyFriends} [530-530],
+ assertEquals((Integer) 132, sum(meAndMyFriends, on(Person.class).getAge())); ref {meAndMyFriends} [531-531],
+ assertEquals((Float) 4.4f, sum(meAndMyFriends, on(Person.class).getFloat())); ref {meAndMyFriends} [532-532],
+ assertEquals((Integer) 132, sum(meAndMyFriends, on(Person.class).getAge())); ref {meAndMyFriends} [533-533]
+[m[m03.09.2022 - 19:49:47.061 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testIllegalSumFrom has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.061 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSumOnEmptyList has 3 assertions: 
+ assertEquals(0, age); ref {age} [551-551],
+ assertEquals(0.0, income, 0.001); ref {income} [554-554],
+ assertEquals(0.0f, floatIncome, 0.001); ref {floatIncome} [557-557]
+[m[m03.09.2022 - 19:49:47.061 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSumMinMaxFrom has 6 assertions: 
+ assertThat(ageSummer.getAge(), is(equalTo(35 + 29 + 39 + 29))); ref {ageSummer} [565-565],
+ // check that the sumFrom proxy works also on the second invocation
+assertThat(ageSummer.getAge(), is(equalTo(35 + 29 + 39 + 29))); ref {ageSummer} [567-567],
+ assertThat(ageSummer.getAgeAsBigInteger(), is(equalTo(BigInteger.valueOf(35 + 29 + 39 + 29)))); ref {BigInteger, ageSummer} [569-569],
+ assertThat(ageSummer.getAgeAsBigDecimal(), is(equalTo(BigDecimal.valueOf(35 + 29 + 39 + 29)))); ref {ageSummer, BigDecimal} [570-570],
+ assertThat(minAge, is(equalTo(29))); ref {minAge} [573-573],
+ assertThat(maxAge, is(equalTo(39))); ref {maxAge} [576-576]
+[m[m03.09.2022 - 19:49:47.061 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSumInteger has 1 assertions: 
+ assertThat((Integer) sum(list), equalTo(new Integer("6"))); ref {list} [582-582]
+[m[m03.09.2022 - 19:49:47.061 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSumBigDecimal has 1 assertions: 
+ assertThat((BigDecimal) sum(list), equalTo(new BigDecimal("6.6"))); ref {list} [588-588]
+[m[m03.09.2022 - 19:49:47.062 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testAvg has 13 assertions: 
+ assertEquals((Double) 0.0, (Double) avg(new ArrayList<Person>())); ref {} [594-594],
+ assertEquals((Integer) 0, (Integer) avg(new ArrayList<Person>(), on(Person.class).getAge())); ref {} [596-596],
+ assertEquals((Double) 0.0, (Double) avg(new ArrayList<Person>(), on(Person.class).getIncome())); ref {} [597-597],
+ assertEquals(BigDecimal.ZERO, avg(new ArrayList<Person>(), on(Person.class).getBigDecimalIncome())); ref {BigDecimal.ZERO, BigDecimal} [598-598],
+ assertEquals((Integer) 0, (Integer) avgFrom(new ArrayList<Person>(), Person.class).getAge()); ref {} [600-600],
+ assertEquals((Double) 0.0, (Double) avgFrom(new ArrayList<Person>(), Person.class).getIncome()); ref {} [601-601],
+ assertEquals(BigDecimal.ZERO, avgFrom(new ArrayList<Person>(), Person.class).getBigDecimalIncome()); ref {BigDecimal.ZERO, BigDecimal} [602-602],
+ assertEquals(averageAge, (35 + 29 + 39 + 29) / 4); ref {averageAge} [606-606],
+ assertEquals(averageAgeFrom, (35 + 29 + 39 + 29) / 4); ref {averageAgeFrom} [608-608],
+ assertEquals(averageIncome, (me.getIncome() + luca.getIncome() + biagio.getIncome() + celestino.getIncome()) / 4, 0.001); ref {biagio, luca, averageIncome, me, celestino} [611-611],
+ assertEquals(averageIncomeFrom, (me.getIncome() + luca.getIncome() + biagio.getIncome() + celestino.getIncome()) / 4, 0.001); ref {biagio, luca, me, averageIncomeFrom, celestino} [613-613],
+ assertEquals(averageBigIncome.doubleValue(), (me.getIncome() + luca.getIncome() + biagio.getIncome() + celestino.getIncome()) / 4, 0.001); ref {averageBigIncome, biagio, luca, me, celestino} [616-616],
+ assertEquals(averageBigIncomeFrom.doubleValue(), (me.getIncome() + luca.getIncome() + biagio.getIncome() + celestino.getIncome()) / 4, 0.001); ref {averageBigIncomeFrom, biagio, luca, me, celestino} [618-618]
+[m[m03.09.2022 - 19:49:47.062 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testEmptySumMinMaxFrom has 3 assertions: 
+ assertThat(0, is(equalTo(sumFrom(new ArrayList<Person>(), Person.class).getAge()))); ref {} [623-623],
+ assertThat(0, is(equalTo(minFrom(new ArrayList<Person>(), Person.class).getAge()))); ref {} [624-624],
+ assertThat(0, is(equalTo(maxFrom(new ArrayList<Person>(), Person.class).getAge()))); ref {} [625-625]
+[m[m03.09.2022 - 19:49:47.062 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testPlainSumMinMaxFrom has 12 assertions: 
+ assertThat(15, is(equalTo(sum(integerArray)))); ref {integerArray} [631-631],
+ assertThat(1, is(equalTo(min(integerArray)))); ref {integerArray} [632-632],
+ assertThat(5, is(equalTo(max(integerArray)))); ref {integerArray} [633-633],
+ assertThat(15, is(equalTo(sum(integerList)))); ref {integerList} [636-636],
+ assertThat(1, is(equalTo(min(integerList)))); ref {integerList} [637-637],
+ assertThat(5, is(equalTo(max(integerList)))); ref {integerList} [638-638],
+ assertThat(15, is(equalTo(sum(integerList.iterator())))); ref {integerList} [640-640],
+ assertThat(1, is(equalTo(min(integerList.iterator())))); ref {integerList} [641-641],
+ assertThat(5, is(equalTo(max(integerList.iterator())))); ref {integerList} [642-642],
+ assertThat(15L, is(equalTo(sum(longArray)))); ref {longArray} [645-645],
+ assertThat(15.0, is(equalTo(sum(doubleArray)))); ref {doubleArray} [647-647],
+ assertThat(15f, is(equalTo(sum(floatArray)))); ref {floatArray} [649-649]
+[m[m03.09.2022 - 19:49:47.063 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testTypedSumMinMax has 3 assertions: 
+ assertThat(sum(meAndMyFriends, on(Person.class).getAge()), is(equalTo(35 + 29 + 39 + 29))); ref {meAndMyFriends} [655-655],
+ assertThat(min(meAndMyFriends, on(Person.class).getAge()), is(equalTo(29))); ref {meAndMyFriends} [656-656],
+ assertThat(max(meAndMyFriends, on(Person.class).getAge()), is(equalTo(39))); ref {meAndMyFriends} [657-657]
+[m[m03.09.2022 - 19:49:47.063 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testTypedSum2 has 1 assertions: 
+ assertThat(totalBestFriendAge, is(equalTo(35 * 3))); ref {totalBestFriendAge} [666-666]
+[m[m03.09.2022 - 19:49:47.063 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testTypedMixedSums has 3 assertions: 
+ assertThat(totalAge, is(equalTo(35 + 29 + 39 + 29))); ref {totalAge} [679-679],
+ assertThat(totalBestFriendAge, is(equalTo(35 * 3))); ref {totalBestFriendAge} [682-682],
+ assertThat(totalMyFriendsAge, is(equalTo(29 + 39 + 29))); ref {totalMyFriendsAge} [685-685]
+[m[m03.09.2022 - 19:49:47.063 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testFlatten1 has 4 assertions: 
+ assertEquals(me, flattened.get(0)); ref {flattened, me} [699-699],
+ assertEquals(celestino, flattened.get(1)); ref {flattened, celestino} [700-700],
+ assertEquals(luca, flattened.get(2)); ref {flattened, luca} [701-701],
+ assertEquals(biagio, flattened.get(3)); ref {flattened, biagio} [702-702]
+[m[m03.09.2022 - 19:49:47.063 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testFlatten2 has 4 assertions: 
+ assertEquals(me, flattened.get(0)); ref {flattened, me} [712-712],
+ assertEquals(celestino, flattened.get(1)); ref {flattened, celestino} [713-713],
+ assertEquals(luca, flattened.get(2)); ref {flattened, luca} [714-714],
+ assertEquals(biagio, flattened.get(3)); ref {flattened, biagio} [715-715]
+[m[m03.09.2022 - 19:49:47.063 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testCollectAges has 4 assertions: 
+ assertThat(ages.get(0), is(equalTo(35))); ref {ages} [723-723],
+ assertThat(ages.get(1), is(equalTo(29))); ref {ages} [724-724],
+ assertThat(ages.get(2), is(equalTo(39))); ref {ages} [725-725],
+ assertThat(ages.get(3), is(equalTo(29))); ref {ages} [726-726]
+[m[m03.09.2022 - 19:49:47.063 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testInvalidCollect has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.064 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectUnique has 5 assertions: 
+ assertNull(person34Aged); ref {person34Aged} [746-746],
+ assertSame(me, person35Aged); ref {me, person35Aged} [748-748],
+ assertNull(person34Aged); ref {person34Aged} [752-752],
+ assertSame(me, person35Aged); ref {me, person35Aged} [754-754],
+ assertSame(me, person35Aged); ref {me, person35Aged} [762-762]
+[m[m03.09.2022 - 19:49:47.064 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectFirst has 2 assertions: 
+ assertNull(person34Aged); ref {person34Aged} [770-770],
+ assertSame(luca, person29Aged); ref {luca, person29Aged} [773-773]
+[m[m03.09.2022 - 19:49:47.064 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectStringsThatEndsWithD has 2 assertions: 
+ assertThat(results.size(), is(equalTo(2))); ref {results} [781-781],
+ assertThat(results, hasItems("second", "third")); ref {results} [782-782]
+[m[m03.09.2022 - 19:49:47.064 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectDistinct has 2 assertions: 
+ assertThat(results.size(), is(equalTo(3))); ref {results} [790-790],
+ assertThat(results.size(), is(equalTo(2))); ref {results} [797-797]
+[m[m03.09.2022 - 19:49:47.064 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testJoin has 1 assertions: 
+ assertThat(result, is(equalTo("first, second, third"))); ref {result} [804-804]
+[m[m03.09.2022 - 19:49:47.064 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testJoinFrom has 1 assertions: 
+ assertThat(result, is(equalTo("france, brazil"))); ref {result} [811-811]
+[m[m03.09.2022 - 19:49:47.064 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testEmptyJoinFrom has 2 assertions: 
+ assertEquals("", joinFrom(new ArrayList<Person>(), Person.class).getLastName()); ref {} [816-816],
+ assertEquals("", joinFrom(new ArrayList<Person>(), Person.class, " - ").getLastName()); ref {} [817-817]
+[m[m03.09.2022 - 19:49:47.065 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSelectFranceExposures has 2 assertions: 
+ assertThat(result.size(), is(equalTo(1))); ref {result} [827-827],
+ assertThat(result, hasItem(franceExposure)); ref {result, franceExposure} [828-828]
+[m[m03.09.2022 - 19:49:47.065 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testConcatUsingMockedString has 1 assertions: 
+ assertThat(joinFrom(strings, "; ").toString(), is(equalTo("a text; another text"))); ref {strings} [837-837]
+[m[m03.09.2022 - 19:49:47.065 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testJoinStrings has 11 assertions: 
+ assertThat(join(forEach(asList("many", "strings"))), is(equalTo("many, strings"))); ref {} [842-842],
+ assertThat(join(forEach("many", "strings")), is(equalTo("many, strings"))); ref {} [843-843],
+ assertThat(join(asList("many", "strings")), is(equalTo("many, strings"))); ref {} [844-844],
+ assertThat(join(new String[] { "many", "strings" }), is(equalTo("many, strings"))); ref {} [845-845],
+ assertThat(join(new ArrayList<String>()), is(equalTo(""))); ref {} [846-846],
+ assertThat(join(null), is(equalTo(""))); ref {} [847-847],
+ assertThat(join(""), is(equalTo(""))); ref {} [848-848],
+ assertThat(join(1), is(equalTo("1"))); ref {} [849-849],
+ assertThat(join(1l), is(equalTo("1"))); ref {} [850-850],
+ assertThat(join(1f), is(equalTo("1.0"))); ref {} [851-851],
+ assertThat(join(1d), is(equalTo("1.0"))); ref {} [852-852]
+[m[m03.09.2022 - 19:49:47.065 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testJoinEmptyStringWithSeparatorAlwaysProduceEmptyString has 6 assertions: 
+ assertThat(join("", ";"), is(equalTo(""))); ref {} [857-857],
+ assertThat(join("", ","), is(equalTo(""))); ref {} [858-858],
+ assertThat(join("", "%"), is(equalTo(""))); ref {} [859-859],
+ assertThat(join("", ":"), is(equalTo(""))); ref {} [860-860],
+ assertThat(join("", "$"), is(equalTo(""))); ref {} [861-861],
+ assertThat(join("", "."), is(equalTo(""))); ref {} [862-862]
+[m[m03.09.2022 - 19:49:47.065 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testExtract has 2 assertions: 
+ assertThat(countries, hasItem("france")); ref {countries} [869-869],
+ assertThat(countries, hasItem("brazil")); ref {countries} [870-870]
+[m[m03.09.2022 - 19:49:47.065 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testExtractIterator has 3 assertions: 
+ assertEquals("france", countriesIterator.next()); ref {countriesIterator} [877-877],
+ assertEquals("brazil", countriesIterator.next()); ref {countriesIterator} [878-878],
+ assertFalse(countriesIterator.hasNext()); ref {countriesIterator} [879-879]
+[m[m03.09.2022 - 19:49:47.066 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testNullSafeExtract has 4 assertions: 
+ assertNull(lastNames.get(0)); ref {lastNames} [895-895],
+ assertNull(lastNames.get(1)); ref {lastNames} [896-896],
+ assertEquals("Fusco", lastNames.get(2)); ref {lastNames} [897-897],
+ assertNull(lastNames.get(3)); ref {lastNames} [898-898]
+[m[m03.09.2022 - 19:49:47.066 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testExtractString has 2 assertions: 
+ assertThat(countries, hasItem("france, first")); ref {countries} [905-905],
+ assertThat(countries, hasItem("brazil, second")); ref {countries} [906-906]
+[m[m03.09.2022 - 19:49:47.066 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testExtractProperty has 2 assertions: 
+ assertThat(countries, hasItem("france")); ref {countries} [913-913],
+ assertThat(countries, hasItem("brazil")); ref {countries} [914-914]
+[m[m03.09.2022 - 19:49:47.066 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testConvert has 1 assertions: 
+ assertEquals(strings.get(i++).length(), length); ref {strings, length, i} [922-922]
+[m[m03.09.2022 - 19:49:47.066 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testConvertMap has 1 assertions: 
+ assertEquals("Fusco", convertedMap.get("Mario")); ref {convertedMap} [930-930]
+[m[m03.09.2022 - 19:49:47.066 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testCount has 3 assertions: 
+ assertThat(3, equalTo(lastNameCounter.get("Fusco"))); ref {lastNameCounter} [937-937],
+ assertThat(1, equalTo(lastNameCounter.get("Beatrice"))); ref {lastNameCounter} [938-938],
+ assertNull(lastNameCounter.get("Pippo")); ref {lastNameCounter} [939-939]
+[m[m03.09.2022 - 19:49:47.066 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testStringPropertyExtractor has 1 assertions: 
+ assertEquals(agesAsString.get(i), String.valueOf(meAndMyFriends.get(i).getAge())); ref {agesAsString, i, String, meAndMyFriends} [948-948]
+[m[m03.09.2022 - 19:49:47.066 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testNestedStringPropertyExtractor has 2 assertions: 
+ assertEquals(agesAsString.get(i), ""); ref {agesAsString, i} [958-958],
+ assertEquals(agesAsString.get(i), String.valueOf(bestFriend.getAge())); ref {bestFriend, agesAsString, i, String} [959-959]
+[m[m03.09.2022 - 19:49:47.067 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testIndex has 2 assertions: 
+ assertSame(frenchExposure, indexed.get("france")); ref {frenchExposure, indexed} [969-969],
+ assertSame(brazilianExposure, indexed.get("brazil")); ref {indexed, brazilianExposure} [970-970]
+[m[m03.09.2022 - 19:49:47.067 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testSumBigDecimalOnEmptyList has 2 assertions: 
+ assertEquals(result, BigDecimal.ZERO); ref {result, BigDecimal.ZERO, BigDecimal} [984-984],
+ assertEquals(result2, BigDecimal.ZERO); ref {BigDecimal.ZERO, result2, BigDecimal} [987-987]
+[m[m03.09.2022 - 19:49:47.067 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testExists has 6 assertions: 
+ assertTrue("Anything", exists(Collections.singleton("foo"), anything())); ref {Collections} [992-992],
+ assertFalse("Nothing", exists(Collections.singleton("foo"), not(anything()))); ref {Collections} [993-993],
+ assertFalse("Empty", exists(Collections.emptySet(), anything())); ref {Collections} [994-994],
+ assertTrue("Has match", exists(Collections.singleton("foo"), equalTo("foo"))); ref {Collections} [996-996],
+ assertFalse("Has no match", exists(Collections.singleton("bar"), equalTo("foo"))); ref {Collections} [997-997],
+ assertTrue("One of many", exists(Arrays.asList("bar", "foo"), equalTo("foo"))); ref {Arrays} [998-998]
+[m[m03.09.2022 - 19:49:47.067 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.LambdaTest::testFloatArgument has 3 assertions: 
+ assertEquals(10f, f, 0.1); ref {f} [1021-1021],
+ assertEquals(60f, f, 0.1); ref {f} [1023-1023],
+ assertEquals(10f, f, 0.1); ref {f} [1025-1025]
+[m[m03.09.2022 - 19:49:47.069 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.069 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.069 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m03.09.2022 - 19:49:47.070 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.proxy.nodefconstructor.problem.RelationSmellQuery::when_selecting_first_element_for_relation_smell_query_should_not_throw has 1 assertions: 
+ assertThat(smell, is(smell_between_3_and_4)); ref {smell_between_3_and_4, smell} [50-50]
+[m[m03.09.2022 - 19:49:47.070 [INFO ] ParsingStrategy.parseTestSuite() - Found 3 test cases
+[m[m03.09.2022 - 19:49:47.070 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.closure.FileParserClosureTest::testPrintFile has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.071 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.closure.FileParserClosureTest::testReadFile has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.071 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.closure.FileParserClosureTest::testCountFile has 1 assertions: 
+ assertEquals(9, lineCounter); ref {lineCounter} [43-43]
+[m[m03.09.2022 - 19:49:47.073 [INFO ] ParsingStrategy.parseTestSuite() - Found 5 test cases
+[m[m03.09.2022 - 19:49:47.073 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.GroupsTest::testByCriteria has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.073 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.GroupsTest::testGroupByCountry has 3 assertions: 
+ assertThat(group.keySet(), hasItems("France", "Canada")); ref {group} [71-71],
+ assertThat(groupFrance, hasItems(FexFrance1, FexFrance2)); ref {groupFrance, FexFrance1, FexFrance2} [74-74],
+ assertThat(groupCanada, hasItems(FexCanada1, FexCanada2)); ref {groupCanada, FexCanada2, FexCanada1} [77-77]
+[m[m03.09.2022 - 19:49:47.074 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.GroupsTest::testGroupByInsuredName has 3 assertions: 
+ assertThat(group.keySet(), hasItems("Fex France 1", "Fex France 2", "Fex Canada 1", "Fex Canada 2")); ref {group} [84-84],
+ assertThat(groupFrance, hasItems(FexFrance2)); ref {groupFrance, FexFrance2} [87-87],
+ assertThat(groupCanada, hasItems(FexCanada1)); ref {groupCanada, FexCanada1} [90-90]
+[m[m03.09.2022 - 19:49:47.074 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.GroupsTest::testGroupByCountryAndInsuredName has 5 assertions: 
+ assertThat(group.keySet(), hasItems("France", "Canada")); ref {group} [97-97],
+ assertThat(groupFrance.findAll(), hasItems(FexFrance1, FexFrance2)); ref {groupFrance, FexFrance1, FexFrance2} [100-100],
+ assertThat(groupFexFrance, hasItems(FexFrance1)); ref {FexFrance1, groupFexFrance} [103-103],
+ assertThat(groupCanada.findAll(), hasItems(FexCanada1, FexCanada2)); ref {groupCanada, FexCanada2, FexCanada1} [106-106],
+ assertThat(groupFexCanada, hasItems(FexCanada2)); ref {groupFexCanada, FexCanada2} [109-109]
+[m[m03.09.2022 - 19:49:47.074 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.GroupsTest::testGroupTypedByCountryAndInsuredName has 5 assertions: 
+ assertThat(group.keySet(), hasItems("France", "Canada")); ref {group} [116-116],
+ assertThat(groupFrance.findAll(), hasItems(FexFrance1, FexFrance2)); ref {groupFrance, FexFrance1, FexFrance2} [119-119],
+ assertThat(groupFexFrance, hasItems(FexFrance1)); ref {FexFrance1, groupFexFrance} [122-122],
+ assertThat(groupCanada.findAll(), hasItems(FexCanada1, FexCanada2)); ref {groupCanada, FexCanada2, FexCanada1} [125-125],
+ assertThat(groupFexCanada, hasItems(FexCanada2)); ref {groupFexCanada, FexCanada2} [128-128]
+[m[m03.09.2022 - 19:49:47.078 [INFO ] ParsingStrategy.parseTestSuite() - Found 6 test cases
+[m[m03.09.2022 - 19:49:47.079 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.TypedGroupByTest::testGroupByAge has 18 assertions: 
+ assertFalse(group.isLeaf()); ref {group} [26-26],
+ assertEquals(4, group.getSize()); ref {group} [27-27],
+ assertEquals(3, group.subgroups().size()); ref {group} [28-28],
+ assertTrue(keys.contains("29")); ref {keys} [31-31],
+ assertTrue(keys.contains("35")); ref {keys} [32-32],
+ assertTrue(keys.contains("39")); ref {keys} [33-33],
+ assertTrue(group.findAll().contains(me)); ref {me, group} [35-35],
+ assertTrue(group.findAll().contains(biagio)); ref {biagio, group} [36-36],
+ assertTrue(group.findAll().contains(luca)); ref {luca, group} [37-37],
+ assertTrue(group.findAll().contains(celestino)); ref {celestino, group} [38-38],
+ assertTrue(group29aged.isLeaf()); ref {group29aged} [41-41],
+ assertEquals(2, group29aged.getSize()); ref {group29aged} [42-42],
+ assertEquals(0, group29aged.keySet().size()); ref {group29aged} [43-43],
+ assertSame(group29aged, group29aged.findGroup(null)); ref {group29aged} [44-44],
+ assertEquals(0, group29aged.subgroups().size()); ref {group29aged} [45-45],
+ assertSame(persons29Aged, group29aged.find(null)); ref {group29aged, persons29Aged} [48-48],
+ assertTrue(persons29Aged.contains(luca)); ref {luca, persons29Aged} [49-49],
+ assertTrue(persons29Aged.contains(celestino)); ref {persons29Aged, celestino} [50-50]
+[m[m03.09.2022 - 19:49:47.079 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.TypedGroupByTest::testGroupByAgeAsPersons has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.079 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.TypedGroupByTest::testGroupByAgeAsPersonsWithFirstName has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.079 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.TypedGroupByTest::testGroupByAgeAsPersonsWithName has 7 assertions: 
+ assertEquals(0, group.getHeads().size()); ref {group} [76-76],
+ assertEquals("", group.getHeadValue("name")); ref {group} [77-77],
+ assertEquals(2, group35aged.getHeads().size()); ref {group35aged} [80-80],
+ assertTrue(group35aged.getHeads().contains("age")); ref {group35aged} [81-81],
+ assertEquals("35", group35aged.getHeadValue("age")); ref {group35aged} [82-82],
+ assertTrue(group35aged.getHeads().contains("name")); ref {group35aged} [83-83],
+ assertEquals("Mario", group35aged.getHeadValue("name")); ref {group35aged} [84-84]
+[m[m03.09.2022 - 19:49:47.079 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.TypedGroupByTest::testGroupByAgeAndName has 4 assertions: 
+ assertFalse(group29aged.isLeaf()); ref {group29aged} [94-94],
+ assertTrue(persons29Aged.contains(luca)); ref {luca, persons29Aged} [97-97],
+ assertTrue(persons29Aged.contains(celestino)); ref {persons29Aged, celestino} [98-98],
+ assertTrue(groupLuca.findAll().contains(luca)); ref {groupLuca, luca} [101-101]
+[m[m03.09.2022 - 19:49:47.079 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.TypedGroupByTest::testGroupAndSubgroup has 11 assertions: 
+ assertEquals(4, group.getSize()); ref {group} [109-109],
+ assertEquals(3, group.subgroups().size()); ref {group} [110-110],
+ assertFalse(group.isLeaf()); ref {group} [111-111],
+ assertEquals(me, group.first()); ref {me, group} [112-112],
+ assertNull(group.key()); ref {group} [113-113],
+ assertFalse(subgroup.isLeaf()); ref {subgroup} [116-116],
+ assertEquals(me, subgroup.first()); ref {subgroup, me} [117-117],
+ assertEquals(me.getAge(), subgroup.key()); ref {subgroup, me} [118-118],
+ assertTrue(subsubgroup.isLeaf()); ref {subsubgroup} [121-121],
+ assertEquals(me, subgroup.first()); ref {subgroup, me} [122-122],
+ assertEquals(me.getFirstName(), subsubgroup.key()); ref {subsubgroup, me} [123-123]
+[m[m03.09.2022 - 19:49:47.108 [INFO ] ParsingStrategy.parseTestSuite() - Found 17 test cases
+[m[m03.09.2022 - 19:49:47.108 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::test1 has 2 assertions: 
+ assertNotNull(result); ref {result} [26-26],
+ assertEquals(2, result.size()); ref {result} [27-27]
+[m[m03.09.2022 - 19:49:47.108 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::testSet has 4 assertions: 
+ assertEquals(lambdaSet.hashCode(), lambdaSet2.hashCode()); ref {lambdaSet2, lambdaSet} [37-37],
+ assertEquals(lambdaSet, lambdaSet2); ref {lambdaSet2, lambdaSet} [38-38],
+ assertEquals(3, lambdaSet.size()); ref {lambdaSet} [41-41],
+ assertEquals(1, lambdaSet.size()); ref {lambdaSet} [43-43]
+[m[m03.09.2022 - 19:49:47.109 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::testIterable has 3 assertions: 
+ assertFalse(iterable.equals(iterable2)); ref {iterable, iterable2} [50-50],
+ assertEquals(1, (int) iterable.iterator().next()); ref {iterable} [51-51],
+ assertEquals(4, (int) iterable2.iterator().next()); ref {iterable2} [52-52]
+[m[m03.09.2022 - 19:49:47.109 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::test2 has 2 assertions: 
+ assertNotNull(result); ref {result} [74-74],
+ assertEquals(3, result.size()); ref {result} [75-75]
+[m[m03.09.2022 - 19:49:47.109 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::test3 has 2 assertions: 
+ assertNotNull(oldFriends); ref {oldFriends} [87-87],
+ assertEquals(2, oldFriends.size()); ref {oldFriends} [88-88]
+[m[m03.09.2022 - 19:49:47.109 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::testPredicate has 2 assertions: 
+ assertNotNull(oldFriends); ref {oldFriends} [97-97],
+ assertEquals(2, oldFriends.size()); ref {oldFriends} [98-98]
+[m[m03.09.2022 - 19:49:47.109 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::test4 has 1 assertions: 
+ assertEquals(money("1,412,321,057.24 GBP").getValue(), total.getValue(), 0.000001); ref {total} [111-111]
+[m[m03.09.2022 - 19:49:47.109 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::testConcatNull1 has 1 assertions: 
+ assertEquals(result, "a"); ref {result} [117-117]
+[m[m03.09.2022 - 19:49:47.109 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::testConcatNull2 has 1 assertions: 
+ assertEquals(result, ""); ref {result} [123-123]
+[m[m03.09.2022 - 19:49:47.110 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::testConcatNull3 has 1 assertions: 
+ assertEquals(result, "a-b"); ref {result} [129-129]
+[m[m03.09.2022 - 19:49:47.110 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::testMap has 2 assertions: 
+ assertNotNull(personsByName); ref {personsByName} [136-136],
+ assertEquals(4, personsByName.size()); ref {personsByName} [137-137]
+[m[m03.09.2022 - 19:49:47.110 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::testMap1 has 2 assertions: 
+ assertNotNull(personsByAge); ref {personsByAge} [144-144],
+ assertEquals(3, personsByAge.size()); ref {personsByAge} [145-145]
+[m[m03.09.2022 - 19:49:47.110 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::testMap2 has 2 assertions: 
+ assertNotNull(personsByAge); ref {personsByAge} [152-152],
+ assertEquals(3, personsByAge.size()); ref {personsByAge} [153-153]
+[m[m03.09.2022 - 19:49:47.110 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::testList has 14 assertions: 
+ assertEquals(3, list.size()); ref {list} [171-171],
+ assertEquals(4, list.size()); ref {list} [174-174],
+ assertEquals(1, (int) list.get(0)); ref {list} [175-175],
+ assertEquals(0, (int) list.indexOf(1)); ref {list} [176-176],
+ assertEquals(5, list.size()); ref {list} [179-179],
+ assertEquals(4, (int) list.lastIndexOf(1)); ref {list} [180-180],
+ assertEquals(0, list.size()); ref {list} [183-183],
+ assertEquals(5, list.size()); ref {list} [186-186],
+ assertEquals(4, list.size()); ref {list} [188-188],
+ assertEquals(2, (int) list.get(0)); ref {list} [189-189],
+ assertEquals(4, list.size()); ref {list} [191-191],
+ assertEquals(1, (int) list.get(0)); ref {list} [192-192],
+ assertEquals(1, (int) iterator.next()); ref {iterator} [195-195],
+ assertEquals(4, (int) iterator.next()); ref {iterator} [198-198]
+[m[m03.09.2022 - 19:49:47.111 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::testNonCloneableMap has 1 assertions: 
+ Assert.assertEquals(list, clonedList); ref {clonedList, Assert, list} [208-208]
+[m[m03.09.2022 - 19:49:47.111 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::testIterateAfterModifyCollection has 1 assertions: 
+ assertEquals(1, (int) lambdaList.iterator().next()); ref {lambdaList} [223-223]
+[m[m03.09.2022 - 19:49:47.111 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaListTest::testForEachAfterModifyCollection has 1 assertions: 
+ assertEquals("Fusco", lambdaList.get(0).getLastName()); ref {lambdaList} [232-232]
+[m[m03.09.2022 - 19:49:47.111 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.112 [INFO ] ParsingStrategy.parseTestSuite() - Found 5 test cases
+[m[m03.09.2022 - 19:49:47.112 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.aggregate.SumTest::testSumNull has 1 assertions: 
+ assertThatSum(null, null, is(equalTo(0.0))); ref {} [17-17]
+[m[m03.09.2022 - 19:49:47.112 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.aggregate.SumTest::testSumNumberAndInteger has 3 assertions: 
+ assertThatSum(1, 1, is(equalTo(2))); ref {} [22-22],
+ assertThatSum(1, null, is(equalTo(1))); ref {} [23-23],
+ assertThatSum(null, 1, is(equalTo(1))); ref {} [24-24]
+[m[m03.09.2022 - 19:49:47.113 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.aggregate.SumTest::testSumNumberAndLong has 3 assertions: 
+ assertThatSum(1l, 1l, is(equalTo(2l))); ref {} [29-29],
+ assertThatSum(1l, null, is(equalTo(1l))); ref {} [30-30],
+ assertThatSum(null, 1l, is(equalTo(1l))); ref {} [31-31]
+[m[m03.09.2022 - 19:49:47.113 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.aggregate.SumTest::testSumNumberAndFloat has 3 assertions: 
+ assertThatSum(1f, 1f, is(equalTo(2f))); ref {} [36-36],
+ assertThatSum(1f, null, is(equalTo(1f))); ref {} [37-37],
+ assertThatSum(null, 1f, is(equalTo(1f))); ref {} [38-38]
+[m[m03.09.2022 - 19:49:47.113 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.aggregate.SumTest::testSumNumberAndDouble has 3 assertions: 
+ assertThatSum(1d, 1d, is(equalTo(2d))); ref {} [43-43],
+ assertThatSum(1d, null, is(equalTo(1d))); ref {} [44-44],
+ assertThatSum(null, 1d, is(equalTo(1d))); ref {} [45-45]
+[m[m03.09.2022 - 19:49:47.114 [INFO ] ParsingStrategy.parseTestSuite() - Found 6 test cases
+[m[m03.09.2022 - 19:49:47.114 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureSpecialCasesTest::testWithEmptyListAndUnboundVar has 1 assertions: 
+ assertEquals(asList("added later"), items); ref {items} [44-44]
+[m[m03.09.2022 - 19:49:47.114 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureSpecialCasesTest::testWithNonEmptyListAndUnboundVar has 1 assertions: 
+ assertEquals(asList("initial", "added later"), items); ref {items} [55-55]
+[m[m03.09.2022 - 19:49:47.114 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureSpecialCasesTest::testWithEmptyListOnly has 1 assertions: 
+ assertEquals(asList("added later"), items); ref {items} [66-66]
+[m[m03.09.2022 - 19:49:47.114 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureSpecialCasesTest::testWithNonEmptyListOnly has 1 assertions: 
+ assertEquals(asList("initial", "added later"), items); ref {items} [77-77]
+[m[m03.09.2022 - 19:49:47.114 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureSpecialCasesTest::testWithFixedClassArgument has 1 assertions: 
+ assertEquals("pippo", string); ref {string} [86-86]
+[m[m03.09.2022 - 19:49:47.114 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureSpecialCasesTest::testWithFreeClassArgument has 1 assertions: 
+ assertEquals("pippo", string); ref {string} [95-95]
+[m[m03.09.2022 - 19:49:47.115 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.115 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.116 [INFO ] ParsingStrategy.parseTestSuite() - Found 9 test cases
+[m[m03.09.2022 - 19:49:47.116 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaIteratorTest::test1 has 2 assertions: 
+ assertNotNull(result); ref {result} [29-29],
+ assertEquals("1!2!3!4!5", result); ref {result} [30-30]
+[m[m03.09.2022 - 19:49:47.116 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaIteratorTest::testConcatNull1 has 1 assertions: 
+ assertEquals(result, "a"); ref {result} [42-42]
+[m[m03.09.2022 - 19:49:47.116 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaIteratorTest::testConcatNull2 has 1 assertions: 
+ assertEquals(result, ""); ref {result} [48-48]
+[m[m03.09.2022 - 19:49:47.116 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaIteratorTest::testConcatNull3 has 1 assertions: 
+ assertEquals(result, "a-b"); ref {result} [54-54]
+[m[m03.09.2022 - 19:49:47.116 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaIteratorTest::testMap has 2 assertions: 
+ assertNotNull(personsByName); ref {personsByName} [61-61],
+ assertEquals(4, personsByName.size()); ref {personsByName} [62-62]
+[m[m03.09.2022 - 19:49:47.117 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaIteratorTest::testMap1 has 2 assertions: 
+ assertNotNull(personsByAge); ref {personsByAge} [69-69],
+ assertEquals(3, personsByAge.size()); ref {personsByAge} [70-70]
+[m[m03.09.2022 - 19:49:47.117 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaIteratorTest::testMap2 has 2 assertions: 
+ assertNotNull(personsByAge); ref {personsByAge} [77-77],
+ assertEquals(3, personsByAge.size()); ref {personsByAge} [78-78]
+[m[m03.09.2022 - 19:49:47.117 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaIteratorTest::testIterator has 3 assertions: 
+ assertEquals(4, (int) filteredIterator.next()); ref {filteredIterator} [110-110],
+ assertEquals(5, (int) filteredIterator.next()); ref {filteredIterator} [111-111],
+ assertFalse(filteredIterator.hasNext()); ref {filteredIterator} [112-112]
+[m[m03.09.2022 - 19:49:47.117 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaIteratorTest::testIteratorExtract has 1 assertions: 
+ assertEquals("Mario", nameIterator.next()); ref {nameIterator} [123-123]
+[m[m03.09.2022 - 19:49:47.119 [INFO ] ParsingStrategy.parseTestSuite() - Found 7 test cases
+[m[m03.09.2022 - 19:49:47.119 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaMapTest::testRetainKeys has 4 assertions: 
+ assertEquals(1, map.size()); ref {map} [31-31],
+ assertEquals(me, map.get("Mario")); ref {me, map} [32-32],
+ assertNull(map.get("Luca")); ref {map} [33-33],
+ assertEquals(map.toString(), "{Mario=Mario Fusco}"); ref {map} [34-34]
+[m[m03.09.2022 - 19:49:47.119 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaMapTest::testRemoveKeys has 3 assertions: 
+ assertEquals(2, map.size()); ref {map} [41-41],
+ assertEquals(me, map.get("Fusco")); ref {me, map} [42-42],
+ assertNull(map.get("Beatrice")); ref {map} [43-43]
+[m[m03.09.2022 - 19:49:47.119 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaMapTest::testRetainValues has 3 assertions: 
+ assertEquals(2, map.size()); ref {map} [50-50],
+ assertNull(map.get("Mario")); ref {map} [51-51],
+ assertEquals(luca, map.get("Luca")); ref {luca, map} [52-52]
+[m[m03.09.2022 - 19:49:47.119 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaMapTest::testRemoveValues has 3 assertions: 
+ assertEquals(2, map.size()); ref {map} [59-59],
+ assertEquals(me, map.get("Mario")); ref {me, map} [60-60],
+ assertNull(map.get("Luca")); ref {map} [61-61]
+[m[m03.09.2022 - 19:49:47.120 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaMapTest::testChangeMapValues has 1 assertions: 
+ assertEquals(2, extract.size()); ref {extract} [73-73]
+[m[m03.09.2022 - 19:49:47.120 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaMapTest::testMap has 12 assertions: 
+ assertEquals(map, map2); ref {map2, map} [80-80],
+ assertTrue(map.equals(map)); ref {map} [82-82],
+ assertEquals(4, map.entrySet().size()); ref {map} [83-83],
+ assertTrue(map.containsKey("Mario")); ref {map} [85-85],
+ assertTrue(map.containsValue(me)); ref {me, map} [86-86],
+ assertEquals(3, map.size()); ref {map} [89-89],
+ assertEquals(3, map.keySet().size()); ref {map} [90-90],
+ assertEquals(4, map.size()); ref {map} [92-92],
+ assertEquals(4, map.values().size()); ref {map} [93-93],
+ assertEquals(5, map.size()); ref {map} [98-98],
+ assertNotNull(map.get("Gianfranco")); ref {map} [99-99],
+ assertTrue(map.isEmpty()); ref {map} [102-102]
+[m[m03.09.2022 - 19:49:47.120 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaMapTest::testNonCloneableMap has 1 assertions: 
+ assertEquals(map, clonedMap); ref {clonedMap, map} [112-112]
+[m[m03.09.2022 - 19:49:47.120 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.120 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.121 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m03.09.2022 - 19:49:47.121 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.matcher.HasNestedPropertyWithValueTest::testHasNestedProperty has 3 assertions: 
+ assertTrue(matcher.matches(me)); ref {me, matcher} [21-21],
+ assertFalse(matcher.matches(biagio)); ref {biagio, matcher} [22-22],
+ assertEquals("hasProperty(\"bestFriend.age\", is <39>)", description.toString()); ref {description} [26-26]
+[m[m03.09.2022 - 19:49:47.121 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.122 [INFO ] ParsingStrategy.parseTestSuite() - Found 8 test cases
+[m[m03.09.2022 - 19:49:47.123 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.GroupByTest::testGroupByInsuredName has 2 assertions: 
+ assertThat(string, containsString("insuredName:Fex France")); ref {string} [58-58],
+ assertThat(string, containsString("insuredName:Fex Canada")); ref {string} [59-59]
+[m[m03.09.2022 - 19:49:47.123 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.GroupByTest::testGroupByInsuredNameAndCountryName has 5 assertions: 
+ assertThat(string, containsString("children:[]")); ref {string} [72-72],
+ assertThat(string, containsString("countryName:France")); ref {string} [73-73],
+ assertThat(string, containsString("insuredName:Fex France")); ref {string} [74-74],
+ assertThat(string, containsString("countryName:Canada")); ref {string} [75-75],
+ assertThat(string, containsString("insuredName:Fex Canada")); ref {string} [76-76]
+[m[m03.09.2022 - 19:49:47.123 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.GroupByTest::testGroupByInsuredNameAsExposures has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.123 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.GroupByTest::testGroupByCountryName has 5 assertions: 
+ assertThat(string, containsString("insureds:[{")); ref {string} [89-89],
+ assertThat(string, allOf(containsString("countryName:France"), containsString("insuredName:Fex France"), containsString("countryFlag:/flags/fr.jpg"), containsString("countryIso:FR"))); ref {string} [90-90],
+ assertThat(string, allOf(containsString("countryName:Canada"), containsString("insuredName:Fex Canada"), containsString("countryFlag:/flags/fr.jpg"), containsString("countryIso:FR"))); ref {string} [91-91],
+ assertThat(string, containsString("countryIso:FR")); ref {string} [95-95],
+ assertThat(string, containsString("countryIso:CA")); ref {string} [96-96]
+[m[m03.09.2022 - 19:49:47.123 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.GroupByTest::testGroupByCountryNameAsCode has 5 assertions: 
+ assertThat(string, containsString("insureds:[{")); ref {string} [104-104],
+ assertThat(string, allOf(containsString("countryName:France"), containsString("insuredName:Fex France"), containsString("countryFlag:/flags/fr.jpg"), containsString("countryIso:FR"))); ref {string} [105-105],
+ assertThat(string, allOf(containsString("countryName:Canada"), containsString("insuredName:Fex Canada"), containsString("countryFlag:/flags/fr.jpg"), containsString("countryIso:FR"))); ref {string} [106-106],
+ assertThat(string, containsString("code:FR")); ref {string} [110-110],
+ assertThat(string, containsString("code:CA")); ref {string} [111-111]
+[m[m03.09.2022 - 19:49:47.123 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.GroupByTest::testGroupByCountryNameAndInsuredName has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.123 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.GroupByTest::testGroupByCountryNameAsCountries has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.123 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.group.GroupByTest::testGroupByCountryNameAsExposures has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.127 [INFO ] ParsingStrategy.parseTestSuite() - Found 12 test cases
+[m[m03.09.2022 - 19:49:47.127 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaDemoTest::testPrintAllBrands has 1 assertions: 
+ assertEquals(brandsIterative, brands); ref {brands, brandsIterative} [28-28]
+[m[m03.09.2022 - 19:49:47.127 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaDemoTest::testFindAllSalesOfAFerrari has 1 assertions: 
+ assertTrue(listsAreEqual(sales, salesIterative)); ref {salesIterative, sales} [45-45]
+[m[m03.09.2022 - 19:49:47.127 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaDemoTest::testFindAllBuysOfYoungestPerson has 1 assertions: 
+ assertTrue(listsAreEqual(sales, salesIterative)); ref {salesIterative, sales} [61-61]
+[m[m03.09.2022 - 19:49:47.127 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaDemoTest::testFindMostCostlySaleValue has 2 assertions: 
+ assertEquals(max, maxCost, .001); ref {max, maxCost} [73-73],
+ assertEquals(maxFrom, maxCost, .001); ref {maxFrom, maxCost} [76-76]
+[m[m03.09.2022 - 19:49:47.127 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaDemoTest::testSumSalesCostWhereBothActorsAreAMale has 2 assertions: 
+ assertEquals(sum, sumIterative, .001); ref {sum, sumIterative} [88-88],
+ assertEquals(sumFrom, sumIterative, .001); ref {sumFrom, sumIterative} [91-91]
+[m[m03.09.2022 - 19:49:47.128 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaDemoTest::testFindYoungestAgeOfWhoBoughtACarForMoreThan50000 has 1 assertions: 
+ assertEquals(age, ageIterative); ref {ageIterative, age} [106-106]
+[m[m03.09.2022 - 19:49:47.128 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaDemoTest::testSortSalesByCost has 1 assertions: 
+ assertTrue(listsAreEqual(sortedSales, sortedSalesIterative)); ref {sortedSales, sortedSalesIterative} [120-120]
+[m[m03.09.2022 - 19:49:47.128 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaDemoTest::testExtractCarsOriginalCost has 1 assertions: 
+ assertTrue(listsAreEqual(costs, costsIterative)); ref {costsIterative, costs} [130-130]
+[m[m03.09.2022 - 19:49:47.128 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaDemoTest::testIndexCarsByBrand has 1 assertions: 
+ assertEquals(carsByBrand.get("Ferrari"), carsByBrandIterative.get("Ferrari")); ref {carsByBrandIterative, carsByBrand} [140-140]
+[m[m03.09.2022 - 19:49:47.128 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaDemoTest::testGroupSalesByBuyersAndSellers has 1 assertions: 
+ assertEquals(sale, saleIterative); ref {saleIterative, sale} [168-168]
+[m[m03.09.2022 - 19:49:47.128 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaDemoTest::testGroupSalesByBuyersSortedByAge has 2 assertions: 
+ assertTrue(iterativeSales.containsAll(lambdajSales)); ref {iterativeSales, lambdajSales} [193-193],
+ assertTrue(lambdajSales.containsAll(iterativeSales)); ref {iterativeSales, lambdajSales} [194-194]
+[m[m03.09.2022 - 19:49:47.128 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaDemoTest::testFindMostBoughtCar has 1 assertions: 
+ assertEquals(boughtTimesIterative, boughtTimes); ref {boughtTimes, boughtTimesIterative} [219-219]
+[m[m03.09.2022 - 19:49:47.134 [INFO ] ParsingStrategy.parseTestSuite() - Found 24 test cases
+[m[m03.09.2022 - 19:49:47.134 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testSystemOut has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.135 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testOnList has 2 assertions: 
+ assertEquals(1, writer.getFreeVarsNumber()); ref {writer} [47-47],
+ assertEquals("firstsecondthird", sw.toString()); ref {sw} [49-49]
+[m[m03.09.2022 - 19:49:47.135 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testOnArray has 2 assertions: 
+ assertEquals("firstsecondthird", sw.toString()); ref {sw} [57-57],
+ assertEquals("firstsecondthirdforth", sw.toString()); ref {sw} [60-60]
+[m[m03.09.2022 - 19:49:47.135 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testTypedOnList has 2 assertions: 
+ assertEquals("firstsecondthird", sw.toString()); ref {sw} [78-78],
+ assertEquals("firstsecondthirdforth", sw.toString()); ref {sw} [80-80]
+[m[m03.09.2022 - 19:49:47.135 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testTypedOnArray has 1 assertions: 
+ assertEquals("firstsecondthird", sb.toString()); ref {sb} [92-92]
+[m[m03.09.2022 - 19:49:47.135 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testAddOnInteger has 1 assertions: 
+ assertEquals(2 + 3, sum); ref {sum} [101-101]
+[m[m03.09.2022 - 19:49:47.135 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testDo4OnInt has 1 assertions: 
+ assertEquals((5 - 2) * (4 - 3), result); ref {result} [110-110]
+[m[m03.09.2022 - 19:49:47.135 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testUntypedDo4OnInt has 1 assertions: 
+ assertEquals((5 - 2) * (4 - 3), result); ref {result} [118-118]
+[m[m03.09.2022 - 19:49:47.135 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testDo2OnInt has 1 assertions: 
+ assertEquals((5 - 2) * (4 - 3), result); ref {result} [127-127]
+[m[m03.09.2022 - 19:49:47.135 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testCurry has 21 assertions: 
+ assertEquals(4, closure4.getFreeVarsNumber()); ref {closure4} [136-136],
+ assertEquals((5 - 2) * (7 - 3), result); ref {result} [138-138],
+ assertEquals((5 - 4) * (7 - 3), result); ref {result} [141-141],
+ assertEquals((5 - 2) * (9 - 3), result); ref {result} [143-143],
+ assertEquals((5 - 2) * (7 - 1), result); ref {result} [145-145],
+ assertEquals((5 - 2) * (6 - 1), result); ref {result} [147-147],
+ assertEquals(3, closure3.getFreeVarsNumber()); ref {closure3} [152-152],
+ assertEquals((5 - 2) * 4, result); ref {result} [154-154],
+ assertEquals((8 - 3) * 4, result); ref {result} [156-156],
+ assertEquals((5 - 2) * 4, result); ref {result} [158-158],
+ assertEquals(2, closure2.getFreeVarsNumber()); ref {closure2} [162-162],
+ assertEquals((7 - 2) * 3, result); ref {result} [163-163],
+ assertEquals(1, closure1.getFreeVarsNumber()); ref {closure1} [167-167],
+ assertEquals((4 - 2) * 5, result); ref {result} [168-168],
+ assertEquals((4 - 2) * 5, converter.convert(4).intValue()); ref {converter} [171-171],
+ assertEquals((4 - 2) * 5, results.next()); ref {results} [174-174],
+ assertEquals((5 - 2) * 5, results.next()); ref {results} [175-175],
+ assertEquals((6 - 2) * 5, results.next()); ref {results} [176-176],
+ assertFalse(results.hasNext()); ref {results} [177-177],
+ assertEquals(0, closure0.getFreeVarsNumber()); ref {closure0} [181-181],
+ assertEquals((9 - 2) * 5, result); ref {result} [182-182]
+[m[m03.09.2022 - 19:49:47.136 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testCast has 1 assertions: 
+ assertEquals((5 - 2) * (4 - 3), result); ref {result} [192-192]
+[m[m03.09.2022 - 19:49:47.136 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testWrongCurry has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.136 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testWrongCast has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.136 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testClosureOnNonFinalArgument has 2 assertions: 
+ assertEquals(35, me.getAge()); ref {me} [228-228],
+ assertEquals(36, me.getAge()); ref {me} [232-232]
+[m[m03.09.2022 - 19:49:47.136 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testClosureOnClass has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.136 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testNoThreadLocalClosureOnClass has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.136 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testReturningClosureOnClass has 2 assertions: 
+ assertEquals(35, ageGetter.apply(me)); ref {ageGetter, me} [268-268],
+ assertEquals(35, ageGetterOnMyself.apply()); ref {ageGetterOnMyself} [271-271]
+[m[m03.09.2022 - 19:49:47.136 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testWrongClosureOnClass has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.136 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::tesStaticClosure has 2 assertions: 
+ assertEquals(666, intParser.apply("666")); ref {intParser} [289-289],
+ assertEquals(666, intParser0.apply()); ref {intParser0} [292-292]
+[m[m03.09.2022 - 19:49:47.136 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::tesFinalClosure has 2 assertions: 
+ assertEquals("MARIO", toUpperCase.apply("mario")); ref {toUpperCase} [298-298],
+ assertEquals("MARIO", toUpperCaseMe.apply()); ref {toUpperCaseMe} [301-301]
+[m[m03.09.2022 - 19:49:47.136 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::tesFinalClosureWithParams has 3 assertions: 
+ assertEquals("ar", varSubstring.apply("mario", 1, 3)); ref {varSubstring} [308-308],
+ assertEquals("mari", fixedSubstring.apply(0, 4)); ref {fixedSubstring} [312-312],
+ assertEquals("rio", substring3From2.apply("mario")); ref {substring3From2} [315-315]
+[m[m03.09.2022 - 19:49:47.137 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testNotExistingMethod has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.137 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testToStringAsClosure has 2 assertions: 
+ assertEquals("mario", stringifier.apply("mario")); ref {stringifier} [329-329],
+ assertEquals("123", stringifier.apply(123)); ref {stringifier} [330-330]
+[m[m03.09.2022 - 19:49:47.137 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureTest::testInvocationOnVar has 1 assertions: 
+ assertEquals(37, me.getAge()); ref {me} [345-345]
+[m[m03.09.2022 - 19:49:47.138 [INFO ] ParsingStrategy.parseTestSuite() - Found 2 test cases
+[m[m03.09.2022 - 19:49:47.138 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.util.iterator.IteratorFactoryTest::testInvalidIterator has 0 assertions: 
+ 
+[m[m03.09.2022 - 19:49:47.138 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.util.iterator.IteratorFactoryTest::testResettableIteratorOnIterator has 5 assertions: 
+ assertEquals("one", iterator.next()); ref {iterator} [34-34],
+ assertEquals("two", iterator.next()); ref {iterator} [35-35],
+ assertEquals("one", iterator.next()); ref {iterator} [37-37],
+ assertEquals("two", iterator.next()); ref {iterator} [38-38],
+ assertEquals("three", iterator.next()); ref {iterator} [39-39]
+[m[m03.09.2022 - 19:49:47.142 [INFO ] ParsingStrategy.parseTestSuite() - Found 12 test cases
+[m[m03.09.2022 - 19:49:47.142 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaListDemoTest::testPrintAllBrands has 2 assertions: 
+ assertEquals(brandsIterative, brands); ref {brands, brandsIterative} [25-25],
+ assertEquals(brandsIterative, brands2); ref {brands2, brandsIterative} [28-28]
+[m[m03.09.2022 - 19:49:47.142 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaListDemoTest::testFindAllSalesOfAFerrari has 1 assertions: 
+ assertTrue(listsAreEqual(sales, salesIterative)); ref {salesIterative, sales} [40-40]
+[m[m03.09.2022 - 19:49:47.142 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaListDemoTest::testFindAllBuysOfYoungestPerson has 1 assertions: 
+ assertTrue(listsAreEqual(sales, salesIterative)); ref {salesIterative, sales} [57-57]
+[m[m03.09.2022 - 19:49:47.142 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaListDemoTest::testFindMostCostlySaleValue has 2 assertions: 
+ assertEquals(max, maxCost, .001); ref {max, maxCost} [69-69],
+ assertEquals(max2, maxCost, .001); ref {maxCost, max2} [72-72]
+[m[m03.09.2022 - 19:49:47.142 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaListDemoTest::testSumSalesCostWhereBothActorsAreAMale has 2 assertions: 
+ assertEquals(sum, sumIterative, .001); ref {sum, sumIterative} [84-84],
+ assertEquals(sum2, sumIterative, .001); ref {sum2, sumIterative} [87-87]
+[m[m03.09.2022 - 19:49:47.142 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaListDemoTest::testFindYoungestAgeOfWhoBoughtACarForMoreThan50000 has 1 assertions: 
+ assertEquals(age, ageIterative); ref {ageIterative, age} [102-102]
+[m[m03.09.2022 - 19:49:47.142 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaListDemoTest::testSortSalesByCost has 1 assertions: 
+ assertTrue(listsAreEqual(sortedSales, sortedSalesIterative)); ref {sortedSales, sortedSalesIterative} [116-116]
+[m[m03.09.2022 - 19:49:47.143 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaListDemoTest::testExtractCarsOriginalCost has 1 assertions: 
+ assertTrue(listsAreEqual(costs, costsIterative)); ref {costsIterative, costs} [126-126]
+[m[m03.09.2022 - 19:49:47.143 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaListDemoTest::testIndexCarsByBrand has 1 assertions: 
+ assertEquals(carsByBrand.get("Ferrari"), carsByBrandIterative.get("Ferrari")); ref {carsByBrandIterative, carsByBrand} [136-136]
+[m[m03.09.2022 - 19:49:47.143 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaListDemoTest::testGroupSalesByBuyersAndSellers has 1 assertions: 
+ assertEquals(sale, saleIterative); ref {saleIterative, sale} [164-164]
+[m[m03.09.2022 - 19:49:47.143 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaListDemoTest::testGroupSalesByBuyersSortedByAge has 2 assertions: 
+ assertTrue(iterativeSales.containsAll(lambdajSales)); ref {iterativeSales, lambdajSales} [189-189],
+ assertTrue(lambdajSales.containsAll(iterativeSales)); ref {iterativeSales, lambdajSales} [190-190]
+[m[m03.09.2022 - 19:49:47.143 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.demo.LambdaListDemoTest::testFindMostBoughtCar has 1 assertions: 
+ assertEquals(boughtTimesIterative, boughtTimes); ref {boughtTimes, boughtTimesIterative} [215-215]
+[m[m03.09.2022 - 19:49:47.143 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.144 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m03.09.2022 - 19:49:47.144 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ClosureVoidMethodInvocationTest::testShallReplayChainedMethodCalls has 2 assertions: 
+ assertTrue(talked.isEmpty()); ref {talked} [39-39],
+ assertEquals(asList("Sue"), talked); ref {talked} [41-41]
+[m[m03.09.2022 - 19:49:47.144 [INFO ] ParsingStrategy.parseTestSuite() - Found 2 test cases
+[m[m03.09.2022 - 19:49:47.144 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.aggregate.MaxTest::testLesserFirst has 4 assertions: 
+ assertThatMax(1, 2, is(equalTo(2))); ref {} [17-17],
+ assertThatMax(2, 3, is(equalTo(3))); ref {} [18-18],
+ assertThatMax(3, 4, is(equalTo(4))); ref {} [19-19],
+ assertThatMax(1, null, is(equalTo(1))); ref {} [20-20]
+[m[m03.09.2022 - 19:49:47.144 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.aggregate.MaxTest::testGreaterFirst has 4 assertions: 
+ assertThatMax(4, 3, is(equalTo(4))); ref {} [25-25],
+ assertThatMax(3, 2, is(equalTo(3))); ref {} [26-26],
+ assertThatMax(2, 1, is(equalTo(2))); ref {} [27-27],
+ assertThatMax(null, 1, is(equalTo(1))); ref {} [28-28]
+[m[m03.09.2022 - 19:49:47.145 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m03.09.2022 - 19:49:47.145 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.argument.CreatingArgumentFromArrayTest::testCreatingArgumentFromArray has 1 assertions: 
+ assertThat(argument, is(instanceOf(ICompilationUnit[].class))); ref {argument} [22-22]
+[m[m03.09.2022 - 19:49:47.145 [INFO ] ParsingStrategy.parseTestSuite() - Found 4 test cases
+[m[m03.09.2022 - 19:49:47.145 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.aggregate.ConcatTest::testConcatStrings has 2 assertions: 
+ assertThatConcat("", "", is(equalTo(""))); ref {} [17-17],
+ assertThatConcat("a", "a", is(equalTo("a, a"))); ref {} [18-18]
+[m[m03.09.2022 - 19:49:47.145 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.aggregate.ConcatTest::testConcatStringAndNumber has 2 assertions: 
+ assertThatConcat("a", "1", is(equalTo("a, 1"))); ref {} [23-23],
+ assertThatConcat("1", "a", is(equalTo("1, a"))); ref {} [24-24]
+[m[m03.09.2022 - 19:49:47.145 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.aggregate.ConcatTest::testConcatStringAndNull has 2 assertions: 
+ assertThatConcat("", null, is(equalTo(""))); ref {} [29-29],
+ assertThatConcat(null, "", is(equalTo(""))); ref {} [30-30]
+[m[m03.09.2022 - 19:49:47.145 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.aggregate.ConcatTest::testConcatNull has 1 assertions: 
+ assertThatConcat(null, null, is(equalTo(""))); ref {} [35-35]
+[m[m03.09.2022 - 19:49:47.146 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m03.09.2022 - 19:49:47.146 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.matcher.HasArgumentWithValueTest::testHaving has 3 assertions: 
+ assertTrue(matcher.matches(me)); ref {me, matcher} [21-21],
+ assertFalse(matcher.matches(biagio)); ref {biagio, matcher} [22-22],
+ assertEquals("hasArgument(\"bestFriend.age\", is <39>)", description.toString()); ref {description} [26-26]
+[m[m03.09.2022 - 19:49:47.146 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.147 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.147 [INFO ] ParsingStrategy.parseTestSuite() - Found 2 test cases
+[m[m03.09.2022 - 19:49:47.147 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.aggregate.MinTest::testLesserFirst has 4 assertions: 
+ assertThatMin(1, 2, is(equalTo(1))); ref {} [17-17],
+ assertThatMin(2, 3, is(equalTo(2))); ref {} [18-18],
+ assertThatMin(3, 4, is(equalTo(3))); ref {} [19-19],
+ assertThatMin(1, null, is(equalTo(1))); ref {} [20-20]
+[m[m03.09.2022 - 19:49:47.147 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.function.aggregate.MinTest::testGreaterFirst has 4 assertions: 
+ assertThatMin(4, 3, is(equalTo(3))); ref {} [25-25],
+ assertThatMin(3, 2, is(equalTo(2))); ref {} [26-26],
+ assertThatMin(2, 1, is(equalTo(1))); ref {} [27-27],
+ assertThatMin(null, 1, is(equalTo(1))); ref {} [28-28]
+[m[m03.09.2022 - 19:49:47.149 [INFO ] ParsingStrategy.parseTestSuite() - Found 8 test cases
+[m[m03.09.2022 - 19:49:47.149 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionTest::test1 has 2 assertions: 
+ assertNotNull(result); ref {result} [34-34],
+ assertEquals(2, result.size()); ref {result} [35-35]
+[m[m03.09.2022 - 19:49:47.150 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionTest::test2 has 3 assertions: 
+ assertNotNull(result); ref {result} [52-52],
+ assertEquals(5, result.size()); ref {result} [53-53],
+ assertEquals("[1, 3, 5, 2, 4]", result.toString()); ref {result} [54-54]
+[m[m03.09.2022 - 19:49:47.150 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionTest::test3 has 2 assertions: 
+ assertNotNull(oldFriends); ref {oldFriends} [65-65],
+ assertEquals(2, oldFriends.size()); ref {oldFriends} [66-66]
+[m[m03.09.2022 - 19:49:47.150 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionTest::testConcatNull1 has 1 assertions: 
+ assertEquals(result, "Mario Fusco, Biagio Beatrice, Celestino Bellone"); ref {result} [72-72]
+[m[m03.09.2022 - 19:49:47.150 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionTest::testMap has 2 assertions: 
+ assertNotNull(personsByName); ref {personsByName} [79-79],
+ assertEquals(3, personsByName.size()); ref {personsByName} [80-80]
+[m[m03.09.2022 - 19:49:47.150 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionTest::testMap1 has 2 assertions: 
+ assertNotNull(personsByAge); ref {personsByAge} [87-87],
+ assertEquals(3, personsByAge.size()); ref {personsByAge} [88-88]
+[m[m03.09.2022 - 19:49:47.150 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionTest::testMap2 has 2 assertions: 
+ assertNotNull(personsByAge); ref {personsByAge} [95-95],
+ assertEquals(3, personsByAge.size()); ref {personsByAge} [96-96]
+[m[m03.09.2022 - 19:49:47.150 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.collection.LambdaCollectionTest::testCollection has 17 assertions: 
+ assertEquals(5, collection.size()); ref {collection} [110-110],
+ assertFalse(collection.isEmpty()); ref {collection} [111-111],
+ assertTrue(collection.containsAll(with(4, 3, 2))); ref {collection} [112-112],
+ assertEquals(collection, collection.clone()); ref {collection} [113-113],
+ assertEquals(6, collection.size()); ref {collection} [116-116],
+ assertEquals(0, collection.size()); ref {collection} [119-119],
+ assertTrue(collection.isEmpty()); ref {collection} [120-120],
+ assertEquals(5, collection.size()); ref {collection} [123-123],
+ assertEquals(5, collection.size()); ref {collection} [125-125],
+ assertEquals(4, collection.size()); ref {collection} [127-127],
+ assertEquals(2, collection.size()); ref {collection} [129-129],
+ assertEquals(1, collection.size()); ref {collection} [131-131],
+ assertEquals(3, (int) collection.iterator().next()); ref {collection} [132-132],
+ assertEquals(1, array.length); ref {array, array.length} [135-135],
+ assertEquals(3, array[0]); ref {array} [136-136],
+ assertEquals(1, typedArray.length); ref {typedArray, typedArray.length} [139-139],
+ assertEquals(3, (int) typedArray[0]); ref {typedArray} [140-140]
+[m[m03.09.2022 - 19:49:47.151 [INFO ] ParsingStrategy.parseTestSuite() - Found 1 test case
+[m[m03.09.2022 - 19:49:47.151 [INFO ] ParsingStrategy.lambda$parseTestSuite$28() - Testcase ch.lambdaj.ArgumentCornerCaseTest::testSimpleGet has 2 assertions: 
+ assertEquals("get.start", argument(dateArgument).getInkvokedPropertyName()); ref {dateArgument} [32-32],
+ assertEquals(expectedMin, min); ref {min, expectedMin} [33-33]
+[m[m03.09.2022 - 19:49:47.151 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.151 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.151 [INFO ] ParsingStrategy.parseTestSuite() - Found 0 test cases
+[m[m03.09.2022 - 19:49:47.155 [INFO ] ParsingStrategy.mergePartialSuites() - ====================================================================
+[m[m03.09.2022 - 19:49:47.155 [INFO ] ParsingStrategy.mergePartialSuites() - Finished parsing the test suite.
+[m[m03.09.2022 - 19:49:47.156 [INFO ] ParsingStrategy.mergePartialSuites() - It contains 266 test cases and 743 assertions.
+[m[m03.09.2022 - 19:49:47.200 [INFO ] JUnitTestSuiteReducer.reduce() - Starting test suite reduction
+[m[32m03.09.2022 - 19:54:26.104 [DEBUG] GeneticReductionStrategy.reduce() - Jenetics Statistics:
+[m[32m03.09.2022 - 19:54:26.130 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Time statistics                                                          |
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |             Selection: sum=0.070762687000 s; mean=0.004717512467 s        |
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |              Altering: sum=0.589495812000 s; mean=0.039299720800 s        |
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |   Fitness calculation: sum=261.323177486000 s; mean=17.421545165733 s     |
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |     Overall execution: sum=261.963095092000 s; mean=17.464206339467 s     |
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Evolution statistics                                                     |
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |           Generations: 15                                                 |
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |               Altered: sum=5,985,182; mean=399012.133333333               |
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                Killed: sum=0; mean=0.000000000                            |
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |              Invalids: sum=0; mean=0.000000000                            |
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |  Population statistics                                                    |
+[m[32m03.09.2022 - 19:54:26.131 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m03.09.2022 - 19:54:26.132 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                   Age: max=14; mean=2.023947; var=8.795224                |
+[m[32m03.09.2022 - 19:54:26.132 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |               Fitness:                                                    |
+[m[32m03.09.2022 - 19:54:26.132 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      min  = -1.000000000000                               |
+[m[32m03.09.2022 - 19:54:26.132 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      max  = 1332.000000000000                             |
+[m[32m03.09.2022 - 19:54:26.132 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      mean = 820.852506666667                              |
+[m[32m03.09.2022 - 19:54:26.132 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      var  = 410355.177008076700                           |
+[m[32m03.09.2022 - 19:54:26.132 [DEBUG] GeneticReductionStrategy.forEachRemaining() - |                      std  = 640.589710351389                              |
+[m[32m03.09.2022 - 19:54:26.132 [DEBUG] GeneticReductionStrategy.forEachRemaining() - +---------------------------------------------------------------------------+
+[m[32m03.09.2022 - 19:54:26.132 [DEBUG] GeneticReductionStrategy.reduce() - Best Result:
+[m[32m03.09.2022 - 19:54:26.134 [DEBUG] GeneticReductionStrategy.reduce() - [00000011|11111011|11111111|11111111|11111101|11111011|11111101|11110111|11111111|11111111|10011111|01111011|11110110|11111111|11111111|11111111|11111111|11111111|10111111|11111101|11111111|11111111|11011111|11111111|11111111|11111111|11111111|11111111|11111111|11111111|11101111|11111111|11111111|11111111] -> 1332
+[m[32m03.09.2022 - 19:54:26.258 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByAge
+[m[32m03.09.2022 - 19:54:26.258 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByAgeAsPersonsWithName
+[m[32m03.09.2022 - 19:54:26.258 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByAgeAndName
+[m[32m03.09.2022 - 19:54:26.259 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupAndSubgroup
+[m[32m03.09.2022 - 19:54:26.259 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testWithTransaction
+[m[32m03.09.2022 - 19:54:26.259 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMyGrep
+[m[32m03.09.2022 - 19:54:26.259 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testStressParameterlessFilter
+[m[32m03.09.2022 - 19:54:26.259 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testStressPrimitiveParameterFilter
+[m[32m03.09.2022 - 19:54:26.259 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testAggregateGrossPremium
+[m[32m03.09.2022 - 19:54:26.259 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping callsFromConstructorAreForwarded
+[m[32m03.09.2022 - 19:54:26.259 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExecSwitch
+[m[32m03.09.2022 - 19:54:26.259 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExecAllSwitch
+[m[32m03.09.2022 - 19:54:26.259 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSwitchOnPersons
+[m[32m03.09.2022 - 19:54:26.259 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSwitchAsFactory
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testForEach
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testForEachForProxy
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectPersonWith4LettersName
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSortOnAge
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFindOldest
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testRetainWithHaving
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectDistinctAge
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectDistinct
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testRemoveNull
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testReplace
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testProjectDto
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTypedSumMinMax
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTypedSum2
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExtractAges
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectFirst
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExists
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testAll
+[m[32m03.09.2022 - 19:54:26.260 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectUnique
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectStringsThatEndsWithD
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testJoin
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testJoinFrom
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExtract
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConvert
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConvertMap
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIndex
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testProxyNoDefaultConstructor
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPrintFile
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testReadFile
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCountFile
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCreateArgumentPlaceholder
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCreateArgumentPlaceholderForUnknownClass
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testArgumentsFactoryForFinalClasses
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSpeculation
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testProject
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testArgument
+[m[32m03.09.2022 - 19:54:26.261 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testForEach
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testForEachThrowingException
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testForEachOnIterator
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testForEachOnArray
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFailingForEach
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testForEachForProxy
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testForEachWithNoEmptyConstructor
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIllegalForEach
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectPersonWith4LettersName
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFilterPersonWith4LettersName
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSortOnAge
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSortOnAgeWithNull
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSortOnAgeArgument
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSortIgnoreCase
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFindOldest
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFindOldestOnArray
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSortOnNameLenght
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectWithHaving
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectIteratorWithHaving
+[m[32m03.09.2022 - 19:54:26.262 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectOnForEach
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectWithHavingInOr
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectDistinctAge
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectDistinctOnAge
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testArgumentIdentity
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectOnBooleanWithHaving
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectOnFailingMethod
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectOnDateWithHaving
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectOnEnumMustFailWithHaving
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testProject
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testProjectDto
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testInvalidProjectDto
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFilter
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFilterArray
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFilterOnCustomMatcher
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFilterWithHaving
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testRepeatedSum
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIllegalSumFrom
+[m[32m03.09.2022 - 19:54:26.263 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSumOnEmptyList
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSumMinMaxFrom
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSumInteger
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSumBigDecimal
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testAvg
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testEmptySumMinMaxFrom
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPlainSumMinMaxFrom
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTypedSumMinMax
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTypedSum2
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTypedMixedSums
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFlatten1
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFlatten2
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCollectAges
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testInvalidCollect
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectUnique
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectFirst
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectStringsThatEndsWithD
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectDistinct
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testJoin
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testJoinFrom
+[m[32m03.09.2022 - 19:54:26.264 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testEmptyJoinFrom
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSelectFranceExposures
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConcatUsingMockedString
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testJoinStrings
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testJoinEmptyStringWithSeparatorAlwaysProduceEmptyString
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExtract
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExtractIterator
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testNullSafeExtract
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExtractString
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExtractProperty
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConvert
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConvertMap
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCount
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testStringPropertyExtractor
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testNestedStringPropertyExtractor
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIndex
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSumBigDecimalOnEmptyList
+[m[32m03.09.2022 - 19:54:26.265 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExists
+[m[32m03.09.2022 - 19:54:26.266 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFloatArgument
+[m[32m03.09.2022 - 19:54:26.266 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping when_selecting_first_element_for_relation_smell_query_should_not_throw
+[m[32m03.09.2022 - 19:54:26.266 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPrintFile
+[m[32m03.09.2022 - 19:54:26.266 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testReadFile
+[m[32m03.09.2022 - 19:54:26.266 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCountFile
+[m[32m03.09.2022 - 19:54:26.266 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testByCriteria
+[m[32m03.09.2022 - 19:54:26.266 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByCountry
+[m[32m03.09.2022 - 19:54:26.266 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByInsuredName
+[m[32m03.09.2022 - 19:54:26.266 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByCountryAndInsuredName
+[m[32m03.09.2022 - 19:54:26.266 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupTypedByCountryAndInsuredName
+[m[32m03.09.2022 - 19:54:26.266 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByAge
+[m[32m03.09.2022 - 19:54:26.266 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByAgeAsPersons
+[m[32m03.09.2022 - 19:54:26.266 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByAgeAsPersonsWithFirstName
+[m[32m03.09.2022 - 19:54:26.267 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByAgeAsPersonsWithName
+[m[32m03.09.2022 - 19:54:26.267 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupAndSubgroup
+[m[32m03.09.2022 - 19:54:26.267 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test1
+[m[32m03.09.2022 - 19:54:26.267 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSet
+[m[32m03.09.2022 - 19:54:26.267 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIterable
+[m[32m03.09.2022 - 19:54:26.267 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test2
+[m[32m03.09.2022 - 19:54:26.267 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPredicate
+[m[32m03.09.2022 - 19:54:26.267 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test4
+[m[32m03.09.2022 - 19:54:26.267 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConcatNull1
+[m[32m03.09.2022 - 19:54:26.268 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConcatNull3
+[m[32m03.09.2022 - 19:54:26.268 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMap
+[m[32m03.09.2022 - 19:54:26.268 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMap2
+[m[32m03.09.2022 - 19:54:26.268 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testList
+[m[32m03.09.2022 - 19:54:26.268 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testNonCloneableMap
+[m[32m03.09.2022 - 19:54:26.268 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIterateAfterModifyCollection
+[m[32m03.09.2022 - 19:54:26.268 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testForEachAfterModifyCollection
+[m[32m03.09.2022 - 19:54:26.268 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSumNull
+[m[32m03.09.2022 - 19:54:26.268 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSumNumberAndLong
+[m[32m03.09.2022 - 19:54:26.268 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSumNumberAndFloat
+[m[32m03.09.2022 - 19:54:26.269 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSumNumberAndDouble
+[m[32m03.09.2022 - 19:54:26.269 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testWithEmptyListAndUnboundVar
+[m[32m03.09.2022 - 19:54:26.269 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testWithNonEmptyListAndUnboundVar
+[m[32m03.09.2022 - 19:54:26.269 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testWithEmptyListOnly
+[m[32m03.09.2022 - 19:54:26.269 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testWithNonEmptyListOnly
+[m[32m03.09.2022 - 19:54:26.269 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testWithFixedClassArgument
+[m[32m03.09.2022 - 19:54:26.269 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testWithFreeClassArgument
+[m[32m03.09.2022 - 19:54:26.269 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test1
+[m[32m03.09.2022 - 19:54:26.269 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConcatNull1
+[m[32m03.09.2022 - 19:54:26.269 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConcatNull2
+[m[32m03.09.2022 - 19:54:26.269 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConcatNull3
+[m[32m03.09.2022 - 19:54:26.269 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMap
+[m[32m03.09.2022 - 19:54:26.270 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMap1
+[m[32m03.09.2022 - 19:54:26.270 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMap2
+[m[32m03.09.2022 - 19:54:26.270 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIterator
+[m[32m03.09.2022 - 19:54:26.270 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIteratorExtract
+[m[32m03.09.2022 - 19:54:26.270 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testRetainKeys
+[m[32m03.09.2022 - 19:54:26.270 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testRemoveKeys
+[m[32m03.09.2022 - 19:54:26.270 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testRemoveValues
+[m[32m03.09.2022 - 19:54:26.270 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMap
+[m[32m03.09.2022 - 19:54:26.270 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testNonCloneableMap
+[m[32m03.09.2022 - 19:54:26.270 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testHasNestedProperty
+[m[32m03.09.2022 - 19:54:26.270 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByInsuredName
+[m[32m03.09.2022 - 19:54:26.270 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByInsuredNameAndCountryName
+[m[32m03.09.2022 - 19:54:26.271 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByInsuredNameAsExposures
+[m[32m03.09.2022 - 19:54:26.271 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByCountryName
+[m[32m03.09.2022 - 19:54:26.271 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByCountryNameAsCode
+[m[32m03.09.2022 - 19:54:26.271 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByCountryNameAndInsuredName
+[m[32m03.09.2022 - 19:54:26.271 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByCountryNameAsCountries
+[m[32m03.09.2022 - 19:54:26.271 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupByCountryNameAsExposures
+[m[32m03.09.2022 - 19:54:26.271 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testPrintAllBrands
+[m[32m03.09.2022 - 19:54:26.271 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFindAllSalesOfAFerrari
+[m[32m03.09.2022 - 19:54:26.271 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFindAllBuysOfYoungestPerson
+[m[32m03.09.2022 - 19:54:26.271 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFindMostCostlySaleValue
+[m[32m03.09.2022 - 19:54:26.271 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSumSalesCostWhereBothActorsAreAMale
+[m[32m03.09.2022 - 19:54:26.271 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFindYoungestAgeOfWhoBoughtACarForMoreThan50000
+[m[32m03.09.2022 - 19:54:26.271 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSortSalesByCost
+[m[32m03.09.2022 - 19:54:26.272 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIndexCarsByBrand
+[m[32m03.09.2022 - 19:54:26.272 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupSalesByBuyersAndSellers
+[m[32m03.09.2022 - 19:54:26.272 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupSalesByBuyersSortedByAge
+[m[32m03.09.2022 - 19:54:26.272 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFindMostBoughtCar
+[m[32m03.09.2022 - 19:54:26.272 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSystemOut
+[m[32m03.09.2022 - 19:54:26.272 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOnList
+[m[32m03.09.2022 - 19:54:26.272 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testOnArray
+[m[32m03.09.2022 - 19:54:26.272 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTypedOnList
+[m[32m03.09.2022 - 19:54:26.272 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testTypedOnArray
+[m[32m03.09.2022 - 19:54:26.272 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testAddOnInteger
+[m[32m03.09.2022 - 19:54:26.272 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDo4OnInt
+[m[32m03.09.2022 - 19:54:26.272 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testUntypedDo4OnInt
+[m[32m03.09.2022 - 19:54:26.272 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testDo2OnInt
+[m[32m03.09.2022 - 19:54:26.273 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCurry
+[m[32m03.09.2022 - 19:54:26.273 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCast
+[m[32m03.09.2022 - 19:54:26.273 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testWrongCurry
+[m[32m03.09.2022 - 19:54:26.273 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testClosureOnNonFinalArgument
+[m[32m03.09.2022 - 19:54:26.273 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testClosureOnClass
+[m[32m03.09.2022 - 19:54:26.273 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testNoThreadLocalClosureOnClass
+[m[32m03.09.2022 - 19:54:26.273 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testReturningClosureOnClass
+[m[32m03.09.2022 - 19:54:26.273 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testWrongClosureOnClass
+[m[32m03.09.2022 - 19:54:26.273 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping tesStaticClosure
+[m[32m03.09.2022 - 19:54:26.273 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping tesFinalClosure
+[m[32m03.09.2022 - 19:54:26.273 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping tesFinalClosureWithParams
+[m[32m03.09.2022 - 19:54:26.273 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testNotExistingMethod
+[m[32m03.09.2022 - 19:54:26.273 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testToStringAsClosure
+[m[32m03.09.2022 - 19:54:26.274 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testInvocationOnVar
+[m[32m03.09.2022 - 19:54:26.274 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testInvalidIterator
+[m[32m03.09.2022 - 19:54:26.274 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testResettableIteratorOnIterator
+[m[32m03.09.2022 - 19:54:26.274 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFindAllSalesOfAFerrari
+[m[32m03.09.2022 - 19:54:26.274 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFindAllBuysOfYoungestPerson
+[m[32m03.09.2022 - 19:54:26.274 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFindMostCostlySaleValue
+[m[32m03.09.2022 - 19:54:26.274 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSumSalesCostWhereBothActorsAreAMale
+[m[32m03.09.2022 - 19:54:26.274 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFindYoungestAgeOfWhoBoughtACarForMoreThan50000
+[m[32m03.09.2022 - 19:54:26.274 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSortSalesByCost
+[m[32m03.09.2022 - 19:54:26.274 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testExtractCarsOriginalCost
+[m[32m03.09.2022 - 19:54:26.274 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testIndexCarsByBrand
+[m[32m03.09.2022 - 19:54:26.275 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupSalesByBuyersAndSellers
+[m[32m03.09.2022 - 19:54:26.275 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGroupSalesByBuyersSortedByAge
+[m[32m03.09.2022 - 19:54:26.275 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testFindMostBoughtCar
+[m[32m03.09.2022 - 19:54:26.275 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testShallReplayChainedMethodCalls
+[m[32m03.09.2022 - 19:54:26.275 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLesserFirst
+[m[32m03.09.2022 - 19:54:26.275 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGreaterFirst
+[m[32m03.09.2022 - 19:54:26.275 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCreatingArgumentFromArray
+[m[32m03.09.2022 - 19:54:26.275 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConcatStrings
+[m[32m03.09.2022 - 19:54:26.275 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConcatStringAndNull
+[m[32m03.09.2022 - 19:54:26.275 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConcatNull
+[m[32m03.09.2022 - 19:54:26.275 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testHaving
+[m[32m03.09.2022 - 19:54:26.275 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testLesserFirst
+[m[32m03.09.2022 - 19:54:26.275 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testGreaterFirst
+[m[32m03.09.2022 - 19:54:26.276 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test1
+[m[32m03.09.2022 - 19:54:26.276 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test2
+[m[32m03.09.2022 - 19:54:26.276 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping test3
+[m[32m03.09.2022 - 19:54:26.276 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testConcatNull1
+[m[32m03.09.2022 - 19:54:26.276 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMap
+[m[32m03.09.2022 - 19:54:26.276 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testMap2
+[m[32m03.09.2022 - 19:54:26.276 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testCollection
+[m[32m03.09.2022 - 19:54:26.276 [DEBUG] GeneticReductionStrategy.lambda$reduce$2() - Keeping testSimpleGet
+[m[m03.09.2022 - 19:54:26.277 [INFO ] JUnitTestSuiteReducer.reduce() - Finished test suite reduction
+[m[m03.09.2022 - 19:54:26.278 [INFO ] JUnitTestSuiteReducer.reduce() - Reduced test suite from 266 to 251 test cases: 15 redundant test cases found
+[m[m03.09.2022 - 19:54:26.280 [INFO ] JUnitTestSuiteReducer.generateReport() - Generated report and wrote it to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/tsr-report-%x%.xml
+[m[m03.09.2022 - 19:54:26.280 [INFO ] CompilationUnitExtractor.parseCompilationUnitsFromFilePath() - Collecting compilation units from File Path /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/projects/lambdaj/src/test/java
+[m[m03.09.2022 - 19:54:26.507 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote LambdaGroupTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/collection/LambdaGroupTest.java
+[m[m03.09.2022 - 19:54:26.508 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote DelayedClosureTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/DelayedClosureTest.java
+[m[m03.09.2022 - 19:54:26.509 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote Text.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/mock/Text.java
+[m[m03.09.2022 - 19:54:26.509 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote Exposure.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/mock/Exposure.java
+[m[m03.09.2022 - 19:54:26.510 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote PrimitiveReferenceTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/PrimitiveReferenceTest.java
+[m[m03.09.2022 - 19:54:26.510 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote PersonThrowingException.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/mock/PersonThrowingException.java
+[m[m03.09.2022 - 19:54:26.512 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote TableMain.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/demo/TableMain.java
+[m[m03.09.2022 - 19:54:26.512 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ElementId.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/proxy/nodefconstructor/problem/ElementId.java
+[m[m03.09.2022 - 19:54:26.513 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ElementId.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/proxy/nodefconstructor/ElementId.java
+[m[m03.09.2022 - 19:54:26.513 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ExposureBy.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/mock/ExposureBy.java
+[m[m03.09.2022 - 19:54:26.514 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote AggregateTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/aggregate/AggregateTest.java
+[m[m03.09.2022 - 19:54:26.514 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote Assert.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/Assert.java
+[m[m03.09.2022 - 19:54:26.515 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ConstructorBugTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/ConstructorBugTest.java
+[m[m03.09.2022 - 19:54:26.516 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote SwitcherTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/SwitcherTest.java
+[m[m03.09.2022 - 19:54:26.517 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote Car.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/demo/Car.java
+[m[m03.09.2022 - 19:54:26.518 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote Db.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/demo/Db.java
+[m[m03.09.2022 - 19:54:26.522 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote LambdaCollectionsTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/collection/LambdaCollectionsTest.java
+[m[m03.09.2022 - 19:54:26.523 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ProxyNoDefaultConstructorTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/proxy/nodefconstructor/ProxyNoDefaultConstructorTest.java
+[m[m03.09.2022 - 19:54:26.523 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote FileParserImplicitClosureTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/closure/FileParserImplicitClosureTest.java
+[m[m03.09.2022 - 19:54:26.524 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote RelationSmell.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/proxy/nodefconstructor/problem/RelationSmell.java
+[m[m03.09.2022 - 19:54:26.525 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ArgumentsFactoryTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/argument/ArgumentsFactoryTest.java
+[m[m03.09.2022 - 19:54:26.525 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote FaillingClosureTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/closure/FaillingClosureTest.java
+[m[m03.09.2022 - 19:54:26.526 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote InvocationSequenceTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/argument/InvocationSequenceTest.java
+[m[m03.09.2022 - 19:54:26.536 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote LambdaTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/LambdaTest.java
+[m[m03.09.2022 - 19:54:26.537 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote Money.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/aggregate/Money.java
+[m[m03.09.2022 - 19:54:26.537 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ValidatingPersonDto.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/mock/ValidatingPersonDto.java
+[m[m03.09.2022 - 19:54:26.537 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote RelationSmellQuery.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/proxy/nodefconstructor/problem/RelationSmellQuery.java
+[m[m03.09.2022 - 19:54:26.538 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote FileParserClosureTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/closure/FileParserClosureTest.java
+[m[m03.09.2022 - 19:54:26.539 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote GroupsTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/group/GroupsTest.java
+[m[m03.09.2022 - 19:54:26.540 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote TypedGroupByTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/group/TypedGroupByTest.java
+[m[m03.09.2022 - 19:54:26.542 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote LambdaListTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/collection/LambdaListTest.java
+[m[m03.09.2022 - 19:54:26.543 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote IPerson.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/mock/IPerson.java
+[m[m03.09.2022 - 19:54:26.543 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote SumTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/aggregate/SumTest.java
+[m[m03.09.2022 - 19:54:26.544 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ClosureSpecialCasesTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/ClosureSpecialCasesTest.java
+[m[m03.09.2022 - 19:54:26.545 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote Person.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/demo/Person.java
+[m[m03.09.2022 - 19:54:26.545 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote Strings.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/Strings.java
+[m[m03.09.2022 - 19:54:26.547 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote LambdaIteratorTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/collection/LambdaIteratorTest.java
+[m[m03.09.2022 - 19:54:26.549 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote LambdaMapTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/collection/LambdaMapTest.java
+[m[m03.09.2022 - 19:54:26.549 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote PersonDto.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/mock/PersonDto.java
+[m[m03.09.2022 - 19:54:26.550 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote Sale.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/demo/Sale.java
+[m[m03.09.2022 - 19:54:26.550 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote HasNestedPropertyWithValueTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/matcher/HasNestedPropertyWithValueTest.java
+[m[m03.09.2022 - 19:54:26.551 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote MultithreadTestMain.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/MultithreadTestMain.java
+[m[m03.09.2022 - 19:54:26.552 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote GroupByTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/group/GroupByTest.java
+[m[m03.09.2022 - 19:54:26.554 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote LambdaDemoTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/demo/LambdaDemoTest.java
+[m[m03.09.2022 - 19:54:26.557 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ClosureTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/ClosureTest.java
+[m[m03.09.2022 - 19:54:26.558 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote IteratorFactoryTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/util/iterator/IteratorFactoryTest.java
+[m[m03.09.2022 - 19:54:26.560 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote LambdaListDemoTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/demo/LambdaListDemoTest.java
+[m[m03.09.2022 - 19:54:26.561 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote Person.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/mock/Person.java
+[m[m03.09.2022 - 19:54:26.562 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ClosureVoidMethodInvocationTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/ClosureVoidMethodInvocationTest.java
+[m[m03.09.2022 - 19:54:26.562 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote MaxTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/aggregate/MaxTest.java
+[m[m03.09.2022 - 19:54:26.563 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote CreatingArgumentFromArrayTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/argument/CreatingArgumentFromArrayTest.java
+[m[m03.09.2022 - 19:54:26.563 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ConcatTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/aggregate/ConcatTest.java
+[m[m03.09.2022 - 19:54:26.564 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote HasArgumentWithValueTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/matcher/HasArgumentWithValueTest.java
+[m[m03.09.2022 - 19:54:26.567 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote LambdaDemoTestMain.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/demo/LambdaDemoTestMain.java
+[m[m03.09.2022 - 19:54:26.568 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote RelationMetricResult.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/proxy/nodefconstructor/RelationMetricResult.java
+[m[m03.09.2022 - 19:54:26.568 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote MinTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/aggregate/MinTest.java
+[m[m03.09.2022 - 19:54:26.569 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote LambdaCollectionTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/collection/LambdaCollectionTest.java
+[m[m03.09.2022 - 19:54:26.570 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ArgumentCornerCaseTest.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/ArgumentCornerCaseTest.java
+[m[m03.09.2022 - 19:54:26.570 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote ReturnAString.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/mock/ReturnAString.java
+[m[m03.09.2022 - 19:54:26.571 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote Measure.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/function/aggregate/Measure.java
+[m[m03.09.2022 - 19:54:26.572 [INFO ] JUnit4Serializer.writeCompilationUnit() - Wrote Util.java to /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen/ch/lambdaj/demo/Util.java
+[m[m03.09.2022 - 19:54:26.572 [INFO ] JUnitJSRFacade.logTime() - ******************************************************************
+[m[m03.09.2022 - 19:54:26.572 [INFO ] JUnitJSRFacade.logTime() - * Facade Statistics:
+[m[m03.09.2022 - 19:54:26.572 [INFO ] JUnitJSRFacade.logTime() - * Parsing took: 0.659 seconds
+[m[m03.09.2022 - 19:54:26.572 [INFO ] JUnitJSRFacade.logTime() - * Reduction took: 279.124 seconds
+[m[m03.09.2022 - 19:54:26.572 [INFO ] JUnitJSRFacade.logTime() - * Serialization took: 0.292 seconds
+[m[m03.09.2022 - 19:54:26.572 [INFO ] JUnitJSRFacade.logTime() - * Overall: 280.075 seconds
+[m[m03.09.2022 - 19:54:26.572 [INFO ] JUnitJSRFacade.logTime() - ******************************************************************
+[mSuccessfully reduced your test suite!
++----------------------------------- Summary -----------------------------------+
+| Test suite size: 266 test cases
++-------------------------------------------------------------------------------+
+| Found 251 relevant test cases:
+|    ch.lambdaj.collection.LambdaGroupTest:testGroupByAge
+|    ch.lambdaj.collection.LambdaGroupTest:testGroupByAgeAsPersonsWithName
+|    ch.lambdaj.collection.LambdaGroupTest:testGroupByAgeAndName
+|    ch.lambdaj.collection.LambdaGroupTest:testGroupAndSubgroup
+|    ch.lambdaj.DelayedClosureTest:testWithTransaction
+|    ch.lambdaj.DelayedClosureTest:testMyGrep
+|    ch.lambdaj.PrimitiveReferenceTest:testStressParameterlessFilter
+|    ch.lambdaj.PrimitiveReferenceTest:testStressPrimitiveParameterFilter
+|    ch.lambdaj.function.aggregate.AggregateTest:testAggregateGrossPremium
+|    ch.lambdaj.ConstructorBugTest:callsFromConstructorAreForwarded
+|    ch.lambdaj.SwitcherTest:testExecSwitch
+|    ch.lambdaj.SwitcherTest:testExecAllSwitch
+|    ch.lambdaj.SwitcherTest:testSwitchOnPersons
+|    ch.lambdaj.SwitcherTest:testSwitchAsFactory
+|    ch.lambdaj.collection.LambdaCollectionsTest:testForEach
+|    ch.lambdaj.collection.LambdaCollectionsTest:testForEachForProxy
+|    ch.lambdaj.collection.LambdaCollectionsTest:testSelectPersonWith4LettersName
+|    ch.lambdaj.collection.LambdaCollectionsTest:testSortOnAge
+|    ch.lambdaj.collection.LambdaCollectionsTest:testFindOldest
+|    ch.lambdaj.collection.LambdaCollectionsTest:testRetainWithHaving
+|    ch.lambdaj.collection.LambdaCollectionsTest:testSelectDistinctAge
+|    ch.lambdaj.collection.LambdaCollectionsTest:testSelectDistinct
+|    ch.lambdaj.collection.LambdaCollectionsTest:testRemoveNull
+|    ch.lambdaj.collection.LambdaCollectionsTest:testReplace
+|    ch.lambdaj.collection.LambdaCollectionsTest:testProjectDto
+|    ch.lambdaj.collection.LambdaCollectionsTest:testTypedSumMinMax
+|    ch.lambdaj.collection.LambdaCollectionsTest:testTypedSum2
+|    ch.lambdaj.collection.LambdaCollectionsTest:testExtractAges
+|    ch.lambdaj.collection.LambdaCollectionsTest:testSelectFirst
+|    ch.lambdaj.collection.LambdaCollectionsTest:testExists
+|    ch.lambdaj.collection.LambdaCollectionsTest:testAll
+|    ch.lambdaj.collection.LambdaCollectionsTest:testSelectUnique
+|    ch.lambdaj.collection.LambdaCollectionsTest:testSelectStringsThatEndsWithD
+|    ch.lambdaj.collection.LambdaCollectionsTest:testJoin
+|    ch.lambdaj.collection.LambdaCollectionsTest:testJoinFrom
+|    ch.lambdaj.collection.LambdaCollectionsTest:testExtract
+|    ch.lambdaj.collection.LambdaCollectionsTest:testConvert
+|    ch.lambdaj.collection.LambdaCollectionsTest:testConvertMap
+|    ch.lambdaj.collection.LambdaCollectionsTest:testIndex
+|    ch.lambdaj.proxy.nodefconstructor.ProxyNoDefaultConstructorTest:testProxyNoDefaultConstructor
+|    ch.lambdaj.function.closure.FileParserImplicitClosureTest:testPrintFile
+|    ch.lambdaj.function.closure.FileParserImplicitClosureTest:testReadFile
+|    ch.lambdaj.function.closure.FileParserImplicitClosureTest:testCountFile
+|    ch.lambdaj.function.argument.ArgumentsFactoryTest:testCreateArgumentPlaceholder
+|    ch.lambdaj.function.argument.ArgumentsFactoryTest:testCreateArgumentPlaceholderForUnknownClass
+|    ch.lambdaj.function.argument.ArgumentsFactoryTest:testArgumentsFactoryForFinalClasses
+|    ch.lambdaj.function.closure.FaillingClosureTest:testSpeculation
+|    ch.lambdaj.function.argument.InvocationSequenceTest:testProject
+|    ch.lambdaj.LambdaTest:testArgument
+|    ch.lambdaj.LambdaTest:testForEach
+|    ch.lambdaj.LambdaTest:testForEachThrowingException
+|    ch.lambdaj.LambdaTest:testForEachOnIterator
+|    ch.lambdaj.LambdaTest:testForEachOnArray
+|    ch.lambdaj.LambdaTest:testFailingForEach
+|    ch.lambdaj.LambdaTest:testForEachForProxy
+|    ch.lambdaj.LambdaTest:testForEachWithNoEmptyConstructor
+|    ch.lambdaj.LambdaTest:testIllegalForEach
+|    ch.lambdaj.LambdaTest:testSelectPersonWith4LettersName
+|    ch.lambdaj.LambdaTest:testFilterPersonWith4LettersName
+|    ch.lambdaj.LambdaTest:testSortOnAge
+|    ch.lambdaj.LambdaTest:testSortOnAgeWithNull
+|    ch.lambdaj.LambdaTest:testSortOnAgeArgument
+|    ch.lambdaj.LambdaTest:testSortIgnoreCase
+|    ch.lambdaj.LambdaTest:testFindOldest
+|    ch.lambdaj.LambdaTest:testFindOldestOnArray
+|    ch.lambdaj.LambdaTest:testSortOnNameLenght
+|    ch.lambdaj.LambdaTest:testSelectWithHaving
+|    ch.lambdaj.LambdaTest:testSelectIteratorWithHaving
+|    ch.lambdaj.LambdaTest:testSelectOnForEach
+|    ch.lambdaj.LambdaTest:testSelectWithHavingInOr
+|    ch.lambdaj.LambdaTest:testSelectDistinctAge
+|    ch.lambdaj.LambdaTest:testSelectDistinctOnAge
+|    ch.lambdaj.LambdaTest:testArgumentIdentity
+|    ch.lambdaj.LambdaTest:testSelectOnBooleanWithHaving
+|    ch.lambdaj.LambdaTest:testSelectOnFailingMethod
+|    ch.lambdaj.LambdaTest:testSelectOnDateWithHaving
+|    ch.lambdaj.LambdaTest:testSelectOnEnumMustFailWithHaving
+|    ch.lambdaj.LambdaTest:testProject
+|    ch.lambdaj.LambdaTest:testProjectDto
+|    ch.lambdaj.LambdaTest:testInvalidProjectDto
+|    ch.lambdaj.LambdaTest:testFilter
+|    ch.lambdaj.LambdaTest:testFilterArray
+|    ch.lambdaj.LambdaTest:testFilterOnCustomMatcher
+|    ch.lambdaj.LambdaTest:testFilterWithHaving
+|    ch.lambdaj.LambdaTest:testRepeatedSum
+|    ch.lambdaj.LambdaTest:testIllegalSumFrom
+|    ch.lambdaj.LambdaTest:testSumOnEmptyList
+|    ch.lambdaj.LambdaTest:testSumMinMaxFrom
+|    ch.lambdaj.LambdaTest:testSumInteger
+|    ch.lambdaj.LambdaTest:testSumBigDecimal
+|    ch.lambdaj.LambdaTest:testAvg
+|    ch.lambdaj.LambdaTest:testEmptySumMinMaxFrom
+|    ch.lambdaj.LambdaTest:testPlainSumMinMaxFrom
+|    ch.lambdaj.LambdaTest:testTypedSumMinMax
+|    ch.lambdaj.LambdaTest:testTypedSum2
+|    ch.lambdaj.LambdaTest:testTypedMixedSums
+|    ch.lambdaj.LambdaTest:testFlatten1
+|    ch.lambdaj.LambdaTest:testFlatten2
+|    ch.lambdaj.LambdaTest:testCollectAges
+|    ch.lambdaj.LambdaTest:testInvalidCollect
+|    ch.lambdaj.LambdaTest:testSelectUnique
+|    ch.lambdaj.LambdaTest:testSelectFirst
+|    ch.lambdaj.LambdaTest:testSelectStringsThatEndsWithD
+|    ch.lambdaj.LambdaTest:testSelectDistinct
+|    ch.lambdaj.LambdaTest:testJoin
+|    ch.lambdaj.LambdaTest:testJoinFrom
+|    ch.lambdaj.LambdaTest:testEmptyJoinFrom
+|    ch.lambdaj.LambdaTest:testSelectFranceExposures
+|    ch.lambdaj.LambdaTest:testConcatUsingMockedString
+|    ch.lambdaj.LambdaTest:testJoinStrings
+|    ch.lambdaj.LambdaTest:testJoinEmptyStringWithSeparatorAlwaysProduceEmptyString
+|    ch.lambdaj.LambdaTest:testExtract
+|    ch.lambdaj.LambdaTest:testExtractIterator
+|    ch.lambdaj.LambdaTest:testNullSafeExtract
+|    ch.lambdaj.LambdaTest:testExtractString
+|    ch.lambdaj.LambdaTest:testExtractProperty
+|    ch.lambdaj.LambdaTest:testConvert
+|    ch.lambdaj.LambdaTest:testConvertMap
+|    ch.lambdaj.LambdaTest:testCount
+|    ch.lambdaj.LambdaTest:testStringPropertyExtractor
+|    ch.lambdaj.LambdaTest:testNestedStringPropertyExtractor
+|    ch.lambdaj.LambdaTest:testIndex
+|    ch.lambdaj.LambdaTest:testSumBigDecimalOnEmptyList
+|    ch.lambdaj.LambdaTest:testExists
+|    ch.lambdaj.LambdaTest:testFloatArgument
+|    ch.lambdaj.proxy.nodefconstructor.problem.RelationSmellQuery:when_selecting_first_element_for_relation_smell_query_should_not_throw
+|    ch.lambdaj.function.closure.FileParserClosureTest:testPrintFile
+|    ch.lambdaj.function.closure.FileParserClosureTest:testReadFile
+|    ch.lambdaj.function.closure.FileParserClosureTest:testCountFile
+|    ch.lambdaj.group.GroupsTest:testByCriteria
+|    ch.lambdaj.group.GroupsTest:testGroupByCountry
+|    ch.lambdaj.group.GroupsTest:testGroupByInsuredName
+|    ch.lambdaj.group.GroupsTest:testGroupByCountryAndInsuredName
+|    ch.lambdaj.group.GroupsTest:testGroupTypedByCountryAndInsuredName
+|    ch.lambdaj.group.TypedGroupByTest:testGroupByAge
+|    ch.lambdaj.group.TypedGroupByTest:testGroupByAgeAsPersons
+|    ch.lambdaj.group.TypedGroupByTest:testGroupByAgeAsPersonsWithFirstName
+|    ch.lambdaj.group.TypedGroupByTest:testGroupByAgeAsPersonsWithName
+|    ch.lambdaj.group.TypedGroupByTest:testGroupAndSubgroup
+|    ch.lambdaj.collection.LambdaListTest:test1
+|    ch.lambdaj.collection.LambdaListTest:testSet
+|    ch.lambdaj.collection.LambdaListTest:testIterable
+|    ch.lambdaj.collection.LambdaListTest:test2
+|    ch.lambdaj.collection.LambdaListTest:testPredicate
+|    ch.lambdaj.collection.LambdaListTest:test4
+|    ch.lambdaj.collection.LambdaListTest:testConcatNull1
+|    ch.lambdaj.collection.LambdaListTest:testConcatNull3
+|    ch.lambdaj.collection.LambdaListTest:testMap
+|    ch.lambdaj.collection.LambdaListTest:testMap2
+|    ch.lambdaj.collection.LambdaListTest:testList
+|    ch.lambdaj.collection.LambdaListTest:testNonCloneableMap
+|    ch.lambdaj.collection.LambdaListTest:testIterateAfterModifyCollection
+|    ch.lambdaj.collection.LambdaListTest:testForEachAfterModifyCollection
+|    ch.lambdaj.function.aggregate.SumTest:testSumNull
+|    ch.lambdaj.function.aggregate.SumTest:testSumNumberAndLong
+|    ch.lambdaj.function.aggregate.SumTest:testSumNumberAndFloat
+|    ch.lambdaj.function.aggregate.SumTest:testSumNumberAndDouble
+|    ch.lambdaj.ClosureSpecialCasesTest:testWithEmptyListAndUnboundVar
+|    ch.lambdaj.ClosureSpecialCasesTest:testWithNonEmptyListAndUnboundVar
+|    ch.lambdaj.ClosureSpecialCasesTest:testWithEmptyListOnly
+|    ch.lambdaj.ClosureSpecialCasesTest:testWithNonEmptyListOnly
+|    ch.lambdaj.ClosureSpecialCasesTest:testWithFixedClassArgument
+|    ch.lambdaj.ClosureSpecialCasesTest:testWithFreeClassArgument
+|    ch.lambdaj.collection.LambdaIteratorTest:test1
+|    ch.lambdaj.collection.LambdaIteratorTest:testConcatNull1
+|    ch.lambdaj.collection.LambdaIteratorTest:testConcatNull2
+|    ch.lambdaj.collection.LambdaIteratorTest:testConcatNull3
+|    ch.lambdaj.collection.LambdaIteratorTest:testMap
+|    ch.lambdaj.collection.LambdaIteratorTest:testMap1
+|    ch.lambdaj.collection.LambdaIteratorTest:testMap2
+|    ch.lambdaj.collection.LambdaIteratorTest:testIterator
+|    ch.lambdaj.collection.LambdaIteratorTest:testIteratorExtract
+|    ch.lambdaj.collection.LambdaMapTest:testRetainKeys
+|    ch.lambdaj.collection.LambdaMapTest:testRemoveKeys
+|    ch.lambdaj.collection.LambdaMapTest:testRemoveValues
+|    ch.lambdaj.collection.LambdaMapTest:testMap
+|    ch.lambdaj.collection.LambdaMapTest:testNonCloneableMap
+|    ch.lambdaj.function.matcher.HasNestedPropertyWithValueTest:testHasNestedProperty
+|    ch.lambdaj.group.GroupByTest:testGroupByInsuredName
+|    ch.lambdaj.group.GroupByTest:testGroupByInsuredNameAndCountryName
+|    ch.lambdaj.group.GroupByTest:testGroupByInsuredNameAsExposures
+|    ch.lambdaj.group.GroupByTest:testGroupByCountryName
+|    ch.lambdaj.group.GroupByTest:testGroupByCountryNameAsCode
+|    ch.lambdaj.group.GroupByTest:testGroupByCountryNameAndInsuredName
+|    ch.lambdaj.group.GroupByTest:testGroupByCountryNameAsCountries
+|    ch.lambdaj.group.GroupByTest:testGroupByCountryNameAsExposures
+|    ch.lambdaj.demo.LambdaDemoTest:testPrintAllBrands
+|    ch.lambdaj.demo.LambdaDemoTest:testFindAllSalesOfAFerrari
+|    ch.lambdaj.demo.LambdaDemoTest:testFindAllBuysOfYoungestPerson
+|    ch.lambdaj.demo.LambdaDemoTest:testFindMostCostlySaleValue
+|    ch.lambdaj.demo.LambdaDemoTest:testSumSalesCostWhereBothActorsAreAMale
+|    ch.lambdaj.demo.LambdaDemoTest:testFindYoungestAgeOfWhoBoughtACarForMoreThan50000
+|    ch.lambdaj.demo.LambdaDemoTest:testSortSalesByCost
+|    ch.lambdaj.demo.LambdaDemoTest:testIndexCarsByBrand
+|    ch.lambdaj.demo.LambdaDemoTest:testGroupSalesByBuyersAndSellers
+|    ch.lambdaj.demo.LambdaDemoTest:testGroupSalesByBuyersSortedByAge
+|    ch.lambdaj.demo.LambdaDemoTest:testFindMostBoughtCar
+|    ch.lambdaj.ClosureTest:testSystemOut
+|    ch.lambdaj.ClosureTest:testOnList
+|    ch.lambdaj.ClosureTest:testOnArray
+|    ch.lambdaj.ClosureTest:testTypedOnList
+|    ch.lambdaj.ClosureTest:testTypedOnArray
+|    ch.lambdaj.ClosureTest:testAddOnInteger
+|    ch.lambdaj.ClosureTest:testDo4OnInt
+|    ch.lambdaj.ClosureTest:testUntypedDo4OnInt
+|    ch.lambdaj.ClosureTest:testDo2OnInt
+|    ch.lambdaj.ClosureTest:testCurry
+|    ch.lambdaj.ClosureTest:testCast
+|    ch.lambdaj.ClosureTest:testWrongCurry
+|    ch.lambdaj.ClosureTest:testClosureOnNonFinalArgument
+|    ch.lambdaj.ClosureTest:testClosureOnClass
+|    ch.lambdaj.ClosureTest:testNoThreadLocalClosureOnClass
+|    ch.lambdaj.ClosureTest:testReturningClosureOnClass
+|    ch.lambdaj.ClosureTest:testWrongClosureOnClass
+|    ch.lambdaj.ClosureTest:tesStaticClosure
+|    ch.lambdaj.ClosureTest:tesFinalClosure
+|    ch.lambdaj.ClosureTest:tesFinalClosureWithParams
+|    ch.lambdaj.ClosureTest:testNotExistingMethod
+|    ch.lambdaj.ClosureTest:testToStringAsClosure
+|    ch.lambdaj.ClosureTest:testInvocationOnVar
+|    ch.lambdaj.util.iterator.IteratorFactoryTest:testInvalidIterator
+|    ch.lambdaj.util.iterator.IteratorFactoryTest:testResettableIteratorOnIterator
+|    ch.lambdaj.demo.LambdaListDemoTest:testFindAllSalesOfAFerrari
+|    ch.lambdaj.demo.LambdaListDemoTest:testFindAllBuysOfYoungestPerson
+|    ch.lambdaj.demo.LambdaListDemoTest:testFindMostCostlySaleValue
+|    ch.lambdaj.demo.LambdaListDemoTest:testSumSalesCostWhereBothActorsAreAMale
+|    ch.lambdaj.demo.LambdaListDemoTest:testFindYoungestAgeOfWhoBoughtACarForMoreThan50000
+|    ch.lambdaj.demo.LambdaListDemoTest:testSortSalesByCost
+|    ch.lambdaj.demo.LambdaListDemoTest:testExtractCarsOriginalCost
+|    ch.lambdaj.demo.LambdaListDemoTest:testIndexCarsByBrand
+|    ch.lambdaj.demo.LambdaListDemoTest:testGroupSalesByBuyersAndSellers
+|    ch.lambdaj.demo.LambdaListDemoTest:testGroupSalesByBuyersSortedByAge
+|    ch.lambdaj.demo.LambdaListDemoTest:testFindMostBoughtCar
+|    ch.lambdaj.ClosureVoidMethodInvocationTest:testShallReplayChainedMethodCalls
+|    ch.lambdaj.function.aggregate.MaxTest:testLesserFirst
+|    ch.lambdaj.function.aggregate.MaxTest:testGreaterFirst
+|    ch.lambdaj.function.argument.CreatingArgumentFromArrayTest:testCreatingArgumentFromArray
+|    ch.lambdaj.function.aggregate.ConcatTest:testConcatStrings
+|    ch.lambdaj.function.aggregate.ConcatTest:testConcatStringAndNull
+|    ch.lambdaj.function.aggregate.ConcatTest:testConcatNull
+|    ch.lambdaj.function.matcher.HasArgumentWithValueTest:testHaving
+|    ch.lambdaj.function.aggregate.MinTest:testLesserFirst
+|    ch.lambdaj.function.aggregate.MinTest:testGreaterFirst
+|    ch.lambdaj.collection.LambdaCollectionTest:test1
+|    ch.lambdaj.collection.LambdaCollectionTest:test2
+|    ch.lambdaj.collection.LambdaCollectionTest:test3
+|    ch.lambdaj.collection.LambdaCollectionTest:testConcatNull1
+|    ch.lambdaj.collection.LambdaCollectionTest:testMap
+|    ch.lambdaj.collection.LambdaCollectionTest:testMap2
+|    ch.lambdaj.collection.LambdaCollectionTest:testCollection
+|    ch.lambdaj.ArgumentCornerCaseTest:testSimpleGet
++-------------------------------------------------------------------------------+
+| Found 15 redundant test cases:
+|    ch.lambdaj.PrimitiveReferenceTest:testStressParameterFilter
+|    ch.lambdaj.function.argument.InvocationSequenceTest:verifyEquals
+|    ch.lambdaj.LambdaTest:testSelectOnNull
+|    ch.lambdaj.group.TypedGroupByTest:testGroupByAgeAndName
+|    ch.lambdaj.collection.LambdaListTest:test3
+|    ch.lambdaj.collection.LambdaListTest:testConcatNull2
+|    ch.lambdaj.collection.LambdaListTest:testMap1
+|    ch.lambdaj.function.aggregate.SumTest:testSumNumberAndInteger
+|    ch.lambdaj.collection.LambdaMapTest:testRetainValues
+|    ch.lambdaj.collection.LambdaMapTest:testChangeMapValues
+|    ch.lambdaj.demo.LambdaDemoTest:testExtractCarsOriginalCost
+|    ch.lambdaj.ClosureTest:testWrongCast
+|    ch.lambdaj.demo.LambdaListDemoTest:testPrintAllBrands
+|    ch.lambdaj.function.aggregate.ConcatTest:testConcatStringAndNumber
+|    ch.lambdaj.collection.LambdaCollectionTest:testMap1
++-------------------------------------------------------------------------------+
+| Wrote reduced test suite code to: /home/thomas/Desktop/bachelor_thesis/bachelor_thesis/Tool/Benchmarks/results/lambdaj/lc/genetic_0.0_0.5/gen
++-------------------------------------------------------------------------------+
